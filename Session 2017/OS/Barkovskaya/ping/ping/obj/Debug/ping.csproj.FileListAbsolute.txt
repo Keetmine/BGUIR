@@ -1,0 +1,6 @@
+D:\Session 2017\OS\Barkovskaya\ping\ping\obj\Debug\ping.csproj.CoreCompileInputs.cache
+D:\Session 2017\OS\Barkovskaya\ping\ping\bin\Debug\ping.exe.config
+D:\Session 2017\OS\Barkovskaya\ping\ping\bin\Debug\ping.exe
+D:\Session 2017\OS\Barkovskaya\ping\ping\bin\Debug\ping.pdb
+D:\Session 2017\OS\Barkovskaya\ping\ping\obj\Debug\ping.exe
+D:\Session 2017\OS\Barkovskaya\ping\ping\obj\Debug\ping.pdb

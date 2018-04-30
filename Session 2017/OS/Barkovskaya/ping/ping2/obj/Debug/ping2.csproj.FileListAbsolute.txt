@@ -1,0 +1,7 @@
+D:\Session 2017\OS\Barkovskaya\ping\ping2\bin\Debug\ping2.exe.config
+D:\Session 2017\OS\Barkovskaya\ping\ping2\bin\Debug\ping2.exe
+D:\Session 2017\OS\Barkovskaya\ping\ping2\bin\Debug\ping2.pdb
+D:\Session 2017\OS\Barkovskaya\ping\ping2\obj\Debug\ping2.csprojResolveAssemblyReference.cache
+D:\Session 2017\OS\Barkovskaya\ping\ping2\obj\Debug\ping2.csproj.CoreCompileInputs.cache
+D:\Session 2017\OS\Barkovskaya\ping\ping2\obj\Debug\ping2.exe
+D:\Session 2017\OS\Barkovskaya\ping\ping2\obj\Debug\ping2.pdb

@@ -1,0 +1,4 @@
+﻿  Teilor barkovskaya.cpp
+d:\session 2017\os\barkovskaya\lab\teilor barkovskaya\teilor barkovskaya\teilor barkovskaya.cpp(28): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+d:\session 2017\os\barkovskaya\lab\teilor barkovskaya\teilor barkovskaya\teilor barkovskaya.cpp(33): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Teilor barkovskaya.vcxproj -> D:\Session 2017\OS\Barkovskaya\lab\Teilor barkovskaya\Debug\Teilor barkovskaya.exe

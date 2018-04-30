@@ -1,0 +1,7 @@
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\bin\Debug\proj.exe.config
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\bin\Debug\proj.exe
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\bin\Debug\proj.pdb
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\obj\Debug\proj.csprojResolveAssemblyReference.cache
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\obj\Debug\proj.csproj.CoreCompileInputs.cache
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\obj\Debug\proj.exe
+D:\Session 2017\OOTPiSp\Ivanov\10 var\proj\proj\obj\Debug\proj.pdb
