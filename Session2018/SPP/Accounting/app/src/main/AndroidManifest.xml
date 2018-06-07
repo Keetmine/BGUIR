@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ivanov.accounting">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.UsersActivity"
+            android:label="@string/title_activity_users"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateUserActivity"
+            android:label="@string/title_activity_create_user"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.UsersActivity" />
+        </activity>
+        <activity
+            android:name=".views.RolesActivity"
+            android:label="Roles"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.StatusesActivity"
+            android:label="Status"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.ReasonsActivity"
+            android:label="Reasons"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.ProductsActivity"
+            android:label="Products"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.GroupActivity"
+            android:label="Groups"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.EmployeeActivity"
+            android:label="Employee"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.CompanyActivity"
+            android:label="Company"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.ActionTypesActivity"
+            android:label="Action types"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateStatusActivity"
+            android:label="Create status"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.StatusesActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateRoleActivity"
+            android:label="Create role"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.RolesActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateGroupActivity"
+            android:label="Create group"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".views.GroupActivity" />
+
+        <activity
+            android:name=".views.CreateEmployeActivity"
+            android:label="Create employer"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.EmployeeActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateReasonActivity"
+            android:label="Create Reason"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ReasonsActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateActionTypeActivity"
+            android:label="Create action type"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ActionTypesActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateCompanyActivity"
+            android:label="Create product"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.CompanyActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateProductActivity"
+            android:label="Create Producs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ProductsActivity" />
+        </activity>
+        <activity
+            android:name=".views.ActionsActivity"
+            android:label="Actions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.CreateActionActivity"
+            android:label="Create action"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ActionsActivity" />
+        </activity>
+        <activity
+            android:name=".action"
+            android:label="@string/title_activity_action"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

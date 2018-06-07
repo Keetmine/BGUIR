@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nav_users" />
+        <item
+            android:id="@+id/nav_company"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_companies" />
+        <item
+            android:id="@+id/nav_roles"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_roles" />
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Status" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_products" />
+        <item
+            android:id="@+id/nav_action"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_actions" />
+        <item
+            android:id="@+id/nav_employees"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_employees" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_groups" />
+        <item
+            android:id="@+id/nav_actionType"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_actionsType" />
+        <item
+            android:id="@+id/nav_reason"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_reasons" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Logout" />
+
+    </group>
+</menu>

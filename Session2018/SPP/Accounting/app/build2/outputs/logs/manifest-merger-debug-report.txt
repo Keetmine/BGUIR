@@ -1,0 +1,325 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+MERGED from [io.realm:realm-android-library:5.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.1.0.aar\97e651f517d6866b4023458789838331\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1409db0fc74fdf99758eae586deb86bc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\901e81a32a13de1a53203c4dfd765a42\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a495cd5f8f2548fab1bd07fff9a69541\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\60816e826dbe4656dfdb478db5e5923d\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\e41ebb9fa91479f30eb83132f5b1d612\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\bd157beeb2bf1b3b17c366a8bcbd1785\AndroidManifest.xml:17:1-22:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\1868b32b198dfd781106846f1339bd7a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0d44c49f5d18d7cf07f59bdd139edc35\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f373ff7e606b9924ed27fa1df84c7eb1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d004ec57fa7634c3cf3e708f32a5330c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\207ec640b2ca0fb01651c7171409fb83\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\cb9f981e5a9a9654a953a875d4df36be\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3fe20047a5938e90f6b3d30bace7ea8f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\2157c9e4eb0ad87ed517e0d3b7ec656d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8f85dd07dff838abafc7913b8f9bcb37\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\a16d263bf0ce1f74b5be49c646332c4a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\55a564f9fea419d81c010971e2eb9aed\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1232303f82c9ba4634681fa3ea159824\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\115bd351a245588c4db419a607372424\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+	package
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:1-198:12
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:8:22-69
+application
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:10:5-196:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\60816e826dbe4656dfdb478db5e5923d\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\60816e826dbe4656dfdb478db5e5923d\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.ivanov.accounting.MainActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:17:9-26:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:19:13-45
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:20:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:18:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:24:27-74
+activity#com.ivanov.accounting.views.UsersActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:parentActivityName
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:30:13-55
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:29:13-57
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:28:13-48
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:32:13-34:49
+	android:value
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:34:17-46
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:33:17-63
+activity#com.ivanov.accounting.views.CreateUserActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:36:9-43:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:38:13-63
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:39:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:37:13-53
+activity#com.ivanov.accounting.views.RolesActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:44:9-51:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:46:13-34
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:47:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:45:13-48
+activity#com.ivanov.accounting.views.StatusesActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:52:9-59:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:54:13-35
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:53:13-51
+activity#com.ivanov.accounting.views.ReasonsActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:60:9-67:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:62:13-36
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:63:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:61:13-50
+activity#com.ivanov.accounting.views.ProductsActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:68:9-75:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:70:13-37
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:71:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:69:13-51
+activity#com.ivanov.accounting.views.GroupActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:76:9-83:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:78:13-35
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:79:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:77:13-48
+activity#com.ivanov.accounting.views.EmployeeActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:84:9-91:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:86:13-37
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:87:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:85:13-51
+activity#com.ivanov.accounting.views.CompanyActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:92:9-99:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:94:13-36
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:95:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:93:13-50
+activity#com.ivanov.accounting.views.ActionTypesActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:100:9-107:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:102:13-41
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:103:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:101:13-54
+activity#com.ivanov.accounting.views.CreateStatusActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:108:9-115:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:110:13-42
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:111:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:109:13-55
+activity#com.ivanov.accounting.views.CreateRoleActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:116:9-123:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:118:13-40
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:119:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:117:13-53
+activity#com.ivanov.accounting.views.CreateGroupActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:124:9-127:59
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:126:13-41
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:127:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:125:13-54
+activity#com.ivanov.accounting.views.CreateEmployeActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:133:9-140:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:135:13-44
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:136:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:134:13-56
+activity#com.ivanov.accounting.views.CreateReasonActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:141:9-148:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:143:13-42
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:144:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:142:13-55
+activity#com.ivanov.accounting.views.CreateActionTypeActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:149:9-156:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:151:13-47
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:152:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:150:13-59
+activity#com.ivanov.accounting.views.CreateCompanyActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:157:9-164:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:159:13-43
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:160:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:158:13-56
+activity#com.ivanov.accounting.views.CreateProductActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:165:9-172:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:167:13-43
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:168:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:166:13-56
+activity#com.ivanov.accounting.views.ActionsActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:173:9-180:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:175:13-36
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:176:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:174:13-50
+activity#com.ivanov.accounting.views.CreateActionActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:181:9-188:20
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:183:13-42
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:184:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:182:13-55
+activity#com.ivanov.accounting.action
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:189:9-192:59
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:191:13-58
+	android:theme
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:192:13-56
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:190:13-35
+activity#com.ivanov.accounting.views.LoginActivity
+ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:193:9-195:69
+	android:label
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:195:13-57
+	android:name
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml:194:13-48
+uses-sdk
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+MERGED from [io.realm:realm-android-library:5.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.1.0.aar\97e651f517d6866b4023458789838331\AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:5.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.1.0.aar\97e651f517d6866b4023458789838331\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1409db0fc74fdf99758eae586deb86bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1409db0fc74fdf99758eae586deb86bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\901e81a32a13de1a53203c4dfd765a42\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\901e81a32a13de1a53203c4dfd765a42\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a495cd5f8f2548fab1bd07fff9a69541\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a495cd5f8f2548fab1bd07fff9a69541\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\60816e826dbe4656dfdb478db5e5923d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\60816e826dbe4656dfdb478db5e5923d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\e41ebb9fa91479f30eb83132f5b1d612\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\e41ebb9fa91479f30eb83132f5b1d612\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\bd157beeb2bf1b3b17c366a8bcbd1785\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\bd157beeb2bf1b3b17c366a8bcbd1785\AndroidManifest.xml:20:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\1868b32b198dfd781106846f1339bd7a\AndroidManifest.xml:7:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\1868b32b198dfd781106846f1339bd7a\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0d44c49f5d18d7cf07f59bdd139edc35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0d44c49f5d18d7cf07f59bdd139edc35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f373ff7e606b9924ed27fa1df84c7eb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f373ff7e606b9924ed27fa1df84c7eb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d004ec57fa7634c3cf3e708f32a5330c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d004ec57fa7634c3cf3e708f32a5330c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\207ec640b2ca0fb01651c7171409fb83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\207ec640b2ca0fb01651c7171409fb83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\cb9f981e5a9a9654a953a875d4df36be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\cb9f981e5a9a9654a953a875d4df36be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3fe20047a5938e90f6b3d30bace7ea8f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3fe20047a5938e90f6b3d30bace7ea8f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\2157c9e4eb0ad87ed517e0d3b7ec656d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\2157c9e4eb0ad87ed517e0d3b7ec656d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8f85dd07dff838abafc7913b8f9bcb37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8f85dd07dff838abafc7913b8f9bcb37\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\a16d263bf0ce1f74b5be49c646332c4a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\a16d263bf0ce1f74b5be49c646332c4a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\55a564f9fea419d81c010971e2eb9aed\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\55a564f9fea419d81c010971e2eb9aed\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1232303f82c9ba4634681fa3ea159824\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1232303f82c9ba4634681fa3ea159824\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\115bd351a245588c4db419a607372424\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Keetmine\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\115bd351a245588c4db419a607372424\AndroidManifest.xml:20:5-44
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		ADDED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml
+		INJECTED from D:\BGUIR\Session2018\SPP\Accounting\app\src\main\AndroidManifest.xml

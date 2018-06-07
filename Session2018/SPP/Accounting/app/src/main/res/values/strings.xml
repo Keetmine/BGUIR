@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Accounting</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_users">Users</string>
+    <string name="nav_groups">Groups</string>
+    <string name="nav_companies">Companies</string>
+    <string name="nav_items">Items</string>
+    <string name="nav_roles">Roles</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_actions">Actions</string>
+    <string name="nav_actionsType">Actions Type</string>
+    <string name="nav_employees">Employees</string>
+    <string name="nav_reasons">Reasons</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_users">UsersActivity</string>
+    <string name="title_activity_create_user">CreateUserActivity</string>
+    <string name="title_activity_create_status">CreateStatusActivity</string>
+    <string name="title_activity_create_role">CreateRoleActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="title_activity_create_employe">CreateEmployeActivity</string>
+    <string name="title_activity_create_reason">CreateReasonActivity</string>
+    <string name="title_activity_create_action_type">CreateActionTypeActivity</string>
+    <string name="title_activity_create_company">CreateCompanyActivity</string>
+    <string name="title_activity_create_product">CreateProductActivity</string>
+    <string name="title_activity_action">action</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>
