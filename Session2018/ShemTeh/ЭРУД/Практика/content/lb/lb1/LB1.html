@@ -1,0 +1,1703 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB1 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                  <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 1</b></p>
+ <div>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";text-transform:
+uppercase'>Активные фильтры</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.1.
+Цель работы</span></b></p>
+
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Изучить работу и
+методы проектирования активных фильтров I и </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>II</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> порядков.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.2.
+Теоретические сведения</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В зависимости от
+передаточной функции типа и числа цепочек </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>RC</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, фильтры классифицируются
+как фильтры </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> порядка, </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>II</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> порядка, </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>III</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> порядка, …, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>n</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-го порядка. На
+рис. 1.1 показан низкочастотный фильтр Баттерворта первого порядка, в котором
+используется только одна </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>RC</span></i><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>-цепь. Отметьте, что в данной
+схеме операционный усилитель (ОУ) используется в неинверсной конфигурации.
+Следовательно, это не перегружает </span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>RC</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-цепь. Резисторы
+</span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R<sub>F</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> определяют
+усиление фильтра. Согласно правилу делителя напряжения, напряжение на
+неинверсном входе ОУ (на конденсаторе </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>):</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span
+style='position:relative;top:17.0pt'><img width=136 height=52
+src="../../../../Практика/images/lb1/image534.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,                                               (1.1)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>где
+</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+position:relative;top:6.0pt'><img width=65 height=29
+src="../../../../Практика/images/lb1/image535.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>;</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+position:relative;top:16.0pt'><img width=119 height=51
+src="../../../../Практика/images/lb1/image536.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Упрощая 
+уравнение (1.1), получим</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:16.0pt'><img width=128 height=51
+src="../../../../Практика/images/lb1/image537.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>                                                 </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(1.2)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Выходное напряжение:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:18.0pt'><img width=131 height=57
+src="../../../../Практика/images/lb1/image538.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Таким образом,</span></p>
+
+<p class=style1 align=right style='margin-top:0cm;margin-right:-.05pt;
+margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;text-autospace:none'><span style='position:relative;
+top:18.0pt'><img width=200 height=57
+src="../../../../Практика/images/lb1/image539.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>                                            </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(1.3)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>или</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span
+style='position:relative;top:17.0pt'><img width=148 height=52
+src="../../../../Практика/images/lb1/image540.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,                                   (1.4)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>где </span><span style='position:relative;
+top:17.0pt'><img width=36 height=52
+src="../../../../Практика/images/lb1/image541.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> – </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>усиление фильтра
+как функция частоты;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";position:relative;top:17.0pt'>      </span><span
+style='position:relative;top:17.0pt'><img width=95 height=52
+src="../../../../Практика/images/lb1/image542.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> – </span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'>
+<span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+<span
+style='color:black'>коэффициент </span>усиления в полосе пропускания фильтра;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><i><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>       f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> – частота
+входного сигнала;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";position:relative;top:14.0pt'>     <img
+width=89 height=48
+src="../../../../Практика/images/lb1/image543.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>– верхняя
+частота среза фильтра.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=405
+height=247 src="../../../../Практика/images/lb1/image544.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>a</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=488
+height=252 src="../../../../Практика/images/lb1/image545.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>б</span></p>
+
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 1.1.
+Фильтр нижних частот первого порядка:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>a</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> – схема, б –
+частотная характеристика</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Коэффициент
+усиления и уравнения фазового угла фильтра нижних частот могут быть получены
+путём преобразования уравнения (1.4) в его эквивалентную полярную форму:</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:22.0pt'><img width=176 height=63
+src="../../../../Практика/images/lb1/image546.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,                              (1.5)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span
+style='position:relative;top:6.0pt'><img width=149 height=29
+src="../../../../Практика/images/lb1/image547.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,                                   </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(1.6)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>где &#966;&nbsp;</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>–</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> фазовый угол в
+градусах.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Работа фильтра
+нижних частот может быть проанализирована с помощью уравнения (1.5):</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1) На очень
+низкой частоте, при</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman","serif";position:relative;top:6.0pt'><img width=52 height=25
+src="../../../../Практика/images/lb1/image548.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:18.0pt'><img width=81 height=57
+src="../../../../Практика/images/lb1/image549.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2) При</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+position:relative;top:6.0pt'><img width=53 height=25
+src="../../../../Практика/images/lb1/image550.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:18.0pt'><img width=169 height=57
+src="../../../../Практика/images/lb1/image551.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3) При</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:6.0pt'><img width=53 height=25
+src="../../../../Практика/images/lb1/image552.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";position:relative;
+top:18.0pt'><img width=81 height=57
+src="../../../../Практика/images/lb1/image549.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Таким образом,
+фильтр нижних частот имеет постоянный коэффициент усиления <i>A<sub>F</sub></i><sub>
+</sub>в полосе частот от 0Гц до верхней частоты среза <i>f</i><sub>н</sub>. На
+частоте <i>f</i><sub>н</sub> усиление – 0,707</span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>A<sub>F</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, и после <i>f</i><sub>н</sub>
+коэффициент уменьшается с постоянной скоростью с увеличением частоты. Таким образом,
+когда частота увеличивается десятикратно (одна декада), коэффициент усиления
+делится на 10. Другими словами, коэффициент уменьшает усиление на 20 дБ (=
+20log10) каждый раз, когда частота увеличивается в 10 раз. Следовательно,
+коэффициент усиления уменьшается после <i>f</i><sub>н</sub> со скоростью
+20dB/дек. или 6dB/октав, где октава выражает двукратное увеличение частоты.
+Частоту <i>f</i> = <i>f</i><sub>н</sub> называют <i>частотой среза</i>, потому
+что усиление фильтра на этой частоте снижается на 3 дБ (20log0,707) по
+сравнению с усилением на частоте 0 Гц.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.2.1.
+Проектирование фильтров нижних частот</span></b></p>
+
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Фильтр нижних
+частот может быть спроектирован следующим образом:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1. Выбор
+значения верхней частоты среза, </span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2. Выбор
+значения емкости конденсатора <i>С</i> меньшей или равной 1&#956;</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3. Определение
+значения сопротивления резистора <i>R</i> с помощью формулы:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";position:relative;
+top:17.0pt'><img width=85 height=52
+src="../../../../Практика/images/lb1/image553.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:110%;text-autospace:none'><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>4.
+Наконец, выбор значения </span><i><span lang=EN-US style='font-size:14.0pt;
+line-height:110%;font-family:"Times New Roman CYR","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>1</span></sub><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>
+и </span><i><span lang=EN-US style='font-size:14.0pt;line-height:110%;
+font-family:"Times New Roman CYR","serif"'>R<sub>F</sub></span></i><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>
+в зависимости от требуемого коэффициента усиления в полосе пропускания при
+помощи формулы</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='position:relative;top:17.0pt'><img width=95 height=52
+src="../../../../Практика/images/lb1/image542.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.2.2. Фильтры
+верхних частот I порядка</span></b></p>
+
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Фильтры верхних
+частот – результат перемены местами резисторов и конденсаторов в фильтрах
+нижних частот. Таким образом, фильтр верхних частот I порядка, получим из
+фильтра I порядка нижних частот, меняя местами резистор <i>R</i> и конденсатор <i>С</i>.
+На рис. 1.2 показан фильтр верхних частот Баттерворта I порядка с частотой
+среза <i>f</i><sub>н</sub>. Это – частота, на которой величина коэффициента
+усиления составляет 0,707 от значения коэффициента усиления в полосе
+пропускания. Очевидно, все частоты, выше чем <i>f</i><sub>н</sub> – частоты
+полосы пропускания с самой высокой частотой, определяемой верхней частотой ОУ с
+обратной связью.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=375
+height=242 src="../../../../Практика/images/lb1/image554.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>a</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=338
+height=196 src="../../../../Практика/images/lb1/image555.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>б</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 1.2 a – фильтр
+верхних частот I порядка,</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>б – его
+частотная характеристика.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Фильтр верхних
+частот (см. рис. 1.2) и фильтр нижних частот (см.&nbsp;рис.1.1) – одни и те
+же схемы, за исключением того, что определяющие частоту компоненты (<i>R</i> и <i>C</i>)
+меняются местами.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Для фильтра
+верхних частот (см. рис. 1.2) выходное напряжение</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:18.0pt'><img width=200 height=57
+src="../../../../Практика/images/lb1/image556.png"></span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>или</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:17.0pt'><img width=172 height=52
+src="../../../../Практика/images/lb1/image557.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,  </span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>                                               </span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>(1.7)</span></p>
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>где<span style='position:relative;
+top:17.0pt'><img width=95 height=52
+src="../../../../Практика/images/lb1/image542.png"></span> –
+коэффициент<span style='color:black'> </span>усиления в полосе пропускания
+фильтра;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=17 height=24
+src="../../../../Практика/images/lb1/image558.png"></span> –
+частота входного сигнала (Гц);</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";position:relative;
+top:14.0pt'><img width=89 height=48
+src="../../../../Практика/images/lb1/image543.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>– нижняя частота
+среза (Гц).</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Следовательно,
+величина коэффициента усиления по напряжению:</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:22.0pt'><img width=301 height=63
+src="../../../../Практика/images/lb1/image559.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>.                       (1.8)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Так как фильтры
+верхних частот получаются из фильтров нижних частот, обменом местами <i>R</i> и
+<i>С</i>, то проектирование фильтров верхних частот происходит таким же образом,
+как и фильтров нижних частот.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Скорость
+изменения коэффициента усиления фильтра в полосе затухания, равная 40 dB/дек.
+получается у фильтров II порядка. Фильтр нижних частот I порядка может быть
+преобразован в фильтр II порядка путём введения дополнительной <i>RC</i>-цепи,
+как показано на (рис.1.3).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Фильтры II
+порядка очень важны, потому что фильтры высшего порядка могут быть разработаны,
+только с их помощью. Усиление в фильтрах II порядка устанавливается резисторами
+<i>R</i><sub>1</sub> и <i>R<sub>F</sub></i>, в то время как частота среза <i>f</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и полоса
+пропускания фильтра определяется компонентами <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, <i>C</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и <i>C</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> следующим
+образом:</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:19.0pt'><img width=153 height=55
+src="../../../../Практика/images/lb1/image560.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>                                  (1.9)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кроме того, для
+фильтра II порядка коэффициент усиления по напряжению:</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:22.0pt'><img width=167 height=63
+src="../../../../Практика/images/lb1/image561.png"></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>,</span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>                                (1.10)</span></p>
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:110%;text-autospace:none'><span style='font-size:14.0pt;
+line-height:110%;font-family:"Times New Roman CYR","serif"'>где </span><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif";
+position:relative;top:17.0pt'><img width=95 height=52
+src="../../../../Практика/images/lb1/image542.png"></span><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'> –
+коэффициент усиление в полосе пропускания;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:110%;text-autospace:none'><span
+lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=17 height=24
+src="../../../../Практика/images/lb1/image558.png"></span></span><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'> –
+частота входного сигнала (Гц);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:110%;text-autospace:none'><span
+lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif";
+position:relative;top:19.0pt'><img width=153 height=55
+src="../../../../Практика/images/lb1/image560.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>–
+</span><span style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>нижняя
+частота среза (Гц).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1.2.3.
+Проектирование фильтров II порядка</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>За исключением
+различия в скорости изменения коэффициента усиления в полосе затухания фильтры
+II порядка и фильтры I порядка идентичны. Поэтому проектирование фильтров II
+порядка идентично проектированию фильтров I порядка (см. рис. 1.3)</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=428
+height=238 src="../../../../Практика/images/lb1/image562.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>a</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=288
+height=215 src="../../../../Практика/images/lb1/image563.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>б</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 1.3 a –
+схема фильтра нижних частот II порядка,</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>б – его
+частотная характеристика.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Вторичный фильтр
+нижних частот идентичен тому же фильтру из высокоточного типа. Поэтому шаги по
+построению проекта вторичного фильтра идентичны таковым из высокоточного
+фильтра:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1. Выбор
+значения для частоты среза, <i>f</i></span><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>н</span></sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>2. Чтобы
+упростить расчёт, возьмём <i>R</i></span><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'>2 </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>3 </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= <i>R</i> и
+<i>C</i></span><sub><span style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= <i>C</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= <i>C</i>.
+Затем выберем значение <i>C</i> &#8804; 1</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&#956;F</span><span style='font-size:
+14.0pt;font-family:"Times New Roman CYR","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>3. Вычислим
+значение <i>R</i>, используя уравнение (1.9):</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";position:relative;
+top:17.0pt'><img width=85 height=52
+src="../../../../Практика/images/lb1/image553.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>4. Наконец,
+из-за равных значений резисторов (<i>R</i></span><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman CYR","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>) и
+конденсаторов (<i>C</i></span><sub><span style='font-size:14.0pt;font-family:
+"Times New Roman CYR","serif"'>2</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'> </span><span style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'>= <i>C</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>) значения,
+коэффициент усиления </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> в полосе
+пропускания<sub> </sub><span style='position:relative;top:6.0pt'><img
+width=136 height=25
+src="../../../../Практика/images/lb1/image564.png"></span> фильтра
+нижних частот II порядка должен быть равным 1,586. Таким образом, <i>R</i></span><i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>= 0,586<i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>. Это усиление
+необходимо, чтобы гарантировать амплитудно-частотную характеристику, соответствующую
+фильтру Баттерворта. Следовательно, необходимо выбрать значение резистора <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8804; 100
+к&#937; и вычислить значение <i>R<sub>F</sub></i></span><span style='font-size:
+14.0pt;font-family:"Times New Roman CYR","serif"'>.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1.2.4. </span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Фильтр верхних
+частот II порядка</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Как и в случае
+фильтров первого порядка, фильтр верхних частот второго порядка построим из
+фильтра нижних частот второго порядка просто, меняя местами резисторы и
+конденсаторами. На рис. 1.4 показана схема фильтра верхних частот второго
+порядка из которой следует:</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal;text-autospace:none'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:22.0pt'><img width=167 height=63
+src="../../../../Практика/images/lb1/image565.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>,                               (1.11)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:110%;text-autospace:none'><span style='font-size:14.0pt;
+line-height:110%;font-family:"Times New Roman CYR","serif"'>где </span><i><span
+lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>
+</span><span style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>=
+1,586 – коэффициент усиления в полосе пропускания для фильтра Баттерворта
+второго порядка;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>f</span></i><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>– частота
+входного сигнала (Гц);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;– частота
+среза (Гц).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Поскольку
+фильтры II порядка нижних и верхних частот отличаются только расположением
+конденсаторов и резисторов, то проектирование фильтров верхних частот второго
+порядка аналогично проектированию фильтров второго порядка нижних частот.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.3. Требуемое
+оборудование</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Программа компьютерного моделирование электронных схем Multisim:<br>приборы: функциональный генератор сигналов (Function Generator), измеритель АЧХ (Bode Plotter), двухлучевой осциллограф (Oscilloscope);<br> ОУ 741, конденсатор 0,01 мкФ,
+0,001</span><span style='font-size:14.0pt;font-family:"Segoe UI","sans-serif";
+color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>мкФ,
+резисторы: 5,1 кОм, 9,1 кОм, 30 кОм, 10 кОм потенциометр. </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1.4. Порядок
+выполнения лабораторной работы</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.4.1. Фильтр
+нижних частот I порядка</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1. Собрать
+фильтр нижних частот I порядка, показанный на рис. 1.1, используя <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1 </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= 9,1 кОм, <i>R</i></span><i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= 5,1 кОм, <i>R </i>=
+30 кОм, <i>C </i>= 0,01</span><span style='font-size:14.0pt;font-family:"Segoe UI","sans-serif";
+color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>мкФ,
+и подать синусоидальный сигнал с выхода генератора сигналов на вход
+фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2. Установить
+размах входного синусоидального сигнала – 1&nbsp;В.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3. Изменяя
+частоту входного сигнала от 10 Гц до 10 кГц шагами, показанными в таб. 1.1,
+измерить </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и определите
+коэффициент усиления <i>A</i></span><i><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для каждой
+частоты.</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Times New Roman CYR","serif"'>Таблица 1.1</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=126 style='width:94.4pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>вх</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(Гц)</span></p>
+  </td>
+  <td width=123 style='width:92.45pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>0</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(V)</span></p>
+  </td>
+  <td width=129 style='width:97.0pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>экспериментальный</span></p>
+  </td>
+  <td width=126 style='width:94.55pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>теоретический</span></p>
+  </td>
+  <td width=116 style='width:87.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>Примечание</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 style='width:94.4pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>10</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>100</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>200</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>300</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>400</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>500</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>600</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>700</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>800</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>900</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>1000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>2000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>3000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>5000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  1.0cm;line-height:110%'><span lang=EN-US style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>10000</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=129 valign=top style='width:97.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=126 valign=top style='width:94.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=116 valign=top style='width:87.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Подключить  измеритель АЧХ (Bode Plotter), представить амплитудно-частотную характеристику фильтра, используя полулогарифмическую
+шкалу, и определить экспериментальную частоту среза фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.&nbsp;Сравнить
+экспериментальную и теоретическую <i>f</i></span><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6.&nbsp;После
+проведения эксперимента очень точно замерить значения каждого резистора и
+конденсатора, теоретически вычислить частоту среза и снова сравнить с результатом
+эксперимента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>7.&nbsp;Оценить
+качество своей экспериментальной работы.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>8.&nbsp;Рассчитать
+фильтр нижних частот I порядка для частоты среза <i>f</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;1500&nbsp;Гц
+и собрать его.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>9. Повторить
+эксперименты по п. 2 – 5 и проверить результаты расчета.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.4.2. Фильтр
+верхних частот I порядка</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1. Собрать
+фильтр верхних частот I порядка, показанный на рис. 1.2, используя <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=9,1 кОм, <i>R</i><sub>F</sub>=5,1
+кОм, <i>R</i>=30 кОм, <i>C</i>=0,01 мкФ и подать синусоидальный сигнал с выхода
+генератора сигналов на вход фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2. Установить
+размах входного синусоидального сигнала 1&nbsp;В.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3. Изменяя
+частоту входного сигнала от 10 Гц до 10 кГц шагами, показанными в таб. 1.2,
+измерить </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и определить
+коэффициент усиления <i>A</i></span><i><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для каждой
+частоты.</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman CYR","serif"'>Таблица 1.2</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=92 style='width:69.2pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>вх</span></sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(</span><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Гц</span><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>)</span></p>
+  </td>
+  <td width=102 style='width:76.3pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>0</span></sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(В)</span></p>
+  </td>
+  <td width=175 style='width:131.35pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>экспериментальный</span></p>
+  </td>
+  <td width=154 style='width:115.55pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>теоретический</span></p>
+  </td>
+  <td width=99 style='width:74.35pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>Примечание</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>10</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>100</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>200</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>300</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>400</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>500</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>600</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>700</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>800</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>900</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>1000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>2000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>3000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>5000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:15.4pt;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>10000</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=175 valign=top style='width:131.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=154 valign=top style='width:115.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=99 valign=top style='width:74.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Подключить  измеритель АЧХ (Bode Plotter), представить амплитудно-частотную характеристику фильтра, используя полулогарифмическую
+шкалу, и определить экспериментальную частоту среза фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.&nbsp;Сравнить
+экспериментальную и теоретическую <i>f</i></span><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6.&nbsp;После
+проведения эксперимента очень точно замерить значения каждого резистора и
+конденсатора, теоретически вычислить частоту среза и снова сравнить с результатом
+эксперимента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>7.&nbsp;Оценить
+качество своей экспериментальной работы.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>8.&nbsp;Рассчитать
+фильтр верхних частот I порядка для частоты среза <i>f</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;200&nbsp;Гц
+и собрать его.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>9. Повторите
+эксперименты по п. 2 – 5 и проверить результаты расчёта.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.4.2.&nbsp;Фильтр
+нижних частот II порядка</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.&nbsp;Собрать
+фильтр нижних частот II порядка, показанный на рис. 1.3, используя <i>R</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= 9,1 кОм, <i>R</i></span><i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= 5,1 кОм, <i>R</i><sub>2</sub>
+= <i>R</i><sub>3</sub> = 30 кОм, <i>C</i><sub>2</sub> = <i>C</i><sub>3</sub> =
+0,01 мкФ и подать синусоидальный сигнал с выхода генератора сигналов на
+вход фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.&nbsp;Установить
+размах входного синусоидального сигнала 1&nbsp;В.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.&nbsp;Изменяя
+частоту входного сигнала от 10 Гц до 10 кГц шагами, показанными в таб. 1.3,
+измерить </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и определить
+коэффициент усиления </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для каждой
+частоты.</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman CYR","serif"'>Таблица 1.3</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=126 style='width:94.4pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>вх</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(Гц)</span></p>
+  </td>
+  <td width=123 style='width:92.45pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>0</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(V)</span></p>
+  </td>
+  <td width=129 style='width:97.0pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>экспериментальный</span></p>
+  </td>
+  <td width=126 style='width:94.55pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>теоретический</span></p>
+  </td>
+  <td width=116 style='width:87.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>10</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>100</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>200</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>300</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>400</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>500</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>600</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>700</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>800</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>900</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>1000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>2000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>3000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>5000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>10000</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=129 valign=top style='width:97.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=126 valign=top style='width:94.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=116 valign=top style='width:87.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Подключить  измеритель АЧХ (Bode Plotter), представить амплитудно-частотную характеристику фильтра, используя полулогарифмическую
+шкалу, и определить экспериментальную частоту среза фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.&nbsp;Сравнить
+экспериментальную и теоретическую <i>f</i><sub>н</sub>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6.&nbsp;После
+проведения эксперимента, очень точно замерить значения каждого резистора и
+конденсатора, теоретически вычислить частоту среза и снова сравнить с результатом
+эксперимента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>7.&nbsp;Оценить
+качество своей экспериментальной работы.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>8.&nbsp;Рассчитать
+фильтр нижних частот II порядка для частоты среза <i>f</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;1500 Гц и
+собрать его.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>9.&nbsp;Повторить
+эксперименты по п. 2 – 5 и проверить результаты расчёта.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:110%;text-autospace:none'><b><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>1.4.3.&nbsp;Фильтр
+верхних частот II порядка</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.&nbsp;Собрать
+фильтр нижних частот II порядка, показанный на рис. 1.4, используя <i>R</i><sub>1&nbsp;</sub>=&nbsp;9,1
+кОм, <i>R<sub>F</sub></i><sub>&nbsp;</sub>=&nbsp;5,1 кОм, <i>R</i><sub>2&nbsp;</sub>=&nbsp;<i>R</i><sub>3&nbsp;</sub>=&nbsp;30&nbsp;кОм,
+<i>C</i><sub>2&nbsp;</sub>=&nbsp;<i>C</i><sub>3&nbsp;</sub>=&nbsp;0,01 мкФ и подать
+синусоидальный сигнал с выхода генератора сигналов на вход фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.&nbsp;Установить
+размах входного синусоидального сигнала 1 В.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.&nbsp;Изменяя
+частоту входного сигнала от 10 Гц до 10 кГц шагами, показанными в таб. 1.4,
+измерить </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и определить
+коэффициент усиления, </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, для каждой
+частоты.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Подключить  измеритель АЧХ (Bode Plotter), представить амплитудно-частотную характеристику фильтра, используя полулогарифмическую
+шкалу, и определить экспериментальную частоту среза фильтра.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.&nbsp;Сравнить
+экспериментальную и теоретическую <i>f</i></span><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6.&nbsp;После
+проведения эксперимента, очень точно замерить значения каждого резистора и
+конденсатора, теоретически вычислить частоту среза и снова сравнить с результатом
+эксперимента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>7.&nbsp;Оценить
+качество своей экспериментальной работы.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>8.&nbsp;Рассчитать
+фильтр нижних частот II порядка для частоты среза <i>f</i><sub>н</sub>&nbsp;=&nbsp;200&nbsp;Гц
+и собрать его.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>9.&nbsp;Повторить
+эксперименты по п. 2 – 5 и проверить результаты расчёта.</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>Таблица 1.4</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=126 style='width:94.4pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>вх</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(Гц)</span></p>
+  </td>
+  <td width=123 style='width:92.45pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>0</span></sub><span
+  lang=EN-US style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>(V)</span></p>
+  </td>
+  <td width=129 style='width:97.0pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>экспериментальный</span></p>
+  </td>
+  <td width=126 style='width:94.55pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><i><span lang=EN-US style='font-size:
+  14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>A</span></i><i><sub><span
+  lang=EN-US style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>F</span></sub></i><span
+  style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman","serif"'>,</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span style='font-size:12.0pt;line-height:
+  110%;font-family:"Times New Roman","serif"'>теоретический</span></p>
+  </td>
+  <td width=116 style='width:87.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>10</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>100</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>200</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>300</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>400</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>500</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>600</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>700</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>800</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>900</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>1000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>2000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>3000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>5000</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-indent:1.0cm;line-height:110%'><span lang=EN-US
+  style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>10000</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=129 valign=top style='width:97.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=126 valign=top style='width:94.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=116 valign=top style='width:87.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:110%'><span lang=EN-US style='font-size:12.0pt;
+  line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=433
+height=241 src="../../../../Практика/images/lb1/image566.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman CYR","serif"'>а</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman CYR","serif"'>Рис. 1.4, a
+– </span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>фильтр
+Баттерворта</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>верхних частот </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>II</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> порядка</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=443
+height=245 src="../../../../Практика/images/lb1/image567.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>б</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.1.4, б – ч</span><span
+style='font-size:12.0pt;font-family:"Times New Roman CYR","serif"'>астотная
+характеристика фильтра</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.5. Содержание
+отчёта</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.&nbsp;Цель
+эксперимента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.&nbsp;Схемы,
+которые были исследованы в лабораторной работе.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.&nbsp;Результаты
+исследований.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Выводы.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman CYR","serif"'>1.6.
+Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.
+Дать&nbsp;определение фильтров нижних и верхних частот I и II порядков.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:110%;text-autospace:none'><span
+style='font-size:14.0pt;line-height:110%;font-family:"Times New Roman CYR","serif"'>2.
+Особенности&nbsp;проектирования фильтров нижних и верхних частот I и II порядков.</span></p>
+
+</div>
+
+
+ </div>
+	<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

@@ -1,0 +1,1075 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB12 - дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+
+                  <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 12</b></p>
+<div class=WordSection4>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>ИССЛЕДОВАНИЕ ПРЕОБРАЗОВАТЕЛЕЙ КОДОВ</span></b></p>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1. Цель работы </span></b></p>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Синтез преобразователей двоичных
+	кодов и исследование их функционирования.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>2. ТЕОРЕТИЧЕСКИЕ СВЕДЕНИЯ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для представления информации,
+	в цифровых устройствах используются
+	двоичные коды. И хотя любой код,
+	используемый для представления
+	информации, имеет двоичную форму, однако
+	правильная интерпретация этих кодов
+	возможна только, если этот код известен.
+	Наиболее часто используемые двоичные
+	коды представлены в табл.12.1. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	  <FONT SIZE=4>Таблица 12.1</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.25in; margin-bottom: 0in">
+
+	</P>
+	<TABLE WIDTH=658 CELLPADDING=7 CELLSPACING=0 align="center">
+		<COL WIDTH=116>
+		<COL WIDTH=117>
+		<COL WIDTH=117>
+		<COL WIDTH=117>
+		<COL WIDTH=117>
+		<TR VALIGN=TOP>
+			<TD WIDTH=116 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Десятичные
+				числа</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Прямой
+				двоичный код</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">BCD</SPAN></FONT><FONT SIZE=4>
+				код</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Код
+				с избытком 3 (</FONT><FONT SIZE=4><SPAN LANG="en-US">Excess</SPAN></FONT><FONT SIZE=4>3)</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Код
+				Грея</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=116 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><BR>
+				</P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_104e0704.gif" NAME="Object332" ALIGN=ABSMIDDLE WIDTH=19 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_787de8a.gif" NAME="Object333" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_130417d9.gif" NAME="Object334" ALIGN=ABSMIDDLE WIDTH=17 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m40e615e1.gif" NAME="Object335" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4><I>D  C  B  A</I></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5530e944.gif" NAME="Object336" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m196d9cb1.gif" NAME="Object337" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7bb8a9ed.gif" NAME="Object338" ALIGN=ABSMIDDLE WIDTH=19 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m48d6141c.gif" NAME="Object339" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m321713b8.gif" NAME="Object340" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m16d443f5.gif" NAME="Object341" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6126dea.gif" NAME="Object342" ALIGN=ABSMIDDLE WIDTH=19 HEIGHT=24>
+								<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6f35d395.gif" NAME="Object343" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=116 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>2</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>3</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>4</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>5</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>6</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>7</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>8</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>9</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>10</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>11</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>12</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>13</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>14</FONT></P>
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>15</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   1    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   1    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   1    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  1   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  1   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  1   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1   1   1    1</FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   1    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   1    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  1   1    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   0    0</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>1
+				  0   0    1</FONT></P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P CLASS="western" ALIGN=CENTER><BR>
+				</P>
+			</TD>
+			<TD WIDTH=117 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   0
+				0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   0
+				</SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<BR>
+				</P>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P CLASS="western" ALIGN=CENTER><BR>
+				</P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>0
+				  0   0    0</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   0   0    </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4><SPAN LANG="en-US">0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0    </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   0</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   </SPAN></FONT><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				   </SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">   0   0
+				</SPAN></FONT><FONT SIZE=4>1</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><FONT SIZE=4><SPAN LANG="en-US">
+				  0   0    0</SPAN></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.25in; margin-bottom: 0in">
+
+	</P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Прямой двоичный код</B></FONT><FONT SIZE=4><U>
+	</U></FONT><FONT SIZE=4>использует для представления
+	чисел в двоичной системе счисления. В
+	таблице 2.1 прямой двоичный код представляет
+	числа от 0 до 15.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Двоично-десятичный 8-4-2-1 код
+	(ВС</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>D</B></SPAN></FONT><FONT SIZE=4><B>
+	код)</B></FONT><FONT SIZE=4> используется для
+	представления десятичных цифр. Числа
+	8,4,2 и 1 являются весами разрядов. Запись
+	десятичной цифры в коде 8-4-2-1 совпадает
+	с записью двоичных чисел от 0 до 9, а
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m175dfb20.gif" NAME="Object344" ALIGN=ABSMIDDLE WIDTH=18 HEIGHT=18>–
+	разрядное десятичное число представляется
+	с помощью тетрад, каждая из которых
+	состоит из четырех двоичных разрядов
+	(например,
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m78f56f4a.gif" NAME="Object345" ALIGN=ABSMIDDLE WIDTH=166 HEIGHT=21>).
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Двоично-десятичный код с
+	избытком 3 (</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>Excess</B></SPAN></FONT><FONT SIZE=4><B>-3
+	код). </B></FONT><FONT SIZE=4> </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="en-US">Excess</SPAN></FONT><FONT SIZE=4>-3
+	код (также используемый для представления
+	десятичных цифр) образуется от
+	соответствующих представлений цифр в
+	ВС</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>
+	коде путем прибавления двоичного числа
+	0011. Код с избытком 3 является самодополняющим
+	кодом. Правила преобразования прямого
+	кода с избытком 3 в дополнительный с
+	избытком 3 и правила обратного
+	преобразования такие же, как и для
+	двоичного дополнительного кода. Поэтому
+	код с избытком 3 часто удобнее использовать
+	для выполнения арифметических операций.
+	При этом для сложения четырехразрядных
+	кодов можно использовать четырехразрядные
+	двоичные сумматоры.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Код Грея.</B></FONT><FONT SIZE=4> </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>В коде Грея десятичные числа
+	представлены в двоичном виде таким
+	образом, что представление каждого
+	числа отличается от предыдущего как и
+	от последующего только в одном бите
+	(разряде).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Код Грея является зеркальным и
+	может быть построен следующим образом:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Одноразрядный код Грея состоит
+	из кодовых слов, 0 и 1, которые представляют
+	десятичные числа 0 и 1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. В
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_190a7ce9.gif" NAME="Object346" ALIGN=ABSMIDDLE WIDTH=18 HEIGHT=18>–разрядном
+	</FONT><FONT SIZE=4><U>(</U></FONT><FONT SIZE=4><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m175dfb20.gif" NAME="Object347" ALIGN=ABSMIDDLE WIDTH=18 HEIGHT=18><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_me05f4ed.gif" NAME="Object348" ALIGN=ABSMIDDLE WIDTH=18 HEIGHT=18>2)
+	коде Грея, первые
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m41de5e8d.gif" NAME="Object349" ALIGN=ABSMIDDLE WIDTH=38 HEIGHT=20>
+	 кодовых слов повторяют (<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_71ee0a34.gif" NAME="Object350" ALIGN=ABSMIDDLE WIDTH=39 HEIGHT=18>)
+	разрядный код Грея с приписанным 0 в
+	крайнем левом разряде.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Последние
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m41de5e8d.gif" NAME="Object351" ALIGN=ABSMIDDLE WIDTH=38 HEIGHT=20>
+	 кодовые слова представляют кодовые
+	слова (<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_71ee0a34.gif" NAME="Object352" ALIGN=ABSMIDDLE WIDTH=39 HEIGHT=18>)
+	разрядного кода Грея, записанными в
+	обратном порядке (как будто между
+	первыми
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m41de5e8d.gif" NAME="Object353" ALIGN=ABSMIDDLE WIDTH=38 HEIGHT=20>
+	и последними
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m41de5e8d.gif" NAME="Object354" ALIGN=ABSMIDDLE WIDTH=38 HEIGHT=20>
+	кодовыми словами размещено зеркало) и
+	дописанной 1 в крайнем левом разряде.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	        <FONT SIZE=4>Например, определим
+	1-разрядный, двухразрядный и трехразрядный
+	код Грея.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Для одноразрядного кода Грея</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<TABLE WIDTH=637 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=306>
+		<COL WIDTH=300>
+		<TR VALIGN=TOP>
+			<TD WIDTH=306 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Десятичные
+				числа</FONT></P>
+			</TD>
+			<TD WIDTH=300 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Код
+				Грея</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=306 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>0</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=300 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>0</FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Для двухразрядного кода Грея</FONT></P>
+	<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_73a52c66.png" NAME="graphics35" ALIGN=LEFT HSPACE=12 WIDTH=642 HEIGHT=107 BORDER=0><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P><BR>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Для трехразрядного кода Грея</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m52d48c19.png" NAME="graphics36" ALIGN=BOTTOM WIDTH=567 HEIGHT=174 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Очень часто в цифровых системах
+	возникает задача преобразования
+	двоичной информации, представленной
+	в одном двоичном коде в другой код.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Преобразователь двоичного
+	кода в код Грея</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Блок-диаграмма такого
+	преобразователя на четыре разряда
+	показана на рис.12.1 </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_19c636ec.png" NAME="graphics37" ALIGN=BOTTOM WIDTH=536 HEIGHT=146 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+
+	Рис. 12.1 Блок-диаграмма преобразователя
+	двоичного кода в код Грея</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Таблица истинности такого
+	преобразователя представлена табл.12.2.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+	                      <FONT SIZE=4>Таблица 12.2 </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<DL>
+		<DD>
+		<TABLE WIDTH=489 CELLPADDING=7 CELLSPACING=0 align="center">
+			<COL WIDTH=229>
+			<COL WIDTH=230>
+			<TR VALIGN=TOP>
+				<TD WIDTH=229 HEIGHT=6 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Двоичный
+					код</FONT></P>
+				</TD>
+				<TD WIDTH=230 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Код
+					Грея</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=229 HEIGHT=10 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_104e0704.gif" NAME="Object355" ALIGN=ABSMIDDLE WIDTH=19 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_787de8a.gif" NAME="Object356" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_130417d9.gif" NAME="Object357" ALIGN=ABSMIDDLE WIDTH=17 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m40e615e1.gif" NAME="Object358" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24></P>
+				</TD>
+				<TD WIDTH=230 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m321713b8.gif" NAME="Object359" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m16d443f5.gif" NAME="Object360" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6126dea.gif" NAME="Object361" ALIGN=ABSMIDDLE WIDTH=19 HEIGHT=24>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6f35d395.gif" NAME="Object362" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=24></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=229 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1   1
+					 1   1</FONT></P>
+				</TD>
+				<TD WIDTH=230 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   0   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0   1   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   0   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   1   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   1   0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   1   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1   0   0   1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1   0
+					 0   0</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</DL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Упростим выражения каждого
+	выхода преобразователя с помощью карт
+	Карно, как показано на рис.12.2</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_13028bcc.png" NAME="graphics38" ALIGN=BOTTOM WIDTH=435 HEIGHT=430 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.2.  Карты Карно преобразователя
+	двоичного кода в код Грея.</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>На основании выражении для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4572451c.gif" NAME="Object363" ALIGN=ABSMIDDLE WIDTH=57 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3601425e.gif" NAME="Object364" ALIGN=ABSMIDDLE WIDTH=91 HEIGHT=21>,<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m76058070.gif" NAME="Object365" ALIGN=ABSMIDDLE WIDTH=91 HEIGHT=21>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_43a77987.gif" NAME="Object366" ALIGN=ABSMIDDLE WIDTH=91 HEIGHT=21>
+	может быть построена логическая схема
+	четырехразрядного преобразователя
+	двоичного кода в код Грея, рис.12.3. Эта
+	схема может быть обобщена на любое
+	число разрядов.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7fbcefb6.png" NAME="graphics39" ALIGN=BOTTOM WIDTH=422 HEIGHT=278 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.3 Преобразователь двоичного кода
+	в код Грея.</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Из логической схемы преобразователя
+	двоичного кода в код Грея вытекает и
+	общее правило для преобразования любого
+	двоичного кода в соответствующий код
+	Грея, показанное на рис.12.4</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m24be8d64.png" NAME="graphics40" ALIGN=BOTTOM WIDTH=472 HEIGHT=287 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.4. Общая схема преобразования
+	двоичного числа в код Грея.</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Преобразователь кода Грея в
+	двоичный код</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Используя таблицу 12.2, можно с
+	помощью карт Карно упростить выражения
+	для этого преобразователя. Только в
+	данном случае входными переменными
+	будут
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7209400d.gif" NAME="Object367" ALIGN=ABSMIDDLE WIDTH=118 HEIGHT=21>,
+	а выходными
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m49466723.gif" NAME="Object368" ALIGN=ABSMIDDLE WIDTH=115 HEIGHT=21>,
+	рис.12.5.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_306454a4.png" NAME="graphics41" ALIGN=BOTTOM WIDTH=480 HEIGHT=452 BORDER=0></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.5.  Карты Карно для преобразователя
+	кода Грея в двоичный код.</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В соответствии с выражениями,
+	полученными из карт Карно, логическая
+	схема преобразователя построена на
+	рис.12.6а.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img25.jpg">&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.6 Преобразователь кода Грея в двоичный код	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Логическая схема рис.12.6а  сложнее
+	логической схемы рис.12.5. Однако она
+	может быть упрощена, если переписать
+	выражения для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m49466723.gif" NAME="Object369" ALIGN=ABSMIDDLE WIDTH=115 HEIGHT=21>
+	следующим образом:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m78d154b9.gif" NAME="Object370" ALIGN=ABSMIDDLE WIDTH=246 HEIGHT=108></P>
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Логическая схема, построенная
+	по этим выражениям, рис.12.6б не сложнее,
+	чем логическая схема рис.12.5, но необходимо
+	иметь в виду, что быстродействие схемы,
+	рис. 12.6б  более низкое по сравнению с
+	другими схемами.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Преобразователь ВС</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>D</B></SPAN></FONT><FONT SIZE=4><B>
+	кода в прямой двоичный код</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Рассмотрим схему преобразования
+	ВС</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>
+	кода в двоичный код показанную на
+	рис.12.7. Входами являются две тетрады: </FONT><FONT SIZE=4><SPAN LANG="en-US">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c0b1dcf.gif" NAME="Object371" ALIGN=ABSMIDDLE WIDTH=88 HEIGHT=21></SPAN></FONT><FONT SIZE=4>
+	представляющая единицы и </FONT><FONT SIZE=4><SPAN LANG="en-US">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2d31554.gif" NAME="Object372" ALIGN=ABSMIDDLE WIDTH=87 HEIGHT=21></SPAN></FONT><FONT SIZE=4>
+	представляющая десятки. Выходам является
+	семиразрядный двоичный код
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7a762c87.gif" NAME="Object373" ALIGN=ABSMIDDLE WIDTH=112 HEIGHT=21>.
+	На схеме показаны также вес каждого
+	ВС</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>
+	входа и каждого двоичного выхода.
+	Разряды в двоично-десятичном представлении
+	имеют десятичный вес 8,4,2,1 в каждой
+	тетраде, однако каждая тетрада отличается
+	от предыдущей весовым коэффициентом-10(одна
+	десятичная цифра от предыдущей). </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_mf9e0067.png" NAME="graphics44" ALIGN=BOTTOM WIDTH=530 HEIGHT=228 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.7. Схема преобразования двухразрядного
+	ВС<SPAN LANG="en-US">D</SPAN> кода в прямой двоичный
+	код</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Десятичные веса каждого бита в
+	двоично-десятичном представлении,
+	рис.12.7, могут быть представлены двоичными
+	эквивалентами, как приведено в табл.12.3.
+	Используя эти веса, можно осуществить
+	преобразование двоично-десятичного
+	кода в двоичный путем двоичного
+	суммирования двоичных эквивалентов
+	тех бит, которые в </FONT><FONT SIZE=4><SPAN LANG="en-US">BCD</SPAN></FONT><FONT SIZE=4>
+	представлении равны единицам. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in">
+	 <FONT SIZE=4>Таблица 12.3. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<TABLE DIR="LTR" ALIGN=center WIDTH=643 HSPACE=6 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=127>
+		<COL WIDTH=251>
+		<COL WIDTH=222>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=2 WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>ВС</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>биты</FONT></P>
+			</TD>
+			<TD ROWSPAN=2 WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+				<FONT SIZE=4>Десятичные </FONT>
+				</P>
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>веса</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>Двоичные
+				эквиваленты</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1e9b4724.gif" NAME="Object374" ALIGN=ABSMIDDLE WIDTH=168 HEIGHT=21></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_40f65491.gif" NAME="Object375" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   0    0    0    0    1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_15cfce85.gif" NAME="Object376" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=27></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>2</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   0    0    0    1    0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_8997311.gif" NAME="Object377" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>4</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   0    0    1    0    0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7796be7e.gif" NAME="Object378" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>8</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   0    1    0    0    0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m57acabdd.gif" NAME="Object379" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>10</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   0    1    0    </FONT><FONT SIZE=4><SPAN LANG="en-US">1</SPAN></FONT><FONT SIZE=4>
+				   0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_24dbd188.gif" NAME="Object380" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>20</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    0
+				   1    0    1    0    0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3c3a9538.gif" NAME="Object381" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>40</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>0    1
+				   0    1    0    0    0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3d9a66d3.gif" NAME="Object382" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=251 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>80</FONT></P>
+			</TD>
+			<TD WIDTH=222 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY><FONT SIZE=4>1    0
+				   1    0    0    0    0</FONT></P>
+			</TD>
+		</TR>
+	</TABLE><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Например, преобразуем 01010101
+	(двоично-десятичное представление
+	десятичного 55) в двоичный эквивалент.
+	Для этого запишем двоичные эквиваленты
+	для всех «1» в двоично-десятичном
+	представлении, а затем просуммируем
+	их.</FONT><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Отсюда следует один из способов
+	реализации преобразователя
+	двоично-десятичного ВС</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>
+	кода в прямой двоичный с помощью двоичных
+	сумматоров. На рис.12.8 показана схемная
+	реализация такого преобразователя с
+	помощью двух четырехразрядных двоичных
+	сумматоров 1533ИМ3(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">SL</SPAN></FONT><FONT SIZE=4>83).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m53505955.png" NAME="graphics46" ALIGN=BOTTOM WIDTH=574 HEIGHT=539 BORDER=0></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 12.8. Преобразователь двоично-десятичного
+	в двоичный код.</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3. ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+	РАБОТЫ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<U>   </U>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Оборудование и компоненты:</B></FONT><FONT SIZE=4>
+
+	программа компьютерного моделирование электронных схем Multisim: ИС 1533ЛП5(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>86)
+	–четыре двухвходовых логических
+	элемента ИСКЛЮЧАЮЩЕЕ ИЛИ, ИС
+	1533ИМ3(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>83)
+	–четырехразрядный двоичный сумматор.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.1</B></FONT><FONT SIZE=4> </FONT><FONT SIZE=4><B>Исследование
+	преобразователя ВС</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>D</B></SPAN></FONT><FONT SIZE=4><B>
+	кода в двоично-десятичный код с избытком
+	3(</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>Excess</B></SPAN></FONT><FONT SIZE=4><B>-3
+	код).</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Разработать и реализовать
+	схему преобразователя, используя
+	четырехразрядный двоичный сумматор.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Проверить работу преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.2. Исследование преобразователя
+	двоично-десятичного кода с избытком 3
+	в ВС</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>D</B></SPAN></FONT><FONT SIZE=4><B>
+	код.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Разработать и реализовать
+	схему преобразователя используя
+	четырехразрядный двоичный сумматор.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Проверить работу преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.3. Исследование преобразователя
+	двоичного кода в код Грея.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Собрать, используя логические
+	элементы ИСКЛЮЧАЮЩЕЕ ИЛИ, схему
+	преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Исследовать работу преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.4. Исследование преобразователя
+	кода Грея в двоичный код.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Собрать схему преобразователя
+	используя логические элементы ИСКЛЮЧАЮЩЕЕ
+	ИЛИ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Исследовать работу преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.5. Исследование преобразователя
+	двоично-десятичного ВС</B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>D</B></SPAN></FONT><FONT SIZE=4><B>
+	кода в двоичный код.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Собрать схему преобразователя,
+	рис.12.8.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Исследовать работу преобразователя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>4. СОДЕРЖАНИЕ ОТЧЕТА</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Цель работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Схемы, исследуемые в работе.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Таблицы, отражающие результаты
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Выводы по результатам
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>5. КОНТРОЛЬНЫЕ ВОПРОСЫ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Объяснить работу преобразователей
+	кодов, исследуемых в работе.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+<p>	Литература: Будько Цифровые устройства (Минск БГУИР 2010) УДК 004.3*144(076) ББК 32.973.26-04 7
+Б90</p>
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

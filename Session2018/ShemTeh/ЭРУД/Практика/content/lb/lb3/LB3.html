@@ -1,0 +1,630 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB3 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                  <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 3</b></p>
+ <div>
+<div class=WordSection9>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><i><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'> </span></i></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";text-transform:
+uppercase'>Прецизионные однополупериодные и</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>двухполупериодные
+выпрямители</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.1. Цель работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Изучить
+применение операционного усилителя для построения точных однополупериодных и
+двухполупериодных выпрямителей.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.2. Теоретические сведения</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Во многих
+устройствах обработки аналоговых сигналов, например, в измерительных схемах,
+необходимо выделение либо составляющих только одной полярности
+(однополупериодное выпрямление), либо определение абсолютного значения сигнала
+(двухполупериодное выпрямление). Основным ограничением кремниевых диодов
+является то, что они не могут выпрямлять напряжения</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+меньшие 0</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В.
+Устройства, работающ</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>е
+как идеальный диод, могут быть построены на основе ОУ и двух обычных диодов.
+Такие устройства способны выпрямлять входные сигналы в несколько милливольт.
+Эти устройства разделяются на линейные однополупериодные выпрямители и
+прецизионные двухполупериодные выпрямители. </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Однополупериодные
+выпрямители. </span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Выходной сигнал линейного однополупериодного
+выпрямителя зависит от величины и полярности входного сигнала. Линейный
+однополупериодный выпрямитель передает на выход схемы только один полупериод
+входного сигнала и ограничивает второй полупериод на нулевом уровне. Полупериод
+входного сигнала может передаваться на выход схемы с инвертированием или без
+инвертирования. Выходной сигнал в таком выпрямителе может быть усилен, или
+ослаблен, или остаться без изменения в зависимости от выбора резисторов и места
+включения диодов в схеме с ОУ. Линейные однополупериодные выпрямители также
+называются прецизионными однополупериодными выпрямителями и работают как
+идеальный диод.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Прецизионные
+двухполупериодные выпрямители. </span></b><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>Выходной сигнал
+двухполупериодного выпрямителя пропорционален абсолютному значению входного
+сигнала и не зависит от его полярности.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.2.1. Инвертирующий линейный
+однополупериодный выпрямитель</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Инвертирующий однополупериодный
+выпрямитель показан на рис. 3.1. В этой схеме инвертирующий ОУ превращен в
+схему прецизионного однополупериодного выпрямителя путем добавления в схему
+двух диодов.</span></p>
+
+<p class=style1><span style='position:relative;z-index:181;left:-5px;
+top:20px;width:651px;height:372px'><img width=651 height=352
+src="../../../../Практика/images/lb1/image450.png"
+alt="Подпись: 2"></span><span style='font-size:10.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Рис. 3.1. Однополупериодный выпрямитель</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Когда на вход
+схемы подано положительное напряжение </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,
+диод </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D</span></i><sub><span
+lang=X-NONE style='font-size:16.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+lang=X-NONE style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>открыт
+и на выходе ОУ усилителя формируется отрицательное напряжение</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+равное падению напряжения на открытом диоде (&#8776;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В).
+Благодаря этому диод</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D</span></i><sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+закрыт, ток в цепи резистора обратной связи отсутствует и выходное напряжение
+схемы равно 0</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Когда на вход
+схемы подано отрицательное напряжение </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> ,
+то выходное напряжение операционного усилителя <i>U</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+становится положительным, диод</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;</span><i><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>D</span></i><sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+открывается. Схема работает как инвертор, так как <span style='position:relative;
+top:6.0pt'><img width=56 height=25
+src="../../../../Практика/images/lb1/image451.png"></span> и <span
+style='position:relative;top:7.0pt'><img width=195 height=28
+src="../../../../Практика/images/lb1/image452.png"></span>.
+Входной ток (направление тока показано штриховой линией) определяется как </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>/</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, а
+коэффициент усиления схемы как –</span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>/</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Когда на инвертирующем входе
+операционного усилителя нулевой потенциал, диод <i>D</i><sub>1</sub>
+закрывается. Входной ток (направление показано штриховой линией) становится  равным
+</span><span style='position:relative;top:6.0pt'><img width=59 height=25
+src="../../../../Практика/images/lb1/image453.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и усиливается.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выходной и
+входной сигналы однополупериодного выпрямителя</span><span lang=X-NONE
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>показаны
+на рис. 3.2.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Когда <i>U</i><sub>вх</sub> пересекает
+0&nbsp;В (стремясь к отрицательному), <i>U</i></span><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> скачкообразно
+изменяется от </span><span style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;0,6V к +
+0,6V, рис.3.2.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center'><img width=416 height=268
+src="../../../../Практика/images/lb1/image454.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Рис. 3.2. Выходной и входной сигналы положительного
+выхода инвертирующего</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>однополупериодного выпрямителя</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.2.2. Прецизионный двухполупериодный
+выпрямитель</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Двухполупериодный
+выпрямитель принимает сигнал переменного тока на входе и  инвертирует
+положительный или отрицательный полупериод и передает на выход схемы оба
+полупериода – инвертированный и не инвертированный. Таким образом, для
+положительного прецизионного двухполупериодного выпрямителя </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:7.0pt'><img width=79 height=28
+src="../../../../Практика/images/lb1/image455.png"></span></span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, а
+для отрицательного прецизионного двухполупериодного выпрямителя </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:7.0pt'><img width=91 height=28
+src="../../../../Практика/images/lb1/image456.png"></span></span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Прецизионный
+двухполупериодный выпрямитель показан на рис. 3.5. В схеме используются 
+резисторы одинакового номинала.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><img width=591 height=301
+src="../../../../Практика/images/lb1/image457.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Рис. 3.3. Прецизионный двухполупериодный в90ыпрямитель
+</span><span style='position:relative;top:6.0pt'><img width=101 height=23
+src="../../../../Практика/images/lb1/image458.png"></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Для
+положительных входных сигналов диод <i>D<sub>P</sub></i> открыт (</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D<sub>N</sub></span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+закрыт) так, что оба операционных усилителя работают как инверторы, и <span
+style='position:relative;top:6.0pt'><img width=97 height=25
+src="../../../../Практика/images/lb1/image459.png"></span>.
+Для отрицательных входных напряжений диод <i>D<sub>N</sub></i> открыт (<i>D<sub>P</sub></i>
+закрыт) таким образом операционный усилитель <i>B</i> работает как инвертор. </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.3. Приборы и оборудование</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Программа компьютерного моделирование электронных схем Multisim:<br>приборы: функциональный генератор сигналов (Function Generator), измеритель АЧХ (Bode Plotter), осциллограф (Oscilloscope);<br> ИС 741, резисторы: 1</span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>&nbsp;кОм</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, 10</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;кОм</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,
+100</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;кОм</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,
+диоды.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4. Порядок выполнения лабораторной
+работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Напряжение
+питания операционных усилителей ±12 V. В качестве U<sub>in</sub> используется
+сигнал генератора.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4.1. Инвертирующий линейный
+однополупериодный выпрямитель,</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>положительный выход</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Соберите
+и исследуйте схему (рис.</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.1)
+однополупериодного выпрямителя для </span><span style='position:relative;
+top:6.0pt'><img width=120 height=25
+src="../../../../Практика/images/lb1/image460.png"></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Подайте
+входной синусоидальный сигнал <i>U</i></span><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>вх</span></sub><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> =10 мВ, частота
+<i>f</i></span><i><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1
+кГц. Зафиксируйте картинки временных диаграмм входных и выходных сигналов. Измерьте
+амплитуду и частоту.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Измените
+амплитуду и частоту входного сигнала <i>U</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>100
+мВ и <i>f</i></span><i><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>кГц.
+Повторите п</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2
+для этого случая.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Измените
+амплитуду и частоту входного сигнала <i>U</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В и <i>f</i></span><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>10
+кГц. Повторите п</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.
+</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2
+для этого случая.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4.2. Инвертирующий линейный
+однополупериодный выпрямитель,</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>отрицательный выход</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1.&nbsp;Соберите и исследуйте схему (см.
+рис. 3.1)  однополупериодного выпрямителя, включение диодов измените на
+противоположное.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.&nbsp;Подайте входной сигнал
+треугольной формы <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=&nbsp;10&nbsp;мВ, частота&nbsp;<i>f&nbsp;</i>=&nbsp;1&nbsp;кГц.
+Зафиксируйте картинки временных диаграмм входных и выходных сигналов. Измерьте амплитуду и
+частоту.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Измените амплитуду и частоту
+входного сигнала <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=100&nbsp;мВ и <i>f&nbsp;</i>=&nbsp;5&nbsp;кГц.
+Повторите п. 2 для этого случая.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>4.&nbsp;Измените амплитуду и частоту
+входного сигнала <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=&nbsp;1&nbsp;В и <i>f&nbsp;</i>=&nbsp;10&nbsp;кГц.
+Повторите п. 2 для этого случая.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4.3. Инвертирующий линейный
+однополупериодный выпрямитель,</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>положительный выход и коэффициент
+усиления <i>А</i></span></b><b><i><sub><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>F</span></sub></i></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8800;1</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1.&nbsp;Соберите и исследуйте
+однополупериодный выпрямитель (см. рис. 3.1) с </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=1 кОм и </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=10 кОм;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.&nbsp;Подайте входной сигнал с <i>U</i></span><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> =10 мВ и
+частотой <i>f&nbsp;</i>=&nbsp;1 кГц. Зафиксируйте картинки временных диаграмм входных и
+выходных сигналов. Измерьте амплитуду и частоту. Определите усиление цепи по
+напряжению;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Измените </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> на </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>F</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=100 кОм и
+повторите пункт 2.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4.4. Прецизионный двухполупериодный
+выпрямитель, </span></b><b><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i></b><b><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= |</span></b><b><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i></b><b><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>|</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1.&nbsp;Соберите и исследуйте прецизионный
+двухполупериодный выпрямитель (см. рис. 3.3) с </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;1 кОм.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.&nbsp;Подайте входной синусоидальный
+сигнал с <i>U</i></span><sub><span style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;10 мВ и
+частотой <i>f&nbsp;</i>=&nbsp;1&nbsp;кГц. Зафиксируйте картинки временных диаграмм входных
+и выходных сигналов. Измерьте амплитуду и частоту.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Измените амплитуду и частоту
+входного сигнала  <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:16.0pt;
+font-family:"Times New Roman","serif"'> </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>=100 мВ и <i>f&nbsp;</i>=&nbsp;5&nbsp;кГц.
+Повторите п. 2 для этого случая;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>4.&nbsp;Измените амплитуду и частоту
+входного сигнала <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> =&nbsp;1 В и <i>f&nbsp;</i>=&nbsp;10&nbsp;кГц.
+Повторите п. 2 для этого случая.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.4.5. Прецизионный двухполупериодный
+выпрямитель, </span></b><b><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i></b><b><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;</span></b><b><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>|</span></b><b><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i></b><b><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>|</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1.&nbsp;Соберите и исследуйте
+прецизионный двухполупериодный выпрямитель (рис. 3.3),  включение диодов
+измените на противоположное;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.&nbsp;Подайте входной сигнал
+треугольной формы <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=&nbsp;10&nbsp;мВ и частота <i>f&nbsp;</i>=&nbsp;1&nbsp;кГц.
+Зафиксируйте картинки временных диаграмм входных и выходных сигналов. Измерьте амплитуду и
+частоту;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Измените амплитуду и частоту
+входного сигнала <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=100&nbsp;мВ и <i>f&nbsp;</i>=&nbsp;5&nbsp;кГц.
+Повторите п. 2 для этого случая;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>4.&nbsp;Измените амплитуду и частоту
+входного сигнала <i>U</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;=1&nbsp;В и <i>f&nbsp;</i>=&nbsp;10
+кГц. Повторите п. 2 для этого случая;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.5. Содержание отчёта</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Цель
+эксперимента.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Схемы, которые
+были исследованы и временные диаграммы, переходные характеристики.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Результаты
+исследования.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выводы по
+лабораторной работе.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Ответы на
+контрольные вопросы.</span></p>
+
+</div>
+<div class=WordSection10>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.6. Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1.&nbsp;Какой выпрямитель называется
+прецизионным?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.&nbsp;Укажите особенности
+инвертирующего и неинвертирующего прецизионных однополупериодных выпрямителей.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Укажите особенности
+прецизионного двухполупериодного выпрямителя с положительным и отрицательным
+выходами.</span></p>
+
+</div>
+
+
+
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

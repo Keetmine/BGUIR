@@ -1,0 +1,2715 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>PR4 - Практика по дисциплине &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+	<A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+            <td>
+                <p>&nbsp;</p>
+				<A HREF="../../../Практика/practice.html">Практика</A>
+
+                <p>ПРАКТИЧЕСКАЯ  РАБОТА № 4</p>
+<div>
+<p class=11><b>СИНТЕЗ
+КОМБИНАЦИОННЫХ ЦИФРОВЫХ УСТРОЙСТВ В БАЗИСАХ И-НЕ, ИЛИ-НЕ</b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Цель работы</span></b></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Сформировать практические навыки синтеза
+комбинационных цифровых устройств (КЦУ) в базисах И-НЕ, ИЛИ-НЕ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Сформировать практические навыки и начальные умения
+построения принципиальных электрических схем КЦУ на микросхемах стандартной
+логики схемотехники КМОП.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Вопросы для самоконтроля</span></b></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Перечислите способы, которыми можно задать одну и ту
+же ЛФ. Поясните в чем они заключаются?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Перечислите этапы синтеза КЦУ и поясните их
+содержание.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Объясните, что представляют собой СДНФ и СКНФ ЛФ?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Сформулируйте правила перехода от табличной формы
+задания ЛФ к аналитической в СДНФ или СКНФ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Объясните, какие задачи решает минимизация и в чем
+заключается минимизация табличным методом с помощью карт Карно?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>6<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Объясните, из какой формы ЛФ и как осуществляется
+переход из базиса И, ИЛИ, НЕ в базисы И-НЕ и ИЛИ-НЕ?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>7<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Зарисуйте условное графическое обозначение основных ЛЭ
+по ГОСТ 2.743-91 ЕСКД.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>8<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите, в какой последовательности выполняются
+логические операции И, ИЛИ, НЕ.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Порядок выполнения работы</span></b></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Выполнить индивидуальное задание №&nbsp;1.
+Синтезировать КЦУ в базисе И, ИЛИ, НЕ согласно заданному варианту (таблица 4).</span></p>
+
+<p class=MsoNormal style='margin-left:1.0cm;text-align:justify'><span
+style='font-size:11.0pt'>1.1 Задать логическую функцию (ЛФ) с помощью карты
+Карно. Для МДНФ и МКНФ ЛФ использовать отдельные карты Карно.</span></p>
+
+<p class=MsoListParagraph style='margin-left:46.35pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Минимизировать ЛФ табличным
+методом с помощью карты Карно. Результат минимизации записать в МДНФ и МКНФ.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0cm;text-align:justify'><span
+style='font-size:11.0pt'>1.3 Построить две логические схемы устройства по МДНФ
+и МКНФ ЛФ. Сравнить логические схемы по сложности.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0cm;text-align:justify'><span
+style='font-size:11.0pt'>1.4 Проверить правильность функционирования логических
+схем устройства для пятого набора аргументов. Для этого проставить уровни
+сигналов на выводах всех логических элементов. Значения сигналов на выходах
+схем сравнить со значением ЛФ для пятого набора аргументов, они должны
+совпадать.</span></p>
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt'><b>Таблица
+4 </b>– Исходные данные для синтеза КЦУ</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=446
+ style='margin-left:5.65pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=84 rowspan=3 valign=top style='width:62.75pt;border:solid windowtext 1.5pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Номер</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>набора</span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>аргументов</span></p>
+  </td>
+  <td width=98 colspan=4 rowspan=2 valign=top style='width:73.6pt;border-top:
+  solid windowtext 1.5pt;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Наборы</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>аргументов</span></p>
+  </td>
+  <td width=264 colspan=11 valign=top style='width:198.2pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Номер варианта</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>3</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>4</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>5</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>6</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>7</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>8</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>9</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>10</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>–</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>x<sub>4</sub></span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>x<sub>3</sub></span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>x<sub>2</sub></span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>x<sub>1</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>1</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>2</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>3</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>4</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>5</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>6</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>7</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>8</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>9</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>10</sub></span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>f<sub>11</sub></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>3</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>4</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>5</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>6</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>7</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>8</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>9</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>10</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>11</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>12</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>13</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>14</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.6pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>15</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=25 valign=top style='width:18.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Ф</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=24 valign=top style='width:18.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>0</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Выполнить индивидуальное задание
+№&nbsp;2. Синтезировать в базисе И-НЕ КЦУ согласно заданному варианту,
+функционирование которого задано таблицей истинности (таблица 4).</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:46.35pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Преобразовать МДНФ ЛФ в базис
+И-НЕ.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:46.35pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Построить логическую схему КЦУ в
+базисе И-НЕ.</span></p>
+<p class=MsoNormal style='margin-left:46.35pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Построить принципиальную
+электрическую схему КЦУ в базисе И-НЕ на микросхемах схемотехники КМОП серии
+1554.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Выполнить индивидуальное задание
+№&nbsp;3. Синтезировать в базисе ИЛИ-НЕ КЦУ согласно заданному варианту,
+функционирование которого задано таблицей истинности (таблица 4).</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:46.35pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>3.1<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Преобразовать МКНФ ЛФ в базис
+ИЛИ-НЕ.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:46.35pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>3.2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Построить логическую схему КЦУ в
+базисе ИЛИ-НЕ на микросхемах схемотехники КМОП серии 1564.</span></p>
+<p class=MsoNormal style='margin-left:46.35pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>3.3<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:11.0pt'>Построить принципиальную
+электрическую схему КЦУ в базисе ИЛИ-НЕ на микросхемах схемотехники КМОП.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Проверить правильность
+функционирования логических и принципиальных схем КЦУ для пятого набора
+аргументов и сделать вывод о правильности их функционирования.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Определить среднюю задержку
+распространения сигнала от входов к выходу в принципиальных электрических
+схемах устройств в базисах И-НЕ, ИЛИ-НЕ.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Определить среднюю потребляемую
+мощность в принципиальных электрических схемах в базисах И-НЕ, ИЛИ-НЕ.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Ответить на контрольные вопросы.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-size:11.0pt'>8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Оформить отчет и сдать зачет.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Содержание отчета</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Отчет должен содержать:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Наименование и цель занятия.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Условие и решение задачи домашнего задания по
+заданному варианту (индивидуальное задание №&nbsp;1).</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Условия и решения задач по заданному варианту
+(индивидуальные задания №&nbsp;2 и №&nbsp;3).</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Выводы о результатах проверки правильности
+функционирования логических и принципиальных схем.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Результаты расчетов средней потребляемой мощности и
+средней задержки распространения сигналов от входов к выходу устройства в
+принципиальных схемах.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>6<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Ответы на контрольные вопросы.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите особенности минимизации ЛФ, заданной в СКНФ
+табличным методом с помощью карт Карно. Приведите примеры.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Объясните, как в базисах И-НЕ, ИЛИ-НЕ реализуется ЛЭ
+НЕ?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Поясните, как оценивается сложность логической схемы?</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Требования к знаниям и умениям студентов</span></b></p>
+
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>В результате выполнения лабораторного занятия студент
+должен знать теоретические основы синтеза КЦУ.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Должен уметь:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt;letter-spacing:-.05pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;letter-spacing:-.05pt'>минимизировать
+ЛФ табличным методом с помощью карт Карно;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>преобразовывать ЛФ из основного базиса в неосновные;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>строить логические схемы КЦУ в различных базисах и
+проверять правильность их функционирования;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>строить принципиальные электрические схемы КЦУ на
+микросхемах стандартной логики и производить расчет их основных электрических
+параметров.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Методические указания</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Рассмотрим особенности минимизации ЛФ табличным
+методом с помощью карт Карно и примеры синтеза КЦУ в различных базисах.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Для нанесения значений логической функции на карту
+Карно изучите рисунок 1, на котором указано распределение наборов аргументов по
+клеткам карты Карно.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Для записи результата минимизации в МДНФ в замкнутые
+контуры (области) объединяйте клетки с единичными и неопределенными значениями
+ЛФ (Ф – неопределенное или факультативное значение ЛФ), а для записи ЛФ в МКНФ
+– с нулевыми и неопределенными значениями. При этом следует помнить, что в
+замкнутые области можно объединять одну, две, четыре, восемь и т.д. клеток. В
+результат минимизации входят только те аргументы, которые не меняют значение
+для всех клеток замкнутой области. Если значение аргумента равно 0, то его
+символ в МДНФ записывается со знаком отрицания, а в МКНФ – без знака отрицания.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=313 height=203
+src="../../../Практика/images/pr/image013.gif"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 1 – Распределение наборов аргументов по
+клеткам карты Карно</span></p>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt;letter-spacing:-.05pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;letter-spacing:-.05pt'>Для
+построения логической схемы устройства в базисе И-НЕ результат минимизации
+необходимо сначала записать в базисе И, ИЛИ, НЕ в МДНФ, а затем полученную ЛФ
+преобразовать в базис И-НЕ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Для построения логической схемы устройства в базисе
+ИЛИ-НЕ результат минимизации необходимо сначала записать в базисе И, ИЛИ, НЕ в
+МКНФ, а затем полученную ЛФ преобразовать в базис ИЛИ-НЕ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Рассмотрим пример синтеза КЦУ в базисе И, ИЛИ, НЕ,
+функционирование которого задано таблицей истинности (</span><span lang=EN-US
+style='font-size:11.0pt'>f</span><sub><span style='font-size:11.0pt'>11</span></sub><span
+style='font-size:11.0pt'>(</span><span lang=EN-US style='font-size:11.0pt'>x</span><sub><span
+style='font-size:11.0pt'>1</span></sub><span style='font-size:11.0pt'>,</span><span
+lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:
+11.0pt'>2</span></sub><span style='font-size:11.0pt'>,</span><span lang=EN-US
+style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:11.0pt'>3</span></sub><span
+style='font-size:11.0pt'>)) в таблице 4.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.1<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Нанесем значения логической функции </span><span
+lang=EN-US style='font-size:11.0pt'>f</span><sub><span style='font-size:11.0pt'>11</span></sub><span
+style='font-size:11.0pt'>(</span><span lang=EN-US style='font-size:11.0pt'>x</span><sub><span
+style='font-size:11.0pt'>1</span></sub><span style='font-size:11.0pt'>,</span><span
+lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:
+11.0pt'>2</span></sub><span style='font-size:11.0pt'>,</span><span lang=EN-US
+style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:11.0pt'>3</span></sub><span
+style='font-size:11.0pt'>,</span><span lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span
+style='font-size:11.0pt'>4</span></sub><span style='font-size:11.0pt'>) на
+карту Карно (рисунок 2) и проведем минимизацию, причем результат минимизации
+запишем в МДНФ.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=329 height=209
+src="../../../Практика/images/pr/image014.gif"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 2 – Карта Карно для минимизации логической
+функции в МДНФ</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:42.55pt'><span
+lang=EN-US style='font-size:11.0pt'><span style='position:relative;top:5.0pt'><img
+width=303 height=24
+src="../../../Практика/images/pr/image015.gif"></span>              (1)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.2<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим логическую схему устройства по выражению (1).
+Для этого потребуется:</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>два логических элемента 2 И;</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 3 ИЛИ;</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>три логических элемента НЕ.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Логическая схема устройства в базисе И, ИЛИ, НЕ,
+построенная по логической функции (1), представлена на рисунке 3.</span></p>
+
+<p class=style1><span style='font-size:11.0pt'><img
+width=451 height=433
+src="../../../Практика/images/pr/image016.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 3 – Логическая схема устройства в базисе И,
+ИЛИ, НЕ в МДНФ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.3<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Запишем результат минимизации в МКНФ. Для этого еще
+раз начертим карту Карно для ЛФ </span><span lang=EN-US style='font-size:11.0pt'>f</span><sub><span
+style='font-size:11.0pt'>11</span></sub><span style='font-size:11.0pt'>(</span><span
+lang=EN-US style='font-size:11.0pt'>x</span><sub><span style='font-size:11.0pt'>1</span></sub><span
+style='font-size:11.0pt'>,</span><span lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span
+style='font-size:11.0pt'>2</span></sub><span style='font-size:11.0pt'>,</span><span
+lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:
+11.0pt'>3</span></sub><span style='font-size:11.0pt'>,</span><span lang=EN-US
+style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:11.0pt'>4</span></sub><span
+style='font-size:11.0pt'>) (рисунок 4).</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=323 height=215
+src="../../../Практика/images/pr/image017.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 4 – Карта Карно для минимизации логической
+функции в МКНФ</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>При записи результата минимизации в МКНФ аргументы
+следует брать с инверсией, если их значения равны 1.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+lang=EN-US style='font-size:11.0pt'><span style='position:relative;top:5.0pt'><img
+width=328 height=24
+src="../../../Практика/images/pr/image018.gif"></span>          (</span><span
+style='font-size:11.0pt'>2</span><span lang=EN-US style='font-size:11.0pt'>)</span></p>
+
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.4<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим логическую схему устройства по выражению (2).
+Для этого потребуется:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 2 ИЛИ;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 3 ИЛИ;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 2 И;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>три логических элемента НЕ.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Логическая схема устройства в базисе И, ИЛИ, НЕ,
+построенная по ЛФ (2), представлена на рисунке 5.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.5<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Укажем на рисунках 3 и 5 на выходе каждого логического
+элемента выполняемую логическую операцию и уровень сигнала для пятого набора
+аргументов. Уровни сигналов на выходах логических схем соответствуют значению
+ЛФ </span><span lang=EN-US style='font-size:11.0pt'>f</span><sub><span
+style='font-size:11.0pt'>11</span></sub><span style='font-size:11.0pt'>(</span><span
+lang=EN-US style='font-size:11.0pt'>x</span><sub><span style='font-size:11.0pt'>1</span></sub><span
+style='font-size:11.0pt'>,</span><span lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span
+style='font-size:11.0pt'>2</span></sub><span style='font-size:11.0pt'>,</span><span
+lang=EN-US style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:
+11.0pt'>3</span></sub><span style='font-size:11.0pt'>,</span><span lang=EN-US
+style='font-size:11.0pt'>&nbsp;x</span><sub><span style='font-size:11.0pt'>4</span></sub><span
+style='font-size:11.0pt'>) для пятого набора аргументов (таблица 4), что
+позволяет судить о правильности их функционирования.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=448 height=420
+src="../../../Практика/images/pr/image019.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 5 – Логическая схема устройства в базисе И,
+ИЛИ, НЕ в МКНФ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>5.6<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Сравним по сложности логические схемы КЦУ на рисунках
+3 и 5, для этого подсчитаем общее число входов логических элементов. По этому
+критерию обе схемы одинаковы.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>6<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Рассмотрим пример синтеза КЦУ в базисе И-НЕ для той же
+ЛФ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>6.1<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Преобразуем ЛФ (1) в базис И-НЕ, используя правило де
+Моргана:</span></p>
+
+<p class=style1 style='text-indent:49.6pt'><span
+lang=EN-US style='font-size:11.0pt'><span style='position:relative;top:25.0pt'>
+<img
+width=321 height=87
+src="../../../Практика/images/pr/image020.gif" class="style2"></span></span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:49.6pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>6.2<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим логическую схему устройства в базисе И-НЕ по
+выражению (3), при этом одиночные отрицания аргументов реализуем на основе ЛЭ 2
+И-НЕ с объединенными входами. Для этого необходимо использовать:</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>четыре логических элемента 2 И-НЕ;</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 3 И-НЕ.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Логическая схема устройства в базисе И-НЕ представлена
+на рисунке 6.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=432 height=393
+src="../../../Практика/images/pr/image021.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 6 – Логическая схема устройства в базисе И-НЕ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>6.3<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим принципиальную электрическую схему устройства
+в базисе И-НЕ на микросхемах стандартной логики схемотехники КМОП серии 1554.
+Для этого по приложениям Б и В выбираем стандартные микросхемы интегральных ЛЭ
+серии 1554 и соединяем их между собой в соответствии с логической схемой на
+рисунке 6. Выбираем микросхему ЭКР1554ЛА3&nbsp;(</span><span lang=EN-US
+style='font-size:11.0pt'>IN</span><span style='font-size:11.0pt'>74</span><span
+lang=EN-US style='font-size:11.0pt'>AC</span><span style='font-size:11.0pt'>00</span><span
+lang=EN-US style='font-size:11.0pt'>N</span><span style='font-size:11.0pt'>), в
+одном корпусе которой выполнено четыре ЛЭ 2 И-НЕ, а также ЭКР1554ЛА4&nbsp;(</span><span
+lang=EN-US style='font-size:11.0pt'>IN</span><span style='font-size:11.0pt'>74</span><span
+lang=EN-US style='font-size:11.0pt'>AC</span><span style='font-size:11.0pt'>10</span><span
+lang=EN-US style='font-size:11.0pt'>N</span><span style='font-size:11.0pt'>) –
+три ЛЭ 3 И-НЕ (два останутся свободными). Принципиальная электрическая схема
+устройства в базисе И-НЕ представлена на рисунке 7. На схеме указаны буквенно-позиционные
+обозначения микросхем по ГОСТ 2.710-81, номера выводов, а также уровни сигналов
+для пятого набора аргументов (уровни сигналов указаны под линиями выводов
+микросхем).</span></p>
+
+<p class=style1><span style='font-size:11.0pt'><img
+width=436 height=393
+src="../../../Практика/images/pr/image022.gif"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 7 – Принципиальная электрическая схема
+устройства в базисе И-НЕ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>6.4<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Определим среднюю задержку распространения сигнала от
+входа к выходу устройства и среднюю потребляемую мощность.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>В худшем случаем сигнал передается через три ЛЭ. Для
+расчета средней задержки возьмем данные из приложения Б. В результате получаем
+суммарную среднюю задержку распространения сигнала от входа к выходу устройства
+</span><span style='position:relative;top:5.0pt'><img width=183 height=22
+src="../../../Практика/images/pr/image023.gif"></span>&nbsp;<span
+style='font-size:11.0pt'>нс.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Для расчета средней потребляемой мощности всей схемы
+необходимо расчетным путем определить среднюю потребляемую мощность каждой микросхемы
+путем умножения среднего потребляемого тока (приложение Б) на напряжение
+источника питания. В результате получаем суммарную среднюю потребляемую
+мощность </span><span style='position:relative;top:5.0pt'><img width=159
+height=22 src="../../../Практика/images/pr/image024.gif"></span><span
+style='font-size:11.0pt'>&nbsp;мкВт.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt;letter-spacing:-.2pt'>7<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;letter-spacing:-.2pt'>Рассмотрим
+пример синтеза КЦУ в базисе ИЛИ-НЕ для той же ЛФ.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>7.1<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Преобразуем ЛФ (2) в базис ИЛИ-НЕ, используя правило
+де Моргана.</span></p>
+
+<p class=style1 style='text-indent:1.0cm'><span
+lang=EN-US style='font-size:11.0pt'><span style='position:relative;top:25.0pt'><img
+width=345 height=84
+src="../../../Практика/images/pr/image025.gif"></span></span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span lang=EN-US style='font-size:11.0pt'>        </span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>7.2<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим логическую схему устройства в базисе ИЛИ-НЕ
+по выражению (4), при этом одиночные отрицания аргументов реализуем на основе
+ЛЭ 2 ИЛИ-НЕ с объединенными входами. Для этого необходимо использовать:</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>пять логических элементов 2 ИЛИ-НЕ;</span></p>
+
+<p class=MsoNormal style='margin-left:1cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>один логический элемент 3 ИЛИ НЕ.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Логическая схема устройства в базисе ИЛИ-НЕ
+представлена на рисунке 8.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>7.3<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Построим принципиальную электрическую схему устройства
+в базисе ИЛИ-НЕ на микросхемах стандартной логики схемотехники КМОП серии 1564.
+Для этого по приложениям Б и В выбираем стандартные микросхемы интегральных ЛЭ
+серии 1564 и соединяем их между собой в соответствии с логической схемой
+(рисунок 8). Выбираем микросхему ЭКР1564ЛЕ1 (</span><span lang=EN-US
+style='font-size:11.0pt'>IN</span><span style='font-size:11.0pt'>74</span><span
+lang=EN-US style='font-size:11.0pt'>HC</span><span style='font-size:11.0pt'>02</span><span
+lang=EN-US style='font-size:11.0pt'>AN</span><span style='font-size:11.0pt'>),
+в одном корпусе которой выполнено четыре ЛЭ 2 ИЛИ-НЕ (необходимо использовать
+два корпуса этой микросхемы, причем три ЛЭ второго корпуса останутся
+свободными), а также ЭКР1564ЛЕ4 (</span><span lang=EN-US style='font-size:11.0pt'>IN</span><span
+style='font-size:11.0pt'>74</span><span lang=EN-US style='font-size:11.0pt'>HC</span><span
+style='font-size:11.0pt'>27</span><span lang=EN-US style='font-size:11.0pt'>AN</span><span
+style='font-size:11.0pt'>) – три ЛЭ 3 ИЛИ-НЕ (два ЛЭ останутся свободными).
+Принципиальная электрическая схема устройства в базисе ИЛИ-НЕ представлена на
+рисунке 9. На схеме выполнены обозначения в соответствии с п. 6.3.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=433 height=363
+src="../../../Практика/images/pr/image026.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 8 – Логическая схема устройства в базисе
+ИЛИ-НЕ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>7.4<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Определяем среднюю задержку распространения сигнала от
+входа к выходу устройства и среднюю потребляемую мощность.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>В худшем случае сигнал передается через три ЛЭ. Расчет
+средней задержки выполним аналогично п.&nbsp;6.4. В результате получаем среднюю
+задержку </span><span style='position:relative;top:5.0pt'><img width=141
+height=22 src="../../../Практика/images/pr/image027.gif"></span><span
+style='font-size:11.0pt'>&nbsp;нс.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Расчет средней потребляемой мощности выполним
+аналогично п.&nbsp;6.4. В результате получаем среднюю потребляемую мощность </span><span
+style='position:relative;top:8.0pt'><img width=174 height=28
+src="../../../Практика/images/pr/image028.gif"></span><span
+style='font-size:11.0pt'>&nbsp;мкВт.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Таким образом, устройство на микросхемах серии 1554
+имеет более высокое быстродействие и, следовательно, большую среднюю
+потребляемую мощность.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><img width=436 height=363
+src="../../../Практика/images/pr/image029.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'>Рисунок 9 – Принципиальная электрическая схема
+устройства в базисе ИЛИ-НЕ</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>8<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Проверим правильность функционирования логических и
+принципиальных схем КЦУ в базисах И-НЕ, ИЛИ-НЕ (рисунки 6…9). Для этого
+проставим на выходах всех логических элементов значения сигналов для пятого
+набора аргументов. Поскольку на выходах логических схем единичный уровень
+сигнала, то они функционируют в соответствии с таблицей истинности (см.
+значение логической функции </span><span lang=EN-US style='font-size:11.0pt'>f</span><sub><span
+style='font-size:11.0pt'>11</span></sub><span style='font-size:11.0pt'> для
+пятого набора аргументов).</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>9<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Сравним по сложности логические и принципиальные схемы
+КЦУ на рисунках 6…9, для этого подсчитаем общее число входов логических
+элементов. По этому критерию схемы в базисе И-НЕ проще.</span></p>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+
+ </div>
+				<A HREF="../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

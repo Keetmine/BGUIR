@@ -1,0 +1,865 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB2 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                  <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 2</b></p>
+ <div>
+<div class=WordSection11>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>Компаратор
+напряжения на операционном усилителе</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.1. Цель работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Изучить работу и
+характеристики компаратора напряжения.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2. Теоретические сведения</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.1. Чувствительность к напряжению на
+входе (+)</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>На схеме (рис.
+2.1,а) на вход (</span><span style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) подано опорное
+напряжение земли или 0 В. Напряжение <i>Е</i><sub>вх</sub>, на которое должна </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>реагировать
+схема, приложено к входу (+). Во входной цепи компаратора <i>Е</i><sub>вх</sub>
+сравнивается</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+с нулевым опорным напряжением, и состояние выхода говорит нам, положительно или
+отрицательно <i>Е</i></span><sub><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>вх</span></sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> относительно этого опорного напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=425 height=460
+src="../../../../Практика/images/lb1/image461.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.1. Схема включения ОУ 741 как
+компаратора,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>чувствительного к переходам через 0 В по
+входу (+) (а),</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>и формы сигналов на входе и выходе (б).
+Цоколевка</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>соответствует ОУ 741 в корпусе DIP</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Как видно из
+рис.&nbsp;2.1,б, <i>Е</i><sub>вх</sub> положительно в течение времени от точки
+0 до точки <i>А</i>. Потенциал входа (+) будет в это время положительным по
+отношению к потенциалу входа (-), так что <i>U</i><sub>вых</sub> будет
+равно&nbsp;+</span><i><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>U</span></i><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>нас</span></sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>. В том случае, когда<i> </i>Е<sub>вх</sub></span><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>отрицательно (в
+течение времени от точки <i>А</i> до точки <i>В</i>),<i> </i></span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> равняется </span><span
+style='position:relative;top:6.0pt'><img width=48 height=25
+src="../../../../Практика/images/lb1/image462.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, поскольку
+потенциал входа (+) при этом ниже потенциала входа (</span><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>). Таким
+образом, </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> показывает,
+когда<i> Е</i><sub>вх</sub> положительно или отрицательно по отноше­нию к
+нулевому опорному напряжению. Кроме того, переход </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>из одного состояния
+в другое показывает,<i> </i>когда и в каком направлении<i> </i><i>Е</i></span><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>пересекает
+уровень опорного напряжения. Когда<i> Е</i><sub>вх</sub></span><i><sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>пересекает
+опорный уровень, равный 0В, двигаясь в положитель­ном направлении (как это
+имеет место в моменты времени 0 и В), </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>становится также
+положительным. Если </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>становится
+отрицательным (момент<i> </i><i>А</i>), это означает, что<i> </i></span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>E</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:16.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>только что пере­секло
+уровень опорного напряжения в отрицательном направлении.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=402 height=546
+src="../../../../Практика/images/lb1/image463.jpg"></span></p>
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.2. Компаратор, чувствительный к
+переходам через 0 В по входу (</span><span style='font-size:12.0pt;font-family:
+"Courier New"'>-</span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>),</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>а) схема включения; б) форма сигналов на
+входе и выходе</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.2. Чувствительность к напряжению на
+входе (-)</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>На<b> </b>рис.&nbsp;2.2а
+нулевое опорное напряжение (земля) подано на вход (+), а <i>Е</i><sub>вх</sub>
+приложено к входу (-). Во входной цепи компаратора <i>Е</i><sub>вх</sub>
+сравнивается с опорным нулем так же, как в схеме<b> </b>на рис. 2.1а. Однако,
+как показано на рис. 2.2б, в данном случае </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> становится
+равным<b><i> -</i></b></span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> при
+положительном<b><i> </i></b><i>Е</i><sub>вх</sub><b><i>,</i></b> т.е. на
+промежутке от точки 0 до точки А. В течение времени от точки<b><i> </i></b>А до
+точки<b><i> </i></b>В<b><i>,</i></b> когда<b><i> </i></b><i>Е</i><sub>вх<b><i> </i></b></sub>ниже
+нулевого опорного уровня,<b><i> </i></b></span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> равно -</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><b><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></i></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Итак, когда<b><i>
+</i></b></span><span style='position:relative;top:6.0pt'><img width=103
+height=25 src="../../../../Практика/images/lb1/image464.png"></span><b><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span></i></b><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Е</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> больше 0 В;
+если<b><i> </i></b></span><span style='position:relative;top:6.0pt'><img
+width=103 height=25
+src="../../../../Практика/images/lb1/image465.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>E</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> отрицательно.
+Схемы компараторов на рис. 2.1 и 2.2 называют <b>детекторами нуля.</b></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.3. Детекторы ненулевого уровня</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Детектор уровня
+напряжения. Схемы компараторов, пока­занные на рис. 2.1 и 2.2, можно
+использовать также для сравнения напряжений с опорным уровнем, отличным от 0 В.
+В схеме на рис. 2.3, а ко входу (</span><span style='font-size:14.0pt;
+font-family:"Courier New"'>-</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>) приложено опорное напряжение +2 В. В случае когда
+входное напряжение<i> </i><i>Е</i><sub>вх</sub> меньше<i> </i></span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>o</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>п</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> равно </span><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> поскольку
+напряжение на входе (+) по отношению к напряжению на выходе (</span><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) отрицательно.
+При<i> Е</i><sub>вх</sub>, превышающем </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, напряжение на
+входе (+) становится положительным по отношению к напряжению на выходе (</span><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) и </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> переходит в +</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Как видно из
+рис. 2.3,б,<i> </i></span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> показывает,
+больше или меньше<i> Е</i><sub>вх</sub><i>, </i>чем </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>o</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>п</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>; в момент
+перехода </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> от одного
+напряжения насыще­ния к другому </span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>E</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> равно </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Пример 2.1</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> Найти
+результирующую форму кривой </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> в схеме
+рис.&nbsp;2.3,а при полярности </span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, обратной
+указанной на этой фигуре, и входном сигнале </span><i><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>Е</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> треугольной
+формы, показанном на рис. 2.3,&nbsp;б</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Решение</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> Когда</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Е</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> меньше</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, напряжение на
+входе (</span><span style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) более положи­тельное,</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> чем на входе
+(+), и <span style='position:relative;top:6.0pt'><img width=103 height=25
+src="../../../../Практика/images/lb1/image464.png"></span>. В
+момент пересечения </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>E</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> уровня </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>E</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;(-2 В) в
+положительном направлении </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> переключается в
+состояние +</span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, как показано
+на рис. 2.4. При пересечении</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> </span><i><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Е</span></i><sub><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>вх</span></sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> уровня</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>o</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>п</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> в отрицатель</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ном направлении </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> переключается
+на</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> Таким образом, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> говорит о том,
+что оно выше</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+</span><i><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Е</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, чем </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, ниже его или
+равно</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+ему.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>На рис. 2.5
+показана модифицированная схема детектора уровня напряжения, представленного на
+рис. 2.3. Когда <i>Е</i><sub>вх</sub> выше </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> &#8209;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> положительное и
+смещает в прямом направлении светоизлучающий диод (СИД) зеленого свечения.
+Включение этого светодиода может индицировать состояние «включено» или «пуск».
+Если <i>Е</i><sub>вх</sub> ниже </span><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>o</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>п</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> будет
+отрицательно и загорается красный СИД. Это может соответствовать состоянию
+«выключено» или «стоп». Уровень насыщения выходного тока ОУ 741 равен приблизительно
+25 мА. Такого значения тока достаточно для довольно яркого свечения светодиода.
+В описанной схеме можно использо­вать выпускаемые промышленностью сборки СИД, содержащие
+в одном корпусе светодиоды красного и зеленого свечения.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=381 height=515
+src="../../../../Практика/images/lb1/image466.jpg"></p>
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.3. Детектор уровня напряжения (а)</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>и форма сигналов на входе и выходе схемы
+(б)</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=344 height=287
+src="../../../../Практика/images/lb1/image467.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.4. Решение примера 2.1</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=509 height=204
+src="../../../../Практика/images/lb1/image468.jpg"></span></p>
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-top:12.0pt;margin-right:
+0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.
+2.5. Детектор уровня напряжения с индикацией на светодиодах</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.4. Получение опорных напряжений на
+практике</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Так как
+операционные усилители питаются обычно от хорошо стабилизированных источников,
+можно использовать этот отрадный факт для получения недорогого источника
+опорного напряже­ния. В качестве такого источника на рис. 2.6 служат резисторы </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, которые делят
+напряжение питания в соответствии со следующим выражением:</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><span style='position:relative;
+top:17.0pt'><img width=149 height=52
+src="../../../../Практика/images/lb1/image469.png"></span>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Пример 2.2</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Вычислить </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>оп</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для схемы на
+рис. 2.6.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Решение</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Из соотношения
+<span style='position:relative;top:7.0pt'><img width=117 height=27
+src="../../../../Практика/images/lb1/image470.png"></span>получаем</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='position:relative;
+top:16.0pt'><img width=224 height=51
+src="../../../../Практика/images/lb1/image471.png"></span>.</p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=582 height=312
+src="../../../../Практика/images/lb1/image472.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.6. Получение опорного напряжения
+с делителя напряжения</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.5. Инвертирующий компаратор</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Триггер Шмитта –
+это компаратор с положительной обратной связью. В этой схеме часть выходного
+сигнала операционного усилителя подается на неинвертирующий вход и задает
+пороги переключения схемы.&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Электрическая
+схема инвертирующего триггера Шмитта представлена ниже (рис. 2.7).</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><img width=509 height=295
+src="../../../../Практика/images/lb1/image473.png"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;text-indent:35.45pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 2.7.
+Инвертирующий компаратор</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Операционный
+усилитель запитан от двуполярного пятивольтового источника питания. На
+инвертирующий вход <i>U</i><sub>вх</sub> подается синусоидальный сигнал
+амплитудой ±2 В. Резисторы <i>R</i><sub>1</sub> и <i>R</i><sub>2</sub> имеют
+номиналы 25 кОм и 10&nbsp;кОм соответственно.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Напряжение на
+неинвертирующем входе снимается с делителя напряжения подключенного к выходу
+операционного усилителя и мы можем рассчитать его значение для положительного и
+отрицательного напряжения насыщения.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1)</span><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'> </span><span style='position:relative;
+top:17.0pt'><img width=276 height=52
+src="../../../../Практика/images/lb1/image474.png"></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>2) </span><span style='position:relative;top:17.0pt'><img
+width=299 height=52
+src="../../../../Практика/images/lb1/image475.png"></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Когда на выходе
+усилителя положительное напряжение насыщения – на неинвертирующем входе
+напряжение 1 В. Допустим, входной сигнал медленно нарастает от нуля. Пока
+напряжение сигнала меньше напряжения на неинвертирующем входе – ничего не
+происходит. Как только сигнал превысит порог&nbsp;в&nbsp;1 В, выходное
+напряжение операционного усилителя «переключится» и станет равным
+отрицательному напряжению насыщения. Это изменит напряжение на неинвертирующем
+входе, оно станет равным (</span><span style='font-size:14.0pt;font-family:
+"Courier New"'>-</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1)
+В.&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Входной сигнал
+будет нарастать до своего максимум, а потом пойдет на спад. Когда его амплитуда
+станет меньше одного вольта (1&nbsp;В), на выходе усилителя будет по-прежнему
+отрицательное напряжение насыщения. И только когда входной сигнал пересечет
+порог (-1) вольт, выходное напряжение снова «переключится» и станет равным положительному
+напряжению насыщения. Естественно, это повлечет за собой изменение порогового
+напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>На графике (рис.
+2.8) можно увидеть, как меняется выходной сигнал операционного усилителя в
+зависимости от входного.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><img width=419 height=650
+src="../../../../Практика/images/lb1/image476.png"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.8,а &#8209;&nbsp;зашумленный
+сигнал не будет</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>вызывать колебаний на выходе усилителя.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>б &#8209; наличие зашумлённого сигнала.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Триггер Шмитта
+демонстрирует такое свойство систем, как<b> гистерезис</b>. Которое заключается
+в том, что реакция системы на текущее воздействие зависит от воздействия,
+действующего на нее ранее. На графике (рис. 2.9) показана зависимость выходного
+напряжения от входного (<b>петля гистерезиса</b>).</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><img width=272 height=241
+src="../../../../Практика/images/lb1/image477.png"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Рис. 2.9. Петля гистерезиса, где <i>U</i><sub>в</sub>
+– верхний порог</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>триггера Шмитта, <i>U</i><sub>н</sub> &#8209; нижний
+порог.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='position:relative;
+top:17.0pt'><img width=148 height=52
+src="../../../../Практика/images/lb1/image478.png"></span>;</p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='position:relative;
+top:17.0pt'><img width=148 height=52
+src="../../../../Практика/images/lb1/image479.png"></span>.</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Еще одно
+свойство триггера Шмитта, возникающее вследствие положительной обратной связи –
+это увеличение скорость переключения выходного напряжения, по сравнению с скоростью
+простого компаратора. Как только выходное напряжение операционного усилителя
+начинает меняться, положительная обратная связь увеличивает разностное
+напряжение (<i>U</i><sub>вх1</sub> – <i>U</i><sub>вх2</sub>) и еще больше
+изменяет выходное напряжение, что в свою очередь еще больше увеличивает
+разностное напряжение.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.2.6. Практические замечания</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Как известно,
+при конструировании реальной схемы компаратора между фактическими
+характеристиками ОУ и представлен­ной выше идеальной ситуацией, имеются некоторые
+различия. Во-первых, выходное напряжение </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> не изменяется
+от </span><span style='font-size:14.0pt;font-family:"Courier New"'>-</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> до +</span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>нас</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> мгновенно. Этот
+переход происходит за конечный проме­жуток времени. Во-вторых, при равном нулю
+дифференциальном входном напряжении </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>E</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Д</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> напряжение </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, что не будет в
+точности равно нулю. И наконец, на выходе ОУ могут постоянно или при подходе <i>Е</i><sub>Д</sub>
+к 0 В могут возникать непредсказуемые колебания. Все это вызывает необходимость
+глубже изучить параметры ОУ и то, каким образом можно свести к минимуму
+различие между их идеальными и реальными характеристиками.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.3. Приборы и оборудование</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Программа компьютерного моделирование электронных схем Multisim:<br>приборы: функциональный генератор сигналов (Function Generator), измеритель АЧХ (Bode Plotter), осциллограф (Oscilloscope);<br>
+ИС 741, резисторы: 1&nbsp;кОм, 10 кОм, 100 кОм, диоды.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.4. Порядок проведения лабораторной
+работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.4.1. Неинвертирующий компаратор</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.&nbsp;Соберите
+схему неинвертирующего компаратора, показанную на рис. 2.10. В качестве
+входного сигнала (</span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) используйте
+синусоидальный сигнал генератора </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'></span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=496 height=301
+src="../../../../Практика/images/lb1/image480.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.10,а. Схема неинвертирующий
+компаратора</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.&nbsp;Установите
+значение напряжения </span><span style='position:relative;top:6.0pt'><img
+width=100 height=25
+src="../../../../Практика/images/lb1/image481.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, а входной
+сигнал </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=&nbsp;4&nbsp;В
+частотой </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>f</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;=&nbsp;500&nbsp;Гц.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3.&nbsp;Нарисуйте формы сигналов
+входного и выходного напряжения (см.&nbsp;рис.&nbsp;2.10,б,в).</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.&nbsp;Измените
+значение напряжения </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U<sub>REF</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> (для </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=4 В) и
+наблюдайте изменение форм осциллограмм.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.&nbsp;Измените
+значение напряжения </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> (для </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U<sub>REF</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = +1 В) и
+наблюдайте изменение форм осциллограмм.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>6.&nbsp;Установите
+значение напряжения </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U<sub>REF</sub></span></i><i><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span></sub></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= </span><span
+style='font-size:14.0pt;font-family:"Courier New"'>-</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1 В и повторите
+пункты 2 &#8209; 5.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=605 height=453
+src="../../../../Практика/images/lb1/image482.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 2.10, б, в. Графики зависимости
+напряжения от времени </span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>у неинвертирующего компаратора. </span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;text-indent:35.45pt;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.4.2.
+Инвертирующий компаратор</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span>
+<span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Соберите схему
+инвертирующего компаратора, показанную на рис.&nbsp;2.10,&nbsp;а;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Зафиксируйте картинку форм
+сигналов входного </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вх </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и выходного </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.5. Содержание отчёта</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Цель работы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Схемы, которые
+были исследованы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Результаты
+исследования.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выводы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Ответы на
+контрольные вопросы.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2.6. Контрольные вопросы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.&nbsp;Назовите
+особенности триггера Шмитта.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.&nbsp;Назовите
+области применения компараторов.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.&nbsp;Поясните
+такое </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>свойство
+системы, как гистерезис.</span></p>
+
+</div>
+
+
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

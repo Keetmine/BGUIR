@@ -1,0 +1,669 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB16 - Программа дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+
+ <div>
+
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Лабораторная работа</B></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><B>№ 16</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>РЕГИСТРЫ И ИХ ПРИМЕНЕНИЕ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>1. ЦЕЛЬ ЛАБОРАТОРНОЙ  РАБОТЫ </B>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1.1.Изучение принципов построения
+	регистров;</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1.2.Исследование режимов работы
+	и применения регистров.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11in; margin-bottom: 0in">
+	<B>2. ТЕОРЕТИЧЕСКИЕ СВЕДЕНИЯ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Триггер может хранить (запоминать)
+	один бит цифровой информации (1 или
+	0).Его также  можно назвать одноразрядным
+	регистром. Группа триггеров, предназначенная
+	для хранения двоичной информации (один
+	триггер на каждый бит информации),
+	называется регистром. Регистры находят
+	применение в различных цифровых
+	устройствах, включая микропроцессоры.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Данные могут вводиться в регистр
+	(записываться) в последовательной форме
+	(бит за битом) или в параллельной форме
+	(все биты одновременно) и могут выводиться
+	из регистра в последовательной или
+	параллельной форме.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Регистры классифицируются в
+	зависимости от того, в какой форме
+	информация вводится в регистр и в какой
+	форме выводится.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Существует четыре возможности:</FONT></P>
+	<OL>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+		<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Последовательно
+		– последовательный регистр;</FONT></FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+		<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Последовательно
+		– параллельный регистр;</FONT></FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+		<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Параллельно
+		– последовательный регистр;</FONT></FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+		<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Параллельно
+		– параллельный регистр.</FONT></FONT></P>
+	</OL>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0.14in; line-height: 100%">
+	<BR><BR>
+	</P>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Регистры
+	строятся, используя триггеры (</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">RS</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>,
+	</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">JK</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>,
+	</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>),
+	и</FONT></FONT></FONT></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	 <FONT SIZE=4>широко представлены как ИС
+	средней степени интеграции.</FONT></P>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0.14in; line-height: 100%">
+	<BR><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Регистры, в которые данные
+	вводятся или выводятся в последовательной
+	форме, называются </FONT><FONT SIZE=4><B>сдвигающими.
+	</B></FONT><FONT SIZE=4>Биты информации, находящиеся
+	в триггерах регистра, сдвигаются то ли
+	вправо, то ли влево при подаче
+	синхроимпульсов. В некоторых регистрах
+	информация может сдвигаться или вправо,
+	или влево, в зависимости от специального
+	управляющего сигнала. Такие регистры
+	называются </FONT><FONT SIZE=4><B>реверсивными</B></FONT><FONT SIZE=4>.
+	Если регистр может работать  во всех
+	четырех режимах и также как реверсивный,
+	то такой регистр называется </FONT><FONT SIZE=4><B>универсальным.
+	</B></FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Параллельные регистры </U></FONT><FONT SIZE=4>
+	предназначены для запоминания и хранения
+	двоичной информации, поэтому параллельные
+	регистры называют </FONT><FONT SIZE=4><B>регистрами
+	хранения</B></FONT><FONT SIZE=4> или </FONT><FONT SIZE=4><B>регистрами
+	памяти</B></FONT><FONT SIZE=4>. Такие регистры
+	осуществляют операции записи и считывания
+	информации параллельным кодом.
+	Параллельные регистры могут использоваться
+	в качестве буферных регистров, а также
+	для преобразования прямого двоичного
+	кода в обратный код и наоборот.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>При построении параллельных
+	регистров могут использоваться
+	синхронные триггеры со статическим
+	управлением (</FONT><FONT SIZE=4><SPAN LANG="en-US">latch</SPAN></FONT><FONT SIZE=4>),
+	 а также синхронные триггеры с динамическим
+	управлением и двухступенчатые      (</FONT><FONT SIZE=4><SPAN LANG="en-US">RS</SPAN></FONT><FONT SIZE=4>,
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">JK</SPAN></FONT><FONT SIZE=4>,
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>)
+	триггеры.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>На рисунке 1 приведены структуры
+	регистров ИР22 и ИР23. Микросхемы ИР22 и
+	ИР23 – это восьмиразрядные параллельные
+	регистры на  </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггерах. Причем регистр ИР22  построен
+	на </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггерах со статическим управлением,
+	а ИР23 – с динамическим управлением.</FONT></P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_223df333.png" NAME="graphics101" ALIGN=BOTTOM WIDTH=600 HEIGHT=581 BORDER=0></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис 1 Логическая структура регистров
+	ИР22,ИР23</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Регистры ИР22 и ИР23 имеют выходные
+	буферные усилители с тремя состояниями.
+	Третье высокоимпедансное  состояние
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Z</SPAN></FONT><FONT SIZE=4>
+	можно установить с помощью вывода
+	разрешения</FONT><FONT SIZE=4><B> </B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m60af97f3.gif" NAME="Object528" ALIGN=ABSMIDDLE WIDTH=35 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>
+	(</FONT><FONT SIZE=4><SPAN LANG="en-US">Enable</SPAN></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Output</SPAN></FONT><FONT SIZE=4>),
+	если подать на него напряжение высокого
+	уровня. Выходные буферные усилители
+	обладают высокой нагрузочной способностью.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Регистры состоят из восьми </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггеров с входами разрешения
+	параллельной записи РЕ (</FONT><FONT SIZE=4><SPAN LANG="en-US">Preset</SPAN></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Enable</SPAN></FONT><FONT SIZE=4>)
+	(для ИР23 – вход С). Если на входе РЕ
+	действует высокий уровень напряжения,
+	то данные от входов </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>7
+	записываются в триггеры регистра.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если на вход </FONT><FONT SIZE=4><SPAN LANG="en-US"><B>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m60af97f3.gif" NAME="Object529" ALIGN=ABSMIDDLE WIDTH=35 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>подано
+	напряжение низкого уровня, то данные
+	из          </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггеров регистра пройдут на выходы
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>7.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Регистр ИР23 принимает информацию
+	синхронно с положительным перепадом
+	тактового импульса, подаваемого на
+	вход С.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В настоящее время выпускается
+	большое количество регистров
+	разнообразного назначения. Однако
+	наиболее универсальными являются
+	регистры, которые могут работать во
+	всех четырех режимах. Примером такого
+	регистра может быть микросхема ИР16.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Микросхема ИР16</U></FONT><FONT SIZE=4>
+	– это четырехразрядный регистр сдвига
+	с третьим состоянием выхода. Логическая
+	структура регистра  показана на рис. 2 . Он построен на четырех синхронных
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">RS</SPAN></FONT><FONT SIZE=4>-
+	триггерах с инверсным динамическим
+	управлением. </FONT><FONT SIZE=4><SPAN LANG="en-US">RS</SPAN></FONT><FONT SIZE=4>-
+	триггеры включены по схеме </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггеров (вход </FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>
+	соединен через инвертор со входом </FONT><FONT SIZE=4><SPAN LANG="en-US">R</SPAN></FONT><FONT SIZE=4>).
+	На выходах регистра </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>3
+	 поставлены буферные усилители с
+	повышенной нагрузочной способностью
+	и тремя состояниями. Регистр имеет
+	входы данных </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>3
+	,вход разрешения параллельной загрузки
+	и сдвига</FONT><FONT SIZE=4><SPAN LANG="en-US"><B><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_33c583bc.gif" NAME="Object530" ALIGN=ABSMIDDLE WIDTH=34 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>,
+	тактовый вход С, вход последовательной
+	загрузки данных  </FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>1,
+	вход разрешения выходам ЕО и выходы </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>3
+	.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если на вход </FONT><FONT SIZE=4><SPAN LANG="en-US"><B>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_33c583bc.gif" NAME="Object531" ALIGN=ABSMIDDLE WIDTH=34 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>
+	,подать напряжения высокого уровня, то
+	данные от входов </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>3
+	параллельно загружаются в регистр
+	синхронно с отрицательным перепадом
+	импульса синхронизации на входе </FONT><FONT SIZE=4><SPAN LANG="en-US"><B>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2ab3f20c.gif" NAME="Object532" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>.
+	Когда на входе</FONT><FONT SIZE=4><SPAN LANG="en-US"><B><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_33c583bc.gif" NAME="Object533" ALIGN=ABSMIDDLE WIDTH=34 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>
+	действует напряжение низкого уровня,
+	то загрузка данных в регистр происходит
+	последовательно  от входа </FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>1,
+	а сдвиг данных вправо от </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>3
+	к </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	синхронно с каждым отрицательным
+	перепадом тактового импульса на входе</FONT><FONT SIZE=4><SPAN LANG="en-US"><B><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2ab3f20c.gif" NAME="Object534" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></B></SPAN></FONT><FONT SIZE=4>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_61b72557.png" NAME="graphics102" ALIGN=BOTTOM WIDTH=604 HEIGHT=378 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 2 Логическая структура регистра
+	ИР16</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если на вывод разрешения выходам
+	Е0 подать напряжение низкого уровня,
+	то выходы  </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	– </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>3
+	перейдут в </FONT><FONT SIZE=4><SPAN LANG="en-US">Z</SPAN></FONT><FONT SIZE=4>-состояние.
+	На рис. 3 показаны условные обозначения
+	и цоколевка ИР22,ИР23 и ИР16.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m70a8ed7c.png" NAME="graphics103" ALIGN=BOTTOM WIDTH=620 HEIGHT=279 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 3 Условные обозначения и цоколевка
+	ИР22,ИР23 и ИР16</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Реверсивные регистры сдвига</U></FONT><FONT SIZE=4>
+	могут осуществлять сдвиг информации
+	как вправо(</FONT><FONT SIZE=4><SPAN LANG="en-US">SR</SPAN></FONT><FONT SIZE=4>-</FONT><FONT SIZE=4><SPAN LANG="en-US">Shift</SPAN></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Right</SPAN></FONT><FONT SIZE=4>),
+	так и влево(</FONT><FONT SIZE=4><SPAN LANG="en-US">SL</SPAN></FONT><FONT SIZE=4>-</FONT><FONT SIZE=4><SPAN LANG="en-US">Shift</SPAN></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Left</SPAN></FONT><FONT SIZE=4>),в
+	зависимости от сигнала на входе
+	управления М. Пример построения
+	реверсивного счетчика показан на рис 4.</FONT></P>
+	<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_45af2b20.png" NAME="graphics104" ALIGN=BOTTOM WIDTH=633 HEIGHT=360 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 4  Логическая структура реверсивного
+	регистра</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если на вход М поступает низкий
+	уровень напряжения, то при подаче
+	тактовых импульсов, информация с входа
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">SR</SPAN></FONT><FONT SIZE=4>
+	сдвигается вправо. И если на вход М
+	поступает высокий уровень напряжения,
+	то при подаче тактовых импульсов
+	информация  с входа </FONT><FONT SIZE=4><SPAN LANG="en-US">SL</SPAN></FONT><FONT SIZE=4>
+	сдвигается влево.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Применение регистров сдвига.</U></FONT><FONT SIZE=4>
+	Изначально регистры сдвига предназначались
+	для временного хранения данных и
+	некоторых манипуляций с этими данными.
+	Рассмотрим некоторые наиболее общие
+	применения регистров сдвига.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Линия задержки.</U></FONT><FONT SIZE=4>
+	Регистр сдвига с последовательным
+	вводом и последовательным выводом
+	данных можно использовать для задержки
+	цифровых сигналов на время </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><FONT SIZE=4>				</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_605c4dbb.gif" NAME="Object535" ALIGN=ABSMIDDLE WIDTH=78 HEIGHT=41><FONT SIZE=4>,	</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>где </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>
+	 - число разрядов регистра сдвига,</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	 <IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5cc99ae7.gif" NAME="graphics105" ALIGN=LEFT HSPACE=12 WIDTH=19 HEIGHT=23 BORDER=0>
+	   – <FONT SIZE=4>частота следования импульсов
+	синхронизации.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>	</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Таким образом, цифровой сигнал
+	появляется на выходе регистра сдвига
+	задержанным на время ∆</FONT><FONT SIZE=4><SPAN LANG="en-US">t</SPAN></FONT><FONT SIZE=4>.
+	Время задержки можно варьировать с
+	помощью изменения частоты следования
+	импульсов синхронизации и числа
+	триггеров регистра сдвига.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Преобразователь информации
+	из последовательного вида в параллельный
+	вид</U></FONT><FONT SIZE=4>. Данные в последовательном
+	виде легко преобразовать в параллельную
+	форму с помощью последовательно –
+	параллельного регистра.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Преобразователь информации
+	из параллельного вида в последовательный
+	вид</U></FONT><FONT SIZE=4>. Данные в параллельном
+	виде легко преобразовать в последовательную
+	форму с помощью  параллельно -
+	последовательного регистра.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Кольцевой счетчик</U></FONT><FONT SIZE=4>.
+	Если последовательный выход регистра
+	сдвига </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><FONT SIZE=4>0
+	 соединить с последовательным входом,
+	то единичный бит, записанный в один из
+	триггеров, будет циркулировать по
+	регистру при подаче синхроимпульсов.
+	Такая схема называется </FONT><FONT SIZE=4><B>кольцевым
+	счетчиком</B></FONT><FONT SIZE=4>. На выходах
+	триггеров генерируется неперекрывающиеся
+	последовательности импульсов, которые
+	могут быть полезны для различных
+	приложений.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Схема может быть использована
+	для подсчета импульсов. Число сосчитанных
+	импульсов определяется единичным
+	уровнем на выходе соответствующего
+	триггера. Модуль счета такого счетчика
+	равен числу разрядов регистра, </FONT><FONT SIZE=4><SPAN LANG="en-US">mod</SPAN></FONT><FONT SIZE=4>
+	= </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>.
+	Эта схема может рассматриваться и как
+	делитель на </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>
+	(</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>:1).
+	                       </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><U>Счетчик Джонсона</U></FONT><FONT SIZE=4>.
+	Если выход </FONT><FONT SIZE=4><SPAN LANG="en-US">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_231034f2.gif" NAME="Object536" ALIGN=ABSMIDDLE WIDTH=29 HEIGHT=18></SPAN></FONT><FONT SIZE=4>
+	соединить с последовательным </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>входом, то такая схема называется
+	</FONT><FONT SIZE=4><B>счетчиком Джонсона</B></FONT><FONT SIZE=4>.
+	Если в такой схеме, после обнуления
+	регистра, подать импульсы синхронизации,
+	то на выходах триггеров будут
+	генерироваться сигналы формы меандра.
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Счетчик Джонсона – это делитель
+	на 2</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>
+	или модуль счета такого счетчика </FONT><FONT SIZE=4><SPAN LANG="en-US">mod</SPAN></FONT><FONT SIZE=4>
+	= 2</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in">
+	</P>
+	<OL START=3>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+		РАБОТЫ</B></P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Оборудование  и компоненты:
+	<B>Программа компьютерного моделирование электронных схем Multisim:</B></FONT><FONT SIZE=4>Компоненты:
+	ИС КР1533ТМ2 (74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>74)
+	– два синхронных  </FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>-
+	триггера с динамическим управлением,
+	ИС КР1533ЛА3 (74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>00)
+	– четыре логических элемента 2И-НЕ, ИС
+	КР1533ЛА4 (74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>10)
+	– три логических элемента 3И-НЕ, ИС
+	КР555ИР16 (74</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>295)
+	– четырехразрядный регистр сдвига.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+<P LANG="ru-RU" STYLE="text-indent: 0.49in; margin-bottom: 0.14in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>
+	3.1  Собрать
+			схему</B></FONT></FONT><FONT FACE="Times New Roman, serif">
+			<FONT SIZE=4 STYLE="font-size: 16pt">
+			</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>четырехразрядного
+			регистра сдвига, показанную на рис. 5, используя две ИС КР1533ТМ2 и ИС
+			КР1533ЛА3</B></FONT></FONT></FONT></FONT></P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_49648491.png" NAME="graphics106" ALIGN=BOTTOM WIDTH=623 HEIGHT=268 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Рис.  5
+	Четырехразрядный регистр сдвига</FONT></FONT></P>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0.14in; line-height: 100%"><BR><BR>
+	</P>
+	<P LANG="ru-RU" STYLE="text-indent: 0.49in; margin-bottom: 0.14in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>3.2
+	 Исследовать функционирование регистра
+	сдвига, рис.  5 . Эта схема  может работать
+	во всех четырех режимах.</B></FONT></FONT></FONT></FONT></P>
+
+	<P LANG="ru-RU" STYLE="text-indent: 0.49in; margin-bottom: 0.14in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3.2.1
+
+
+			Последовательный
+			вход, последовательный / параллельный
+			выход. Исследовать работу регистра,
+			подавая на его вход следующее
+			четырехразрядное слово: 1011. Для любого
+			другого слова работа регистра будет
+			аналогична. На вход РЕ подать низкий
+			уровень напряжения, затем обнулить
+			регистр. Для этого на вход</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><I>
+			</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><I>
+			<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m43c90f18.gif" NAME="Object537" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=18></I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>подать
+			низкий уровень напряжения, а затем
+			установить </FONT></FONT><FONT FACE="Times New Roman, serif"><I>
+			<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m43c90f18.gif" NAME="Object538" ALIGN=ABSMIDDLE WIDTH=20 HEIGHT=18></I></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><I>=
+			</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1.
+			Теперь, подавая импульсы синхронизации
+			(использовать антидребезговую кнопку),
+			проследить, как данные с последовательного
+			входа будут  сдвигаться в регистр.
+			Наблюдая за состоянием выходов
+			регистра, убедиться, что данные
+			соответствуют временным диаграммам
+			рис. 6 .</FONT></FONT></FONT></FONT></P>
+		</OL>
+	</OL>
+	<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_12043715.png" NAME="graphics107" ALIGN=BOTTOM WIDTH=612 HEIGHT=325 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 6 Временные диаграммы работы
+	регистра: последовательный вход,
+	последовательный / параллельный выход</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" STYLE="text-indent: 0.49in; margin-bottom: 0.14in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3.2.2<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0.14in; line-height: 100%">
+			 <FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Параллельный
+			вход, последовательный / параллельный
+			выход. Вначале обнулим регистр и
+			установим </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">R</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>
+			= 1. Установим входы       </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3
+			= 1, </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2
+			= 0, </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1
+			= 1 и </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>0
+			= 1, а затем на вход РЕ подадим высокий
+			уровень напряжения и данные с  входов
+			</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3,
+			</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2,
+			</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1,
+			</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>0
+			запишутся в регистр. Теперь данные
+			доступны в параллельном виде на выходах
+			триггеров регистра. Подадим на
+			синхровход регистра импульсы
+			синхронизации и на выходе </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>0
+			получим выходные данные в последовательном
+			виде, рис. 7 .</FONT></FONT></FONT></FONT></P>
+			<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0.14in; line-height: 100%">
+			<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Повторить
+			п.3.2.1 и п.3.2.2 для входных данных 1101.
+			Построить временные диаграммы.</FONT></FONT></FONT></FONT></P>
+		</OL>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3b46667d.png" NAME="graphics108" ALIGN=BOTTOM WIDTH=622 HEIGHT=361 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Рис. 7
+	Временные диаграммы, поясняющие работу
+	регистра в режиме: последовательный
+	вход, последовательный / параллельный
+	выход.</FONT></FONT></P>
+	<P LANG="ru-RU" ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>3.3
+	   Исследование кольцевого счетчика.</B></FONT></FONT></FONT></FONT></P>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3.3.1
+	 На основе регистра сдвига рис 5
+	построить кольцевой счетчик. Для этого
+	соединить последовательный выход
+	регистра (выход </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>0)
+	с последовательным входом. </FONT></FONT></FONT></FONT>
+	</P>
+
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3.3.2
+	Для
+			исследования кольцевого счетчика
+			вначале обнулить регистр, затем
+			записать в него 0001 в параллельном виде
+			и подать синхроимпульсы. Результаты
+			наблюдения табулировать, табл. 1. </FONT></FONT></FONT></FONT>
+			</P>
+		</OL>
+	</OL>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+	<BR>
+	</P>
+	<P LANG="ru-RU" ALIGN=CENTER STYLE="margin-bottom: 0.14in; line-height: 100%">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m20fd5331.png" NAME="Рисунок 10" ALIGN=LEFT HSPACE=12 WIDTH=288 HEIGHT=214 BORDER=0></IMG></P><p><FONT SIZE=4 FACE="Times New Roman, serif">Таблица
+	1</FONT></P>
+
+	<P LANG="ru-RU" ALIGN=CENTER STYLE="margin-bottom: 0.14in; line-height: 100%">
+	<BR><BR><BR><BR><BR><BR>
+	</P>
+
+	<P LANG="ru-RU" STYLE="margin-bottom: 0.14in; line-height: 100%"><BR><BR>
+	</P>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3.3.3  Построить временные диаграммы работы кольцевого счетчика, сделать выводы.</FONT></FONT></FONT></FONT></P>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+	<OL START=3>
+		<OL START=4>
+			<LI><P LANG="ru-RU" ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%">
+			   <FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Исследование
+			счетчика Джонсона.</B></FONT></FONT></FONT></FONT></P>
+		</OL>
+	</OL>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+	<P LANG="ru-RU" STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4.4.1
+	 На основе регистра сдвига рис. 5
+	построить счетчик Джонсона. Для
+	построения счетчика Джонсона необходимо
+	соединить инверсный выход </FONT></FONT><FONT FACE="Times New Roman, serif">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_295535c8.gif" NAME="Object539" ALIGN=ABSMIDDLE WIDTH=32 HEIGHT=18></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>
+	с последовательным входом регистра.</FONT></FONT></FONT></FONT></P>
+	<P LANG="ru-RU" STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4.4.2  Для
+			исследования работы счетчика Джонсона
+			вначале обнулить регистр, а затем
+			подать синхроимпульсы. Результаты
+			наблюдений табулировать (табл. 7.1).</FONT></FONT></FONT></FONT></P>
+			<P LANG="ru-RU" STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 100%">
+	<FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4.4.3  Построить
+			временные диаграммы работы счетчика
+			Джонсона, сделать выводы.</FONT></FONT></FONT></FONT></P>
+
+	<P LANG="ru-RU" STYLE="margin-bottom: 0.14in; line-height: 100%"><BR><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<B>4. СОДЕРЖАНИЕ ОТЧЕТА</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.1  Цель работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.2  Схемы исследуемых в работе
+	устройств.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.3  Таблицы и временные диаграммы,
+	отражающие результаты   исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.4  Выводы по результатам
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>5.  КОНТРОЛЬНЫЕ  ВОПРОСЫ</B></P>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.1.  Объяснить работу регистров
+	во всех четырех режимах работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.2 . Как строить реверсивный
+	регистр сдвига?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.3 . Как строится кольцевой
+	счетчик?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.4 . Чему равен модуль счета
+	кольцевого счетчика?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.5 . Как строится счетчик Джонсона?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.6 .Чему равен модуль счета
+	счетчика Джонсона? </FONT>
+	</P>
+
+<p>	Литература: Будько Цифровые устройства (Минск БГУИР 2010) УДК 004.3*144(076) ББК 32.973.26-04 7
+Б90</p>
+ </div>
+ <BR><BR>
+<A HREF="../../../../Практика/practice..html">Практика</A><BR><BR>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

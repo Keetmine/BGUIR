@@ -1,0 +1,1864 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB5 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                 <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 5</b></p>
+ <div>
+<div class=WordSection5>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black;
+text-transform:uppercase'>Исследование многокаскадных усилителей</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black;
+text-transform:uppercase'>с обратными связями</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.
+Цель работы</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>1. Изучить виды обратных
+связей (ОС) и их влияние на основные параметры и характеристики усилителей.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.
+Определить влияние отрицательной обратной связи (ООС) на характеристики
+усилителей.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.
+Краткие теоретические сведения</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Многокаскадные
+усилители представляют собой  после­довательное соединение одиночных каскадов.
+Они используются для обеспечения требуемого коэффициента усиления. С целью
+изменения параметров и характеристик усилителя исполь­зуются обратные связи. Обратной
+связью<b> </b>в усилителях называют передачу всего или части выходного сигнала
+во входную цепь усилителя. Цепь, по кото­рой осуществляется передача сигнала
+ОС, называется цепью обратной связи. Петлей ОС называют замкнутый контур,
+включающий в себя цепь ОС и часть усилителя между точками ее подключения.
+Местной петлей ОС (местной ОС) называют ОС, охватывающую отдельные каскады или
+часть усилителя. Общая ОС охватывает весь усилитель.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><img
+width=244 height=175
+src="../../../../Практика/images/lb1/image094.jpg" align=left
+hspace=12><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>В зависимости от вида обратной связи, величины напряжения ОС, наличия
+или отсутствия в це­пи обратной связи частотно-зависимых элементов (в полосе
+пропускания усилителя без ОС) определяется влияние обратной связи на параметры
+усилителя.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='position:absolute;z-index:26;left:0px;margin-left:-249px;margin-top:
+69px;width:241px;height:60px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=241 height=60 style='vertical-align:top'><span style='position:
+  absolute;left:0pt;z-index:26'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+    color:black'>Рис. 1. Усилитель с обратной связью</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> Структурная схема усилителя с обратной связью представлена на
+рис. 1. Усилитель имеет в направле­нии, указанном стрелкой, коэффициент усиления:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=79
+height=55 src="../../../../Практика/images/lb1/image096.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Другим
+прямоугольником обозначена цепь ОС, имеющая коэффициент передачи </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:17.0pt'><img width=76 height=55
+src="../../../../Практика/images/lb1/image098.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+где </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=31 height=28
+src="../../../../Практика/images/lb1/image100.png"></span></span><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> – </span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>напряжение
+ОС, передаваемых с выхода усилителя на вход. </span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>Коэффициент <span
+style='position:relative;top:5.0pt'><img width=15 height=27
+src="../../../../Практика/images/lb1/image101.png"></span> показывает,
+какая часть выходного напряжения передается обратно на вход, поэтому его назы­вают
+коэффициентом обратной связи. </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><img width=304
+height=545 src="../../../../Практика/images/lb1/image102.jpg"
+align=left hspace=12><span style='position:absolute;z-index:21;left:0px;
+margin-left:-228px;margin-top:21px;width:86px;height:38px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=86 height=38 bgcolor=white style='vertical-align:top;background:
+  white'><span style='position:absolute;left:0pt;z-index:21'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;
+    font-family:"Times New Roman","serif"'>Рис. 1</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Обычно
+</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:5.0pt'><img width=49 height=27
+src="../../../../Практика/images/lb1/image104.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><i>,
+</i></span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>поэтому
+вместо нижнего усилителя можно применять пассивный линейный четырех</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>полюсник.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Коэффициент
+усиления усилителя <span style='position:relative;top:2.0pt'><img width=20
+height=23 src="../../../../Практика/images/lb1/image105.png"></span>и
+коэффициент передачи цепи ОС <span style='position:relative;top:5.0pt'><img
+width=15 height=27
+src="../../../../Практика/images/lb1/image101.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> в
+общем случае являются величинами комплексными, учитывающими возможный фазовый
+сдвиг на низких и высоких частотах за счёт наличия в схемах ре­активных
+элементов. При ра­боте в диапазоне средних час­тот, если в цепи ОС отсутст­вуют
+реактивные элементы, параметры </span><i><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'><span style='position:relative;
+top:2.0pt'><img width=20 height=23
+src="../../../../Практика/images/lb1/image105.png"></span></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=13 height=28
+src="../../../../Практика/images/lb1/image107.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> являются
+вещественными величинами.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='position:absolute;z-index:23;left:0px;margin-left:-275px;margin-top:
+162px;width:227px;height:53px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=227 height=53 bgcolor=white style='vertical-align:top;background:
+  white'><span style='position:absolute;left:0pt;z-index:23'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+    color:black'>Рис. 2. Способы получения обратной связи</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>Если напряжение </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=31 height=28
+src="../../../../Практика/images/lb1/image100.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> совпадает
+по фазе со входным напряжением </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=32 height=28
+src="../../../../Практика/images/lb1/image109.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> то
+в точке сравнения происходит сложе­ние сигналов, и ОС называют <b>положительной
+</b>(ПОС). Если </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=31 height=28
+src="../../../../Практика/images/lb1/image100.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=32 height=28
+src="../../../../Практика/images/lb1/image109.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> противофазны
+(&#966; = &#960;), то в точке сравнения происходит их вычитание и ОС называют <b>отрицательной.</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>По
+способу получения сигнала </span></b><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>обратной связи раз­личают: обратную
+связь по напряжению (рис. 2), когда сигнал обратной связи пропорционален
+выходному <b>напряжению </b></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=40 height=28
+src="../../../../Практика/images/lb1/image111.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>;<b><i>
+</i></b>ОС по току </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>(рис. 2),<b> </b>когда сигнал обратной связи пропор­ционален<b> </b>току
+исходной цепи </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:6.0pt'><img width=35 height=28
+src="../../../../Практика/images/lb1/image113.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>;
+комбинированную обратную связь (рис. 2), когда снимаемый сигнал ОС
+пропорционален как напряжению, так и току выходной цепи.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>По
+способу подачи сигнала ОС</span></b><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'> на вход усилителя различают: последо­вательную
+(рис.&nbsp;3) - напряжение ОС </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=28 src="../../../../Практика/images/lb1/image100.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>поступает
+последовательно с на­пряжением источника входного сигна­ла; параллельную (рис.
+3<b>) </b>- напряже­ние ОС </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=28 src="../../../../Практика/images/lb1/image100.png"></span></span><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>поступает
+параллельно с напряжением источника входного сиг­нала; смешанную (рис. 3).</span></p>
+
+<span style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Правило
+определения вида обратной связи: если при коротком за­мыкании нагрузки
+напряжение обрат­ной связи сохраняется, то осуществля­ется обратная связь по
+току; если же оно стремится к нулю, то осуществля­ется обратная связь по
+напряжению.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><img width=305
+height=664 src="../../../../Практика/images/lb1/image115.jpg"
+align=right hspace=12><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>В усилителях обычно используются каскады ОЭ, ОК, ОИ,
+ОС, следовательно, можно  определить вид ООС по способу подачи её сигналов во
+входную цепь. Если сигнал обратной связи поступает на эмиттер (или исток)
+транзистора, то связь последователь­ная, а если на базу (или затвор), то па­раллельная.
+Для определения вида об­ратной связи (ОСС, ПОС) необходимо просмотреть
+прохождение полуволны входного сигнала во всех точках схе­мы усилителя.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Отрицательная
+обратная связь позволяет улучшить некоторые пара­метры усилителя, поэтому она
+нашла на практике преимущественное применение. Оценку влияния обратной связи на
+показатели усилителя рассмотрим на примере схемы с последовательной обратной
+связью по напряжению (см. рис. 3).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Последовательная
+обратная связь по напряжению. </span></b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>На входе усилителя действует
+алгебраическое суммарное напряжение входного сигнала и напряжения&nbsp;ОС:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;line-height:normal;text-autospace:none'><span
+style='position:absolute;z-index:24;left:0px;margin-left:-288px;margin-top:
+27px;width:235px;height:56px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=235 height=56 bgcolor=white style='vertical-align:top;background:
+  white'><span style='position:absolute;left:0pt;z-index:24'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:
+    .0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman","serif";color:black'>Рис. 3. Способы
+    получения </span></p>
+    <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:
+    .0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman","serif";color:black'>обратной связи</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=236
+height=29 src="../../../../Практика/images/lb1/image117.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                            </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>(1)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Напряжение
+на выходе усилителя, охваченного обратной связью, равно</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=259
+height=29 src="../../../../Практика/images/lb1/image119.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                       (2)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Разделив
+обе части уравнения (1) на </span><span
+style='color:black'> <span style='position:relative;top:6.0pt'><img width=32
+height=28 src="../../../../Практика/images/lb1/image109.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+получим</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:16.0pt'><img width=105
+height=53 src="../../../../Практика/images/lb1/image122.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                                             (3)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Это
+соотношение, связывающее коэффициент усиления усилителя </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=28 src="../../../../Практика/images/lb1/image124.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+охваченного обратной связью, и усилителя без обратной связи, является основным
+соотношением в теории усилителей с обратной связью. Величину </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=33
+height=27 src="../../../../Практика/images/lb1/image126.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> характеризует
+усиление и характер петли обратной связи. Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=69
+height=28 src="../../../../Практика/images/lb1/image128.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> называют
+глубиной обратной связи. Глубина ОС показывает, во сколько раз изменится
+коэффициент усиления при введении в усилитель обратной связи.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Поскольку
+в общем случае </span><span
+style='color:black'><span style='position:relative;top:3.0pt'><img width=80
+height=25 src="../../../../Практика/images/lb1/image130.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=77
+height=28 src="../../../../Практика/images/lb1/image132.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+где </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=25
+height=19 src="../../../../Практика/images/lb1/image134.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>и <span
+style='position:relative;top:3.0pt'><img width=13 height=16
+src="../../../../Практика/images/lb1/image135.png"></span> фазовые
+сдвиги напряжения сигнала, вносимые соответственно усилителем и звеном обратной
+связи, выражение </span><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>(3) </span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>можно записать в
+виде:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=164
+height=56 src="../../../../Практика/images/lb1/image137.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                                          (4)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>При </span><span
+style='color:black'> <span style='position:relative;top:5.0pt'><img width=96
+height=23 src="../../../../Практика/images/lb1/image139.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>, </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=91
+height=27 src="../../../../Практика/images/lb1/image141.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+т.е. коэффициент обратной связи есть величина вещественная и отрицательная:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:16.0pt'><img width=105
+height=51 src="../../../../Практика/images/lb1/image143.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                                             (5)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Таким
+образом, если сигнал обратной связи поступает на вход усилителя в противофазе
+со входным сигналом, то коэффициент усиления усилителя уменьшается в </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=56
+height=23 src="../../../../Практика/images/lb1/image145.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>раз.
+Такую обратную связь называют отрицательной обратной связью</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>
+(ООС)</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>ООС
+ослабляет влияние всех изменений коэффициента усиления </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>K</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>, в том числе связанных с неравномерностью частотной
+характеристики; рас</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>ширяет полосу пропускания как в сторону низких, так и в сторону
+высоких частот<b>; </b>уменьшает частотные искажения. ООС уменьшает возникающие
+в усилителе нелинейные искажения. Если при ООС |</span><span
+style='font-family:"Times New Roman","serif";color:black'><span
+style='position:relative;top:5.0pt'><img width=33 height=27
+src="../../../../Практика/images/lb1/image126.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>|&gt;&gt;1,<b>
+</b></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>то говорят, что усилитель охвачен глубокой отрицательной обратной
+связью:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:16.0pt'><img width=127
+height=51 src="../../../../Практика/images/lb1/image147.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>                                        (6)</span></p>
+<p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:right;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>В
+этом случае коэффициент усиления усилителя определяется только коэффициентом
+передачи цепи обратной связи и не зависит от собственного коэффициента усиления
+усилителя <i>К</i>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Если
+величина </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=33
+height=23 src="../../../../Практика/images/lb1/image149.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>вещественная
+и положительная, то сигнал обратной связи совпадает по фазе со входным
+сигналом, усилитель охвачен положи­тельной обратной связью. Коэффициент
+усиления усилителя при этом воз­растает в 1–</span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=33
+height=23 src="../../../../Практика/images/lb1/image149.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>раз.
+При </span><span
+style='color:black'> <span style='position:relative;top:5.0pt'><img width=33
+height=23 src="../../../../Практика/images/lb1/image149.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>=1 в
+усилителе возникают условия для самовоз­буждения усилителя, охваченного
+положительной обратной связью. Такой режим работы нашел применение в
+генераторах напряжения.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Сущность
+самовозбуждения заключается в следующем: любой малый входной сигнал, вызванный
+наводками или колебаниями параметров актив­ных элементов, усиливается и
+возвращается обратно на вход усилителя. Суммируясь со входным сигналом, он вызывает
+появление большого входно­го сигнала. В реальных усилителях наступает ограничение
+выходного сигнала и появляются незатухающие колебания.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Положительная
+обратная связь, увеличивающая коэффициент усиле­ния, в электронных усилителях
+практически не применяется, так как при этом стабильность коэффициента усиления
+значительно ухудшается.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Для
+качественной оценки действия цепи обратной связи определим стабильность коэффициента
+усиления усилителя с обратной связью. Для этой цели продифференцируем выражение
+</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>(6):</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=293
+height=76 src="../../../../Практика/images/lb1/image151.png"></span></span><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span></b></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>тогда относительное
+изменение коэффициента усиления усилителя с отрица­тельной обратной связью
+определяется как:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=120
+height=52 src="../../../../Практика/images/lb1/image152.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>откуда следует, что относительное
+изменение коэффициента усиления усилителя с отрицательной обратной связью в (</span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=56
+height=23 src="../../../../Практика/images/lb1/image145.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>)
+раз меньше относительного<b> </b>изменения коэффициента<b> </b>усиления
+усилителя без обратной связи. При этом стабильность коэффициента усиления
+повышается с увеличением глубины обратной связи.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><img
+width=310 height=249
+src="../../../../Практика/images/lb1/image153.jpg" align=left
+hspace=12><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>Физический смысл повышения стабильности коэффициента усиления
+усилителя с отрицательной обратной связью заключается в том, что при из­менении
+коэффициента усиления усилителя <i>К</i> изменяется напряжение обрат­ной связи </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=25 src="../../../../Практика/images/lb1/image155.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Это приводит к изменению входного напряжения усилителя и препятствует изменению
+выходного напряжения. Стабильность коэффициен­та усиления усилителя при
+введении ООС широко используется для улучше­ния амплитудно-частотной характеристики
+усилителей переменного сигнала (рис. 4), при этом полоса пропускания усилителя
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&#916;<i>f</i></span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>&nbsp;</span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>расширяется. Входное
+сопротивление усилителя с обратной связью определяется как:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=169
+height=56 src="../../../../Практика/images/lb1/image157.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>Используя соотношение </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=124
+height=29 src="../../../../Практика/images/lb1/image159.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>
+получим</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> </span><span
+style='color:black'><span style='position:relative;top:9.0pt'><img width=153
+height=29 src="../../../../Практика/images/lb1/image161.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+т.е. входное сопротивление каскада при последователь­ной обратной связи по напряжению
+возрастает в </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=56
+height=23 src="../../../../Практика/images/lb1/image145.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>раз,
+а положительная обратная связь уменьшает его в </span><span
+style='color:black'><span style='position:relative;top:5.0pt'><img width=56
+height=23 src="../../../../Практика/images/lb1/image145.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>раз.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>Выходное сопротивление
+усилителя, охваченного обратной связью, оп­ределяется выражением:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=307
+height=52 src="../../../../Практика/images/lb1/image163.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span></p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='position:absolute;
+z-index:22;left:0px;margin-left:-206px;margin-top:24px;width:81px;height:40px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=81 height=40 bgcolor=white style='vertical-align:top;background:
+  white'><span style='position:absolute;left:0pt;z-index:22'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;
+    font-family:"Times New Roman","serif"'>Рис</span>. 4</p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>из которого видно, что выходное сопротивление усилителя,
+охваченного ООС, уменьшается, улучшая ценные свойства для оконечных каскадов
+усилителя; обеспечивается меньшая зависимость выходного напряжения усилителя
+при изменении сопротивления нагрузки, усилитель приближается к идеальному источнику
+напряжения.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>Выводы: последовательная ООС
+по входу увеличивает </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>, а
+параллель­ная – уменьшает. ООС по напряжению уменьшает выходное сопротивление,
+а ООС по току – увеличивает.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.
+Методические указания по выполнению лабораторной работы</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Исследование
+амплитудной характеристики усилителя проводится на фиксированной частоте
+входного сигнала (</span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц) с использованием Программы компьютерного моделирование электронных схем Multisim (приборы: функциональный генератор сигналов (Function Generator), осциллограф (Oscilloscope)) согласно структурной схеме, которая представлена на рис. 5.</span></p> <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><img width=560 height=121
+src="../../../../Практика/images/lb1/image166.jpg"></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+5. Структурная схема измерительной установки</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Исследование
+амплитудно-частотной характеристики</span></b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'> проводится при фиксированном
+уровне входного сигнала, выбранном на линейном уча­стке АХ </span><span
+style='color:black'><span style='position:relative;top:7.0pt'><img width=193
+height=28 src="../../../../Практика/images/lb1/image167.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> с
+использованием измерительной установки, структурная схема которой представлена
+на рис. 5. Для упрощения вычисле­ний коэффициента усиления по напряжению
+желательно выбрать круглое значение амплитуды напряжения входного сигнала.
+Например: 1 мВ, 5 мВ, 10 мВ. Исследуемые усилительные каскады имеют полосу пропускания
+в не­сколько декад (декада – изменение чего-либо в десять раз, в данном случае
+частоты). Поэтому при построении графиков АЧХ необходимо по оси частот использовать
+логарифмический масштаб. При снятии АЧХ в области средних частот, где коэффициент
+усиления практически не изменяется, измерения не­обходимо проводить в
+трех...пяти точках на каждую декаду. Например: 100, 300, 500, 700 Гц; 1,2, 3,
+5, 7 кГц и т.д. Значения нижней и верхней граничных частот (</span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=21
+height=25 src="../../../../Практика/images/lb1/image168.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=21
+height=25 src="../../../../Практика/images/lb1/image170.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>)
+необходимо определять по уменьшению коэффициента усиле­ния в </span><span
+style='color:black'><span style='position:relative;top:4.0pt'><img width=29
+height=27 src="../../../../Практика/images/lb1/image172.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>раз
+по сравнению с максимальным значением коэффициента усиле­ния в области средних
+частот. Заключительным этапом исследования АЧХ является определение полосы
+пропускания усилителя:</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black;position:relative;top:6.0pt'> </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black;position:relative;top:6.0pt'><img
+width=96 height=26
+src="../../../../Практика/images/lb1/image173.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Измерение
+входного и выходного сопротивлений</span></b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'> усилителя проводится на фиксированной
+частоте </span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>входного </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>сигнала (</span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц) при уровне входного сигнала, соответствующем линейному участку АХ. Измерительная<b>
+</b>установка собирается согласно структурной схеме, представленной на рис.
+6.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=623
+height=240 src="../../../../Практика/images/lb1/image174.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+6. Измерительная установка для вычисления входного и выходного напряжений</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Входное
+сопротивление </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> измеряется
+косвенным методом. Добавоч­ный резистор </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>R</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> на
+входе усилителя и входное сопротивление усилительного каскада </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> образуют
+делитель напряжения, для которого можно записать:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=113
+height=52 src="../../../../Практика/images/lb1/image071.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>где </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=24 height=25
+src="../../../../Практика/images/lb1/image177.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> – напряжение на выходе генератора низких частот (до резистора </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>R</span></i><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>);</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=32 height=25
+src="../../../../Практика/images/lb1/image179.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> </span><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>– напряжение непосредственно на входе
+усилителя.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>Необходимо изме­рить
+напряжения </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=24 height=25
+src="../../../../Практика/images/lb1/image177.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>  и </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=32 height=25
+src="../../../../Практика/images/lb1/image179.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>, а входное сопротивление рассчитать но формуле:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=119
+height=52 src="../../../../Практика/images/lb1/image181.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Если
+</span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> усилителя
+велико и соизмеримо со входным сопротивлением вольтметра, измеряют выходное
+напряжение </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=52
+height=25 src="../../../../Практика/images/lb1/image183.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>при наличии </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";font-variant:small-caps;color:black'>R</span></i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+font-variant:small-caps;color:black'> </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>и при его отсут­ствии </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=51
+height=25 src="../../../../Практика/images/lb1/image185.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>. В
+этом случае входное сопротивление рассчитывается по формуле:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:17.0pt'><img width=164
+height=52 src="../../../../Практика/images/lb1/image187.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Выходное
+сопротивление </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> также
+измеряется косвенным методом, согласно которому проводятся измерения выходных
+напряжений </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=45
+height=25 src="../../../../Практика/images/lb1/image191.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=47
+height=25 src="../../../../Практика/images/lb1/image193.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>при двух<span style='font-variant:small-caps'> </span>известных
+сопротивлениях нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=28
+height=25 src="../../../../Практика/images/lb1/image195.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image196.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>соответствен­но.
+Значение выходного сопротивления рассчитывается по формуле:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:39.0pt'><img width=235
+height=84 src="../../../../Практика/images/lb1/image199.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>Если </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=61
+height=25 src="../../../../Практика/images/lb1/image201.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> (нагрузка
+отсутствует), то:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><span style='position:relative;top:20.0pt'><img width=337
+height=59 src="../../../../Практика/images/lb1/image203.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.
+Порядок выполнения работы</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.&nbsp;Исследовать
+влияние местной последовательной отрицательной об­ратной связи по току на
+основные характеристики и параметры двухкаскадного усилителя на биполярных
+транзисторах с ОЭ.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.1.&nbsp;Собрать
+двухкаскадный усилитель по схеме, приведенной на рис. 2.7, используя следующие
+значения параметров элементов схемы: VT – КТ315Б, <i>R</i><sub>1</sub>&nbsp;=&nbsp;9,1
+кОм, <i>R</i><sub>2</sub> = 1,5 кОм, <i>R</i><sub>К</sub> = 1 кОм, <i>R</i><sub>Э</sub>
+= 100 Ом, <i>C</i></span><sub><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>P&nbsp;</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> =
+10 мкФ, <i>C</i></span><sub><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>P&nbsp;</span></sub><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> =
+4,7 мкФ, <i>C</i><sub>Э</sub> = 100 мкФ, <i>R</i><sub>Н</sub> = 1 кОм , <i>R</i>
+= 51 Ом, <i>U</i><sub>ИП</sub> = 10 В. Напряжение питания
+контролировать вольтметром постоянного тока - мультиметр (Multimeter).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=527
+height=208 src="../../../../Практика/images/lb1/image204.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+2.7. Схема двухкаскадного усилителя</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.2.&nbsp;Подключить
+измерительные приборы (генератор </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>низкочастотных
+сигналов,</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> осциллограф</span><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>)</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>
+согласно схеме на рис.&nbsp;5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.3.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f&nbsp;</span></i><span style='color:black'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>= 1
+кГц для двух значений сопротивления нагрузки </span><i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>Н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+font-variant:small-caps;color:black'>. </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+поначалу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осцилло­графа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.4.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=27
+height=25 src="../../../../Практика/images/lb1/image210.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>при напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Опреде­лить полосу пропускания усилителя.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.5.&nbsp;Рассчитать
+входное </span><span style='color:black'><span style='position:relative;
+top:6.0pt'><img width=29 height=25
+src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя на частоте входного сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц, установив напряжение входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующего линейному участку АХ, измеренной в области средних частот.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.6.&nbsp;В
+первый усилительный каскад ввести местную последовательную отрицательную
+обратную связь по току. Для этого из схемы необходимо исключить конденсатор </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=25 src="../../../../Практика/images/lb1/image213.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+шунтирующий резистор </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=25 src="../../../../Практика/images/lb1/image215.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.7.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>&nbsp;&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>= 1
+кГц для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>  </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+по началу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осциллографа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя. Сравнить полученные результаты с результатами
+п. 1.3.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.8.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Опреде­лить полосу пропускания усилителя.
+Сравнить полученные результаты с ре­зультатами п. 1.4.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.9.&nbsp;Рассчитать
+входное</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя на частоте входного сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц, установив напряжение входного сиг­нала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=33
+height=25 src="../../../../Практика/images/lb1/image218.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующее линейному участку АХ, измеренной в области средних частот.
+Сравнить полученные результаты с результатами п.1.5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.&nbsp;Исследовать
+влияние общей последовательной отрицательной обрат­ной связи по напряжению на
+основные характеристики и параметры двухкаскадного усилителя на биполярных
+транзисторах с ОЭ.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.1&nbsp;Собрать
+двухкаскадный усилитель с общей последовательной отрица­тельной обратной связью
+по напряжению по схеме, приведенной на рис. 8: VT&nbsp;–&nbsp;КТ315Б, <i>R</i><sub>1</sub>
+= 9,1 кОм, <i>R</i><sub>2</sub> = 1,5 кОм, <i>R</i><sub>К</sub> = 1 кОм, <i>R</i><sub>Э</sub>
+= 100 Ом, <i>C</i><sub>р1</sub>&nbsp;=&nbsp;10&nbsp;мкФ, <i>C</i><sub>р2 </sub>=
+4,7 мкФ,<i> C</i><sub>р3</sub>&nbsp;=&nbsp;10&nbsp;мкФ,  <i>C</i><sub>Э</sub> =
+100 мкФ, R<sub>н</sub> = 1 кОм, <i>R</i> = 51 Ом, <i>U</i><sub>ИП</sub> = 10 В.
+Напряжение питания
+контролировать вольтметром постоянного тока - мультиметр (Multimeter).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.2.&nbsp;Подключить
+измерительные приборы (</span><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>генератор низкочастотных
+сигналов, осциллограф</span><span lang=X-NONE style='font-size:28.0pt;
+font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>согласно
+схеме на рис. 5).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.3.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;=&nbsp;1&nbsp;кГц для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+поначалу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осцилло­графа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя. Сравнить полученные результаты с результатами
+п. 1.7.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=501
+height=260 src="../../../../Практика/images/lb1/image219.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+8. Схема двухкаскадного усилителя с общей последовательной </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>отрицательной
+обратной связью по напряжению</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.4.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Опреде­лить полосу пропускания усилителя.
+Сравнить полученные результаты с ре­зультатами п.1.8.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.5.&nbsp;Измерить
+входное </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=29 height=25
+src="../../../../Практика/images/lb1/image165.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> и выходное </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=39 height=25
+src="../../../../Практика/images/lb1/image189.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+font-variant:small-caps;color:black'> </span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>сопротивления
+усилителя на частоте входного сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> = 1 кГц, установив напряжение входного сигнала </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'><span style='position:relative;top:6.0pt'><img width=32 height=25
+src="../../../../Практика/images/lb1/image179.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>, соответствующее линейному участку АХ, измеренной в области
+средних частот. Сравнить полученные результаты с результатами п. 1.9.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.&nbsp;Исследовать
+влияние местной последовательной отрицательной обратной связи по току на
+основные характеристики и параметры трехкаскадного усилителя на биполярных
+транзисторах с ОЭ.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.1.&nbsp;Собрать
+</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>трех</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>каскадный усилитель по схеме, приведенной на рис. 9
+VT&nbsp;–&nbsp;КТ315Б, <i>R</i><sub>1</sub> = 9,1 кОм, <i>R</i><sub>2</sub> =
+1,5 кОм, <i>R</i><sub>К</sub> = 1 кОм, <i>R</i><sub>Э</sub> = 100 Ом, <i>C</i><sub>р1</sub>&nbsp;=&nbsp;10&nbsp;мкФ,
+<i>C</i><sub>р2</sub> = 4,7 мкФ,<i> C</i><sub>р3</sub>&nbsp;=&nbsp;10&nbsp;мкФ,
+<i>C</i><sub>р4</sub> = 4,7 мкФ,  <i>C</i><sub>Э</sub> = 100 мкФ, R<sub>н</sub>
+= 1 кОм, <i>R</i> = 51 Ом, <i>U</i><sub>ИП</sub> = 10 В. Напряжение питания
+контролировать вольтметром постоянного тока - мультиметр (Multimeter).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.2.&nbsp;Подключить
+измерительные приборы (генератор </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>низкочастотных
+сигналов, </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>осциллограф согласно схеме на рис. 5.).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.3.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;=&nbsp;1&nbsp;кГц для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+по началу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осциллографа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=535
+height=192 src="../../../../Практика/images/lb1/image220.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+9. Схема </span><span lang=X-NONE style='font-size:12.0pt;font-family:"Times New Roman","serif";
+color:black'>трех</span><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+color:black'>каскадного усилителя</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:normal;text-autospace:none'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.4.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Определить полосу пропускания усилителя.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.5.&nbsp;Измерить
+входное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя на частоте входного сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц, установив напряжение входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующее линейному участку АХ, измеренной в области средних частот.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.6.&nbsp;В
+первый и третий усилительный каскады ввести местную последова­тельную
+отрицательную обратную связь по току. Для этого из схемы необходи­мо исключить
+конденсаторы </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=25 src="../../../../Практика/images/lb1/image213.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=33
+height=25 src="../../../../Практика/images/lb1/image222.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+шунтирующие резисторы </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=31
+height=25 src="../../../../Практика/images/lb1/image215.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image225.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.7.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;</span><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>&nbsp;</span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>=&nbsp;1&nbsp;кГц для
+двух значений сопротивления нагрузки </span><span style='color:black'><span
+style='position:relative;top:6.0pt'><img width=24 height=25
+src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+по началу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осцилло­графа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя. Сравнить полу­ченные результаты с результатами
+п. 3.3.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.8.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>результатами выполнения предыдущего пункта). Опреде­лить полосу
+пропускания усилителя. Сравнить полученные результаты с ре­зультатами п.3.4. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.9.&nbsp;Измерить
+входное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя на чистоте входного сигмами </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц, установив напряжение входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующее линейному участку АХ измеренной в области средних частот.
+Сравнить полученные результаты с результатами п.3.5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.
+Исследовать влияние общей параллельной отрицательной обратной связи по напряжению
+па основные характеристики и параметры трехкаскадного усилителя на биполярных
+транзисторах с ОЭ.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.1.&nbsp;Собрать
+трехкаскадный усилитель с общей параллельной отрицатель­ной обратной связью по
+напряжению по схеме, приведенной на рис. 10. </span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>VT – КТ315Б, <i>R</i><sub>1</sub>
+= 9,1 кОм, <i>R</i><sub>2</sub> = 1,5 кОм, <i>R</i><sub>К</sub> = 1 кОм, <i>R</i><sub>Э</sub>
+= 100 Ом, <i>C</i><sub>р</sub> = 10 мкФ, <i>C</i><sub>2</sub>&nbsp;=</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>4,7 мкФ, <i>C</i><sub>Э</sub> = 100 мкФ, </span><span
+style='color:black;position:relative;top:6.0pt'><img width=92 height=26
+src="../../../../Практика/images/lb1/image227.png"></span><span
+style='color:black'>,</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> <i>R</i> = 51 Ом, <i>R</i><sub>ос </sub>= 25 кОм, <i>C</i></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>ос</span></sub><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";color:black'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>= 10
+мкФ, <i>U</i><sub>ИП</sub>&nbsp;=&nbsp;10&nbsp;В.</span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'> Напряжение питания
+контролировать вольтметром постоянного тока - мультиметр (Multimeter).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><img width=518
+height=210 src="../../../../Практика/images/lb1/image228.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+10. Схема трёхкаскадного усилителя с общей параллельной </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>отрицатель­ной
+обратной связью по напряжению<b> </b></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.2.&nbsp;Подключить
+измерительные приборы (генератор </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>низкочастотных
+сигналов, </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>осциллограф) согласно схеме, приведённой на рис. 5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.3.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;=&nbsp;1&nbsp;кГц для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> определять
+по началу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осцилло­графа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя. Сравнить полу­ченные результаты с результатами
+п. 3.3.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.4.&nbsp;Снять
+АЧХ усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Опреде­лить полосу пропускания усилителя.
+Сравнить полученные результаты с ре­зультатами п. 3.4.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.5.&nbsp;Измерить
+входное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя </span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>при </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>частоте входною сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> = 1
+кГц, установив напряжение входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующее линейному участку АХ, измеренной в области средних частот.
+Сравнить полученные результаты с результатами п. 3.5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.&nbsp;Исследовать
+влияние общей последовательной отрицательной обрат­ной связи по току на
+основные характеристики и параметры трехкаскадного усилителя на биполярных
+транзисторах с ОЭ.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.1.&nbsp;Собрать
+трехкаскадный усилитель с общей последовательной от­рицательной обратной связью
+по току по схеме, приведенной на рис. 11. Ус­тановить номинальное напряжение
+питания усилителя </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=37
+height=25 src="../../../../Практика/images/lb1/image231.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> =
+10 В. Напряжение питания
+контролировать вольтметром постоянного тока - мультиметр (Multimeter).</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.2.&nbsp;Подключить
+измерительные приборы (генератор </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";color:black'>низкочастотных
+сигналов, </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>осциллограф) согласно схеме, приведённой на рис. 5.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.3.&nbsp;Снять
+АХ усилителя на частоте синусоидального входного сигнала </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>f</span></i><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>&nbsp;=&nbsp;1&nbsp;кГц для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>.
+Величину </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=57
+height=25 src="../../../../Практика/images/lb1/image207.png"></span></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>определять
+по началу видимых искажений (ограничению синусоиды) выход­ного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+что легко контролируется визуально с помощью осцилло­графа. Рассчитать
+коэффициенты усиления по напряжению для линейного участка АХ и определить
+динамический диапазон усилителя. Сравнить полученные результаты с результатами
+п.</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+color:black'>3.7.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='color:black'><img width=538 height=234
+src="../../../../Практика/images/lb1/image232.jpg"></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>Рис.
+11. Схема трехкаскадного усилителя с общей последовательной </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";color:black'>отрицательной
+обратной связью по току</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>5.4.&nbsp;Снять АЧХ
+усилителя для двух значений сопротивления нагрузки </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=24
+height=25 src="../../../../Практика/images/lb1/image216.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> при
+напряжении входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>,
+соответствующем линейному уча­стку АХ, измеренной в области средних частот
+(воспользоваться для опреде­ления значения </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> результатами
+выполнения предыдущего пункта). Опреде­лить полосу пропускания усилителя.
+Сравнить полученные результаты с ре­зультатами п. 3.8.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>5.5.&nbsp;Измерить входное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и
+выходное </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> сопротивления
+усилителя на частоте входного сигнала </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>f</span></i><span
+lang=EN-US style='color:black'> </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>= 1 кГц, установив
+напряжение входного сигнала </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=33
+height=25 src="../../../../Практика/images/lb1/image218.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>, соответствующее
+линейному участку АХ, измеренной в области средних частот. Сравнить полученные
+результаты с результатами п. 3.9.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.
+Содержание отчета</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.&nbsp;Схемы
+измерительных установок.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.&nbsp;Принципиальные
+схемы исследуемых усилителей.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.&nbsp;Табличные
+и графические результаты исследования АХ каскадов.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.&nbsp;Табличные
+и графические результаты исследования АЧХ каскадов.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.&nbsp;Сводная
+таблица с результатами измерений входных и выходных со­противлений каскадов.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>6.&nbsp;Анализ
+полученных результатов: влияние сопротивления нагрузки, на­личия местной и
+общей ОС на параметры и характеристики усилителей; сравне­ние входных и выходных
+сопротивлений исследованных каскадов.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>6.
+Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>1.&nbsp;Что
+такое обратная связь, и как она влияет на характеристики и па­раметры усилителя?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>2.&nbsp;Что
+такое петля ОС, усиление петли связи (петлевое усиление), глу­бина ОС?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>3.&nbsp;Чем
+отличаются местная и общая ОС, параллельная и последова­тельная ОС, отрицательная
+и положительная ОС, ОС по току и напряжению?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>4.&nbsp;Как
+определить в практической схеме усилителя обратную связь по току и напряжению,
+параллельную и последовательную ОС?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>5.&nbsp;Как
+влияет параллельная ООС по напряжению на полосу пропуска­ния, </span><span
+style='color:black'> <span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'>? </span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>Как это согласуется с экспериментальными
+результатами?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>6.&nbsp;Как
+влияет последовательная ООС по напряжению на полосу пропус­кания, </span><span
+style='color:black'> <span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";font-variant:
+small-caps;color:black'>? </span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";color:black'>Как это согласуется с экспериментальными
+результатами?</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;text-autospace:none'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>7.&nbsp;Как
+влияет местная последовательная ООС по току на полосу пропус­кания, </span><span
+style='color:black'> <span style='position:relative;top:6.0pt'><img width=29
+height=25 src="../../../../Практика/images/lb1/image165.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'> и </span><span
+style='color:black'><span style='position:relative;top:6.0pt'><img width=39
+height=25 src="../../../../Практика/images/lb1/image189.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";color:black'>?
+Как это согласуется с экспериментальными результатами?</span></p>
+
+</div>
+
+ </div>
+				<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

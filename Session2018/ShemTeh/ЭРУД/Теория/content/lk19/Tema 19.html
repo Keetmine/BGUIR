@@ -1,0 +1,2744 @@
+<!-- (C) 2015 08 Rozum Halina, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Tema 19 &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный
+        ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;ИНЖЕНЕРНО-ПСИХОЛОГИЧЕСКОЕ ОБЕСПЕЧЕНИЕ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+  <A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+              <strong>Теория</strong> |
+    <A HREF="../../../Практика/practice.html">Практика</A>|
+    <A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+  <A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<div style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+
+        <A HREF="../../../Теория/theory.html">Содержание</A>
+      <div> <p><span>Раздел 2. Схемотехнические решения <o:p></o:p></span></p> <p><span>Тема 19</span><span><o:p></o:p></span></p>  <p style="text-align: center;"><strong><span>Программируемые
+логические интегральные схемы<o:p></o:p></span></strong></p>
+
+<ol>
+<li><a href="#_T1">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Введение.<o:p></o:p></span></a></li>
+<li><a href="#_T2">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классификация схем PLD. <o:p></o:p></span></a></li>
+<li><a href="#_T3">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Основные структуры CPLD и FPGA. <o:p></o:p></span></a></li>
+<li><a href="#_T4">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Основные свойства PLD</span></a></li>
+<li><a href="#_T5">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выбор архитектуры PLD</span></a></li>
+<li><a href="#_T6">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Методика проектирования на основе PLD. <o:p></o:p></span></a></li>
+<li><a href="#_T7">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Программирование PLD</span></a></li>
+<li><a href="#_T8">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Видео материал</span></a></li>
+
+</ol>
+
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T1"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>1 Введение. ПРОГРАММИРУЕМЫЕ ЛОГИЧЕСКИЕ ИНТЕГРАЛЬНЫЕ
+СХЕМЫ</span></b></a></span><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>История развития программируемой логики начинается с появления
+программируемых постоянных запоминающих устройств (ППЗУ - <span class=SpellE>Programmable</span>
+<span class=SpellE>Read</span> <span class=SpellE>Only</span> <span
+class=SpellE>Memory</span> - PROM) в начале 70-х годов. Первое время PROM
+использовались исключительно для хранения данных, позже их стали применять для
+реализации логических функций. Неудобство использования PROM в качестве
+логических преобразователей заключается в том, что логические функции перед
+записью в PROM необходимо приводить к совершенной дизъюнктивной нормальной
+форме (СДНФ), кроме того, емкость PROM не позволяла реализовать функции
+большого числа переменных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Специально для реализации систем булевых функций (СБФ) большого числа
+переменных были разработаны и с <st1:metricconverter ProductID="1971 г" w:st="on">1971
+ г</st1:metricconverter>. стали выпускаться промышленностью программируемые
+логические матрицы (ПЛМ - <span class=SpellE>Programmable</span> <span
+class=SpellE>Logic</span> <span class=SpellE>Arrays</span> - <span
+class=SpellE>PLAs</span>). Именно PLA можно считать первыми программируемыми
+логическими устройствами (<span class=SpellE>Programmable</span> <span
+class=SpellE>Logic</span> <span class=SpellE>Devices</span> - PLD). PLA
+получили очень широкое распространение в качестве универсальной элементной
+базы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Совершенствование архитектуры PLA привело к появлению программируемых
+матриц логики (<span class=SpellE>Programmable</span> <span class=SpellE>Array</span>
+<span class=SpellE>Logics</span> - <span class=SpellE>PALs</span>), которые на
+долгие годы определили наиболее популярную архитектуру PLD. Первые PAL были
+разработаны фирмой <span class=SpellE>Monolithic</span> <span class=SpellE>Memories</span>
+в 1976 году. Позже фирма <span class=SpellE>Monolithic</span> <span
+class=SpellE>Memories</span> вошла в состав фирмы <span class=SpellE>Advanced</span>
+<span class=SpellE>Micro</span> <span class=SpellE>Devices</span> (AMD),
+которая начала производить PAL c 1977 года. Сейчас аббревиатура PAL является
+торговой маркой фирмы AMD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>С момента своего появления PAL стали успешно конкурировать с PLA и в
+настоящее время благодаря ряду присущих им положительных свойств практически
+полностью вытеснили программируемые пользователем PLA.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Дальнейшее совершенствование технологии производства интегральных схем,
+повышение степени интеграции, успехи в создании корпусов с большим числом
+внешних выводов в начале 90-х годов привели к возможности реализации на одном
+кристалле нескольких PAL, объединяемых программируемыми соединениями. Подобные
+архитектуры получили название сложных PLD (<span class=SpellE>Complex</span>
+PLD - CPLD), соответственно все разработанные ранее PLD стали называть
+стандартными PLD (<span class=SpellE>Standart</span> PLD - SPLD) или
+классическими PLD (<span class=SpellE>Classic</span> PLD).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Основу всех рассмотренных выше устройств составляют программируемые
+матрицы. Поэтому эти устройства еще называют программируемыми логическими
+устройствами, имеющими матричную структуру.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Параллельно с PLD также развивались архитектуры вентильных матриц (<span
+class=SpellE>Gate</span> <span class=SpellE>Array</span> - GA) или матриц
+логических ячеек (<span class=SpellE>Logic</span> <span class=SpellE>Cell</span>
+<span class=SpellE>Array</span> - LCA), в русскоязычной литературе получившие
+название базовых матричных кристаллов (БМК). Первые вентильные матрицы были <span
+class=SpellE>полузаказными</span>, т.е. программировались во время
+изготовления, что сдерживало их широкое практическое использование. Однако в
+1985 году фирма <span class=SpellE>Xilinx</span> выпустила программируемую
+пользователем вентильную матрицу (<span class=SpellE>Field</span> <span
+class=SpellE>Programmable</span> <span class=SpellE>Gate</span> <span
+class=SpellE>Array</span> - FPGA). Это дало сильный толчок к широкому
+распространению вентильных матриц и конкуренции их с PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>В русскоязычной литературе нет четкого разделения между PLD, PAL, PLA,
+SPLD, CPLD и FPGA. Чаще всего все эти устройства называют программируемыми
+логическими интегральными схемами (ПЛИС). Кроме того, в русскоязычной
+литературе можно встретить следующую терминологию: программируемые логические
+устройства (ПЛУ) - для обозначения PLD, программируемые логические матрицы
+(ПЛМ) - для обозначения PLA, программируемые матрицы логики (ПМЛ)<span
+style='mso-tab-count:1'>    </span>- для обозначения PAL,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>программируемые логические интегральные схемы (ПЛИС) - для обозначения
+CPLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+bold'>Таблица 1 - Тенденции развития CPLD и FPGA<o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-overlap:never;mso-yfti-tbllook:160;
+ mso-padding-alt:0cm .5pt 0cm .5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:27.35pt'>
+  <td width=171 valign=top style='width:128.4pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:27.35pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Параметры<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:27.35pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1985<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:27.35pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1990<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:27.35pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1995<o:p></o:p></span></p>
+  </td>
+  <td width=115 style='width:85.9pt;border:solid windowtext 1.0pt;border-bottom:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;background:white;padding:0cm .5pt 0cm .5pt;
+  height:27.35pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>2000<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:26.15pt'>
+  <td width=171 valign=top style='width:128.4pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:26.15pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Стоимость<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:26.15pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>—<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:26.15pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>&gt;500$<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:26.15pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>&lt;50$<o:p></o:p></span></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:26.15pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>&lt;5$<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:25.7pt'>
+  <td width=171 valign=top style='width:128.4pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Число вентилей<o:p></o:p></span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>800<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>5.000<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>50.000<o:p></o:p></span></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>500.000<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:25.9pt'>
+  <td width=171 valign=top style='width:128.4pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Число выводов<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>64<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>256<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>500<o:p></o:p></span></p>
+  </td>
+  <td width=115 style='width:85.9pt;border:solid windowtext 1.0pt;border-bottom:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;background:white;padding:0cm .5pt 0cm .5pt;
+  height:25.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1000<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:25.7pt'>
+  <td width=171 valign=top style='width:128.4pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Число транзисторов<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>85k<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>2M<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>6M<o:p></o:p></span></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:25.7pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>225M<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:26.9pt'>
+  <td width=171 valign=top style='width:128.4pt;border:solid windowtext 1.0pt;
+  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:26.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Задержка (<span class=SpellE>min</span>)<o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid windowtext 1.0pt;
+  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:26.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>40 <span class=SpellE>нс</span><o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid windowtext 1.0pt;
+  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:26.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>15 <span class=SpellE>нс</span><o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid windowtext 1.0pt;
+  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:26.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>3,5 <span class=SpellE>нс</span><o:p></o:p></span></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:white;padding:0cm .5pt 0cm .5pt;
+  height:26.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1,5 <span class=SpellE>нс</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В настоящее время наблюдается бурное
+развитие архитектур CPLD и FPGA (каждый год появляются новые поколения этих
+устройств), сближение их архитектур, приобретение ряда общих свойств, снижения
+стоимости, повышение быстродействия и функциональной мощности (табл.1). Анализ
+тенденции развития архитектур программируемой логики позволяет предположить,
+что в ближайшие пять лет основу элементной базы цифровых систем будут
+составлять CPLD и FPGA. Преимущество использования программируемой логики в
+цифровых системах становится особенно очевидным, когда необходимо быстро
+разработать опытный образец изделия или предполагаются частые корректировки
+проекта в процессе его разработки.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a name="_T2"><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>2.
+КЛАССИФИКАЦИЯ СХЕМ PLD<o:p></o:p></span></b></a></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Прежде, чем рассматривать возможные
+классификации программируемой логики, покажем ее место в общей структуре
+элементной базы цифровых систем (рис.1). Все
+выпускаемые в настоящее время интегральные схемы (ИС - <span class=SpellE>Integrated</span>
+<span class=SpellE>Circuits</span> - <span class=SpellE>ICs</span>) можно
+разделить на два противоположных класса: стандартные (<span class=SpellE>Standard</span>
+<span class=SpellE>Products</span>) и специализированные (<span class=SpellE>Application</span>
+<span class=SpellE>Specific</span> <span class=SpellE>Integrated</span> <span
+class=SpellE>Circuits</span> - ASIC). Стандартные ИС, как правило,
+разрабатываются по инициативе производителя и выпускаются большими тиражами.
+Это микросхемы памяти, микропроцессорные комплекты и др. К ним также можно
+отнести элементы малой и средней степени интеграции: вентили, регистры,
+шифраторы, дешифраторы, мультиплексоры и т.д.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Однако, как бы не была широка
+номенклатура стандартных ИС, последние не могут охватить все потребности
+разработчиков цифровой техники. Поэтому значительный объем производства
+составляют специализированные ИС. Их принято делить на три класса:<span
+style='mso-tab-count:1'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l8 level1 lfo27'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>полностью<span
+style='mso-tab-count:1'>     </span>заказные<span style='mso-tab-count:1'>        </span>(<span
+class=SpellE>Full</span> <span class=SpellE>Custom</span>), <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l8 level1 lfo27'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span class=SpellE><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>полузаказные</span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> (<span
+class=SpellE>Semi-Custom</span>) и<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l8 level1 lfo27'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>программируемые
+пользователем(<span class=SpellE>Field</span> <span class=SpellE>Programmable</span>).<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=689 height=292
+src="Tema%2019.files/image002.jpg" v:shapes="_x0000_i1025"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 1 - Общая
+классификация современной элементной базы цифровых систем<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Разработка полностью заказных ИС
+охватывает полный цикл проектирования. При этом наблюдается наибольшая степень
+использования площади кристалла и достигаются наилучшие характеристики
+устройства. Время разработки и подготовка производства полностью заказной ИС
+может составлять несколько лет, что влечет значительное удорожание изделия
+(рис.2), компенсируемое большими объемами его производства.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=588 height=369
+src="Tema%2019.files/image004.jpg" v:shapes="_x0000_i1026"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 2 -
+Зависимость стоимости и времени разработки проекта от элементной базы<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Базовые структуры <span class=SpellE>полузаказных</span>
+ИС производятся массовыми тиражами, а их специализация выполняется на последних
+этапах изготовления ИС. Это позволяет значительно снизить стоимость устройства.
+Однако, поскольку разработка <span class=SpellE>полузаказных</span> ИС
+неизбежно связана с передачей информации с описанием устройства от пользователя
+производителю, время разработки цифровых устройств (ЦУ) колеблется от
+нескольких недель до нескольких месяцев. Типичными представителями <span
+class=SpellE>полузаказных</span> ИС являются микросхемы стандартных ячеек (<span
+class=SpellE>Standard</span> <span class=SpellE>Cells</span> - SC) и вентильных
+матриц (<span class=SpellE>Gate</span> <span class=SpellE>Arrays</span> - GA).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Наибольшей оперативностью и гибкостью
+использования характеризуются ИС, программируемые пользователем. Стоимость и
+время разработки при этом минимальны. К недостаткам проектирования ЦУ на
+программируемых пользователем ИС следует отнести не всегда рациональное
+использование площади кристалла, отсутствие эффективных методов проектирования
+сложных устройств и др. Однако не смотря на указанные недостатки в настоящее
+время программируемые пользователем ИС считаются наиболее перспективной
+элементной базой. Это подтверждается многочисленными статистическими
+исследованиями и неизменным увеличением объема их производства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В свою очередь программируемые
+пользователем ИС можно разделить на микропрограммные ИС и программируемую
+логику (ПЛИС), в соответствии с двумя основными подходами к проектированию ЦУ:
+микропрограммным и аппаратным. Первый подход предполагает построение ЦУ на базе
+некоторого универсального элемента (микропроцессора, микрокомпьютера,
+микроконтроллера и др.), который специализируется загружаемой в ОЗУ или
+зашиваемой в ППЗУ программой (микропрограммой). Недостатком такого подхода
+является невысокая скорость работы устройства, однако последнее может быть
+легко перенастроено на другой алгоритм работы путем замены программы в ОЗУ или
+в ППЗУ.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Характерной особенностью ПЛИС является
+возможность их настройки на заданный алгоритм функционирования путем изменения
+своей внутренней структуры. Проектирование ЦУ на основе ПЛИС заключается в
+определении настройки по заданным спецификациям и программировании микросхемы
+на специальном оборудовании, называемом программатором (<span class=SpellE>programmer</span>).
+Построенные на основе ПЛИС устройства отличает прежде всего высокая скорость
+работы, низкая стоимости и малые сроки проектирования. Первые промышленные ПЛИС
+характеризовались однократностью настройки, которая осуществлялась путем
+пережигания плавких перемычек (<span class=SpellE>fuse-link</span>). Однако с
+появлением перепрограммируемых ПЛИС с электрическим и ультрафиолетовым
+стиранием этот недостаток устраняется и по способу своего использования они
+ничем не уступают микропрограммным ИС.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=560 height=214
+src="Tema%2019.files/image006.jpg" v:shapes="Рисунок_x0020_25"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 3 -
+Классификация PLD по структурной организации<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В общем случае строгой границы между
+микропрограммными и логическими ИС нет, свидетельством чего могут служить
+программируемые пользователем контроллеры (<span class=SpellE>Field</span> <span
+class=SpellE>Programmable</span> <span class=SpellE>Controller</span> - FPC).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В настоящее время ПЛИС принято делить на
+три (рис. 3) больших класса: стандартные PLD (<span class=SpellE>Standart</span>
+PLD - SPLD) или классические PLD (<span class=SpellE>Classic</span> PLD),
+сложные PLD (<span class=SpellE>Complex</span> PLD - CPLD) и программируемые
+пользователем вентильные матрицы (<span class=SpellE>Field</span> <span
+class=SpellE>Programmable</span> <span class=SpellE>Gate</span> <span
+class=SpellE>Array</span> - FPGA).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T3"><b>3. Основные структуры CPLD и FPGA. </b></a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Структуру большинства стандартных PLD
+условно можно представить в виде совокупности двух матриц <span class=SpellE>взаимнортогональных</span>
+проводников: матрицы И <span class=SpellE>и</span> матрицы ИЛИ. Входные сигналы
+обычно поступают на <span class=SpellE>парафазные</span> входы матрицы И,
+которая на ортогональных шинах позволяет реализовать любые конъюнкции входных
+переменных. Выходы матрицы И соединены со входами матрицы ИЛИ, которая на
+выходах реализует дизъюнкции поступающих сигналов. Совокупность выходных шин
+матрицы И <span class=SpellE>и</span> входных шин матрицы ИЛИ образует
+множество промежуточных шин PLD (<span class=SpellE>product</span> <span
+class=SpellE>terms</span>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В зависимости от того, какая матрица
+программируется, матрица И или матрица ИЛИ, SPLD принято делить на три класса:
+программируемые логические матрицы (ПЛМ - <span class=SpellE>Prgrammable</span>
+<span class=SpellE>Logic</span> <span class=SpellE>Arrays</span> - <span
+class=SpellE>PLAs</span>), программируемые постоянные запоминающие устройства
+(ППЗУ - <span class=SpellE>Programmable</span> <span class=SpellE>Read</span> <span
+class=SpellE>Only</span> <span class=SpellE>Memory</span> - PROM) и
+программируемые матрицы логики (ПМЛ - <span class=SpellE>Programmable</span> <span
+class=SpellE>Array</span> <span class=SpellE>Logics</span> - <span
+class=SpellE>PALs</span>). В PLA (рис.4) программируются обе матрицы: матрица И
+<span class=SpellE>и</span> матрица ИЛИ. В PROM (рис.5) матрица И постоянно
+настроена на функции полного дешифратора. В структуре PAL (рис.6), наоборот,
+матрица ИЛИ имеет фиксированную настройку, а программируется только матрица И.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=355 height=357
+src="Tema%2019.files/image008.jpg" v:shapes="Рисунок_x0020_26"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 4 -
+Структура PLA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=355 height=317
+src="Tema%2019.files/image010.jpg" v:shapes="Рисунок_x0020_27"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 5-
+Структура PROM<o:p></o:p></span></p>
+
+
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=476 height=510
+src="Tema%2019.files/image012.jpg" v:shapes="_x0000_i1030"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 6 -
+Структура PAL<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Безусловно, приведенная классификация не
+охватывает всего разнообразия SPLD. Например, структуру, очень напоминающую
+PLA, имеют программируемые логические секвенсоры (<span class=SpellE>Programmable</span>
+<span class=SpellE>Logic</span> <span class=SpellE>Sequencers</span> - <span
+class=SpellE>PLSs</span>), и обобщенные матрицы логики (<span class=SpellE>Generig</span>
+<span class=SpellE>Array</span> <span class=SpellE>Logics</span> - GAL) подобны
+PAL.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Сложными PLD принято называть микросхемы
+высокой степени интеграции, структура которых представляет собой совокупность
+нескольких PAL, объединяемых программируемыми <span class=SpellE>межсоединениями</span>
+(рис.7). Многими фирмами выпускаются различные структуры CPLD. Например, фирма <span
+class=SpellE>Advanced</span> <span class=SpellE>Micro</span> <span
+class=SpellE>Devices</span> (AMD) свои CPLD назвала КМОП-<span class=SpellE>макроматрицы</span>
+высокой плотности (<span class=SpellE>Macro</span> <span class=SpellE>Array</span>
+CMOS <span class=SpellE>High-density</span> - MACH). Фирма <span class=SpellE>Altera</span>
+выпускает несколько видов CPLD: многократные матричные таблицы (<span
+class=SpellE>Multiple</span> <span class=SpellE>Array</span> <span
+class=SpellE>Matrix</span> - MAX) и FLASH-устройства, названные по способу
+перепрограммирования настраиваемых элементов.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=463 height=400
+src="Tema%2019.files/image014.jpg" v:shapes="Рисунок_x0020_28"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 7 -
+Обобщенная структура CPLD<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Дальнейшее развитие структура сложных
+PLD получила в микросхемах фирмы <span class=SpellE>Altera</span>, названных
+матрицами элементов гибкой логики (<span class=SpellE>Flexible</span> <span
+class=SpellE>Logic</span> <span class=SpellE>Element</span> <span class=SpellE>MatriX</span>
+- FLEX), обобщенная структура которых показана на рис.8. Здесь отсутствует
+привычная PAL-структура, а имеются блоки логических элементов, объединяемые в
+LAB-модули по 8 элементов в каждом. Трассировка соединений между LAB-модулями
+осуществляется с помощью программируемых каналов <span class=SpellE>межсоединений</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Фактически структура FLEX-устройств
+очень напоминает структуру FPGA, выпускаемых фирмой <span class=SpellE>Xilinx</span>
+(рис.8). Основу FPGA составляет матрица логических элементов, между которыми
+располагается поле <span class=SpellE>межсоединений</span>. По краям кристалла
+находятся блоки ввода-вывода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Все PLD можно также классифицировать по
+типу настраиваемого элемента (рис.9):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l23 level1 lfo28'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>статическое
+ОЗУ (SRAM) - FPGA, FLEX, FLASH;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l23 level1 lfo28'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>электрически
+стираемое программируемое ПЗУ (EEPROM) - MACH, MAX7000, MAX9000, SPLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l23 level1 lfo28'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>перепрограммируемое
+ПЗУ с ультрафиолетовым стиранием (EPROM) - MAX5000, SPLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Число настроек элементов первого класса
+обычно не ограничивается. Для второго и третьего классов число перезаписей
+данных настройки обычно ограничивается значением 100 - 1000 раз. Электрически стираемые
+элементы автоматически стираются при каждом новом программировании. Под EPROM
+обычно понимают ПЗУ, стираемое ультрафиолетовым излучением. Поэтому
+перепрограммирование микросхем третьего класса связано с необходимостью
+выполнения операции ультрафиолетового стирания, которая длиться около часа.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=555 height=473
+src="Tema%2019.files/image016.jpg" v:shapes="Рисунок_x0020_29"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Элементы ввода-вывода<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 8 -
+Обобщенная структура CPLD гибкой логики<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=475 height=341
+src="Tema%2019.files/image018.jpg" v:shapes="_x0000_i1033"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 9 -
+Обобщенная структура FPGA XC2000, XC3000, XC4000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>По количеству <span class=SpellE>перепрограммирований</span>
+PLD можно также разделить на многократно программируемые и однократно
+программируемые (<span class=SpellE>One</span> <span class=SpellE>Time</span> <span
+class=SpellE>Programmable</span> - OTP) (рис.10). Большинство PLD (как
+однократно, так и многократно настраиваемые) программируются самим
+пользователем во время эксплуатации (<span class=SpellE>field</span>). Однако,
+если проект тщательно отлажен и изделие производится массовыми тиражами, в нем
+могут применяться <span class=SpellE>масочно</span> программируемые PLD,
+настройка которых выполняется при их изготовлении.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img width=663 height=191
+src="Tema%2019.files/image020.jpg" v:shapes="_x0000_i1034"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 10 -
+Классификация программируемой логики по способу программирования<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=498 height=191
+src="Tema%2019.files/image022.jpg" v:shapes="_x0000_i1035"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 11 -
+Классификация программируемой логики по времени прохождения сигнала <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(задержки) с
+любого входа на любой выход<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Еще одним важным критерием классификации
+PLD является предсказуемость задержки прохождения сигнала со входа на выход
+устройства (рис.11). Для всех SPLD и MACH-устройств задержка прохождения
+сигнала с любого входа на любой выход всегда постоянна. Поэтому при
+проектировании на этих устройствах можно не выполнять временное моделирование
+сигналов. Для MAX, FLASH и FLEX-устройств задержка переменная, но легко
+вычисляемая. Для FPGA задержка полностью зависит от пути, по которому проходит
+сигнал со входа на выход. При изменении трассировки <span class=SpellE>межсоединений</span>
+изменяются и задержки сигналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>CPLD можно также разделять на
+устройства, требующие дополнительного оборудования для своего функционирования
+(FPGA, FLEX), и не требующие вспомогательного оборудования (все остальные CPLD
+и SPLD). Дополнительные устройства необходимы для выполнения начальной
+инициализации CPLD, настраиваемыми элементами которых являются статические ОЗУ.
+В качестве таких устройств могут выступать ОЗУ, ПЗУ, микроконтроллер,
+персональный компьютер и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В данном пункте были рассмотрены только
+основные способы классификации программируемой логики. Этот процесс можно было
+бы продолжить дальше, разделяя PLD на классы по степени обладания теми или
+иными свойствами. Но такая классификация мало полезна, поскольку свойств PLD
+достаточно много и часто микросхемы в пределах одного поколения и даже одной
+серии обладают различными свойствами. Поэтому ограничимся рассмотрением наиболее
+общих свойств, которые присущи различным PLD.<o:p></o:p></span></p>
+
+<br>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T4"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>4. ОСНОВНЫЕ
+СВОЙСТВА PLD</span></b></a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>PLD обладают рядом характерных
+особенностей, благодаря которым они получили такое широкое распространение и на
+сегодняшний день считаются наиболее перспективной элементной базой цифровых
+систем. Ограничимся простым перечислением основных свойств современных PLD,
+объединив их в следующие группы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l22 level1 lfo29'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>общие
+свойства PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l22 level1 lfo29'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>функциональные
+свойства PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l22 level1 lfo29'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>системные
+свойства PLD, имеющие значение при использовании PLD в составе цифровых систем;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l22 level1 lfo29'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>свойства
+проектирования, проявляющиеся при разработке проекта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Безусловно, абсолютно идеальной
+элементной базы не бывает, поэтому здесь отмечаются и недостатки PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Общие свойства
+PLD</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Практически всем современным PLD присущи
+следующие общие свойства:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Низкая стоимость</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. Благодаря
+большим объемам производства, что обусловлено высоким спросом, стоимость PLD
+начинает приближаться к стоимости стандартных устройств.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>Высокое
+быстродействие</i>. Применение передовых технологий привело к снижению задержки
+прохождения сигнала через PLD до 3.5 <span class=SpellE>ns</span> и до 1 <span
+class=SpellE>ns</span> на один логический элемент для FPGA, что позволяет
+достигать частоты функционирования устройств до 250 <span class=SpellE>MHz</span>.
+Практически каждая микросхема PLD имеет несколько реализаций с градацией по
+быстродействию. Поэтому если высокое быстродействие не требуется, пользователь
+с целью экономии средств всегда может выбрать подходящую микросхему.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Высокая степень интеграции</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. PLD имеют
+достаточно регулярную структуру, что позволяет применять 0.5-микронную
+технологию и достигать до 100000 вентилей на кристалл, приближая их по степени
+интеграции к микросхемам памяти.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Функциональная мощность.</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Стандартные PLD
+могут заменять десятки корпусов “жесткой” логики, а сложные PLD - сотни
+корпусов “жесткой” логики, что позволяет реализовать на одной CPLD всю или
+некоторую часть цифровой системы, например, сопроцессор.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>Универсальность</i>.
+На одном и том же PLD можно строить различные функциональные узлы:<span
+style='mso-tab-count:1'>          </span>комбинационные, регистровые,
+синхронные, асинхронные, арифметические и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>Многократность
+программирования.</i> В зависимости от технологии производства и типа
+настраиваемого элемента число <span class=SpellE>перепрограммирований</span>
+PLD может не ограничиваться или составлять 100 - 1000 раз. В то же время
+промышленностью выпускаются дешевые однократно настраиваемые и <span
+class=SpellE>масочно</span> программируемые PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Высокий процент выхода годных изделий.</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Благодаря
+передовым технологиям и хорошей тестируемости PLD отличаются исключительной
+надежностью, что для большинства PLD выражается в 100% выходе годных изделий
+после программирования.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>Защита
+информации от считывания.</i> Все современные PLD имеют бит защиты, установка
+которого препятствует считыванию настройки PLD. Бит защиты сбрасывается только
+при перезаписи всей информации о настройке PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Сброс регистров при включении питания. Это
+свойство позволяет однозначно определять начальное состояние скрытых элементов
+памяти при синтезе <span class=SpellE>последовательностных</span> устройств и
+отказаться от процедуры инициализации в начале работы устройства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><span class=SpellE><i style='mso-bidi-font-style:
+normal'>Предзагрузка</i></span><i style='mso-bidi-font-style:normal'>
+регистров.</i> В дополнение к свойству 9 PLD допускают предварительную загрузку
+внутренних регистров определенными значениями. Это позволяет осуществить
+процедуру инициализации <span class=SpellE>последовательностных</span>
+устройств путем перевода их в некоторое состояние. Однако на практике данное
+свойство чаще используется для тестирования PLD и проверки поведения устройства
+в запрещенных (<span class=SpellE>illegal</span>) состояниях с помощью
+программатора в процессе настройки PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Совместимость по входам и выходам с
+TTL-логикой.</span></i><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+Большинство PLD, выполненных по технологиям, отличным от TTL, остаются
+совместимыми с TTL-логикой по коэффициентам расширения входов и выходов, по
+уровням напряжений и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>Разнообразие</i>
+корпусов PLD. Одна и та же микросхема PLD может быть упакована в различные типы
+корпусов: штыревые - DIP, планарные - SOIC, PGA, PQFP, TQFP, J-<span
+class=SpellE>lead</span> и др. Следует, однако, заметить, что параметры одной и
+той же микросхемы в разных корпусах могут различаться (число логических входов
+и выходов, число внутренних регистров и т. д.).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:39.4pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo30'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Функциональные свойства PLD</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Отметим некоторые наиболее общие
+функциональные свойства PLD, которые, в основном, определяются возможностями
+программируемых выходных <span class=SpellE>макроячеек</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Все входы матрицы И являются <span
+class=SpellE>парафазными</span></i>. Сигналы, поступающие на вход матрицы И,
+как с внешних выводов, так и по цепям обратных связей, всегда представляются в
+прямом и инверсном значении. Это позволяет не заботиться о формировании сигнала
+определенной полярности.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Выходные <span class=SpellE>макроячейки</span>
+имеют цепи обратной связи с матрицей И</i>. Практически все выходные <span
+class=SpellE>макроячейки</span> PLD имеют цепи обратной связи с матрицей И,
+причем некоторые PLD имеют по две обратные связи. Это позволяет, с одной
+стороны, более эффективно использовать возможности <span class=SpellE>макроячеек</span>
+(например, для реализации внутренней логики и для приема входных сигналов), а,
+с другой стороны, широко применять <span class=SpellE>факторизационные</span>
+методы синтеза.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>PLD позволяют реализовать конъюнкции
+большого числа переменных.</i> Для SPLD число переменных в конъюнкции
+ограничивается числом входов в матрицу И (даже для простейших SPLD это значение
+равняется 16). Некоторые CPLD для этой цели содержат специальные цепи
+каскадирования. После применения теоремы <span class=SpellE>деМоргана</span>
+это же свойство может применяться и для реализации дизъюнкции большого числа
+переменных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Все выходы современных PLD имеют управляемый
+буфер с тремя состояниями</i>. Этот буфер может использоваться как по своему
+прямому назначению - для отключения от внешней шины, так и для расширения
+возможностей PLD - использование двунаправленного вывода в качестве входа.
+Кроме того, благодаря тому, что управление буфером также программируется,
+каждый двунаправленный вывод PLD в один момент времени может использоваться в
+качестве входа, а в другой - в качестве выхода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Программируемая полярность выходов</i>.
+Большинство SPLD, а CPLD - все, позволяют программировать полярность каждого
+выхода: выходной сигнал может формироваться в прямой или инверсной логике.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Программирование регистрового или
+комбинационного выхода</i>. Для большинства SPLD и всех CPLD выходная <span
+class=SpellE>макроячейка</span> содержит триггер для образования регистрового
+выхода (например, для синхронизации формируемых выходных сигналов). При
+необходимости триггер может обходиться для реализации комбинационного выхода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Программирование типа запоминающего элемента</i>.
+В случае регистрового выхода по умолчанию принимается D-триггер в качестве
+запоминающего элемента. Однако многие PLD позволяют программировать тип
+запоминающего элемента: D, T, JK, SR триггер или защелку.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Наличие отдельных входов для разрешения
+выходов</i> OE и сигналов глобальной синхронизации триггеров CLK.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Перечисляемые ниже свойства присущи
+большинству, но не всем PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие в выходной <span class=SpellE>макроячейке</span>
+вентиля “Исключающее ИЛИ”. Для реализации определенных функций полезным
+является наличие в выходной <span class=SpellE>макроячейке</span> вентиля
+“Исключающее ИЛИ”.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Асинхронное управление каждым триггером</i>.
+Для построения разнообразных асинхронных устройств имеется возможность
+программировать асинхронные сигналы установки (<span class=SpellE>preset</span>),
+сброса (<span class=SpellE>reset</span>) и синхронизации (<span class=SpellE>clock</span>)
+каждого триггера.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>Асинхронное управление третьим состоянием
+каждого выхода</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Изменяемое число промежуточных шин (<span
+class=SpellE>product</span> <span class=SpellE>terms</span>), подключаемых к
+одной <span class=SpellE>макроячейке</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Буферизация входных сигналов с помощью
+регистров или защелок.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие нескольких входов для сигналов
+синхронизации и разрешения выходов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Возможность выбора для каждого запоминающего
+элемента (триггера или защелки) сигнала синхронизации от любого внешнего
+вывода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Возможность выбора для каждого выхода сигнала
+разрешения выхода от любого внешнего вывода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Отметим некоторые специфические свойства
+отдельных CPLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие схем быстрого переноса для эффективной
+реализации сумматоров и счетчиков (FLEX).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие схем каскадирования для эффективной
+реализации логических функций большого числа переменных (FLEX).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие <span class=SpellE>арифметическо</span>-логического
+устройства (АЛУ - ALU) в каждой <span class=SpellE>макроячейке</span> (XC7200).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие внутреннего ОЗУ (FLEX, FLASH, FPGA).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Возможность подсоединения большого числа
+промежуточных шин матрицы И к одной <span class=SpellE>макроячейке</span>
+(MAX).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие внутренней <span class=SpellE>трехстабильной</span>
+шины (XC4000).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Программное управление скоростью формирования
+выходного сигнала (MAX,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>FLEX).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Следует, однако, отметить, что, с одной
+стороны, перечисленные свойства не охватывают всех функциональных возможностей
+современных PLD, а, с другой стороны, одновременно всеми свойствами не обладает
+ни одна PLD. Поэтому при рассмотрении вопроса о возможности применения
+некоторой микросхемы следует внимательно изучить ее характерные особенности.<o:p></o:p></span></p>
+
+<br>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:bookmark205'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Системные свойства PLD</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Остановимся
+     на рассмотрении свойств PLD, которые имеют важное значение при их
+     использовании в составе цифровой системы.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Наличие
+     бита <span class=SpellE>Turbo</span>. Бит <span class=SpellE>Turbo</span>
+     устанавливается во время программирования. При значении бита <span
+     class=SpellE>Turbo</span> ON обеспечивается максимальное быстродействие
+     PLD при номинальной потребляемой мощности. При значении бита <span
+     class=SpellE>Turbo</span> OFF обеспечивается минимальная потребляемая
+     мощность PLD при номинальном быстродействии.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Режим
+     пониженного энергопотребления. Некоторые PLD имеют независимый от бита <span
+     class=SpellE>Turbo</span> режим пониженного энергопотребления. При
+     программировании этого режима обеспечивается исключительно низкий ток
+     потребления на низких частотах функционирования устройства. Режим
+     пониженного энергопотребления может программироваться для всего
+     устройства, для отдельных PAL-блоков и даже для каждой отдельной <span
+     class=SpellE>макроячейки</span>.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Наличие
+     нескольких бит защиты. Отдельные PLD не ограничиваются одним битом защиты
+     от считывания информации о настройке, а имеют несколько таких бит для
+     повышения степени защиты информации.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Возможность
+     перенастройки во время функционирования системы. CPLD, в которых в
+     качестве настраиваемых элементов используются SRAM, программируются при
+     каждом включении питания. Время программирования составляет менее, чем 100
+     <span class=SpellE>ms</span>. При необходимости перенастройку CPLD можно
+     осуществлять и во время функционирования всей системы, что позволяет
+     строить различные адаптивные системы.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";color:red'>5.0-
+     или 3.3- <span class=SpellE>в<span style='color:windowtext'>ольтное</span></span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+     функционирование. Некоторые CPLD могут настраиваться на 5.0 или 3.3 <span
+     class=SpellE>вольтное</span> значение входных и выходных сигналов.
+     Отдельные CPLD допускают подобную настройку для каждого вывода.<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Поддержка</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+     EN-US'> </span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стандарта</span><span
+     lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+     mso-ansi-language:EN-US'> JTAG (Joint Test Action Group). </span><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CPLD,
+     поддерживающие JTAG-стандарт, позволяют выполнять тестирование методом
+     граничного сканирования (<span class=SpellE>Boundary-Scan</span> <span
+     class=SpellE>Testing</span> - BST) в соответствии с требованиями IEEE <span
+     class=SpellE>Std</span>. 1149.1-1990, перенастройку в схеме (<span
+     class=SpellE>In-Circuit</span> <span class=SpellE>Reconfigurability</span>
+     - ICR) и программирование в системе (<span class=SpellE>In-System</span> <span
+     class=SpellE>Programmability</span> - ISP).<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Поддержка</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+     EN-US'> </span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стандарта</span><span
+     lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+     mso-ansi-language:EN-US'> PCI (Peripheral Component Interconnect - PCI).<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l30 level1 lfo31'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Программирование
+     режима пониженного “шума” формируемых выходных сигналов. При включении
+     данного режима несколько снижается быстродействие устройства, однако
+     формируемые выходные сигналы отличаются исключительной “чистотой”, что
+     позволяет не применять специальные системные средства для понижения шумов
+     формируемых сигналов. Отдельные CPLD позволяют программировать этот режим
+     для каждого вывода.<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span>Свойства
+проектирования</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Одной из главных причин широкого
+применения PLD является удобство их применения. Это стало возможным благодаря
+ряду специфических свойств.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Малое время проектирования. Например, после
+разработки проекта средней сложности на концептуальном уровне, время ввода
+проекта может составить менее одного часа, синтез - 5-30 минут, моделирование -
+около двух часов и программирование - 2 минуты. В результате общее время
+разработки проекта на PLD составляет около 3.5 часов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Наличие развитых программных и аппаратных
+средств проектирования на основе PLD. Имеющиеся программные средства
+проектирования удовлетворяют очень широкому кругу пользователей. Они могут быть
+дорогими (с широкими возможностями) и дешевыми (с ограниченными возможностями);
+ориентированными для использования на рабочих станциях и на простейших
+персональных компьютерах; предоставляющие широкий перечень решаемых проектных
+задач и решающие только отдельные специфические задачи и т.д.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Аналогично производителями предлагается
+широкий набор аппаратных средств для проектирования на основе PLD: от
+простейших пользовательских программаторов, ориентированных на ограниченную
+номенклатуру PLD одной фирмы, до универсальных высокопроизводительных
+промышленных программирующих систем, позволяющих выполнять операцию настройки
+PLD без участия человека.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Простота разработки проекта на основе PLD. Для
+разработки проекта на основе PLD достаточно описать его функционирование на
+одном из входных языков используемого программного средства, выполнить
+автоматизированный синтез (компиляцию), произвести функциональное и/или
+временное моделирование и настроить PLD с помощью программатора.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Простота внесения в проект изменений.
+Изменения в проект на основе PLD вносятся исключительно просто: для этого
+достаточно перепрограммировать PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Упрощается этап конструкторского
+проектирования. Это достигается за счет:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>уменьшения числа корпусов системы;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>уменьшения числа внешних соединений;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>упрощения разводки схемы, поскольку
+большинство выводов PLD можно считать логически эквивалентными между собой.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Повышается надежность системы. Кроме
+уменьшения числа корпусов и внешних соединений, повышению надежности проектов
+способствует улучшенное функциональное и временное моделирование PLD. Более
+того, PLD, поддерживающие JTAG-стандарт, могут включаться в общую цепочку
+проекта для тестирования элементов схемы по JTAG- стандарту.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Упрощается отладка проекта. В процессе
+проектирования каждая отдельная микросхема PLD может тестироваться как на
+логическом уровне с помощью программного обеспечения, так и на физическом
+уровне с помощью программатора. Некоторые программаторы позволяют тестировать
+PLD в реальном масштабе времени, т.е. на рабочей частоте устройства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Отладка всего проекта в целом упрощается
+за счет поддержки большинством CPLD JTAG-стандарта, причем в цепочку граничного
+сканирования могут включаться произвольные элементы (не обязательно PLD).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Многообразие способов ввода проекта.
+Современные программные средства проектирования на основе PLD предлагают следующие
+способы ввода проекта:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>текстовый (заданием таблицы истинности,
+описанием функционирования конечного автомата, на языке VHDL и др.)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>схемный;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span>в
+виде временной диаграммы;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Кроме того, в одном проекте допускается
+сочетание разнообразных способов ввода, возможно также иерархическое описание
+проекта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Многообразие методов синтеза. В современных
+программных средствах проектирования на основе PLD реализовано большое
+количество различных методов синтеза. Это методы минимизации булевых функций,
+библиотеки параметризированных функциональных блоков, а также методы
+декомпозиции сложных проектов на отдельные PAL-блоки.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Многообразие методов моделирования и
+тестирования. Реализованные в программных средствах методы моделирования
+позволяют выполнять функциональное и временное моделирование; выявление в CPLD
+путей сигналов, критичных к скорости формирования; автоматическое формирование
+тестовых последовательностей для тестирования в JTAG-стандарте и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Разнообразие способов программирования.
+PLD могут настраиваться и тестироваться с помощью программатора,
+непосредственно на плате во время инициализации системы, перенастраиваться в
+процессе функционирования системы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:bookmark207'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Недостатки PLD</span></b></span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Отметим некоторые недостатки и
+ограничения использования, характерные для современных PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>SPLD имеют относительно небольшое число
+промежуточных шин, связанных с одним выходом (<span class=SpellE>макроячейкой</span>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>PLD имеют ограниченное время хранения
+записанной информации (настройки). Обычно гарантированное время сохранения
+настройки составляет 20 лет.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>Невозможность использования в средах с
+повышенным излучением (радиационным, электромагнитным, ультрафиолетовым и др.).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T5"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>5. ВЫБОР АРХИТЕКТУРЫ PLD</span></b></a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В настоящее время многими фирмами (<span
+class=SpellE>Altera</span>, AMD, <span class=SpellE>Atmel</span>, <span
+class=SpellE>Intel</span>, <span class=SpellE>Texas</span> <span class=SpellE>Instruments</span>,
+<span class=SpellE>Xilinx</span> и др.) выпускается большое разнообразие PLD.
+Поэтому выбор подходящей архитектуры является далеко не тривиальной задачей.
+Эта проблема становится особенно важной, когда приходится выбирать PLD в
+качестве элементной базы длительного пользования (на несколько лет). Здесь
+приходится учитывать большое разнообразие различных факторов, зачастую
+противоречивых. В данном параграфе предпринята попытка определить основные
+критерии, которыми следует руководствоваться при выборе подходящей архитектуры
+PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В технической документации практически
+всех производителей PLD описываются методики выбора микросхемы с требуемой
+архитектурой. К сожалению, все эти методики касаются изделий только одной
+конкретной фирмы, а на рынке, как правило, имеются PLD нескольких различных
+фирм. С другой стороны, сравнение общих параметров PLD различных
+производителей, таких как число выводов, регистров, быстродействие, стоимость и
+др., обычно не позволяет сделать определенный выбор, поскольку эти параметры
+для большинства микросхем одинаковы. Поэтому выбор элементной базы следует
+делать исходя из более специфичных особенностей проекта и возможностей PLD
+удовлетворения этим особенностям.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Дело в том, что современные PLD обладают
+очень широкой гаммой возможностей и значительной функциональной мощностью,
+поэтому выбор более дорогой и сложной микросхемы, особенно последних поколений,
+позволяет удовлетворить практически всем требованиям проекта. Но это
+достигается не путем учета специфики проекта и выбора соответствующей
+архитектуры PLD, а путем <span class=SpellE>черезмерного</span> задействования
+ресурсов мощной PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Прежде всего следует отнести проект к
+одному из следующих классов:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l37 level1 lfo32'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>проект
+реализуется на одной PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l37 level1 lfo32'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>проект
+реализуется совокупностью однотипных PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l37 level1 lfo32'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>проект
+реализуется совокупностью разнотипных PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l37 level1 lfo32'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>проект
+реализуется совокупностью разнотипных PLD с использованием других микросхем.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В первом случае выбор PLD особых проблем
+не вызывает, главное, чтобы функциональной мощности PLD хватило для реализации
+всего проекта. Во втором случае главным критерием выбора PLD является
+минимизация общего числа корпусов схемы и минимизация числа связей между ними.
+В третьем случае кроме минимизации элементов и числа связей между ними
+необходимо предусмотреть согласование всех элементов системы между собой по
+уровням напряжений сигналов, нагрузочных способностей и др. Для этого лучше
+всего использовать микросхемы одной и той же фирмы, изготовленные по одинаковой
+технологии. В четвертом случае последнее требование выполнить едва ли возможно,
+поэтому вопросы согласования элементов между собой выступают на первое место.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Затем для каждой части проекта
+выбирается архитектура подходящей PLD. Главными критериями здесь являются:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l13 level1 lfo33'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>функциональные
+особенности;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l13 level1 lfo33'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>специфические
+требования;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l13 level1 lfo33'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>системные
+требования;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l13 level1 lfo33'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стоимость.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>При определении функциональных
+особенностей следует отметить следующие моменты:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>преимущественная
+функциональная ориентация схемы (комбинационная или <span class=SpellE>последовательностная</span>,
+синхронная или асинхронная, арифметическая, функциональный узел, произвольная
+логика и т. д.);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>сложность
+проекта (число входов, выходов, двунаправленных выводов, внутренних регистров и
+др.);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>сложность
+реализуемых логических функций (число переменных, число различных элементарных
+конъюнкций в дизъюнктивной нормальной форме, допустимо ли скобочное
+представление функции, наличие общих фактор-функций, использование операции
+“Исключающее ИЛИ” и др.);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>типы
+используемых триггеров;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>необходимость
+буферизация входных и выходных сигналов;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>требования
+к синхронизации регистров (число сигналов синхронизации, их характер);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>требования
+к временной задержке формируемых выходных сигналов (постоянная, переменная,
+допустимая величина разброса и др.);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l28 level1 lfo34'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>требования
+по быстродействию (минимальная величина задержки и максимальная частота
+функционирования).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Определение <b style='mso-bidi-font-weight:
+normal'>специфических требований</b> заключается в ответе на следующие вопросы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>необходимы схемы быстрого переноса (для
+реализации сумматоров и счетчиков);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>необходимы схемы каскадирования (для
+реализации функций большого числа переменных);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>использование функциональных элементов типа
+памяти, АЛУ и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>При определении системных требований
+указываются системные свойства, которым должна удовлетворять PLD, главными из
+которых являются:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>уровни
+напряжений сигналов (5 или 3.3 вольта);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>возможность
+перенастройки во время функционирования;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>способ
+тестирования PLD и всего проекта в целом;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>наличие
+специальных системных средств защиты от шумов (в случае их отсутствия и
+опасности появления шумов следует использовать возможности PLD по формированию
+“чистых” сигналов за счет потери быстродействия);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>необходимость
+поддержки JTAG и PCI стандартов;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo35'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>требования
+к потребляемой мощности и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>При определении стоимости следует
+учитывать следующие моменты:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стоимость
+PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>для
+PLD, настраиваемыми элементами которых являются SRAM, стоимость дополнительного
+оборудования, устанавливаемого на плату (ПЗУ, ОЗУ, микропроцессор,
+микроконтроллер, разъем и др.);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стоимость
+программного и аппаратного обеспечения, необходимого для разработки проекта на
+данном типе PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стоимость
+услуг сторонних организаций (проектирующих центров) в случае обращения к ним
+для разработки проекта;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>стоимость
+сертификации и сопровождения проекта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo36'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Отметим,
+что перечисленные характеристики частей проекта не охватывают всего
+разнообразия факторов, необходимость учета которых может возникнуть при выборе
+архитектуры PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>После определения всех или части
+перечисленных свойств проекта можно приступить к выбору подходящих микросхем
+PLD. Здесь можно руководствоваться следующими подходами:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l12 level1 lfo37'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>все
+определенные свойства проекта (его части) должны покрываться возможностями PLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l12 level1 lfo37'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>следует
+оставлять 20-40% ресурсов PLD для будущих корректировок и развития проекта;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l12 level1 lfo37'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>в
+случае одинаковых функциональных возможностей желательно использовать PLD более
+поздних поколений (для предотвращения опасности прекращения выпуска микросхем
+более ранних поколений);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l12 level1 lfo37'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>если
+разные части проекта требуют различных архитектур PLD, следует выбирать
+микросхемы, обладающие максимальным количеством общих свойств (это
+предоставляет возможность распределенной реализации частей проекта);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l12 level1 lfo37'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>следует
+отдавать предпочтение CPLD и микросхемам с большей степенью интеграции,
+поскольку для них характерным является минимальная стоимость одного вентиля и
+внешнего вывода.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T6"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>6. МЕТОДИКА ПРОЕКТИРОВАНИЯ НА ОСНОВЕ PLD</span></b></a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Методика проектирования на основе PLD
+включает в себя четыре основных последовательно выполняемых этапа:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l36 level1 lfo38'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ввод
+исходных данных для проектирования;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l36 level1 lfo38'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>выполнение
+синтеза (компиляция) отдельных частей проекта и всего проекта в целом;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l36 level1 lfo38'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>моделирование
+проекта;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l36 level1 lfo38'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>программирование
+и тестирование PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Приведенная методика носит общий
+характер и в ряде случаев может изменяться и корректироваться. Так, при
+реализации проекта на CPLD, обязательным этапом синтеза является подгонка (<span
+class=SpellE>fitting</span>) проекта, т.е. вложение скомпилированного проекта в
+заданную структуру CPLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В общем случае разработка сложных
+иерархических проектов на PLD ничем не отличается от известных подходов к
+проектированию цифровых систем. Здесь возможно проектирование как “сверху
+вниз”, так и “снизу вверх”, использование библиотек стандартных блоков и
+функциональных узлов, а также заимствование опыта предыдущих разработок.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Разработка проектов на PLD выполняется с
+помощью программных средств автоматизированного проектирования. Известные
+пакеты автоматизированного проектирования на PLD (PALASM, CUPL, ABEL) решают
+только задачи функционально-логического проектирования, а для решения задач
+конструкторского проектирования, как правило, имеют информационную связь (на
+уровне файлов) с соответствующими пакетами (<span class=SpellE>OrCAD</span>,
+P-CAD). С другой стороны, наличие схемного ввода некоторых пакетов (MAX+PLUSII,
+<span class=SpellE>Synario</span>) позволяет непосредственно вводить проекты,
+разработанные на элементах “жесткой” логики в системах конструкторского
+проектирования.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Остановимся более подробно на
+рассмотрении основных этапов методики проектирования на основе PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span>Ввод проекта</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Ввод проекта заключается в описании
+одним из способов машинного представления всех частей проекта. Различные пакеты
+имеют различные способы ввода, но наиболее распространенными являются следующие
+- текстовый, схемный и в виде временных диаграмм.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Текстовый ввод предполагает описание проекта
+(части проекта) на некотором исходном языке используемого программного средства
+в виде текстового файла. Наибольшее распространение получили языки исходного
+описания пакетов PALASM, CUPL и ABEL, которые с незначительными изменениями
+повторяются в других пакетах. Текстовый файл исходного описания проекта, как
+правило, включает заголовок, определение переменных и назначение им
+соответствующих выводов PLD, а также описание функционирования устройства в
+виде логических уравнений, алгоритма функционирования, таблицы истинности или
+конечного автомата. Иногда в исходный файл описания проекта включаются тестовые
+вектора для моделирования проекта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Схемный ввод осуществляется с помощью
+графического редактора используемого программного средства. Для удобства ввода
+принципиальных схем больших проектов графический редактор, как правило,
+содержит библиотеки стандартных элементов жесткой логики (например, серии
+74XX), а также библиотеку параметризированных функциональных узлов (вентилей,
+шифраторов, дешифраторов, мультиплексоров, <span class=SpellE>демультиплексоров</span>,
+триггеров, регистров, счетчиков и т.д.).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Ввод проекта в виде временной диаграммы
+осуществляется с помощью графического редактора. Вначале определяются
+переменные (сигналы) проекта, а затем описывается поведение устройства в виде
+временной диаграммы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Некоторые пакеты поддерживают ввод
+проекта на языке VHDL и других языках проектирования (HDL, DDL и др.), но для
+этого, как правило, необходима дополнительная программа.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Отдельные пакеты также допускают ввод
+иерархических проектов, причем в одном проекте допускается сочетание
+разнообразных способов ввода. Сложный иерархический проект не обязательно сразу
+вводить целиком. Проект можно вводить и компилировать по ветвям дерева
+иерархии.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><span style='mso-spacerun:yes'> </span>Синтез
+проекта</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Автоматизированный синтез простых
+проектов фактически заключается в компиляции исходного описания проекта во
+внутреннее представление используемого программного средства (абсолютный файл)
+и/или JEDEC-файл для настройки PLD. В последующем абсолютный файл используется
+для моделирования. Многие пакеты также позволяют формировать файлы для связи
+проекта с другими пакетами <span class=SpellE>функционально­логического</span>
+и конструкторского проектирования. Задачи оптимизации, решаемые на этом этапе,
+сводятся к минимизации логических функций, управляющих выходными <span
+class=SpellE>макроячейками</span> PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Сложности могут возникать при синтезе
+конечных автоматов из-за недостатка промежуточных шин для реализации функций
+возбуждения элементов памяти. Поскольку коды состояний задаются пользователем,
+можно применить специальные методы рационального кодирования внутренних
+состояний.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Специфические свойства архитектуры PLD
+предоставляют новые возможности при синтезе комбинационных и <span
+class=SpellE>последовательностных</span> схем. Важное место среди методов
+синтеза на PLD цифровых устройств, математической моделью которых является
+конечный автомат, занимают методы синтеза одноуровневых схем, поскольку они
+обладают наибольшим быстродействием. Благодаря своей блочной структуре, CPLD
+оказались удобными для построения сложных иерархических и параллельных
+устройств. При построении микропроцессорных систем для согласования сигналов
+между различными микросхемами часто используются простейшие функциональные
+узлы, такие как инверторы, вентили, триггеры, регистры и др. Совокупность
+подобных элементов получила название логики склеивания (<span class=SpellE>glue</span>
+<span class=SpellE>logic</span>). PLD получили очень широкое распространение
+при реализации логики склеивания, причем в качестве элементов этой логики могут
+выступать простые функциональные узлы как комбинационного, так и регистрового
+типа.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Синтез сложных проектов на CPLD
+дополнительно требует специальной программы, называемой упаковщиком (<span
+class=SpellE>fitter</span>), которая выполняет “подгонку” проекта (<span
+class=SpellE>fitting</span>) в заданную структуру CPLD. При синтезе сложных
+проектов следует планировать 20-40% использования ресурсов CPLD для возможности
+корректировок и эффективной работы упаковщика. Проект рекомендуется создавать
+путем выполнения ряда итераций: вначале реализуется ядро проекта, а затем
+добавляется остальная логика до полного проекта. При этом обеспечивается лучшее
+решение по упаковке проекта и наиболее рациональное назначение сигналов внешним
+выводам.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Большие проекты могут разбиваться на
+отдельные PAL-блоки как автоматически, так и указываться пользователем с
+помощью директив. Пользователем также могут указываться назначение сигналов
+отдельным выводам. Если после указаний пользователя проект не может быть
+упакован в заданное устройство, программа запрашивает возможность
+альтернативных решений (компромиссов):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l31 level1 lfo39'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-tab-count:1'>            </span>переназначение выводов,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l31 level1 lfo39'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>оптимизацию
+типов триггеров,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l31 level1 lfo39'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><span
+style='mso-spacerun:yes'> </span>повторное прохождение сигналов через
+устройство <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l31 level1 lfo39'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>и
+др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рекомендуется первоначальную упаковку
+проекта выполнять предоставлением программе наибольших возможностей, а затем
+конкретизировать назначение выводов. После получения некоторого решения проект
+может быть оптимизирован для наиболее рационального использования ресурсов CPLD
+с целью их освобождения для реализации другой логики.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Моделирование
+проекта</span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Моделирование проекта на PLD может
+осуществляться как на логическом, так и на физическом уровне. При моделировании
+на логическом уровне работоспособность проекта проверяется на основании
+математических моделей PLD и выполняется программным обеспечением без участия
+конкретной микросхемы. На физическим уровне проверяется реальное
+функционирование проекта с использованием уже запрограммированных PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Логическое моделирование делится на
+функциональное и временное (временной анализ). Функциональное моделирование
+выполняется программным обеспечением на основании тестовых векторов входных и
+выходных сигналов проекта. Тестовые вектора могут задаваться в файле исходного
+описания проекта или находиться в отдельном файле. Некоторые пакеты допускают
+задание тестовых векторов в виде временных диаграмм. При логическом
+моделировании возможно решение следующих задач:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l25 level1 lfo40'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>определение
+выходных значений по заданным входным воздействиям;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l25 level1 lfo40'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>сравнение
+вычисленных выходных значений с эталонными;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l25 level1 lfo40'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>моделирование
+неисправностей устройства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Временное моделирование выполняется на
+временных моделях PLD и заключается в определении времени прохождения и
+формирования различных сигналов. Результаты временного моделирования могут
+также представляться в виде временных диаграмм.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Кроме того с помощью отдельной
+программой, называемой временным анализатором, производится анализ, позволяющий
+обнаружить пути сигналов, критичные по скорости. Оптимизация путей
+распространения сигналов позволяет повысить быстродействие всего проекта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Моделирование проекта на физическом
+уровне (тестирование на программаторе) осуществляется после настройки PLD. Для
+этого в файл, содержащий информацию о настройке PLD и управляющий работой
+программатора, добавляется информация для тестирования устройства. Последняя
+может быть получена на основании тестовых векторов и результатов
+функционального моделирования. Причем здесь возможно моделирование в реальном
+масштабе времени, в том числе на предельной частоте работы PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>CPLD, поддерживающие JTAG-стандарт,
+могут тестироваться непосредственно на плате методом граничного сканирования.
+Для этого программным обеспечением на основании тестовых векторов создаются
+тестовые последовательности в JTAG-стандарте. При этом допускается тестирование<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l10 level1 lfo41'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>одного
+CPLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l10 level1 lfo41'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>цепочки
+CPLD;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l10 level1 lfo41'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>цепочки
+всех устройств проекта (в том числе и CPLD), поддерживающих JTAG-стандарт.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T7"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>7. Программирование PLD</span></b></a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Программирование PLD заключается в его
+настройке на заданный алгоритм функционирования. Стандартные PLD
+программируются с помощью программаторов. Технологии программирования
+(последовательности подаваемых сигналов, уровни напряжений и др.) могут
+существенно отличаться даже для одних и тех же PLD, но производимых различными
+фирмами. Поэтому важное значение имеет использование только сертифицированных
+программаторов, рекомендуемых фирмами-изготовителями PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>CPLD, в которых настраиваемым элементом
+является SRAM, конфигурируются всякий раз, при включении питания. Процесс
+конфигурирования состоит из двух частей: загрузки данных и обнуления всех
+регистров. Данные о настройке CPLD могут поступать от управляющего компьютера,
+микропроцессора, ПЗУ, ОЗУ, других CPLD. Форма передаваемых данных может быть
+как последовательная, так и параллельная. Имеется также ряд режимов
+программирования, когда CPLD выступает в качестве активного устройства (само
+управляет процессом загрузки данных), и в качестве пассивного устройства
+(другое устройство управляет процессом загрузки данных).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Как правило, фирмы-изготовители CPLD
+выпускают специализированные ППЗУ для программирования CPLD. В такие ППЗУ с
+помощью программатора записывается информация о настройке CPLD и они
+устанавливаются на плате вместе с CPLD. С целью минимизации площади платы для
+передачи данных между ППЗУ и CPLD используется последовательный интерфейс, а
+CPLD выступает в качестве активного устройства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Некоторые CPLD, поддерживающие
+JTAG-стандарт, могут программироваться на плате, используя сигналы
+JTAG-стандарта. Для этого на границе платы устанавливается специальный разъем
+для передачи сигналов управления процессом программирования. Несколько CPLD на
+одной плате могут объединяться в цепочки, но в каждый момент времени
+допускается программирование только одного CPLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>ОБЛАСТИ ПРИМЕНЕНИЯ PLD</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>PLD хорошо себя зарекомендовали в
+качестве универсальной элементной базы. Рассмотрим конкретные примеры
+использования PLD, приводимые в литературе фирмами-изготовителями PLD и
+производителями программного обеспечения для проектирования на основе PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+12.0pt;font-family:"Times New Roman","serif"'>Таблица 1 - Стандартные
+функциональные узлы, реализуемые на PLD<o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-overlap:never;mso-yfti-tbllook:160;
+ mso-padding-alt:0cm .5pt 0cm .5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:21.6pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:21.6pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Комбинационные<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:21.6pt'>
+  <p class=MsoNormal style='text-align:justify'><span class=SpellE><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Последовательностные</span></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:20.65pt'>
+  <td width=568 colspan=2 valign=top style='width:426.25pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>Легко реализуемые на PLD<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Шифраторы<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Регистры<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Дешифраторы<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Сдвиговые регистры<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Мультиплексоры<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Двоичные счетчики<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span class=SpellE><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Демультиплексоры</span></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики по модулю<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Компараторы A=B<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики Грея<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Сумматоры<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики Джонсона<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span class=SpellE><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Инкременторы</span></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Асинхронные счетчики<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span class=SpellE><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Декременторы</span></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Делители частоты<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Преобразователи кодов<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Полиномиальные счетчики<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Приоритетные шифраторы<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Двоичные счетчики<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;height:20.65pt'>
+  <td width=568 colspan=2 valign=top style='width:426.25pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>Требующие каскадной реализации на CPLD<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Мультиплексоры<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики по модулю<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;height:20.65pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span class=SpellE><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Демультиплексоры</span></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.65pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики Грея<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;height:20.9pt'>
+  <td width=303 valign=top style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Компараторы<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:20.9pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Счетчики Джонсона<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;height:28.1pt'>
+  <td width=303 valign=bottom style='width:227.3pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:white;padding:0cm .5pt 0cm .5pt;height:28.1pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Сумматоры с параллельным переносом<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:28.1pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;mso-yfti-lastrow:yes;height:29.05pt'>
+  <td width=303 valign=bottom style='width:227.3pt;border:solid windowtext 1.0pt;
+  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;background:
+  white;padding:0cm .5pt 0cm .5pt;height:29.05pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Преобразователи кода Грея в двоичный
+  код<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:198.95pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:white;padding:0cm .5pt 0cm .5pt;
+  height:29.05pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>На классических PLD можно легко
+реализовать ряд стандартных комбинационных и <span class=SpellE>последовательностных</span>
+узлов цифровых систем (табл.1). Отдельные функциональные узлы большой
+размерности требуют каскадной реализации на стандартных PLD или на сложной PLD.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Необходимость построения стандартных
+функциональных узлов на PLD может возникать по следующим причинам:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>отсутствие
+необходимой номенклатуры;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>нестандартные
+размеры узла;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>большая
+размерность узла;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>необходимость
+специального управления узлом;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>требования
+<span class=SpellE>схемотехники</span> по согласованию напряжений уровней
+сигналов, временных задержек, улучшения помехозащищенности и др.;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>улучшение
+временных параметров узла: постоянная задержка с любого входа на любой выход ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>необходимость
+реализации нескольких разнотипных узлов в одном корпусе;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>необходимость
+тестирования по JTAG-стандарту;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l16 level1 lfo42'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>минимизация
+числа корпусов схемы и др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Особенно часто PLD используются при
+построении специализированных микропроцессорных систем:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>для
+управления микропроцессорной системой;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>для
+управления памятью;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>для
+реализации отдельных функциональных узлов МПС;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>для
+реализации шинного интерфейса;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>в
+видеосистемах;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>в
+других приложения микропроцессорных систем;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l42 level1 lfo43'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>а
+также в качестве “логики склеивания” (<span class=SpellE>glue</span> <span
+class=SpellE>logic</span>), например, для реализации интерфейса микропроцессора
+с другими устройствами.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Кроме того, PLD широко используется в:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level1 lfo44'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>системах
+цифровой обработке сигналов;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level1 lfo44'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>системах
+телекоммуникации;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level1 lfo44'> <span style='font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>а
+также самых разнообразных приложениях автоматики и электроники.<o:p></o:p></span></p>
+
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>ОСНОВНЫЕ СТРУКТУРЫ CPLD</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Все архитектуры рассматриваемых CPLD
+можно представить в виде пяти структур, приведенных на рис. 12.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Структура на рис.12,а представляет собой
+“классическую” сложную CPLD: совокупность PAL-блоков (<span class=SpellE>Programmable</span>
+<span class=SpellE>Array</span> <span class=SpellE>Logic</span>), объединяемых
+матрицей переключений SM. Основные функциональные преобразования выполняются в
+PAL- блоках, а матрица переключений служит для передачи сигналов между
+PAL-блоками. Каждый PAL-блок имеет свое множество двунаправленных выводов (на
+рис. 12 не показаны), по которым поступают обрабатываемые сигналы. Кроме того,
+имеются специализированные (<span class=SpellE>dedicated</span>) входы, которые
+связаны с матрицей переключений и со всеми PAL-блоками. Эти входы обычно
+используются для глобальных сигналов установки, сброса и синхронизации
+триггеров, а также для глобальных сигналов разрешения выходов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>При возрастании числа PAL-блоков трудно
+обеспечить необходимые соединения между ними без значительного увеличения
+размеров матрицы переключений. В структуре на рис.12,б матрица переключений
+представлена в виде глобальной шины GI и нескольких локальных шин LI (семейство
+MACH5). Здесь все PAL-блоки объединены в сегменты по четыре PAL-блока в каждом
+сегменте. Локальные шины обеспечивают соединения между PAL-блоками одного
+сегмента, а глобальная шина - между сегментами PAL-блоков.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Для повышения гибкости в назначении
+внутренней логики внешним выводам фирмой <span class=SpellE>Altera</span>
+предложена структура, изображенная на рис.12,в. Здесь основные функциональные
+блоки организованы в виде матрицы логических элементов и названы LAB-модулями.
+Между строками и столбцами LAB-модулей расположены горизонтальные и
+вертикальные каналы трассировки. LAB-модули связаны с горизонтальными каналами,
+но имеется возможность передачи сигналов с горизонтальных каналов на
+вертикальные и наоборот. Элементы ввода-вывода подсоединяются к концам как
+горизонтальных, так и вертикальных каналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>В структуре на рис.12,г (семейство
+XC9500) все обрабатываемые сигналы дважды проходят через матрицу переключений
+SM, при вводе и при выводе, для обеспечения 100% соединений между PAL-блоками и
+блоками ввода-вывода (IOB). Однако данная структура не гарантирует постоянной
+задержку прохождения сигнала с любого входа на любой выход, поскольку задержка
+будет зависеть от способа настройки соответствующей <span class=SpellE>макроячейки</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img width=346 height=248
+src="Tema%2019.files/image024.jpg" v:shapes="_x0000_i1036"> <span
+style='mso-spacerun:yes'>   </span><img width=410 height=304
+src="Tema%2019.files/image026.jpg" v:shapes="_x0000_i1037"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img width=432 height=335
+src="Tema%2019.files/image028.jpg" v:shapes="_x0000_i1038"> <span
+style='mso-spacerun:yes'>      </span><img width=264 height=238
+src="Tema%2019.files/image030.jpg" v:shapes="_x0000_i1039"> <span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+<img width=348 height=297
+src="Tema%2019.files/image032.jpg" v:shapes="_x0000_i1040"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. 12 -
+Основные структуры CPLD<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Структура на рис.12,д представляет
+специализированное семейство XC7300 фирмы <span class=SpellE>Xilinx</span>,
+предназначенное для построения арифметических вычислителей. Она содержит два
+типа функциональных блоков: быстрые FFB и повышенной функциональной мощности
+FB. Блоки FB реализуют арифметические операции, а на блоках FFB строятся
+конечные автоматы для управления вычислительными процессами.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T8"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>Видео материал</span></b></a></span></p>
+<A HREF="../../video/21 MK Plic.mp4">.  Микроконтроллер и ПЛИС.</A><br>
+<A HREF="../../video/19 Altera.mp4">.  Введение в программируемую логику Altera.</a><br>
+</div>
+        <A HREF="../../../Теория/theory.html">Содержание</A>
+        <div style="position: fixed; right: 0; bottom: 0">
+  <a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </div>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>
+

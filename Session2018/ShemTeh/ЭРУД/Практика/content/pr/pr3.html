@@ -1,0 +1,2578 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>PR3 - Практика по дисциплине &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+	<A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../Теория/theory.html">Теория</a> |
+			<strong>Практика</strong> |
+	<A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+            <td>
+                <p>&nbsp;</p>
+<A HREF="../../../Практика/practice.html">Практика</A>
+
+                <p>ПРАКТИЧЕСКАЯ  РАБОТА № 3</p>
+                 <div> 	<p class=11><b>ИЗУЧЕНИЕ СЧЕТЧИКОВ НА МИКРОСХЕМАХ.</b>Работа со справочником</p>
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span
+style='font-size:11.0pt'>Цель работы</span></b></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:37.85pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Изучить назначение, УГО,
+логическую структуру, назначение выводов и принцип работы микросхем счетчиков
+схемотехники ТТЛШ и КМОП.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:37.85pt;text-align:justify;
+text-indent:-18.0pt'><span style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt'>Получить практические навыки в
+организации различных режимов работы счетчиков.</span></p>
+<p class=MsoNormal style='margin-left:37.85pt;text-align:justify;text-indent:
+-16.55pt'><span style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:11.0pt'>Приобрести практические навыки
+работы со справочной литературой.</span></p>
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span
+style='font-size:11.0pt'>Вопросы для самоконтроля</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<p class=MsoNormal style='margin-left:19.85pt;text-align:justify'>
+<span
+style='font-size:11.0pt'>Укажите назначение и основные параметры счетчиков.</span></p>
+<p class=MsoNormal style='margin-left:19.85pt;text-align:justify'>
+<span
+style='font-size:11.0pt'>Поясните основные особенности асинхронных и синхронных
+двоичных счетчиков. Укажите их достоинства и недостатки.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>8<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Поясните, какой счетчик называется суммирующим? Начертите
+логическую схему на </span><span lang=EN-US style='font-size:11.0pt'>JK</span><span
+style='font-size:11.0pt'>-триггерах, таблицу состояний и временные диаграммы
+синхронного трехразрядного суммирующего двоичного счетчика с последовательным
+переносом.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>9<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Поясните, какой счетчик называется вычитающим?
+Начертите логическую схему на </span><span lang=EN-US style='font-size:11.0pt'>JK</span><span
+lang=BE style='font-size:11.0pt'>-триггерах, таблицу состояний и временные
+диаграммы асинхронного трехразрядного вычитающего двоичного счетчика.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>10<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Поясните назначение и принцип
+построения недвоичных счетчиков.</span></p>
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span style='font-size:11.0pt'>Порядок выполнения работы</span></b></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>
+<span style='font-size:11.0pt'>Проверка подготовки студентов к занятию по вопросам
+для самоконтроля.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Получить индивидуальное задание. Изучить микросхему
+счетчик схемотехники ТТЛШ или КМОП (таблица 13).</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.1<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Выбрать из таблицы 13 микросхему счетчика для
+заданного варианта.</span></p>
+<p class=MsoNormal style='text-align:justify'>
+<span style='font-size:11.0pt'>Таблица
+13 – Исходные данные для индивидуального задания</span></p>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=446
+ style='margin-left:5.65pt;border-collapse:collapse;border:none'>
+<tr><td width=58 rowspan=2 style='width:43.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-5.65pt;
+  margin-bottom:0cm;margin-left:-5.65pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>Номер варианта</span></p>
+</td>
+<td width=205 colspan=2 style='width:154.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>Условное обозначение ИМС</span></p>
+</td>
+<td width=52 rowspan=2 style='width:38.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>Схемотехника</span></p>
+</td>
+<td width=56 rowspan=2 style='width:41.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>Кодовое слово</span></p>
+</td>
+<td width=74 rowspan=2 style='width:55.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>Число входных импульсов</span></p>
+</td>
+</tr>
+<tr>
+<td width=107 style='width:80.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>международное</span></p>
+</td>
+<td width=99 style='width:73.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>прототип</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>IN74HC161AN</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>ЭКР15</span><span lang=EN-US style='font-size:11.0pt'>6</span><span
+  style='font-size:11.0pt'>4ИЕ10</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>КМОП</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1000</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>85</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>2</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>SN54ALS192</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>1533ИЕ6</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>ТТЛШ</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>0101</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>76</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>3</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>IN74AC163N</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>ЭКР1554ИЕ18</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>КМОП</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>0111</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>68</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>4</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>SN54ALS193</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>1533ИЕ7</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>ТТЛШ</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1010</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>54</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>5</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>IN74HC192AN</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>ЭКР1564ИЕ6</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>КМОП</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1110</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>72</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>6</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>SN54ALS160</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>1533ИЕ9</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>ТТЛШ</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1011</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>59</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>7</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>IN74AC193N</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>ЭКР1594ИЕ7</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>КМОП</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>0101</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>26</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>8</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>SN54ALS161</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>1533ИЕ10</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>ТТЛШ</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>0100</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>13</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>9</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-5.65pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>IN74HCT163AN</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>ЭКР5564ИЕ18</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>КМОП</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>1101</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>29</span></p>
+</td>
+</tr>
+<tr>
+<td width=58 valign=top style='width:43.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>10</span></p>
+</td>
+<td width=107 valign=top style='width:80.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  lang=EN-US style='font-size:11.0pt'>SN54ALS162</span></p>
+</td>
+<td width=99 valign=top style='width:73.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'>
+<span
+  style='font-size:11.0pt'>1533ИЕ11</span></p>
+</td>
+<td width=52 valign=top style='width:38.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:11.0pt'>ТТЛШ</span></p>
+</td>
+<td width=56 valign=top style='width:41.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>0001</span></p>
+</td>
+<td width=74 valign=top style='width:55.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:11.0pt'>31</span></p>
+</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.2<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Определить по [8] (для схемотехники ТТЛШ) или
+приложениям Б и В (для схемотехники КМОП) тип заданного счетчика, зарисовать
+его УГО, таблицу состояний и временные диаграммы (если приведены в
+справочнике). На УГО проставить номера выводов микросхемы.</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Кратко описать принцип построения и работу заданной
+микросхемы счетчика в различных режимах, анализируя таблицу состояний. Указать
+назначение выводов.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.3<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Определить разрядность счетчика и коэффициент
+пересчета (модуль счета).</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.4<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Указать на УГО заданной микросхемы счетчика уровни информационных
+и управляющих сигналов, которые следует подать на входы, для предварительной
+параллельной записи кодового слова, указанного в таблице 13.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.5<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Выполнить расчет и указать на УГО кодовое слово,
+зафиксированное на в</span><span lang=BE style='font-size:11.0pt'>ы</span><span
+style='font-size:11.0pt'>ходах счетчика в режиме сложения после поступления
+заданного числа входных импульсов, если предварительно в нем было записано
+кодовое слово, указанное в таблице 13.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'>
+<span
+style='font-size:11.0pt'>3.6<span style='font:7.0pt "Times New Roman"'> </span>
+</span><span
+style='font-size:11.0pt'>Определить по [8] или приложению Б основные
+статические и динамические параметры заданной микросхемы счетчика. Результат
+записать в таблицу, аналогичную по форме таблице 2.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Ответить на контрольные вопросы.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Оформить отчет и сдать зачет.</span></p>
+
+<p class=13>   <b>Пример </b>синтеза недвоичного счетчика на JK-триггерах</p>
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<b><span
+style='font-size:11.0pt'>Методику</b> синтеза недвоичного счетчика на </span><b>
+<span
+lang=EN-US style='font-size:11.0pt'>JK</span></b><span style='font-size:
+11.0pt'>-триггерах рассмотрим на примере синтеза логической схемы счетчика с
+коэффициентом пересчета </span><b><span lang=EN-US style='font-size:11.0pt'>K</span><sub><span
+style='font-size:11.0pt'>пер</span></sub></b><b><span style='font-size:11.0pt'>&nbsp;=&nbsp;10
+при использовании карт Карно.</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Необходимое число триггеров будет определяться как
+минимальное </span><span lang=EN-US style='font-size:11.0pt'>n</span><span
+style='font-size:11.0pt'>, удовлетворяющее неравенству
+<span style='position:
+relative;top:2.0pt'>
+<img width=45 height=21
+src="../../../Практика/images/pr/image184.gif"></span><sub>пер</sub>.
+В данном случае число триггеров </span>
+<span lang=EN-US style='font-size:11.0pt'>n</span><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;4.</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>В счетчике с коэффициентом пересчета </span>
+<span
+lang=EN-US style='font-size:11.0pt'>K</span><sub><span style='font-size:11.0pt'>пер</span></sub><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;10 десять состояний, причем каждый
+десятый импульс сбрасывает счетчик в нулевое состояние. Переход счетчика из
+текущего в следующее состояние связан с переключением триггеров. Для
+переключения триггеров в требуемые состояния на их входах </span>
+<span
+lang=EN-US style='font-size:11.0pt'>J</span><span style='font-size:11.0pt'> и
+</span><span
+lang=EN-US style='font-size:11.0pt'>K</span><span style='font-size:11.0pt'>
+необходимы определенные уровни сигналов. В таблице А.1 показаны все возможные
+переходы состояний триггера и требуемые для этих переходов уровни сигналов на
+входах </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'>. На основании таблицы А.1 в таблице А.2 указаны
+уровни сигналов на входах </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'>, которые обеспечивают переходы счетчика в следующее
+состояние.</span></p>
+
+<p class=MsoNormal style='text-align:justify'>
+<span style='font-size:10.0pt'><b>Таблица А.1 </b>– Таблица переходов </span><span lang=EN-US style='font-size:10.0pt'>JK</span><span
+style='font-size:10.0pt'>-триггера</span></p>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=408
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+<tr>
+<td width=203 rowspan=2 style='width:152.3pt;border:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>Вид перехода</span></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>триггера</span></p>
+</td>
+<td width=440 colspan=2 style='width:329.65pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>Уровни сигналов на входах</span></p>
+</td>
+</tr>
+<tr>
+<td width=220 style='width:164.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>J</span></p>
+</td>
+<td width=220 style='width:164.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>K</span></p>
+</td>
+</tr>
+<tr>
+<td width=203 style='width:152.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>0</span><span style='font-size:10.0pt;font-family:
+  Symbol'>®</span><span style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=220 style='width:164.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=220 style='width:164.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr>
+<td width=203 style='width:152.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>0</span><span style='font-size:10.0pt;font-family:
+  Symbol'>®</span><span style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=220 style='width:164.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=220 style='width:164.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr>
+<td width=203 style='width:152.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>1</span><span style='font-size:10.0pt;font-family:
+  Symbol'>®</span><span style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=220 style='width:164.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=220 style='width:164.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>1</span></p>
+</td>
+</tr>
+<tr>
+<td width=203 style='width:152.3pt;border:solid windowtext 1.5pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>1</span><span style='font-size:10.0pt;font-family:
+  Symbol'>®</span><span style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=220 style='width:164.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=220 style='width:164.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>0</span></p>
+</td>
+</tr>
+<tr style='height:14.1pt'>
+<td width=643 colspan=3 style='width:17.0cm;border:solid windowtext 1.5pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt'>
+<p class=MsoNormal style='margin-right:-2.85pt;text-align:justify;text-indent:
+  8.5pt'><span style='font-size:9.0pt'>Примечание – Знак «</span><span
+  lang=EN-US style='font-size:9.0pt'>X</span><span style='font-size:9.0pt'>»
+  означает произвольный уровень сигнала (0&nbsp;или&nbsp;1).</span></p>
+</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'>
+<span style='font-size:10.0pt'><b>Таблица
+А.2</b> – Таблица переходов счетчика с коэффициентом пересчета </span>
+<span
+lang=EN-US style='font-size:10.0pt'>K</span><sub><span style='font-size:10.0pt'>пер</span></sub><span
+style='font-size:10.0pt'>&nbsp;=&nbsp;10</span></p>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=408
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+<tr style='page-break-inside:avoid'>
+<td width=61 rowspan=2 style='width:46.1pt;border:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:10.0pt'>Номер входного импульса</span></p>
+</td>
+<td width=86 colspan=4 style='width:64.5pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:10.0pt'>Текущее состояние</span></p>
+</td>
+<td width=87 colspan=4 style='width:65.6pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:10.0pt'>Следующее состояние</span></p>
+</td>
+<td width=173 colspan=8 style='width:130.0pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  style='font-size:10.0pt'>Уровни сигналов на входах триггеров</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>3</span></sub></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>2</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>1</span></sub></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>0</span></sub></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>3</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>2</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>1</span></sub></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>Q</span><sub><span style='font-size:10.0pt'>0</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>J</span><sub><span style='font-size:10.0pt'>0</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>K</span><sub><span style='font-size:10.0pt'>0</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>J</span><sub><span style='font-size:10.0pt'>1</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>K</span><sub><span style='font-size:10.0pt'>1</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>J</span><sub><span style='font-size:10.0pt'>2</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span lang=EN-US style='font-size:10.0pt'>K</span><sub><span style='font-size:10.0pt'>2</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>J</span><sub><span style='font-size:10.0pt'>3</span></sub></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'>
+<span
+  lang=EN-US style='font-size:10.0pt'>K</span><sub><span style='font-size:10.0pt'>3</span></sub></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>2</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>3</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>4</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>5</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>6</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>7</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>8</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>9</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=61 style='width:46.1pt;border:solid windowtext 1.5pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>10</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=21 style='width:15.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>1</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>0</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span lang=EN-US
+  style='font-size:10.0pt'>X</span></p>
+</td>
+<td width=22 style='width:16.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+  style='font-size:10.0pt'>1</span></p>
+</td>
+</tr>
+</table>
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<span
+style='font-size:11.0pt'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Пусть к моменту подачи первого импульса счетчик
+находился в состоянии 0000. Под действием этого импульса должно быть обеспечено
+новое состояние 0001 (таблица А.2). Следовательно, в триггере младшего разряда
+происходит переход вида 0</span><span style='font-size:11.0pt;font-family:Symbol'>®</span><span
+style='font-size:11.0pt'>1, обеспечиваемый при следующих уровнях на
+информационных входах: </span><span lang=EN-US style='font-size:11.0pt'>J</span><sub><span
+style='font-size:11.0pt'>0</span></sub><span style='font-size:11.0pt'>&nbsp;=&nbsp;1,
+</span><span lang=EN-US style='font-size:11.0pt'>K</span><sub><span
+style='font-size:11.0pt'>0</span></sub><span style='font-size:11.0pt'>&nbsp;=&nbsp;</span><span
+lang=EN-US style='font-size:11.0pt'>X</span><span style='font-size:11.0pt'>. В
+остальных триггерах происходит переход вида 0</span><span style='font-size:
+11.0pt;font-family:Symbol'>®</span><span style='font-size:11.0pt'>0, который
+обеспечивается уровнями </span><span lang=EN-US style='font-size:11.0pt'>J</span><sub><span
+style='font-size:11.0pt'>1</span></sub><span style='font-size:11.0pt'>&nbsp;=&nbsp;0,
+</span><span lang=EN-US style='font-size:11.0pt'>K</span><sub><span
+style='font-size:11.0pt'>1</span></sub><span style='font-size:11.0pt'>&nbsp;=&nbsp;</span><span
+lang=EN-US style='font-size:11.0pt'>X</span><span style='font-size:11.0pt'>,
+</span><span
+lang=EN-US style='font-size:11.0pt'>J</span><sub><span style='font-size:11.0pt'>2</span></sub><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;0, </span>
+<span lang=EN-US
+ style='font-size:11.0pt'>K</span><sub><span style='font-size:11.0pt'>2</span></sub><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;</span><span lang=EN-US style='font-size:
+11.0pt'>X</span><span style='font-size:11.0pt'>, </span>
+<span lang=EN-US
+style='font-size:11.0pt'>J</span><sub><span style='font-size:11.0pt'>3</span></sub><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;0, </span>
+<span lang=EN-US
+style='font-size:11.0pt'>K</span><sub><span style='font-size:11.0pt'>3</span></sub><span
+style='font-size:11.0pt'>&nbsp;=&nbsp;</span><span lang=EN-US style='font-size:
+11.0pt'>X</span><span style='font-size:11.0pt'>. Эти значения занесены в клетки
+карт Карно для входов </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'> всех триггеров, соответствующие состоянию счетчика
+0000 (рисунок А.1). Пользуясь таблицей А.2, можно заполнить карты Карно для
+входов </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'> всех триггеров счетчика. При этом следует помнить,
+что уровни сигналов на входах </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'> являются логическими функциями текущего состояния
+триггеров и на картах Карно (рисунок А.1) под </span>
+<span lang=EN-US
+style='font-size:11.0pt'>Q</span><sub><span style='font-size:11.0pt'>3</span></sub><span
+style='font-size:11.0pt'>, </span><span lang=EN-US style='font-size:11.0pt'>Q</span><sub><span
+style='font-size:11.0pt'>2</span></sub><span style='font-size:11.0pt'>, </span>
+<span
+lang=EN-US style='font-size:11.0pt'>Q</span><sub><span style='font-size:11.0pt'>1</span></sub><span
+style='font-size:11.0pt'>, </span><span lang=EN-US style='font-size:11.0pt'>Q</span><sub><span
+style='font-size:11.0pt'>0</span></sub><span style='font-size:11.0pt'>
+понимается текущее состояние счетчика, т.е. перед поступлением на вход счетчика
+очередного импульса. На картах Карно знаком «Ф» обозначены неопределенные
+значения функций возбуждения входов </span>
+<span lang=EN-US style='font-size:
+11.0pt'>J</span><span style='font-size:11.0pt'> и </span>
+<span lang=EN-US
+style='font-size:11.0pt'>K</span><span style='font-size:11.0pt'>,
+соответствующие лишним состояниям счетчика.</span></p>
+
+
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image185.gif"></span></p>
+<p class=MsoNormal align=center style='text-align:center'><i>
+<span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image186.gif"></span></p>
+<p class=MsoNormal align=center style='text-align:center'><i>
+<span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image187.gif"></span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:10.0pt'>Рисунок А.1 – Карты Карно для счетчика с коэффициентом
+пересчета </span><span lang=EN-US style='font-size:10.0pt'>K</span><sub><span
+style='font-size:10.0pt'>пер</span></sub><span style='font-size:10.0pt'>&nbsp;=&nbsp;10</span></p>
+<span style='font-size:11.0pt;font-family:"Times New Roman","serif"'>
+<br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image188.gif"></span></p>
+<p class=MsoNormal align=center style='text-align:center'><i>
+<span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image189.gif"></span></p>
+<p class=MsoNormal align=center style='text-align:center'><i>
+<span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image190.gif"></span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:10.0pt'>Продолжение рисунка А.1</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<span style='font-size:11.0pt;font-family:"Times New Roman","serif"'>
+<br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=224 height=173
+src="../../../Практика/images/pr/image191.gif"></span></p>
+<p class=MsoNormal align=center style='text-align:center'><i>
+<span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<img width=224
+height=173 src="../../../Практика/images/pr/image192.gif"></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:8.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:10.0pt'>Окончание рисунка А.1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Следует помнить, что при минимизации не полностью
+заданных логических функций произвольные и неопределенные значения функции
+можно доопределять с целью упрощения результата минимизации. Следовательно, на
+картах Карно при записи результата минимизации в МДНФ в замкнутые области
+следует объединять клетки, заполненные единицами, а также произвольными и
+неопределенными значениями логической функции.</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>По картам Карно запишем следующие выражения для
+функций возбуждения входов </span><span lang=EN-US style='font-size:11.0pt'>J</span><span
+style='font-size:11.0pt'> и </span><span lang=EN-US style='font-size:11.0pt'>K</span><span
+style='font-size:11.0pt'> всех триггеров счетчика в МДНФ</span></p>
+
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'><span style='position:relative;top:34.0pt'>
+<img
+width=288 height=97
+src="../../../Практика/images/pr/image193.gif"></span>                (А.1)</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+				&nbsp;</p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+				&nbsp;</p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:8.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Логическая схема счетчика, построенная по логическим
+функциям (А.1), представлена на рисунке А.2.</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+style='font-size:8.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:11.0pt'>
+<img width=409 height=231
+src="../../../Практика/images/pr/image194.gif"></span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<i><span
+lang=EN-US style='font-size:11.0pt'>&nbsp;</span></i></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:10.0pt'>Рисунок А.2 – Логическая схема счетчика на </span>
+<span
+lang=EN-US style='font-size:10.0pt'>JK</span><span style='font-size:10.0pt'>-триггерах
+с коэффициентом пересчета </span><span lang=EN-US style='font-size:10.0pt'>K</span><sub><span
+style='font-size:10.0pt'>пер</span></sub><span style='font-size:10.0pt'>&nbsp;=&nbsp;10</span></p>
+
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<span
+style='font-size:11.0pt'>Работа счетчика (рисунок А.2) поясняется временными
+диаграммами, приведенными на рисунке А.3 (число входных импульсов </span>
+<span
+lang=EN-US style='font-size:11.0pt'>N</span><span style='font-size:11.0pt'>
+определяется по формуле </span><span lang=EN-US style='font-size:11.0pt'>N&nbsp;</span><span
+style='font-size:11.0pt'>=</span><span lang=EN-US style='font-size:11.0pt'>&nbsp;K</span><sub><span
+style='font-size:11.0pt'>пер</span></sub><span lang=EN-US style='font-size:
+11.0pt'>&nbsp;</span><span style='font-size:11.0pt'>+</span><span lang=EN-US
+style='font-size:11.0pt'>&nbsp;</span><span style='font-size:11.0pt'>1).</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:normal'>
+<span style='font-size:
+11.0pt'><img width=410 height=343
+src="../../../Практика/images/pr/image195.gif"></span></p>
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<span
+lang=EN-US style='font-size:11.0pt'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center'>
+<span
+style='font-size:10.0pt'>Рисунок А.3 – Временные диаграммы работы недвоичного
+счетчика с коэффициентом пересчета </span>
+<span lang=EN-US style='font-size:
+10.0pt'>K</span><sub><span style='font-size:10.0pt'>пер</span></sub><span
+lang=EN-US style='font-size:10.0pt'>&nbsp;</span><span style='font-size:10.0pt'>=</span><span
+lang=EN-US style='font-size:10.0pt'>&nbsp;</span><span style='font-size:10.0pt'>10</span></p>
+
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<span
+style='font-size:11.0pt'>Из временных диаграмм следует, что каждый десятый
+импульс сбрасывает счетчик в исходное нулевое состояние.</span></p>
+<p class=MsoBodyTextIndent style='text-indent:19.85pt;line-height:normal'>
+<b><span
+style='font-size:11.0pt;letter-spacing:-.2pt'>Синтез счетчика с заданным
+коэффициентом пересчета выполните по вышерассмотренной методике.</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span
+style='font-size:11.0pt'>Содержание отчета</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Отчет должен содержать:</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Наименование и цель лабораторной работы.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Выполненное индивидуальное задание (условие и ответы
+на пункты 2.2…2.6).</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Ответы на контрольные вопросы.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span
+style='font-size:11.0pt'>Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Поясните, как определить разрядность счетчика?</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Начертите логическую структуру и поясните принцип
+построения двоичного счетчика схемотехники ТТЛШ на микросхеме К555ИЕ5.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Начертите УГО микросхемы ЭКР1594ИЕ23 (</span><span
+lang=EN-US style='font-size:11.0pt'>IN</span><span style='font-size:11.0pt'>74</span><span
+lang=EN-US style='font-size:11.0pt'>ACT</span><span style='font-size:11.0pt'>4520</span><span
+lang=EN-US style='font-size:11.0pt'>N</span><span style='font-size:11.0pt'>),
+поясните назначение выводов, укажите возможные режимы работы и условия их
+обеспечения.</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>Поясните назначение выводов счетчиков: </span>
+<span
+lang=EN-US style='font-size:11.0pt'>LD</span><span style='font-size:11.0pt'>,
++1</span><span lang=BE style='font-size:11.0pt'>&nbsp;(</span><span lang=EN-US
+style='font-size:11.0pt'>CU</span><span lang=BE style='font-size:11.0pt'>)</span><span
+style='font-size:11.0pt'>, –1&nbsp;</span><span lang=BE style='font-size:11.0pt'>(</span><span
+lang=EN-US style='font-size:11.0pt'>CD</span><span lang=BE style='font-size:
+11.0pt'>)</span><span style='font-size:11.0pt'>, </span>
+<span lang=EN-US
+style='font-size:11.0pt'>R</span><span style='font-size:11.0pt'>, </span>
+<span
+lang=EN-US style='font-size:11.0pt'>D</span><span style='font-size:11.0pt'>3…</span><span
+lang=EN-US style='font-size:11.0pt'>D</span><span style='font-size:11.0pt'>0,
+</span><span
+lang=EN-US style='font-size:11.0pt'>C</span><span style='font-size:11.0pt'>,
+</span><span
+lang=EN-US style='font-size:11.0pt'>CEP</span><span style='font-size:11.0pt'>,
+</span><span
+lang=EN-US style='font-size:11.0pt'>CET</span><span style='font-size:11.0pt'>,
+</span><span
+lang=EN-US style='font-size:11.0pt'>R</span><span style='font-size:11.0pt'>,
+</span><span
+lang=EN-US style='font-size:11.0pt'>C</span><span style='font-size:11.0pt'>0,
+</span><span
+lang=EN-US style='font-size:11.0pt'>B</span><span style='font-size:11.0pt'>0.</span></p>
+<p class=MsoNormal align=center style='text-align:center'><b>
+<span
+style='font-size:11.0pt'>Требования к знаниям и умениям студентов</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>В результате выполнения лабораторной работы студенты
+должны знать назначение и принцип функционирования различных типов счетчиков на
+интегральных микросхемах.</span></p>
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>Должны уметь:</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>обеспечивать различные режимы работы микросхем
+счетчиков (режим прямого и обратного счета, параллельной загрузки);</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>наращивать разрядность счетчиков;</span></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'>
+<span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span
+style='font-size:11.0pt'>определять по УГО тип счетчика и назначение выводов.</span></p>
+
+ </div>
+<A HREF="../../../Практика/practice.html">Практика</A>
+<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

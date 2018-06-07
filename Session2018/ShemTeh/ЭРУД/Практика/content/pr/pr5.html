@@ -1,0 +1,901 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>PR5 - Практика по дисциплине &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+	<A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+            <td>
+                <p>&nbsp;</p>
+				<A HREF="../../../Практика/practice.html">Практика</A>
+
+                <p>ПРАКТИЧЕСКАЯ  РАБОТА № 5</p>
+                 <div>
+<p class=11><b>ИЗУЧЕНИЕ ИНТЕГРАЛЬНЫХ ЛОГИЧЕСКИХ И БУФЕРНЫХ ЭЛЕМЕНТОВ. </b>Работа со справочником</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Цель работы</span></b></p>
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Изучить основные статические и динамические параметры
+интегральных ЛЭ транзисторно-транзисторной логики с диодами Шотки (схемотехники
+ТТЛШ) и схемотехники КМОП.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Приобрести практические навыки работы со справочной
+литературой и умение подбирать интегральные логические и буферные элементы с
+требуемыми параметрами.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Вопросы для самоконтроля</span></b></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите основные статические и динамические параметры
+интегральных ЛЭ, поясните их физический смысл и единицы измерения.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Поясните взаимосвязь между быстродействием
+интегральных ЛЭ, потребляемой мощностью и помехоустройчивостью.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Поясните, почему выходные токи <span style='position:
+relative;top:4.0pt'><img width=27 height=22
+src="../../../Практика/images/pr/image001.gif"></span> и <span
+style='position:relative;top:4.0pt'><img width=27 height=22
+src="../../../Практика/images/pr/image002.gif"></span> имеют
+разные знаки? Покажите их направление на УГО инвертора.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите напряжение источника питания для микросхем
+схемотехники ТТЛШ и современных серий схемотехники КМОП.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>5<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Поясните, какие параметры интегральных ЛЭ и как можно
+определить по передаточной характеристике?</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>6<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Зарисуйте УГО основных ЛЭ по ГОСТ 2.743-91 и их
+международные варианты.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>7<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите схемотехнические особенности цифровых
+элементов (логических, запоминающих, буферных) с логическим выходом, с открытым
+коллектором (стоком), с третьим или </span><span lang=EN-US style='font-size:
+11.0pt'>Z</span><span style='font-size:11.0pt'>-состоянием. Зарисуйте их УГО,
+принципиальную электрическую схему выходного каскада, поясните принцип работы,
+укажите достоинства и недостатки.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Порядок выполнения работы</span></b></p>
+
+
+<p class=MsoNormal style='margin-left:7.15pt;text-align:justify;text-indent:
+19.85pt'><span style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Выполнить индивидуальное задание
+№&nbsp;1. Изучить микросхемы интегральных логических и буферных элементов
+разных схемотехнических типов (таблица 1).</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt'><b>Таблица
+1 </b>– Исходные данные к индивидуальному заданию №&nbsp;1</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=446
+ style='width:334.55pt;margin-left:5.65pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=72 rowspan=2 valign=top style='width:53.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Номер варианта</span></p>
+  </td>
+  <td width=373 colspan=3 valign=top style='width:279.85pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Условное обозначение микросхем по ГОСТ 17021&#8209;88
+  (международное обозначение) и схемотехника</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Логические элементы ТТЛШ</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Логические элементы КМОП</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Буферные элементы КМОП</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА1</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS20)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛЕ1</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC02AN)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛП8</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC125N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛН2</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS05)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛИ6</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC21N)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554АП3</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC240N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>3</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛЕ1</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS02)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛН2</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC05AN)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛП8</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:1.15pt;margin-bottom:.0001pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC125AN)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>4</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА4</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS10)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛИ1</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC08N)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554АП4</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC241)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>5</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА8</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS01)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛП5</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC86AN)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:-5.65pt;margin-bottom:
+  0cm;margin-left:1.15pt;margin-bottom:.0001pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1594АП6</span></p>
+  <p class=MsoNormal style='margin-left:1.15pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74ACT245N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>6</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА7</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS22)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛЕ4</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC27N)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1594АП5</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74ACT244N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>7</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА3</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS</span><span
+  style='font-size:10.0pt'>0</span><span lang=EN-US style='font-size:10.0pt'>0)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛЛ1</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC32AN)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564АП4</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:1.15pt;margin-bottom:.0001pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC241AN)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>8</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛП5</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS86)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛА3</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC00N)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554АП6</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC245N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>9</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛИ1</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS08)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1564ЛЕ4</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HC27AN)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554АП25</span></p>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC620N)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 style='width:53.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>10</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>1533ЛА2</span></p>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>SN54ALS30)</span></p>
+  </td>
+  <td width=116 valign=top style='width:86.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР1554ЛИ3</span></p>
+  <p class=MsoNormal style='margin-left:3.9pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74AC11N)</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.1pt;text-align:justify'><span
+  style='font-size:10.0pt'>ЭКР5564АП26</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:-5.65pt;margin-bottom:
+  0cm;margin-left:1.15pt;margin-bottom:.0001pt;text-align:justify'><span
+  style='font-size:10.0pt'>(</span><span lang=EN-US style='font-size:10.0pt'>IN74HCT623AN)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>2.1<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Выбрать из таблицы 1 заданную микросхему интегрального
+ЛЭ схемотехники ТТЛШ для заданного варианта и найти ее в справочнике [</span><span
+lang=BE style='font-size:11.0pt'>8</span><span style='font-size:11.0pt'>],
+используя алфавитно-цифровой указатель. Номер варианта соответствует последней
+цифре номера студента в списке учебного журнала группы, за исключением варианта
+№&nbsp;10, который выполняют студенты, имеющие в списке группы номер 10, 20 или
+30. Затем выбрать из таблицы 1 заданные микросхемы интегрального логического
+или буферного элементов схемотехники КМОП и найти их в приложении Б.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>2.2<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Зарисовать по [</span><span lang=BE style='font-size:
+11.0pt'>8</span><span style='font-size:11.0pt'>] и приложению </span><span
+lang=EN-US style='font-size:11.0pt'>B</span><span style='font-size:11.0pt'> УГО
+заданных микросхем, таблицы истинности и проставить номера выводов. Указать
+выполняемые логические операции.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>2.3<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Определить по [</span><span lang=BE style='font-size:
+11.0pt'>8</span><span style='font-size:11.0pt'>] и приложению Б основные
+статические и динамические параметры заданных микросхем. Результаты записать в
+таблицу, аналогичную по форме таблице 2.</span></p>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+<img alt="" src="../../../Практика/images/pr/imgC.jpg"></span><p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+style='font-size:1.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>2.4 <span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Проанализировать данные таблицы 2 и сделать
+сравнительную характеристику интегральных ЛЭ различных схемотехнических типов,
+указать их достоинства и недостатки.</span></p>
+
+<p class=MsoNormal style='margin-left:7.15pt;text-align:justify;text-indent:
+19.85pt'><span style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Выполнить индивидуальное задание
+№&nbsp;2 (таблица 3). По заданной логической операции, типу схемотехники и типу
+выхода выбрать микросхему.</span></p>
+
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt'><b>Таблица
+3 </b>– Исходные данные к индивидуальному заданию №&nbsp;2</span></p>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.65pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-5.65pt;
+  margin-bottom:0cm;margin-left:-5.65pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Номер варианта</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Логическая</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>операция</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:-2.85pt;
+  margin-bottom:0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:10.0pt'>Схемотехника</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>Тип выхода</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>6&nbsp;ЛЭ     НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>КМОП</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Открытый
+  сток</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>2&nbsp;ЛЭ     4&nbsp;И-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>ТТЛШ</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Логический</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>3</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;И-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>КМОП</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Открытый
+  сток</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>4</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;ИЛИ-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>ТТЛШ</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Логический</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>5</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;ИЛИ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>КМОП</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Логический</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>6</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;И-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>ТТЛШ</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Открытый
+  коллектор</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>7</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:-2.85pt;margin-bottom:
+  0cm;margin-left:-2.85pt;margin-bottom:.0001pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;Искл. ИЛИ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>КМОП</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Логический</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>8</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;И</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>ТТЛШ</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Открытый
+  коллектор</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>9</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>4&nbsp;ЛЭ     2&nbsp;И-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>КМОП</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt'>Логический</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:44.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>10</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:-2.85pt;text-align:justify'><span
+  style='font-size:10.0pt'>2&nbsp;ЛЭ     4&nbsp;И-НЕ</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:12.6pt;text-align:justify'><span
+  style='font-size:10.0pt'>ТТЛШ</span></p>
+  </td>
+  <td width=159 valign=top style='width:118.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt'>Z</span><span style='font-size:10.0pt'>-состояние</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>3.1<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Подобрать по справочнику [</span><span lang=BE
+style='font-size:11.0pt'>8</span><span style='font-size:11.0pt'>] или
+приложению Б микросхему схемотехники ТТЛШ или КМОП в соответствии с заданными в
+таблице 3 требованиями. Для подбора микросхемы схемотехники ТТЛШ следует
+использовать таблицу 2.2 в справочнике [</span><span lang=BE style='font-size:
+11.0pt'>8</span><span style='font-size:11.0pt'>]. Для подбора микросхемы
+схемотехники КМОП следует использовать приложение Б. Указать возможные варианты
+микросхем, соответствующих заданию, и выбрать одну из них с лучшими
+параметрами.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:1.0cm'><span
+style='font-size:11.0pt'>3.2<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:11.0pt'>Зарисовать УГО выбранной микросхемы и таблицу
+истинности, указать ее условное обозначение, а также записать в таблицу 2
+основные статические и динамические параметры.</span></p>
+
+<p class=MsoNormal style='margin-left:7.15pt;text-align:justify;text-indent:
+19.85pt'><span style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Ответить на контрольные вопросы.</span></p>
+
+<p class=MsoNormal style='margin-left:7.15pt;text-align:justify;text-indent:
+19.85pt'><span style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Оформить отчет и сдать зачет.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Содержание отчета</span></b></p>
+
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Отчет должен содержать:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Наименование и цель лабораторной работы.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt;letter-spacing:-.15pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;letter-spacing:-.15pt'>Выполненные
+индивидуальные задания №&nbsp;1, 2 (условия и ответы).</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Ответы на контрольные вопросы.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Контрольные вопросы</span></b></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите назначение, УГО и особенности интегральных ЛЭ
+с третьим состоянием на выходе.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>2<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите назначение, УГО и особенности интегральных ЛЭ
+с открытым коллектором (стоком).</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>3<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите назначение, УГО и особенности интегральных ЛЭ
+с логическим выходом.</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>4<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>Укажите назначение, УГО и особенности буферных
+элементов и двунаправленных приемопередатчиков.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:11.0pt'>Требования к знаниям и умениям студентов</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>В результате выполнения лабораторной работы студент
+должен знать:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>основные статические и динамические параметры
+интегральных ЛЭ, их физический смысл и единицы измерения;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>количественные значения основных статических и
+динамических параметров интегральных ЛЭ схемотехники ТТЛШ и КМОП.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>Должен уметь:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>определять параметры интегральных логических и
+буферных элементов по справочнику;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:19.85pt'><span
+style='font-size:11.0pt'>–<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.0pt'>подбирать по справочнику интегральные логические и
+буферные элементы с заданными параметрами.</span></p>
+
+
+ </div>
+				<A HREF="../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

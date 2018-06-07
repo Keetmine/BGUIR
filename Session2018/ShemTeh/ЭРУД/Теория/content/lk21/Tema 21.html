@@ -1,0 +1,1941 @@
+<!-- (C) 2015 09 Rozum Halina, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Tema 21 &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный
+        ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;ИНЖЕНЕРНО-ПСИХОЛОГИЧЕСКОЕ ОБЕСПЕЧЕНИЕ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+  <A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+              <strong>Теория</strong> |
+    <A HREF="../../../Практика/practice.html">Практика</A>|
+    <A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+  <A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+ <div style="margin-left:5%; margin-right:5%;" width="80%" border="0" cellpadding="0" cellspacing="0">
+
+        <A HREF="../../../Теория/theory.html">Содержание</A>
+                 <div> <p><span>Раздел 2. Схемотехнические решения <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Тема
+21 <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;background:white'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Структурная
+организация микроконтроллера<o:p></o:p></span></b></p>
+
+<ol>
+<li><a href="#_T1">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Общие сведения.<o:p></o:p></span></a></li>
+<li><a href="#_T2">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классификация и структура микроконтроллеров. <o:p></o:p></span></a></li>
+<li><a href="#_T3">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Архитектура микроконтроллера и команды. <o:p></o:p></span></a></li>
+<li><a href="#_T4">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Процессорное ядро микроконтроллера</span></a></li>
+<li><a href="#_T5">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Структурная организация микроконтроллера </span></a></li>
+<li><a href="#_T6">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Структурная организация AVR - микроконтроллера. <o:p></o:p></span></a></li>
+<li><a href="#_T7">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классификация команд</span></a></li>
+<li><a href="#_T8">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Видео материал</span></a></li>
+ <li><a href="#_T9">
+ <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight: bold'>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Литература</span></a></li>
+</ol>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T1"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>1. Общие сведения.</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+class=SpellE><span class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman"'>Микроконтро&#769;ллер</span></span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> (<a
+href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA"
+title="Английский язык"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>англ.</span></a>&nbsp;<span class=SpellE>Micro</span> <span
+class=SpellE>Controller</span> <span class=SpellE>Unit</span>, MCU)&nbsp;— <a
+href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0"
+title=Микросхема><span style='color:windowtext;text-decoration:none;text-underline:
+none'>микросхема</span></a>, предназначенная для управления <a
+href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0"
+title=Электроника><span style='color:windowtext;text-decoration:none;
+text-underline:none'>электронными</span></a> <a
+href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE"
+title="Электронное устройство"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>устройствами</span></a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Типичный микроконтроллер
+сочетает на одном кристалле функции <a
+href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80"
+title=Процессор><span style='color:windowtext;text-decoration:none;text-underline:
+none'>процессора</span></a> и <a
+href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B8%D1%84%D0%B5%D1%80%D0%B8%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE"
+title="Периферийное устройство"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>периферийных устройств</span></a>, содержит <a
+href="https://ru.wikipedia.org/wiki/%D0%9E%D0%97%D0%A3" title=ОЗУ><span
+style='color:windowtext;text-decoration:none;text-underline:none'>ОЗУ</span></a>
+и (или) <a
+href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B5_%D0%B7%D0%B0%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D1%8E%D1%89%D0%B5%D0%B5_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE"
+title="Постоянное запоминающее устройство"><span style='color:windowtext;
+text-decoration:none;text-underline:none'>ПЗУ</span></a>. По сути, это
+однокристальный <a
+href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80"
+title=Компьютер><span style='color:windowtext;text-decoration:none;text-underline:
+none'>компьютер</span></a>, способный выполнять относительно простые задачи.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Отличается от <a
+href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80"
+title=Микропроцессор><span style='color:windowtext;text-decoration:none;
+text-underline:none'>микропроцессора</span></a> интегрированными в микросхему
+устройствами ввода-вывода, таймерами и другими периферийными устройствами.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Микроконтроллеры
+предоставляют человеку возможность управления устройством, устанавливаются на
+различные бытовые и технические устройства и используются в управлении различными
+устройствами и их отдельными блоками:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><u><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>в вычислительной
+технике: <o:p></o:p></span></u></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>материнские платы,
+     контроллеры дисководов <a
+     href="https://ru.wikipedia.org/wiki/%D0%96%D1%91%D1%81%D1%82%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B8%D1%81%D0%BA"
+     title="Жёсткий диск"><span style='color:windowtext;text-decoration:none;
+     text-underline:none'>жестких</span></a> и <a
+     href="https://ru.wikipedia.org/wiki/%D0%9D%D0%93%D0%9C%D0%94" title=НГМД><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>гибких
+     дисков</span></a>, <a href="https://ru.wikipedia.org/wiki/CD" title=CD><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>CD</span></a>
+     и <a href="https://ru.wikipedia.org/wiki/DVD" title=DVD><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>DVD</span></a>,
+     <a
+     href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80"
+     title=Калькулятор><span class=GramE><span style='color:windowtext;
+     text-decoration:none;text-underline:none'>калькуляторах</span></span></a>;<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><u><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>в электронике и
+разнообразных устройствах бытовой техники, в которой используется электронные
+системы управления<o:p></o:p></span></u></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>стиральных <span
+     class=GramE>машинах</span>, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>микроволновых <span
+     class=GramE>печах</span>, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>посудомоечных <span
+     class=GramE>машинах</span>,<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><span
+     style='mso-spacerun:yes'> </span><span class=GramE>телефонах</span> и <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>современных <span
+     class=GramE>приборах</span>, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>различных <span
+     class=GramE>роботах</span>, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman"'>системах</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'> «умный дом», и
+     др..<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><u><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>В промышленности:<o:p></o:p></span></u></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>устройства <a
+     href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0"
+     title="Промышленная автоматика"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>промышленной автоматики</span></a>&nbsp;— от <a
+     href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D0%B5_%D1%80%D0%B5%D0%BB%D0%B5"
+     title="Программируемое реле"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>программируемого реле</span></a> и <a
+     href="https://ru.wikipedia.org/wiki/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0"
+     title="Встраиваемая система"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>встраиваемых систем</span></a> до <a
+     href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%B9_%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80"
+     title="Программируемый логический контроллер"><span style='color:windowtext;
+     text-decoration:none;text-underline:none'>ПЛК</span></a>,<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><a
+     href="https://ru.wikipedia.org/wiki/CNC" title=CNC><span style='color:
+     windowtext;text-decoration:none;text-underline:none'>систем управления</span></a>
+     <a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%9F%D0%A3" title=ЧПУ><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>станками</span></a>.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+то время как 8-разрядные микропроцессоры общего назначения полностью вытеснены
+более производительными моделями, 8-разрядные микроконтроллеры продолжают
+широко использоваться. Это объясняется тем, что существует большое количество
+применений, в которых не требуется высокая производительность, но важна низкая
+стоимость. В то же время, есть микроконтроллеры, обладающие <span class=SpellE>больши&#769;ми</span>
+вычислительными возможностями, например, <a
+href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80"
+title="Цифровой сигнальный процессор"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>цифровые сигнальные процессоры</span></a>,
+применяющиеся для обработки большого потока данных в реальном времени (например,
+ауди<span class=GramE>о-</span>, видеопотоков).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Программа
+работы микроконтроллера хранится в памяти в виде последовательности команд
+(инструкций). Обычно она устанавливается его производителем, при этом
+отсутствует возможность ее изменения в дальнейшем. В процессе работы процессорное
+ядро последовательно извлекает из памяти инструкции, расшифровывает и выполняет
+их. В зависимости от инструкции в ядре выполняются различные арифметические и
+логические операции, пересыпки данных. При необходимости, в процессе выполнения
+инструкции, процессорное ядро обращается за данными к ячейкам памяти и
+функциональным блокам, либо пересыпает в них результаты вычислений. Множество
+инструкций, которые понимает процессорное ядро, образует систему команд
+микроконтроллера.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><a
+href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"
+title=Программирование><span style='color:windowtext;text-decoration:none;
+text-underline:none'>Программирование</span></a> микроконтроллеров обычно
+осуществляется на языке <a
+href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B7%D1%8B%D0%BA_%D0%B0%D1%81%D1%81%D0%B5%D0%BC%D0%B1%D0%BB%D0%B5%D1%80%D0%B0"
+title="Язык ассемблера"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>ассемблера</span></a> или <a
+href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)"
+title="Си (язык программирования)"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>Си</span></a>, хотя существуют <a
+href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80"
+title=Компилятор><span style='color:windowtext;text-decoration:none;text-underline:
+none'>компиляторы</span></a> для других языков, например, <a
+href="https://ru.wikipedia.org/wiki/Forth_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)"
+title="Forth (язык программирования)"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>Форта</span></a> и <a
+href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%B9%D1%81%D0%B8%D0%BA"
+title=Бейсик><span style='color:windowtext;text-decoration:none;text-underline:
+none'>Бейсика</span></a>. Используются также встроенные <a
+href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%BE%D1%80"
+title=Интерпретатор><span style='color:windowtext;text-decoration:none;
+text-underline:none'>интерпретаторы</span></a> <a
+href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%B9%D1%81%D0%B8%D0%BA"
+title=Бейсик><span style='color:windowtext;text-decoration:none;text-underline:
+none'>Бейсика</span></a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Микроконтроллеры
+производятся в огромных количествах (большими партиями). <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>
+<img border=0 width=62 height=79
+src="Tema%2021.files/image002.jpg" v:shapes="_x0000_i1025"> <span
+style='mso-spacerun:yes'>     </span>
+<img border=0 width=99 height=60
+src="Tema%2021.files/image004.jpg" v:shapes="_x0000_i1026"> <span
+style='mso-spacerun:yes'>     </span>
+<img border=0 width=112 height=94
+src="Tema%2021.files/image006.jpg" alt=Микроконтроллер v:shapes="_x0000_i1027"> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Для того<span
+class=GramE>,</span> чтобы персональный компьютер мог работать, необходимо,
+чтобы в его оперативной памяти находилась программа и данные, и между ними
+происходил обмен. При работе программы часто <span class=GramE>бывает</span>
+необходим ввод информации от пользователя или вывод ее на экран. Такой обмен
+называется вводом-выводом. Для его осуществления имеются два промежуточных
+звена:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>для каждого
+     внешнего устройства ПК имеется электронная схема, которая им управляет.
+     Его называют контроллером или адаптером.<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     class=GramE><span style='font-size:12.0pt;font-family:"Times New Roman"'>в</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>се контроллеры или
+     адаптеры взаимодействуют с микропроцессором и оперативной памятью через
+     системную магистраль передачи данных, которую называют шиной. Системная
+     шина является каналом соединения микропроцессора, оперативной памяти и
+     интегральных устройств. Физически шина находится на материнской плате.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Для обмена данными с
+памятью и устройствами ввода-вывода служат разные компоненты шины:
+взаимодействие микропроцессора с периферийными устройствами идет через шину
+данных, а адресация памяти происходит при помощи шины адреса.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Шина персонального
+компьютера IBM PC XT была 8-разрядной. Затем фирма IBM PC AT ввела стандарт
+16-разрядной шины ISA. Все IBM-совместимые компьютеры перенимали стандарт ISA.
+В <st1:metricconverter ProductID="1987 г" w:st="on">1987 г</st1:metricconverter>.
+появилась 32-х разрядная шина для IBM PS/2, она называлась MCA. Эта шина была
+несовместима <span class=GramE>со</span> стандартной – ISA. В 1989 году
+появилась новая 32-х разрядная шина EISA, совместимая с ISA. Позже развилась
+концепция локальной шины, повышающей быстродействие за счет установки к ней
+дополнительной шины. Популярным стандартом стал PCI (64 разряда). AGP-видео
+шина работает на частоте процессора.<span class=GramE>( </span>http://inf1.info/trunk)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+1.0cm;line-height:normal;page-break-after:avoid;mso-outline-level:3'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T2"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>2. Классификация и структура микроконтроллеров</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>В настоящее время выпускается целый ряд
+типов&nbsp;<i>МК</i>. Все эти приборы можно условно разделить на три основных
+класса:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l7 level1 lfo1;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>8-разрядные&nbsp;<i>МК</i>&nbsp;для
+     встраиваемых приложений;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l7 level1 lfo1;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>16- и
+     32-разрядные&nbsp;<i>МК</i>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l7 level1 lfo1;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>цифровые
+     сигнальные процессоры (DSP).<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Наиболее распространенным представителем
+семейства&nbsp;<i>МК</i>&nbsp;являются 8-разрядные приборы, широко используемые
+в промышленности, бытовой и компьютерной технике. Они прошли в своем развитии
+путь от простейших приборов с относительно слаборазвитой периферией до
+современных многофункциональных контроллеров, обеспечивающих реализацию сложных
+алгоритмов управления в реальном масштабе времени. Причиной жизнеспособности
+8-разрядных&nbsp;<i>МК</i>&nbsp;является использование их для управления
+реальными объектами, где применяются, в основном, алгоритмы с преобладанием
+логических операций, скорость обработки которых практически не зависит от
+разрядности процессора.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Росту популярности 8-разрядных&nbsp;<i>МК</i>&nbsp;способствует
+постоянное расширение номенклатуры изделий, выпускаемых такими известными
+фирмами, как <span class=SpellE>Motorola</span>, <span class=SpellE>Microchip</span>,
+<span class=SpellE>Intel</span>, <span class=SpellE>Zilog</span>, <span
+class=SpellE>Atmel</span> и многими другими. Современные 8-разрядные&nbsp;<i>МК</i>&nbsp;обладают,
+как правило, рядом отличительных признаков. <span class=GramE>Перечислим
+основные из них:</span><o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l0 level1 lfo2;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>модульная
+     организация, при которой на базе одного&nbsp;<i>процессорного ядра</i>&nbsp;(центрального
+     процессора) проектируется ряд (линейка)&nbsp;<i>МК</i>, различающихся
+     объемом и типом&nbsp;<i>памяти программ</i>, объемом&nbsp;<i>памяти данных</i>,
+     набором периферийных модулей, частотой синхронизации;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l0 level1 lfo2;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>использование
+     закрытой архитектуры&nbsp;<i>МК</i>, которая характеризуется отсутствием
+     линий магистралей адреса и данных на выводах корпуса&nbsp;<i>МК</i>. Таким
+     образом,&nbsp;<i>МК</i>&nbsp;представляет собой законченную систему
+     обработки данных, наращивание возможностей которой с использованием
+     параллельных магистралей адреса и данных не предполагается;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l0 level1 lfo2;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>использование
+     типовых функциональных периферийных модулей (таймеры, процессоры событий,
+     контроллеры последовательных интерфейсов, аналого-цифровые преобразователи
+     и др.), имеющих незначительные отличия в алгоритмах работы в&nbsp;<i>МК</i>&nbsp;различных
+     производителей;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l0 level1 lfo2;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>расширение
+     числа режимов работы периферийных модулей, которые задаются в процессе
+     инициализации регистров специальных функций&nbsp;<i>МК</i>.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Неполный список <a
+href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B8%D1%84%D0%B5%D1%80%D0%B8%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE"
+title="Периферийное устройство"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>периферийных устройств</span></a>, которые могут
+использоваться в микроконтроллерах, включает в себя:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>универсальные
+     цифровые порты, которые можно настраивать как на ввод, так и на вывод;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>различные
+     интерфейсы ввода-вывода, такие, как <a
+     href="https://ru.wikipedia.org/wiki/UART" title=UART><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>UART</span></a>,
+     <a href="https://ru.wikipedia.org/wiki/I2C" title=I2C><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>I&sup2;C</span></a>,
+     <a href="https://ru.wikipedia.org/wiki/Serial_Peripheral_Interface"
+     title="Serial Peripheral Interface"><span style='color:windowtext;
+     text-decoration:none;text-underline:none'>SPI</span></a>, <a
+     href="https://ru.wikipedia.org/wiki/Controller_Area_Network"
+     title="Controller Area Network"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>CAN</span></a>, <a
+     href="https://ru.wikipedia.org/wiki/USB" title=USB><span style='color:
+     windowtext;text-decoration:none;text-underline:none'>USB</span></a>, <a
+     href="https://ru.wikipedia.org/wiki/IEEE_1394" title="IEEE 1394"><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>IEEE
+     1394</span></a>, <a href="https://ru.wikipedia.org/wiki/Ethernet"
+     title=Ethernet><span class=SpellE><span style='color:windowtext;
+     text-decoration:none;text-underline:none'>Ethernet</span></span></a>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><a
+     href="https://ru.wikipedia.org/wiki/%D0%90%D0%A6%D0%9F" title=АЦП><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>аналого-цифровые</span></a>
+     и <a href="https://ru.wikipedia.org/wiki/%D0%A6%D0%90%D0%9F" title=ЦАП><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>цифро-аналоговые</span></a>
+     преобразователи;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><a
+     href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D1%80"
+     title=Компаратор><span style='color:windowtext;text-decoration:none;
+     text-underline:none'>компараторы</span></a>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><a
+     href="https://ru.wikipedia.org/wiki/%D0%A8%D0%98%D0%9C" title=ШИМ><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>широтно-импульсные</span></a>
+     модуляторы (<a
+     href="https://ru.wikipedia.org/wiki/%D0%A8%D0%98%D0%9C-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80"
+     title=ШИМ-контроллер><span style='color:windowtext;text-decoration:none;
+     text-underline:none'>ШИМ-контроллер</span></a>);<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><a
+     href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BC%D0%B5%D1%80_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)"
+     title="Таймер (информатика)"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>таймеры</span></a>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>контроллеры <span
+     class=SpellE>бесколлекторных</span> двигателей, в том числе <a
+     href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+     title="Шаговый двигатель"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>шаговых</span></a>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>контроллеры
+     дисплеев и клавиатур;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>радиочастотные
+     приемники и передатчики;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>массивы <span
+     class=GramE>встроенной</span> <a
+     href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B5%D1%88-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C"
+     title=Флеш-память><span class=SpellE><span style='color:windowtext;
+     text-decoration:none;text-underline:none'>флеш</span></span><span
+     style='color:windowtext;text-decoration:none;text-underline:none'>-памяти</span></a>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=GramE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>встроенные</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'> <a
+     href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80"
+     title="Тактовый генератор"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>тактовый генератор</span></a> и <a
+     href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%B2%D0%BE%D0%B9_%D1%82%D0%B0%D0%B9%D0%BC%D0%B5%D1%80"
+     title="Сторожевой таймер"><span style='color:windowtext;text-decoration:
+     none;text-underline:none'>сторожевой таймер</span></a>.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T3"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>3. Архитектура микроконтроллера и команды</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Контроллером в технике
+регулирования считается управляющее устройство, осуществляющее регулирующие или
+контролирующие функции в системе. Контроллер, реализованный на одном кристалле,
+называется микроконтроллером. Современный микроконтроллер является большой
+цифровой интегральной схемой, объединяющей миллионы, выполненных по микронным
+технологиям, транзисторов. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:36.85pt;line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Микроконтроллер состоит
+из трех, связанных системными шинами, элементов: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:normal;mso-list:l1 level1 lfo7;tab-stops:list 32.2pt left 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'> <span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman"'>процессорного
+ядра, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:normal;mso-list:l1 level1 lfo7;tab-stops:list 32.2pt left 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'> <span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman"'>памяти
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:normal;mso-list:l1 level1 lfo7;tab-stops:list 32.2pt left 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'> <span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <span style='font-size:12.0pt;font-family:"Times New Roman"'>набора
+программируемых функциональных блоков различного назначения.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>При модульном принципе построения
+все&nbsp;<i>МК</i>&nbsp;одного семейства содержат&nbsp;<i>процессорное ядро</i>,
+одинаковое для всех&nbsp;<i>МК</i>&nbsp;данного семейства, и изменяемый
+функциональный блок, который отличает&nbsp;<i>МК</i>&nbsp;разных моделей.
+Структура модульного&nbsp;<i>МК</i>&nbsp;приведена на рис.1.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.4pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU;mso-no-proof:yes'>
+<img border=0 width=409 height=154
+src="Tema%2021.files/image007.png" alt="Модульная организация МК." v:shapes="Рисунок_x0020_1"> </span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:35.4pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Рис.1. Модульная
+организация микроконтроллера.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><b><i><span style='font-size:
+12.0pt;font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>&nbsp;</span></i></b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><b><i><span style='font-size:
+12.0pt;font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Процессорное ядро</span></i></b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>&nbsp;включает в себя:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l5 level1 lfo3;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>центральный
+     процессор;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l5 level1 lfo3;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>внутреннюю
+     контроллерную магистраль (ВКМ) в составе шин адреса, данных и управления;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l5 level1 lfo3;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>схему
+     синхронизации&nbsp;<i>МК</i>;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l5 level1 lfo3;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>схему
+     управления режимами работы&nbsp;<i>МК</i>, включая поддержку режимов
+     пониженного энергопотребления, начального запуска (сброса) и т.д.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:36.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Изменяемый функциональный блок включает в
+себя модули памяти различного типа и объема, порты ввода/вывода, модули
+тактовых генераторов (Г), таймеры. В относительно простых&nbsp;<i>МК</i>&nbsp;модуль
+обработки прерываний входит в состав&nbsp;<i>процессорного ядра</i>. В более
+сложных&nbsp;<i>МК</i>&nbsp;он представляет собой отдельный модуль с развитыми
+возможностями. В состав изменяемого функционального блока могут входить и такие
+дополнительные модули как компараторы напряжения, аналого-цифровые
+преобразователи (АЦП) и другие. Каждый модуль проектируется для работы в
+составе&nbsp;<i>МК</i>&nbsp;с учетом протокола ВКМ. Данный подход позволяет
+создавать разнообразные по структуре&nbsp;<i>МК</i>&nbsp;в пределах одного
+семейства.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:36.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T4"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>4. Процессорное ядро микроконтроллера</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal;page-break-after:avoid;
+mso-outline-level:3'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>Структура процессорного ядра МК<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Основными характеристиками, определяющими
+производительность&nbsp;<i>процессорного ядра</i>&nbsp;&nbsp;&nbsp;<i>МК</i>,
+являются:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>набор
+     регистров для хранения промежуточных данных (каждый регистр имеет свой <i
+     style='mso-bidi-font-style:normal'>оригинальный адрес</i>, по которому
+     процессорное ядро находит его в процессе работы);<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><i><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>система
+     команд</span></i><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>&nbsp;процессора;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>способы
+     адресации операндов в пространстве памяти;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>организация
+     процессов выборки и исполнения&nbsp;<i>команды</i>.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>С точки зрения&nbsp;<i>системы команд</i>&nbsp;и
+способов адресации операндов&nbsp;<i>процессорное ядро</i>&nbsp;современных
+8-разрядных&nbsp;<i>МК</i>&nbsp;реализует один из двух принципов построения
+процессоров:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l8 level1 lfo5;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>процессоры
+     с CISC-архитектурой, реализующие так называемую полную&nbsp;<i>систему
+     команд</i>&nbsp;(<span class=SpellE>Complicated</span> <span class=SpellE>Instruction</span>
+     <span class=SpellE>Set</span> <span class=SpellE>Computer</span>);<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l8 level1 lfo5;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>процессоры
+     с RISC-архитектурой, реализующие сокращенную&nbsp;<i>систему команд</i>&nbsp;(<span
+     class=SpellE>Reduced</span> <span class=SpellE>Instruction</span> <span
+     class=SpellE>Set</span> <span class=SpellE>Computer</span>).<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>CISC-процессоры выполняют большой
+набор&nbsp;<i>команд</i>&nbsp;с развитыми возможностями адресации, давая
+разработчику возможность выбрать наиболее подходящую&nbsp;<i>команду</i>&nbsp;для
+выполнения необходимой операции. В применении к 8-разрядным&nbsp;<i>МК</i>&nbsp;процессор
+с CISC-архитектурой может иметь однобайтовый, двухбайтовый и трехбайтовый
+(редко четырехбайтовый) формат&nbsp;<i>команд</i>. Время выполнения&nbsp;<i>команды</i>&nbsp;может
+составлять от 1 до 12 циклов. К&nbsp;<i>МК</i>&nbsp;с CISC-архитектурой
+относятся&nbsp;<i>МК</i>&nbsp;фирмы <span class=SpellE>Intel</span> с ядром
+MCS-51, которые поддерживаются в настоящее время целым рядом
+производителей,&nbsp;<i>МК</i>&nbsp;семейств НС05, НС08 и НС11 фирмы <span
+class=SpellE>Motorola</span> и ряд других.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>В процессорах с RISC-архитектурой набор
+исполняемых&nbsp;<i>команд</i>&nbsp;сокращен до минимума. Для реализации более
+сложных операций приходится комбинировать&nbsp;<i>команды</i>. При этом
+все&nbsp;<i>команды</i>&nbsp;имеют формат фиксированной длины (например, 12, 14
+или 16 бит), выборка&nbsp;<i>команды</i>&nbsp;из памяти и ее исполнение
+осуществляется за один цикл (такт) синхронизации.&nbsp;<i>Система команд</i>&nbsp;RISC-процессора
+предполагает возможность равноправного использования всех регистров процессора.
+Это обеспечивает дополнительную гибкость при выполнении ряда операций. К&nbsp;<i>МК</i>&nbsp;с
+RISC-процессором относятся&nbsp;<i>МК</i>&nbsp;AVR фирмы <span class=SpellE>Atmel</span>,&nbsp;<i>МК</i>&nbsp;PIC16
+и PIC17 фирмы <span class=SpellE>Microchip</span> и другие.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>На первый взгляд,&nbsp;<i>МК</i>&nbsp;с
+RISC-процессором должны иметь более высокую производительность по сравнению с
+CISC&nbsp;<i>МК</i>&nbsp;при одной и той же тактовой частоте внутренней магистрали.
+Однако на практике вопрос о производительности более сложен и неоднозначен.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>С точки зрения <i style='mso-bidi-font-style:
+normal'>организации </i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>памяти</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";color:black;
+mso-fareast-language:RU'> - процессов</span></i><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'> выборки и исполнения&nbsp;<i>команды</i>&nbsp;в
+современных 8-разрядных&nbsp;<i>МК</i>&nbsp;применяется одна из двух архитектур
+МПС: фон-неймановская (принстонская) или гарвардская.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:34.6pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Неймановская архитектура</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> - характеризуется общим
+пространством памяти для хранения данных и программы. При этом разрядность
+памяти зафиксирована (как правило, равна одному байту). Такую архитектуру
+имеют, например, микроконтроллеры НС05 и НС08 фирмы <span class=SpellE>Motorola</span>,
+в которых общий массив 8-битных ячеек памяти включает в себя как память
+программ, так и память данных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:34.6pt;line-height:normal;background:white'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman"'>Гарвардская архитектура</span></b><span style='font-size:
+12.0pt;font-family:"Times New Roman"'> - отличается разделением памяти программ
+и памяти данных. При этом разрядность памяти программ и памяти данных, а также
+шины доступа к ним, различны. В частности, все микроконтроллеры PIC12, PIC16
+фирмы <span class=SpellE>Microchip</span> имеют 8-битную память данных, а
+разрядность памяти программ у них различна: PIC12 имеют 12 битную память
+программ, а <span style='color:black'>PIC14</span> - 14 битную. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Основной особенностью <b style='mso-bidi-font-weight:
+normal'>фон-неймановской архитектуры</b> является использование общей памяти
+для хранения программ и данных, как показано на рис.2.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><a name="image_4_2"></a><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU;mso-no-proof:yes'>
+<img border=0 width=359 height=248
+src="Tema%2021.files/image009.jpg"
+alt="Структура МПС с фон-неймановской архитектурой." v:shapes="Рисунок_x0020_2"> </span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><br>
+Рис. 2.&nbsp; Структура МПС с фон-неймановской архитектурой.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Основное преимущество архитектуры <b
+style='mso-bidi-font-weight:normal'>Фон-Неймана</b> – упрощение устройства МПС,
+так как реализуется обращение только к одной общей памяти. Кроме того,
+использование единой области памяти позволяло оперативно перераспределять
+ресурсы между областями программ и данных, что существенно повышало гибкость
+МПС с точки зрения разработчика программного обеспечения. Размещение&nbsp;<i>стека</i>&nbsp;в
+общей памяти облегчало доступ к его содержимому. Неслучайно поэтому
+фон-неймановская архитектура стала основной архитектурой универсальных
+компьютеров, включая персональные компьютеры.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Основной особенностью <b style='mso-bidi-font-weight:
+normal'>гарвардской архитектуры</b> является использование раздельных адресных
+простран<span class=GramE>ств дл</span>я хранения&nbsp;<i>команд</i>&nbsp;и
+данных, как показано на рис.3.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><a name="image_4_3"></a><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU;mso-no-proof:yes'>
+<img border=0 width=320 height=220
+src="Tema%2021.files/image010.png"
+alt="Структура МПС с гарвардской архитектурой." v:shapes="Рисунок_x0020_3"> </span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><br>
+Рис.3. Структура МПС с гарвардской архитектурой.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Гарвардская </span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>архитектура почти не
+использовалась до конца 70-х годов, пока производители&nbsp;<i>МК</i>&nbsp;не
+поняли, что она дает определенные преимущества разработчикам автономных систем
+управления.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Дело в том, что, судя по опыту
+использования МПС для управления различными объектами, для реализации
+большинства алгоритмов управления такие преимущества фон-неймановской
+архитектуры как гибкость и универсальность не имеют большого значения. Анализ
+реальных программ управления показал, что необходимый объем&nbsp;<i>памяти
+данных</i>&nbsp;&nbsp;<i>МК</i>, используемый для хранения промежуточных
+результатов, как правило, на порядок меньше требуемого объема&nbsp;<i>памяти
+программ</i>. В этих условиях использование единого адресного пространства
+приводило к увеличению формата&nbsp;<i>команд</i>&nbsp;за счет увеличения числа
+разрядов для адресации операндов. Применение отдельной небольшой по объему <i>памяти
+данных</i>&nbsp;способствовало сокращению длины&nbsp;<i>команд</i>&nbsp;и
+ускорению поиска информации в&nbsp;<i>памяти данных</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Кроме того, гарвардская архитектура
+обеспечивает потенциально более высокую скорость выполнения программы по
+сравнению с фон-неймановской за счет возможности реализации параллельных
+операций. Выборка следующей&nbsp;<i>команды</i>&nbsp;может происходить
+одновременно с выполнением предыдущей, и нет необходимости останавливать
+процессор на время выборки&nbsp;<i>команды</i>. Этот метод реализации операций
+позволяет обеспечивать выполнение различных&nbsp;<i>команд</i>&nbsp;за
+одинаковое число тактов, что дает возможность более просто определить время
+выполнения циклов и критичных участков программы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Большинство производителей современных
+8-разрядных&nbsp;<i>МК</i>&nbsp;используют гарвардскую архитектуру. Однако
+гарвардская архитектура является недостаточно гибкой для реализации некоторых
+программных процедур. Поэтому сравнение&nbsp;<i>МК</i>, выполненных по разным
+архитектурам, следует проводить применительно к <span class=SpellE>конретному</span>
+приложению.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>&nbsp;В настоящее время наиболее яркими
+представителями микроконтроллеров&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'>SISC</span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>&nbsp;и&nbsp;</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";color:black;
+mso-ansi-language:EN-US;mso-fareast-language:RU'>RISC</span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>, имеющих соответственно
+фон-неймановскую и гарвардскую архитектуры являются микроконтроллеры&nbsp;</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US;
+mso-fareast-language:RU'>i</span></span><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>8051 и&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'>AVR</span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>&nbsp;– микроконтроллеры фирмы&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'>Atmel</span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>, которые по ряду характеристик превзошли очень известные&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'>PIC</span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>&nbsp;– микроконтроллеры. Поэтому рассмотрим организацию и устройство
+вышеперечисленных представителей.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T5"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>5. Структурная организация микроконтроллера i8051</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;page-break-after:avoid;mso-outline-level:3'><a name="_Toc498968384"></a><a
+name="_Toc500091069"></a><a name="_Toc500090791"></a><a name="_Toc500090642"></a><a
+name="_Toc500090503"></a><a name="_Toc500089804"></a><a name="_Toc500087851"></a><a
+name="_Toc500087496"></a><a name="_Toc500087216"></a><a name="_Toc500086950"></a><a
+name="_Toc499490377"></a><a name="_Toc499489936"></a><a name="_Toc499477305"></a><a
+name="_Toc499402737"></a><a name="_Toc499379662"></a><a name="_Toc499379257"></a><a
+name="_Toc498968948"></a><a name="_Toc498968747"></a><span style='mso-bookmark:
+_Toc498968384'><b><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>Общие характеристики</span></b></span><span style='mso-bookmark:_Toc498968384'></span><b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'> </span></b><b><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>м</span></b><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>икроконтроллер</span><span class=GramE><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-ansi-language:EN-US;mso-fareast-language:RU'>f</span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'> семейства 8051</span><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;page-break-after:avoid;mso-outline-level:4'><a name="_Toc498968385"></a><a
+name="_Toc499379663"></a><a name="_Toc499379258"></a><a name="_Toc498968949"></a><a
+name="_Toc498968748"></a><span style='mso-bookmark:_Toc498968385'><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Микроконтроллер семейства
+8051 имеют следующие аппаратные особенности:</span></span><b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></b></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>внутреннее
+     ОЗУ объемом 128 байт;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>четыре
+     двунаправленных побитно настраиваемых восьмиразрядных порта ввода-вывода;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>два
+     16-разрядных таймера-счетчика;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>встроенный
+     тактовый генератор;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>адресация
+     64 <span class=SpellE>КБайт</span> памяти программ и 64 Кбайт памяти
+     данных;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>две
+     линии запросов на прерывание от внешних устройств;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     text-align:justify;line-height:normal;mso-list:l2 level1 lfo4;tab-stops:
+     list 36.0pt'><span style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>интерфейс
+     для последовательного обмена информацией с другими микроконтроллерами или
+     персональными компьютерами.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Микроконтроллер 8751
+снабжен УФ ПЗУ объемом 4 Кбайт.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+27.0pt;line-height:normal'><i><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>Функциональная схема микроконтроллера семейства 8051.</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Микроконтроллер выполнен на основе
+высокоуровневой n-МОП технологии. Через четыре программируемых параллельных
+порта ввода/вывода и один последовательный порт микроконтроллер взаимодействует
+с внешними устройствами. Основу структурной схемы образует внутренняя
+двунаправленная 8-битная шина, которая связывает между собой основные узлы и
+устройства микроконтроллера: резидентную память программ (RPM), резидентную
+память данных (RDM), арифметико-логическое устройство (ALU), блок регистров
+специальных функций, устройство управления (CU) и порты ввода/вывода (P0-P3).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+27.0pt;line-height:normal;page-break-after:avoid;mso-outline-level:3'><a
+name="_Toc428545854"></a><a name="_Toc500091070"></a><a name="_Toc500090792"></a><a
+name="_Toc500090643"></a><a name="_Toc500090504"></a><a name="_Toc500089805"></a><a
+name="_Toc500087852"></a><a name="_Toc500087497"></a><a name="_Toc500087217"></a><a
+name="_Toc500086951"></a><a name="_Toc499490378"></a><a name="_Toc499489937"></a><a
+name="_Toc499477306"></a><a name="_Toc499402738"></a><a name="_Toc499379664"></a><a
+name="_Toc499379259"></a><a name="_Toc498968950"></a><a name="_Toc498968749"></a><a
+name="_Toc498968386"></a><a name="_Toc444511599"></a><a name="_Toc440018665"></a><a
+name="_Toc440017561"></a><a name="_Toc440015580"></a><a name="_Toc439928165"></a><a
+name="_Toc439926321"></a><a name="_Toc439926153"></a><a name="_Toc428546114"></a><span
+style='mso-bookmark:_Toc428545854'><b><span style='font-size:12.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";color:black;
+mso-fareast-language:RU'>Арифметико-логическое устройство</span></b></span><b><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>8-битное арифметико-логическое устройство
+(ALU) может выполнять арифметические операции сложения, вычитания, умножения и
+деления; логические операции<span class=GramE> И</span>, ИЛИ, исключающее ИЛИ,
+а также операции циклического сдвига, сброса, инвертирования и т.п. К входам
+подключены программно-недоступные регистры T1 и T2, предназначенные для
+временного хранения операндов, схема десятичной коррекции (DCU) и схема
+формирования признаков результата операции (PSW).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Простейшая операция сложения используется
+в ALU для инкрементирования содержимого регистров, продвижения
+регистра-указателя данных (RAR) и автоматического вычисления следующего адреса
+резидентной памяти программ. Простейшая операция вычитания используется в ALU
+для декрементирования регистров и сравнения переменных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Простейшие операции автоматически образуют
+“тандемы” для выполнения таких операций, как, например, инкрементирование 16-битных
+регистровых пар. В ALU реализуется механизм каскадного выполнения простейших
+операций для реализации сложных команд. Так, например, при выполнении одной из
+команд условной передачи управления по результату сравнения в ALU трижды
+инкрементируется счётчик команд (PC), дважды производится чтение из RDM,
+выполняется арифметическое сравнение двух переменных, формируется 16-битный
+адрес перехода и принимается решение о том, делать или не делать переход по
+программе. Все перечисленные операции выполняются всего лишь за 2 <span
+class=SpellE>мкс</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:27.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Важной особенностью ALU является его
+способность оперировать не только байтами, но и битами. Отдельные
+программно-доступные биты могут быть установлены, сброшены, инвертированы,
+переданы, проверены и использованы в логических операциях. Эта способность
+достаточно важна, поскольку для управления объектами часто применяются
+алгоритмы, содержащие операции над входными и выходными булевыми переменными,
+реализация которых средствами обычных микропроцессоров сопряжена с
+определенными трудностями.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span class=GramE><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Таким образом, ALU может
+оперировать четырьмя типами информационных объектов: булевыми (1 бит),
+цифровыми (4 бита), байтными (8 бит) и адресными (16 бит).</span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'> В ALU выполняется 51
+различная операция пересылки или преобразования этих данных. Так как используется
+11 режимов адресации (7 для данных и 4 для адресов), то путем комбинирования
+операции и режима адресации базовое число команд 111 расширяется до 255 из 256
+возможных при однобайтном коде операции.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T6"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>6. Структурная организация AVR - микроконтроллера</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>&nbsp;AVR функционируют в широком
+диапазоне питающих напряжений от 1,8 до 6,0 Вольт. Энергопотребление в активном
+режиме зависит от величины напряжения питания, от частоты, на которой работает
+AVR и от конкретного типа микроконтроллера. Подробные спецификации обычно
+приводятся в оригинальной технической документации <span class=SpellE>Atmel</span>
+<span class=SpellE>Corp</span>. Температурные диапазоны работы
+микроконтроллеров AVR - коммерческий (0С...70С) и индустриальный (-40С...+85С).
+К сожалению, корпорация <span class=SpellE>Atmel</span> не выпускает и не
+планирует выпускать AVR для работы в автомобильном (-40С...+125С) и военном
+(-55С...+125С) температурных диапазонах.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>С точки зрения программиста AVR
+представляет собой 8-разрядный RISC микроконтроллер, имеющий быстрый
+Гарвардский процессор, память программ, память данных, порты ввода/вывода и
+различные интерфейсные схемы. Гарвардская архитектура AVR реализует полное
+логическое и физическое разделение не только адресных пространств, но и
+информационных шин для обращения к памяти программ и к памяти данных, причем
+способы адресации и доступа к этим массивам памяти также различны. Подобное
+построение уже ближе к структуре цифровых сигнальных процессоров и обеспечивает
+существенное повышение производительности. Центральный процессор работает
+одновременно как с памятью программ, так и с памятью данных; разрядность шины
+памяти программ расширена до 16 бит.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Следующим шагом на пути увеличения
+быстродействия AVR является использование технологии конвейеризации, вследствие
+чего цикл &quot;выборка - исполнение&quot; команды заметно сокращен. Например,
+у микроконтроллеров семейства MCS51 короткая команда выполняется за 12 тактов
+генератора (1 машинный цикл), в течение которого процессор последовательно
+считывает код операции и исполняет ее. В PIC-контроллерах фирмы <span
+class=SpellE>Microchip</span>, где уже реализован конвейер, короткая команда
+выполняется в течение 8 периодов тактовой частоты (2 машинных цикла). За это
+время последовательно дешифрируется и считывается код операции, исполняется
+команда, фиксируется результат и одновременно считывается код следующей
+операции (одноуровневый конвейер). Поэтому в общем потоке команд одна короткая
+команда реализуется за 4 периода тактовой частоты или за один машинный цикл. В
+микроконтроллерах AVR тоже используется одноуровневый конвейер при обращении к
+памяти программ и короткая команда в общем потоке выполняется, как и в
+PIC-контроллерах, за один машинный цикл. Главное же отличие состоит в том, что
+этот цикл у AVR составляет всего один период тактовой частоты. Для сравнения,
+на рис. 3 приведены временные диаграммы при выполнении типовой команды для
+различных микроконтроллерных платформ.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Следующая отличительная черта архитектуры
+микроконтроллеров AVR - регистровый файл быстрого доступа, структурная схема
+которого показана на рис. 4. Каждый из 32-х регистров общего назначения длиной
+1 байт непосредственно связан с арифметико-логическим устройством (ALU)
+процессора. Другими словами, в AVR существует 32 регистра - аккумулятора. Это
+обстоятельство позволяет в сочетании с конвейерной обработкой выполнять одну
+операцию в ALU за один машинный цикл. Так, два операнда извлекаются из
+регистрового файла, выполняется команда и результат записывается обратно в
+регистровый файл в течение только одного машинного цикла.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:54.0pt;margin-bottom:.0001pt;text-align:center;
+text-indent:-54.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU;mso-no-proof:yes'>
+<img border=0 width=223 height=247
+src="Tema%2021.files/image011.jpg"
+alt="http://www.uran.donetsk.ua/~masters/2005/fvti/kalinichenko/library/9.files/image005.jpg"
+v:shapes="Рисунок_x0020_4"> </span><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:54.0pt;margin-bottom:.0001pt;text-align:center;
+text-indent:-54.0pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Рис.4. Регистровый файл&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+RU'>AVR</span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU;mso-no-proof:yes'>
+<img border=0 width=479 height=223
+src="Tema%2021.files/image012.jpg"
+alt="http://www.uran.donetsk.ua/~masters/2005/fvti/kalinichenko/library/9.files/image007.jpg"
+v:shapes="Рисунок_x0020_5"> </span><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>Рис.5. Временные диаграммы микропроцессорных платформ.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Шесть из 32-х регистров файла могут
+использоваться как три 16-разрядных указателя адреса при косвенной адресации
+данных. Один из этих указателей (Z <span class=SpellE>Pointer</span>)
+применяется также для доступа к данным, записанным в памяти программ
+микроконтроллера. Использование трех 16-битных указателей (X, Y и Z <span
+class=SpellE>Pointers</span>) существенно повышает скорость пересылки данных
+при работе прикладной программы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Регистровый файл занимает младшие 32 байта
+в общем адресном пространстве SRAM AVR. Такое <span class=GramE>архитектурное
+решение</span> позволяет получать доступ к быстрой &quot;регистровой&quot;
+оперативной памяти микроконтроллера двумя путями - непосредственной адресацией
+в коде команды к любой ячейке и другими способами адресации ячеек SRAM. В
+технической документации фирмы <span class=SpellE>Atmel</span> это полезное
+свойство носит название &quot;быстрое контекстное переключение&quot; и является
+еще одной отличительной особенностью архитектуры AVR, повышающей эффективность
+работы микроконтроллера и его производительность. Особенно заметно данное
+преимущество при реализации процедур целочисленной 16-битной арифметики, когда
+исключаются многократные пересылки между различными ячейками памяти данных при
+обработке арифметических операндов в ALU.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Система команд AVR весьма развита и
+насчитывает до 133 различных инструкций. Конкретное количество команд для каждого
+микроконтроллера того или иного семейства AVR приведено в таблицах 1 - 2. Почти
+все команды имеют фиксированную длину в одно слово (16 бит), что позволяет в
+большинстве случаев объединять в одной команде и код операции, и операн<span
+class=GramE>д(</span>ы). Лишь немногие команды имеют размер в 2 слова (32 бит)
+и относятся к группе команд вызова процедуры CALL, длинных переходов в пределах
+всего адресного пространства JMP, возврата из подпрограмм RET и команд работы с
+памятью программ LPM. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>Различают <b style='mso-bidi-font-weight:
+normal'>пять групп команд AVR</b>: <o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>условного
+     ветвления, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>безусловного
+     ветвления, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>арифметические и
+     логические операции, <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>команды пересылки
+     данных, <o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt;
+     line-height:normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext'>команды</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:RU'> работы с битами. <o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>В последних версиях кристаллов AVR
+семейства &quot;<span class=SpellE>mega</span>&quot; реализована функция
+аппаратного умножения, что придает новым микроконтроллерам еще больше
+привлекательности с точки зрения разработчика.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>По разнообразию и количеству реализованных
+инструкций AVR больше похожи на CISC, чем на RISC процессоры. Например, у
+PIC-контроллеров система команд насчитывает до 75 различных инструкций, а у
+MCS51 она составляет 111. В целом, прогрессивная RISC архитектура AVR в
+сочетании с наличием регистрового файла и расширенной системы команд позволяет
+в короткие сроки создавать работоспособные программы с эффективным <span
+class=GramE>кодом</span> как по компактности реализации, так и по скорости
+выполнения.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.4pt;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T7"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>7. Классификация команд</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Множество
+инструкций микроконтроллера образует систему команд. Система команд, как
+правило, не меняется для всех микроконтроллеров одного семейства. В полном
+списке инструкций при описании системы обычно выделяются отдельные группы,
+родственных по применению инструкций, например, арифметические и логические
+команды, команды пересылки и др. Это деление довольно условно и полностью
+определяется политикой разработчика.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>При
+описании системы команд приводится полная информация о каждой инструкции:
+способах адресации, использовании флагов регистра состояния, времени
+исполнения.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+качестве примера рассмотрим систему команд микроконтроллера <span class=SpellE><span
+class=GramE>А</span><span style='mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:RU'>mega</span></span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'> </span><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><span
+style='mso-spacerun:yes'> </span>163 Система команд микроконтроллера содержит <b
+style='mso-bidi-font-weight:normal'>130 </b>команд, условно разделенных на <b
+style='mso-bidi-font-weight:normal'>четыре группы</b>:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>команды пересылки данных
+     (data transfer instructions), <o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>0 арифметические и
+     логические команды (<span class=SpellE>arithmetic</span> <span
+     class=SpellE>and</span> <span class=SpellE>logic</span> <span
+     class=SpellE>instructions</span>),<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>команды работы с битами
+     (bit and bit-test instructions), °<span style='mso-spacerun:yes'>     
+     </span><o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>команды ветвления (<span
+     class=SpellE>branch</span> <span class=SpellE>instructions</span>).</span><span
+     lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+     mso-ansi-language:EN-US'><o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>При
+описании системы команд использованы следующие обозначения:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>Rd</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'> - регистр-приемник
+     результата (0 &lt; d &lt; 31),<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>Rd</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>* -
+     регистр-приемник результата с номером более 16 (16 &lt; d &lt; 31),<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>Rr</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>-регистр-источник
+     (0 &lt; г &lt; 31),<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>Rdl</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>: регистры R24,
+     R26, R28, R30 (для инструкций ADIW и SBIW),<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=GramE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>Р-</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'> адрес регистра
+     ввода/вывода, Р*- адрес побитно адресуемого регистра<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>ввода/вывода
+     ($00-$1F)<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=GramE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>К</span></span><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'> - символьная или
+     численная константа (8 бит)<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'><span
+     style='mso-spacerun:yes'> </span><span class=GramE>к</span> - адресная
+     константа<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>b - номер бита в
+     регистре (3 бита)<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>s - номер бита в регистре
+     статуса (3 бита)<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal;mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'><span class=GramE><span
+     style='font-size:12.0pt;font-family:"Times New Roman"'>X, Y, Z - регистры
+     косвенной адресации (X=R27:</span></span><span style='font-size:12.0pt;
+     font-family:"Times New Roman"'>R26, Y=R29:R28; Z=R31 :R30 <o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Команды пересылки</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Команды
+пересылки осуществляют перемещение данных между ячейками памяти и регистрами
+процессорного ядра. Один из операндов, участвующих в инструкции, является
+источником данных, второй - приемником. При пересылке из источника в приемник
+копия данных всегда остается в источнике. Таким образом, все команды пересылки
+практически осуществляют копирование данных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Одним
+из операндов в любой команде пересылки обычно является регистр общего
+назначения процессорного ядра. Вторым может быть любой регистр или ячейка
+памяти.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции,
+как правило, не влияют на флаги в регистре состояния процессорного ядра.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+системе команд микроконтроллеров AVR предусмотрено 34 инструкции,
+осуществляющие пересылку данных. В инструкциях используются все, за исключением
+битовых, способы адресации данных; одним из операндов в любой инструкции
+является регистр общего назначения. <span class=GramE>Инструкция <span
+class=SpellE>Idi</span> (<span class=SpellE>toad</span> <span class=SpellE>immediate</span>),
+использующая непосредственную адресацию, может быть использована только в
+старшей половине файла регистров общего назначения (R16....R31), остальные
+команды работают с любым из регистров файла.</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкцию
+<span class=SpellE>spm</span> (<span class=SpellE>store</span> <span
+class=SpellE>program</span> <span class=SpellE>memory</span>), осуществляющую
+запись, когда в память программ, можно использовать только в <span
+class=SpellE>Boot</span> <span class=SpellE>Program</span> <span class=SpellE>Section</span>
+памяти программ.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Время
+выполнения инструкций, работающих с регистрами, равно 1 такту. Инструкции,
+обращающиеся к ячейкам памяти данных, выполняются за 2 такта, а вращающиеся к
+ячейкам памяти программ - за 3 такта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Арифметические и
+логические команды<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+группу арифметических команд входят команды, выполняющие сложение, вычитание,
+декремент и инкремент данных, логическое умножение логическое сложение,
+операцию ИСКЛЮЧАЮЩЕЕ ИЛИ, инверсию переменной. Обычно к этой группе относят
+также инструкции сравнения данных. В микроконтроллере <span class=SpellE>А<span
+style='mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>mega</span></span> 163 реализованы также функции арифметического умножения
+целых чисел и дробных чисел, без знака и со знако3м<span class=GramE> В</span>се
+инструкции этой группы, как правило, приводят к изменению состояния флагов
+регистра состояния в соответствии с резулыа1ами, выполняемой операции.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+микроконтроллерах с архитектурой AVR</span></i></b><span style='font-size:12.0pt;
+font-family:"Times New Roman"'> предусмотрено довольно много (31) инструкций,
+выполняющих арифметические и логические преобразования данных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции
+используют исключительно прямую регистровую или непосредственную адресацию
+данных. Операнды хранятся в регистрах общего назначения, в один из них
+(регистр-приемник) всегда направляется и результат вычислений.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>В
+результате выполнения инструкций изменяются флаги регистра SREG (<span
+class=SpellE>Status</span> <span class=SpellE>Register</span>), а флаг переноса<span
+class=GramE> С</span> (Сапу), кроме того, непосредственно участвует в
+выполнении ряда операций.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Арифметические команды</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> сложения и вычитания
+выполняют сложение и вычитание<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>одно-
+и двухбайтных операндов. Команды <span class=SpellE>adc</span> (<span
+class=SpellE>add</span> <span class=SpellE>with</span> сапу <span class=SpellE>two</span>
+<span class=SpellE>registers</span>) и </span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>sbc</span></span><span style='font-size:12.0pt;font-family:"Times New Roman"'>
+(</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-ansi-language:EN-US'>subtract</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman"'> </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";mso-ansi-language:EN-US'>with</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman"'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>carry</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman"'>
+</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-ansi-language:EN-US'>two</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman"'> </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";mso-ansi-language:EN-US'>registers</span><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>) используют при
+вычислениях флаг переноса С.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции логического
+умножения</span></b><span style='font-size:12.0pt;font-family:"Times New Roman"'>
+(<span class=SpellE>and</span>) и логического сложения (<span class=SpellE>or</span>)
+, <span class=GramE>ИСКЛЮЧАЮЩЕЕ</span> ИЛИ (вот) преобразуют только однобайтные
+данные.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкция
+дополнения до единицы <span class=SpellE>com</span> (<span class=SpellE>one's</span>
+<span class=SpellE>complement</span>), фактически выполняет операцию инверсии,
+а инструкция дополнения до двух <span class=SpellE>neg</span> (<span
+class=SpellE>two's</span> <span class=SpellE>complement</span>) - меняет знак
+числа<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции
+установки (<span class=SpellE>set</span>) позволяют установить как отдельные,
+так и все биты выбранного регистра в единичное состояние, а команды очистки (<span
+class=SpellE>dear</span>) - в нулевое.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции
+инкремента регистра <span class=SpellE>inc</span> (<span class=SpellE>increment</span>)
+и декремента регистра <span class=SpellE>dec</span> (<span class=SpellE>decrement</span>)
+используют прямую адресацию одного выбранного регистра.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Тест
+на нуль или минус <span class=SpellE>tst</span> (<span class=SpellE>test</span>
+<span class=SpellE>for</span> <span class=SpellE>zero</span> <span
+class=SpellE>or</span> <span class=SpellE>minus</span>) фактически не меняет
+содержимого регистра, но устанавливает соответствующие флаги при равенстве
+операнда нулю или при его отрицательном значении.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Команды сравнения</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> (<span class=SpellE>compare</span>)
+также не меняют <span class=SpellE>содержиМ°го</span> <span class=SpellE>РегистР°в</span>'
+а оценивают разность операндов и устанавливают соответствующие Флаги в регистре
+состояния.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Шесть инструкций
+умножения</span></b><span style='font-size:12.0pt;font-family:"Times New Roman"'>
+(<span class=SpellE>multiply</span> выполняют умножение |-1ель|Х и <b
+style='mso-bidi-font-weight:normal'>Дробных операндов</b> с учетом и без учета
+знака. 16-битный результат /1^ножения всегда описывается в регистры общего
+назначения RO:</span></span><span style='font-size:12.0pt;font-family:"Times New Roman"'>R1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Большинство
+арифметических и логических команд выполня!0^ <span class=SpellE>за°Дин</span>
+такт-Исключение составляют только команды с непосредственной адресац^.'Ра<span
+class=GramE>2</span>?таюи^ ° двухбайтными словами: </span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>adiw</span></span><span style='font-size:12.0pt;font-family:"Times New Roman"'>
+(</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-ansi-language:EN-US'>add</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman"'> </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";mso-ansi-language:EN-US'>immediate</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman"'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>to</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman"'>
+</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-ansi-language:EN-US'>word</span><span style='font-size:12.0pt;font-family:
+"Times New Roman"'>) и </span><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:EN-US'>sbiw</span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> (<span class=SpellE>subtract</span>
+im^196 m <span class=SpellE>vvo</span>/&quot;)- и команды умножения,
+выполняющиеся за два такта.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Битовые команды<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Битовые
+команды (<span class=SpellE><span class=GramE>В</span>it</span> <span
+class=SpellE>And</span> <span class=SpellE>Bit-Test</span> <span class=SpellE>Instructions</span>)
+позволяют обращаться непосредственно к отдельным битам регистров процессорного
+ядра и выполнять с выбранными битами простейшие операции пересылки, установки и
+сброса.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Операндами
+команд могут <span class=GramE>быть</span> как биты регистров общего
+назначения, так и биты регистров ввода/вывода. Битовые команды могут влиять на
+отдельные флаги регистра признаков.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Битовые
+команды микроконтроллером семейства AVR работают с отдельными битами регистров
+общего назначения и регистров ввода/вывода Биты регистров ввода/вывода могут
+быть установлены или сброшены. Биты регистров общего назначения могут быть
+сдвинуты в соседние ячейки, как влево (в сторону старших разрядов), так и
+вправо (в сторону младших разрядов). В операциях сдвига, кроме разрядов
+регистров, может <span class=GramE>участвовать</span> и бит переноса.
+Специальные команды <span class=GramE>предусмотрены</span> дли установки и
+сброса отдельных флагов регистра состояния. Команда <span class=SpellE>swap</span>
+меняет местами <span class=SpellE>тетрады</span> (полубайты) регистров общего
+назначения.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:0cm;line-height:normal;mso-list:l3 level1 lfo6;
+tab-stops:list 32.2pt;background:white'> <span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span> <b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Понятия и определения<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>               </span><b style='mso-bidi-font-weight:
+normal'>Процессорное ядро</b> (MCU - <span class=SpellE>Microprocessor</span> <span
+class=SpellE>Com</span> <span class=SpellE>Unit</span>) является основой
+микроконтроллера. Оно выполняет все вычислительные операции и одновременно,
+управляет работой всех остальных элементов схемы. По системным шинам
+процессорное ядро обменивается данными с памятью и всеми функциональными.
+Разрядность процессорного ядра определяет разрядность микроконтроллера<span
+class=GramE> Н</span>аиболее распространены в настоящее время 8-битные
+(8-разрядные) микроконтроллеры Вместе с тем, широкое применение в простых
+задачах находят и 4-битные издания, а в сложных высокопроизводительных системах
+16- и 32-битные<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>               </span><b style='mso-bidi-font-weight:
+normal'>В памяти</b> (<span class=SpellE>Memory</span>) хранится программа
+работы микроконтроллера, исходные данные и все промежуточные результаты
+вычислений. Память состоит из множества многоразрядных ячеек, каждая из которых
+имеет свой адрес<span class=GramE> П</span>о этому адресу процессорное ядро
+находит конкретную ячейку памяти в процессе обмена. Память микроконтроллера
+обычно разделена на две части: память данных (<span class=SpellE>Data</span> <span
+class=SpellE>Memory</span>) и память программ (<span class=SpellE>Program</span>
+<span class=SpellE>Memory</span>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span><b style='mso-bidi-font-weight:normal'>Функциональные
+блоки</b> различных типов обеспечивают взаимодействие микроконтроллера с
+внешним миром. Эти блоки могут выполнять самые различные функции: ввод и вывод
+информации, подсчет внешних событий и интервалов времени, передача внешних
+запросов на процессорное ядро, аналого-цифровые и цифроаналоговые
+преобразования сигналов, сравнение различных величин, <span class=GramE>контроль
+за</span> напряжением питания и др. Для процессорного ядра любой функциональный
+блок представляется в виде одного или нескольких регистров.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Каждый
+регистр имеет свой оригинальный адрес, по которому процессорное ядро находит
+его в процессе работы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>Программа</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> работы микроконтроллера
+хранится в памяти в виде последовательности команд (инструкций). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Практически
+все ведущие производители разрабатывают целые семейства микроконтроллеров с так
+называемой модульной структурой. При этом процессорное ядро для всего семейства
+неизменно, а память и состав функциональных блоков у каждого микроконтроллера
+различны. Процессорное ядро всегда имеет свою оригинальную схему и, обязательно,
+оригинальное имя.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><span style='font-size:12.0pt;font-family:"Times New Roman"'>Например,
+<b style='mso-bidi-font-weight:normal'>микроконтроллеры фирмы <span
+class=SpellE>Motorola</span></b> построены на базе ядра НС05 и НС08, <b
+style='mso-bidi-font-weight:normal'>фирма <span class=SpellE>Intel</span></b>
+создала ядро MCS-51 и мг.8-96, контроллеры <b style='mso-bidi-font-weight:normal'>фирмы
+<span class=SpellE>Microchip</span></b> строятся на базе ядра PIC12, PIC16,
+PIC17. 1'К'<span class=GramE>Ш</span> <b style='mso-bidi-font-weight:normal'>фирма
+Л/<span class=SpellE>me</span>/</b> усиленно развивает семейство
+микроконтроллеров с ядром <b style='mso-bidi-font-weight:normal'>AVR</b> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman"'>CISC-архитектура</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman"'> (<span class=SpellE>Complicated</span>
+<span class=SpellE>Instruction</span> <span class=SpellE>Set</span> <span
+class=SpellE>Computer</span>) - архитектура с развитой системой команд. Система
+команд процессорного ядра имеет инструкции разного формата: однобайтовые,
+двухбайтовые, трехбайтовые. Различные инструкции при этом имеют и <span
+class=GramE>существенно разное</span> время исполнения. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:EN-US'>RISC</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman"'>-архитектура</span></b><span style='font-size:12.0pt;
+font-family:"Times New Roman"'> (</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";mso-ansi-language:EN-US'>Reduced</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman"'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>Instruction</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman"'> </span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman";mso-ansi-language:EN-US'>Set</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman"'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";mso-ansi-language:
+EN-US'>Computer</span><span style='font-size:12.0pt;font-family:"Times New Roman"'>)
+- архитектура с сокращенным набором команд. Одна инструкция, как правило,
+занимает только одну ячейку памяти, и все инструкции имеют равное время
+исполнения.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T8"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>8. Видео материал</span></b></a></span></p>
+ <A HREF="../../video/21 MK Plic.mp4">  Микроконтроллер и ПЛИС.</a><br>
+
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='mso-bookmark:bookmark201'><a name="_T9"><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>9. Литература</span></b></a></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:52.5pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>1. Андреев Д.В.
+&quot;Программирование микроконтроллеров MCS-51&quot;, учебное пособие -
+Ульяновск, 2000г.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>2. Основы
+микропроцессорной техники. – Статья.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span class=SpellE><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'>Источник</span></span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-fareast-language:
+RU'> -&nbsp;</span><span style='font-size:12.0pt;font-family:"Times New Roman"'><a
+href="http://www.intuit.ru/"><span style='mso-fareast-font-family:"Times New Roman";
+color:purple;mso-fareast-language:RU'>http://www.intuit.ru</span></a></span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>3. Микроконтроллеры
+семейства&nbsp;</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";color:black;
+mso-ansi-language:EN-US;mso-fareast-language:RU'>MCS</span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>-51<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>Источник -&nbsp;</span><span
+style='font-size:12.0pt;font-family:"Times New Roman"'><a
+href="http://microcon.euro.ru/app/books/mcs51.pdf"><span style='mso-fareast-font-family:
+"Times New Roman";color:purple;mso-fareast-language:RU'>http://microcon.euro.ru/app/books/mcs51.pdf</span></a></span><span
+style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:RU'>4. AVR -
+микроконтроллеры: очередной этап на пути развития Статья Кривченко И.В. журнал
+&quot;Компоненты и технологии&quot; N3, 2002г.</span><span style='font-size:
+12.0pt;font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+
+</div>
+                <p>&nbsp;</p>
+        <A HREF="../../../Теория/theory.html">Содержание</A>
+        <div style="position: fixed; right: 0; bottom: 0">
+  <a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </div>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

@@ -1,0 +1,3085 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB8 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                   <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 8</b></p>
+ <div>
+<div class=WordSection6>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'></span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif";
+text-transform:uppercase'>Входной операционный усилитель на </span></b><b><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+text-transform:uppercase'>JFET</span></b><b><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif";text-transform:uppercase'>-транзисторах</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 1. Цель работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Изучить работу
+операционного усилителя на </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>JFET</span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-транзисторах.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2. Теоретические сведения</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В настоящее
+время одним из основных видов усилителей, применяемых в различных устройствах
+техники, в том числе и в аппаратуре связи, является операционный усилитель.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Операционным
+усилителем (ОУ) называют усилитель электрических сигналов, предназначенный для
+выполнения различных операций с входными сигналами при работе со схемой с
+глубокой отрицательной связью. Первоначально эти усилители предназначались для
+выполнения различных математических операций сложения, умножения, интегрирования
+и т. д. Созданные на дискретных элементах ОУ, оказывались очень громоздкими и
+дорогостоящими, так как для выполнения заданных операций требовались сложнейшие
+схемы, состоящие из десятков усилительных элементов, диодов, и поэтому такие ОУ
+применялись довольно редко.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Только внедрение
+ИМС позволило построить на их базе ОУ, обладающие многофункциональными
+возможностями, малыми габаритными размерами и большой надежностью, простотой в
+эксплуатации.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Операционный
+усилитель обладает свойствами, наиболее соответствующими основным требованиям к
+усилительным устройствам: большим коэффициентом усиления, большим входным
+сопротивлением, малым вводным сопротивлением, широким частотным диапазоном,
+низким уровнем шума.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Идеальный ОУ
+должен иметь следующие параметры: коэффициент усиления </span><span
+style='position:relative;top:3.0pt'><img width=59 height=20
+src="../../../../Практика/images/lb1/image233.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, входное
+сопротивление </span><span style='position:relative;top:6.0pt'><img width=71
+height=25 src="../../../../Практика/images/lb1/image234.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, выходное
+сопротивление </span><span style='position:relative;top:6.0pt'><img width=80
+height=25 src="../../../../Практика/images/lb1/image235.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, полосу пропускания
+</span><span style='position:relative;top:4.0pt'><img width=67 height=21
+src="../../../../Практика/images/lb1/image236.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, уровень шума </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Ш</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 0.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Достижение этих
+показателей и есть основное требование к ОУ.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В зависимости от
+конкретного применения ОУ в реальных устройствах к ним предъявляют и
+дополнительные требования, связанные со спецификой данного устройства.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Следует
+отметить, что ряд современных ОУ обладает свойствами, близкими к идеальным, но
+не по всем показателям, так как между выполнением отдельных требований к ОУ
+существуют противоречия, которые нетрудно понять на основе ранее проведенного
+анализа работы усилителей на дискретных элементах.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Наличие
+коэффициента усиления </span><span style='position:relative;top:3.0pt'><img
+width=59 height=20
+src="../../../../Практика/images/lb1/image233.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> создает
+возможность введения очень глубокой ООС, что позволяет добиться минимальных
+линейных и нелинейных искажений, стабилизировать параметры ОУ при изменении
+температуры питающих напряжений.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Большое </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> свидетельствует
+о том, что практически на входе не потребляется энергии от источника сигнала,
+что ко ОУ может быть подключен источник сигнала с любым внутренним
+сопротивлением. Очень малое сопротивление </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> позволяет
+подключить к выходу ОУ низкоомную нагрузку, при этом потери мощности на
+выходном сопротивлении ОУ будут незначительны.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Наличие низкого
+уровня шума означает, что реальная чувствительность ОУ очень велика, что ОУ
+способен усиливать самые слабые сигналы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=167 height=105
+src="../../../../Практика/images/lb1/image237.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис.  1. Условное обозначение ОУ</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Условное
+обозначение ОУ (рис.  1) — треугольник, у которого на стороне основания слева
+показаны два входа, а справа в вершине &#8209; выход. Вход со знаком « + »
+является неинвертирующим, при подаче входного сигнала на этот вход полярность
+сигнала на выходе остается той же, что и на входе; вход со знаком «-» &#8209;
+инвертирующий, а при подаче сигнала на этот вход на выходе его полярность
+меняется на противоположную. На боковых сторонах треугольника, расположены
+выводы подключения источников питания, кроме того, имеются дополнительные
+выводы, назначение которых будет также рассмотрено.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> </span></b><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.1. Основные
+параметры ОУ</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Как и все
+электронные приборы, ОУ характеризуются своими параметрами — основными
+показателями, по которым выбирают тот или иной прибор для применения в реальной
+схеме. Параметры различных типов ОУ меняются в довольно широких пределах.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Рассмотрим
+параметры ОУ.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Входное
+сопротивление</span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> — дифференциальное сопротивление переменному току
+на входе <span style='position:relative;top:8.0pt'><img width=193 height=28
+src="../../../../Практика/images/lb1/image238.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+отношение приращения дифференциального входного напряжения к соответствующему
+приращению тока неинвертирующего входа в режиме </span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>короткого замыкания</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Идеальное <span
+style='position:relative;top:8.0pt'><img width=99 height=28
+src="../../../../Практика/images/lb1/image239.png"></span>.
+Реальное </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> в
+зависимости от схемы входного каскада ОУ составляет от 4 ... 5 кОм до десятков
+МОм. Большое </span><i><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>R</span></i><sub><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> позволяет
+обеспечить управление усилителем при наименьших затратах мощности источником
+сигнала и передать на вход ОУ без потерь напряжение источника сигнала.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Обычно в ОУ
+происходит большое подавление синфазной сос­тавляющей, и поэтому входное
+синфазное сопротивление <span style='position:relative;top:6.0pt'><img
+width=41 height=25
+src="../../../../Практика/images/lb1/image240.png"></span> на
+несколько порядков больше <span style='position:relative;top:8.0pt'><img
+width=59 height=28
+src="../../../../Практика/images/lb1/image241.png"></span>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Средний
+ток </span></b><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=27 height=25
+src="../../../../Практика/images/lb1/image242.png"></span> —
+среднее арифметическое значение постоянных входных токов инвертируемого и
+неинвертируемого входов в отсутствие сигнала. Обычно <span style='position:
+relative;top:6.0pt'><img width=27 height=25
+src="../../../../Практика/images/lb1/image242.png"></span> не
+превышает сотен наноампер.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Входной
+ток сдвига</span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> <span style='position:relative;top:6.0pt'><img
+width=119 height=29
+src="../../../../Практика/images/lb1/image243.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+разность между входными токами. Входной ток сдвига в несколько раз меньше среднего
+входного тока.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Напряжение
+смещения </span></b><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=39 height=25
+src="../../../../Практика/images/lb1/image244.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+напряжение постоянного тока, которое должно быть приложено к дифференциальному
+входу ОУ, чтобы его <span style='position:relative;top:6.0pt'><img width=69
+height=25 src="../../../../Практика/images/lb1/image245.png"></span>.
+Обычно составляет не более единиц милливольт.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Дрейф
+выходного напряжения смещения</span></b><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> <span style='position:relative;
+top:6.0pt'><img width=160 height=25
+src="../../../../Практика/images/lb1/image246.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+отношение изменения входного напряжения смещения к измене­нию окружающей
+температуры. Обычно составляет 1 ... 5 мкВ/°С.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выходное
+сопротивление </span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'><span style='position:relative;top:6.0pt'><img
+width=39 height=25
+src="../../../../Практика/images/lb1/image189.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+внутреннее сопротивление вы­хода ОУ. Идеальное RBbix±0, при этом все выходное
+напряжение выделяется без потерь в нагрузке. Реальное <span style='position:
+relative;top:6.0pt'><img width=39 height=25
+src="../../../../Практика/images/lb1/image189.png"></span> составляет
+еди­ницы и сотни ом.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Коэффициент
+усиления</span></b><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+<span style='position:relative;top:8.0pt'><img width=347 height=32
+src="../../../../Практика/images/lb1/image247.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+отношение изменения <span style='position:relative;top:6.0pt'><img width=40
+height=25 src="../../../../Практика/images/lb1/image209.png"></span> к
+соответствующему изменению разности входных напряжении при разомкнутой цепи
+обратной связи. В идеальных ОУ <span style='position:relative;top:3.0pt'><img
+width=59 height=20
+src="../../../../Практика/images/lb1/image233.png"></span>, в
+реальных ОУ <i>К</i> составляет от сотен до сотен тысяч. Так как <span
+style='position:relative;top:6.0pt'><img width=40 height=25
+src="../../../../Практика/images/lb1/image209.png"></span> ограничено
+напряжением источника питания, которое обычно не превышает 10... ... 15 В, то
+при очень больших коэффициентах усиления <span style='position:relative;
+top:6.0pt'><img width=32 height=25
+src="../../../../Практика/images/lb1/image179.png"></span> очень
+мало. При больших&nbsp;<span style='position:relative;top:6.0pt'><img width=32
+height=25 src="../../../../Практика/images/lb1/image179.png"></span> транзисторы
+попадают в режим насыщения.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Полоса
+пропускания</span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> </span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>&#8209;</span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> полоса частот, в которой <span
+style='position:relative;top:6.0pt'><img width=40 height=25
+src="../../../../Практика/images/lb1/image209.png"></span> уменьшается
+не </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>менее</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> чем
+до 0,707 своего максимального значения при неизменной амплитуде на входе.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Идеальная полоса
+пропускания ОУ<span style='position:relative;top:3.0pt'><img width=40
+height=16 src="../../../../Практика/images/lb1/image248.png"></span>.
+Реальная полоса пропускания ограничена. Максимальную частоту полосы пропуска­ния
+иногда называют частотой среза</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>.</span><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> Иногда указывается часто­та единичного
+усиления <span style='position:relative;top:6.0pt'><img width=16 height=24
+src="../../../../Практика/images/lb1/image249.png"></span>,
+при которой коэффициент усиления уменьшается до 1.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Скорость
+нарастания выходного напряжения </span></b><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'><span style='position:relative;
+top:6.0pt'><img width=145 height=25
+src="../../../../Практика/images/lb1/image250.png"></span> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209; </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>отношение
+приращения <span style='position:relative;top:6.0pt'><img width=53 height=25
+src="../../../../Практика/images/lb1/image251.png"></span> к
+интервалу времени<span style='position:relative;top:3.0pt'><img width=23
+height=20 src="../../../../Практика/images/lb1/image252.png"></span>,
+за который происходит это приращение, при подаче на вход прямоугольных
+импульсов. Чем выше частота среза, тем больше скорость нарастания выходного
+напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Время
+установления выходного напряжения</span></b><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> <span style='position:relative;
+top:6.0pt'><img width=20 height=25
+src="../../../../Практика/images/lb1/image253.png"></span> -
+время, в течение которого <span style='position:relative;top:6.0pt'><img
+width=40 height=25
+src="../../../../Практика/images/lb1/image209.png"></span> ОУ
+изменяется от уровня 0,1 до уровня 0,9 установившегося значения <span
+style='position:relative;top:6.0pt'><img width=40 height=25
+src="../../../../Практика/images/lb1/image209.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>при
+воздействии на вход ОУ прямоугольных импульсов.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Время
+установления также пропорционально частоте среза.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Максимальный
+выходной ток</span></b><span lang=X-NONE style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> <span style='position:relative;top:6.0pt'><img
+width=61 height=25
+src="../../../../Практика/images/lb1/image254.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>—
+предельная амплиту­да выходного тока, который может быть дан в нагрузку.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Максимальная
+мощность рассеяния </span></b><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><span style='position:relative;
+top:6.0pt'><img width=37 height=25
+src="../../../../Практика/images/lb1/image255.png"></span> —
+максимально допустимая мощность, которая может быть рассеяна ОУ при на­личии
+входного напряжения и подключенной нагрузке.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Типичные
+характеристики ОУ многокаскадного усилителя постоянного тока представлены на
+рис. 2,  3.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=375 height=276
+src="../../../../Практика/images/lb1/image256.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span lang=X-NONE style='font-size:
+12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center'><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman","serif"'>Рис.  2. Передаточная характеристика ОУ</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> Передаточная
+характеристика (рис.</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2)
+смещена в общем случае на напряжение смещения нуля <span style='position:relative;
+top:9.0pt'><img width=40 height=29
+src="../../../../Практика/images/lb1/image257.png"></span>,
+поэтому даже при отсутствии входного на выходе есть напряжение <span
+style='position:relative;top:9.0pt'><img width=48 height=29
+src="../../../../Практика/images/lb1/image258.png"></span>.
+Причина смещения нуля</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+асимметрия усилительных плеч первого каскада ОУ, неточность сдвига уровня,
+балансировка, асимметрия питающих напряжений, действие синфазного сигнала.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выходные
+максимальные напряжения <span style='position:relative;top:6.0pt'><img
+width=67 height=25
+src="../../../../Практика/images/lb1/image259.png"></span>, <span
+style='position:relative;top:6.0pt'><img width=77 height=25
+src="../../../../Практика/images/lb1/image260.png"></span> практически
+равны напряжению питания. Амплитудно-частотная и фазово-частотная
+характеристики ОУ, снятые в режиме малого сигнала, имеют вид, изображенный на
+рис.</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 3.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Плавные кривые
+линии </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+реальные характеристики, ломаные прямые </span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&#8209;</span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> их
+аппроксимации. Наиболее распространенной является аппроксимация частотной
+характеристики отрезками прямых, наклон которых соответствует <span
+style='position:relative;top:4.0pt'><img width=101 height=21
+src="../../../../Практика/images/lb1/image261.png"></span>, а
+фазовой </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+участками, фазовый сдвиг на которых равен <span style='position:relative;
+top:6.0pt'><img width=69 height=24
+src="../../../../Практика/images/lb1/image262.png"></span> ,
+где <i>n</i>=0,1,2... (так называемые диаграммы Боде).</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Диаграммы Боде
+соответствуют внутренней структуре частотной и фазовой характеристик
+многокаскадного ОУ, которые складываются из характеристик отдельных каскадов:</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:8.0pt'><img width=180 height=31
+src="../../../../Практика/images/lb1/image263.png"></span>,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:8.0pt'><img width=125 height=31
+src="../../../../Практика/images/lb1/image264.png"></span>.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=433 height=476
+src="../../../../Практика/images/lb1/image265.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.</span><span
+lang=X-NONE style='font-size:12.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:12.0pt;font-family:"Times New Roman","serif"'> 3.
+Характеристики ОУ</span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+&#8209;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>амплитудно-частотная;
+фазово-частотная.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Характеристики
+отдельных каскадов близки к характеристикам эквивалентной RC-цепи:</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:25.0pt'><img width=195 height=67
+src="../../../../Практика/images/lb1/image266.png"></span> <span
+style='position:relative;top:9.0pt'><img width=132 height=29
+src="../../../../Практика/images/lb1/image267.png"></span>,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:25.0pt'><img width=409 height=67
+src="../../../../Практика/images/lb1/image268.png"></span></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:9.0pt'><img width=309 height=29
+src="../../../../Практика/images/lb1/image269.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:9.0pt'><img width=340 height=29
+src="../../../../Практика/images/lb1/image270.png"></span>,</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>где <span style='position:relative;
+top:13.0pt'><img width=96 height=47
+src="../../../../Практика/images/lb1/image271.png"></span> —
+верхняя граничная частота <i>i</i>-го каскада</span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'><span style='position:relative;
+top:6.0pt'><img width=15 height=25
+src="../../../../Практика/images/lb1/image272.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+постоянная времени эквивалентной <i>RC</i>-цепи <i>i</i>-го каскада.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Таким образом,
+частоты излома характеристик ОУ соответствуют (примерно) граничным частотам
+отдельных каскадов. Погрешность аппроксимации не превышает обычно 3дБ для
+частотной и Т/4 </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;
+</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>для
+фазовой характеристики, что </span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>вполне</span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> достаточно для практических
+целей пользования ОУ. Следует иметь в виду, что если граничные частоты
+отдельных каскадов близки друг к другу, то реальные характеристики не
+показывают в явном виде изломы, соответствующие аппроксимации по Боде.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Параметры
+амплитудно-частотной и фазово-частотной характеристик:</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=21 height=25
+src="../../../../Практика/images/lb1/image170.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>—
+верхняя граничная частота ОУ с разомкнутой обратной связью, измеренная в режиме
+малого сигнала. Ее величина определяется частотной  характеристикой самого
+инерционного каскада ОУ и в свою очередь определяет ход переходной
+характеристики ОУ;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:8.0pt'><img width=63 height=28
+src="../../../../Практика/images/lb1/image273.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>—
+частота единичного усиления. Она определяет предельный диапазон частот
+устройств на ОУ при введении сколь угодно глубокой отрицательной обратной
+связи;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:6.0pt'><img width=21 height=25
+src="../../../../Практика/images/lb1/image274.png"></span></span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>—
+частота, на которой внутренний фазовый сдвиг в ОУ достигает величины </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:Symbol'>p </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> радиан
+(180<sup>0</sup>). При применении ОУ с внешней частотно-независимой
+отрицательной обратной связью именно на этой частоте возникает 
+самовозбуждение,  если на ней петлевое усиление <span style='position:relative;
+top:6.0pt'><img width=52 height=24
+src="../../../../Практика/images/lb1/image275.png"></span>.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2.2. Структура
+и назначение элементов ОУ</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Типовой
+интегральный операционный усилитель содержит обычно </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>три&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>каскада
+(рис.</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 4)
+— дифференциальный</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+(ДУ)</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,
+усилитель напряжения</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+(УН)</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+и усилитель мощности</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+(УМ)</span><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=518 height=123
+src="../../../../Практика/images/lb1/image276.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  4.
+Структура типового ОУ</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Первый каскад ОУ
+обязательно дифференциальный, </span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>поскольку </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>это необходимо для уменьшения дрейфа
+нуля, подавления синфазной помехи, для расширения возможности управления ОУ. В
+его состав входят усилительные плечи,  генератор стабильного тока, цепи
+термостабилизации, балансировки. Для увеличения входного сопротивления
+усилительные плечи могут выполняться на составных транзисторах. Каскад усиления
+напряжения также обычно выполняется  по дифференциальной схеме для увеличения
+степени подавления дрейфа и синфазной помехи.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Каскад усиления
+мощности обычно двухтактный, имеет малое выходное, но большое входное
+сопротивление (чтобы увеличить эквивалентную нагрузку и коэффициент усиления
+второго каскада).</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Во 2-й или 3-й
+каскад входят также схема сдвига уровня, цепь коррекции для обеспечения
+устойчивости, элементы защиты от перегрузки.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Схема сдвига
+уровня необходима для того, чтобы при входном напряжении, равном нулю, получить
+и выходное напряжение постоянного тока, равное нулю.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кроме того, в
+современных ОУ содержатся многочисленные цепи внутренней обратной связи,
+термокомпенсации, коррекции, стабилизации.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Широкое
+использование находят операционные усилители, собранные по двухкаскадной схеме.
+Основное их достоинство </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+большая устойчивость к самовозбуждению, при этом сохраняются все достоинства
+трехкаскадного ОУ</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Уменьшение числа
+каскадов повышает быстродействие ОУ. В схемах ОУ делается внешний вывод от
+первого каскада для компенсации напряжения смещения во внешней цепи. В выходных
+цепях применяют схемы защиты от перегрузок.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2.3. Схема
+включения ОУ</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Для обеспечения
+нормальной работы ОУ необходимо выполнять правила включения их в схему.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ОУ питаются, как
+правило, от двухполярного источника питания с равными напряжениями (<span
+style='position:relative;top:6.0pt'><img width=163 height=24
+src="../../../../Практика/images/lb1/image277.png"></span>).</span><b><span
+lang=X-NONE style='font-size:48.0pt;font-family:"Times New Roman","serif";
+color:#C00000'> </span></b><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Причем, если заземляется одна из
+внутренних точек ОУ, то допустима нестабильность и асимметрия <span
+style='position:relative;top:6.0pt'><img width=48 height=25
+src="../../../../Практика/images/lb1/image278.png"></span> не
+более 10</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>%.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>При включении ОУ
+без или с неглубокой обратной связью может потребоваться балансировка ОУ. </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2.4. Типовые
+применения ОУ</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ОУ с резистивной
+обратной связью</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Внешняя
+частотно-независимая резистивная обратная связь, охватывающая ОУ, изменяет его
+коэффициент усиления и полосу частот, не изменяя формы частотной
+характеристики. Поэтому нередко говорят, что ОУ в этом режиме является </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>«</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>масштабным
+усилителем</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>»</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. В
+зависимости от того, на какой вход ОУ подается полезный сигнал, различают
+инвертирующее, неинвертирующее и дифференциальное включения ОУ.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Требования,
+предъявляемые к параметрам ОУ, зависят от вы­полняемых функций. В каждом
+конкретном случае выбирают тот тип ОУ, у которого параметры в наибольшей
+степени удовлетво­ряют предъявленным требованиям.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>В связи с тем
+что существует определенное противоречие в получении нескольких групп
+оптимальных параметров ОУ, приходится изготовлять ОУ специального назначения,
+например, высокочастотные ОУ с широкой полосой пропускания, большой ско­ростью
+нарастания выходного напряжения и т. д., но в этом случае трудно получить ОУ с
+минимальными погрешностями на вхо­де. В других случаях добиваются наибольшей
+точности параметров. Такие ОУ получили название прецизионных (высокоточных). </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Таким образом,
+имеются ОУ общего назначения — универсальные, многофункциональные, которые
+больше всего применяют в аппаратуре связи, и ОУ частного применения, которые
+имеют оптимальные значения по какой-то группе параметров.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;text-indent:35.45pt;line-height:normal'><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 2.5. Схемы
+типовых соединений операционного усилителя</span></b><b><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>:</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>операционн</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ый</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+усилител</span></b><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ь</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span></b><b><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Операционный
+усилитель </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155
+(отечественный аналог КР140УД22),  </span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>производимый корпорацией National
+Semiconductor Corporation,</span><span lang=X-NONE style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> представляет собой широкополосный
+операционный усилитель с повышенным быстродействием, имеет хорошо согласованную
+пару JFET-транзисторов на входе, внутреннюю частотную коррекцию и высокую
+скорость нарастания выходного напряжения. Данные операционные усилители
+предназначены для построения быстродействующих и точных измерительных систем,
+систем автоматического регулирования и обработки информации.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2.6. Технические характеристики </span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Преимущества
+применения операционного усилителя </span></i></b><b><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span></i></b><b><i><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155:</span></i></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Низкая
+стоимость операционного усилителя (по сравнению с операционными усилителями на
+гибридных транзисторах) позволяет уменьшить финансовые затраты при производстве
+оборудования.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>JFET-транзисторы,
+используемые в операционном усилителе, сохраняют работоспособность при очень
+низких температурах, что позволяет создавать сверхмалошумящие усилители. </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Технология
+применения JFET-транзисторов на входе операционного усилителя позволяет
+обеспечить высокое быстродействие, линейность и устойчивость работы.</span></p>
+
+<span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2.7. Область применения</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Совокупность
+высоких технических характеристик позволяет использовать операционные усилители
+в качестве интеграторов с большим временем интегрирования и малой погрешностью,
+в электрометрах и логарифмических усилителях с расширенным диапазоном
+логарифмирования. Малые значения шумового тока и хорошие спектральные
+характеристики напряжения шума, высокие динамические параметры, дают
+преимущества при использовании их в качестве усилителей для высокоомных
+фотоприемников с режимом преобразования тока в напряжение, схем выборки и
+хранения, высокоомных буферных каскадах.</span></p>
+
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2.8. Общие характеристики</span></b></p>
+
+
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'>Таблица  1</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Электрические
+параметры при <i>U</i></span><sub><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>П</span></sub><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>= <img width=7 height=10
+src="../../../../Практика/images/lb1/image279.png" hspace=5
+alt="plus minus">15 В, <i>R</i><sub>н</sub></span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>= 2к, Т</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>25°C</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=right style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:right;line-height:normal'><span lang=X-NONE
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="92%"
+ style='width:92.5%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>1.&nbsp;Напряжение питания</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'><img width=7 height=10
+  src="../../../../Практика/images/lb1/image279.png" hspace=5
+  alt="plus minus">15 В <img width=7 height=10
+  src="../../../../Практика/images/lb1/image279.png" hspace=5
+  alt="plus minus">10&nbsp;%</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" valign=top style='width:76.44%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>2.&nbsp;Максимальное выходное напряжение</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее <img width=7 height=10
+  src="../../../../Практика/images/lb1/image279.png" hspace=5
+  alt="plus minus">11,0 В </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>3.&nbsp;Напряжение смещения нуля</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не более 10 мВ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>4.&nbsp;Входной ток</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не более 0,2 нА</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>5.&nbsp;Ток потребления</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не более 10 мА</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" valign=top style='width:76.44%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>6.&nbsp;Разность входных токов</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не более 0,05 нА</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>7.&nbsp;Коэффициент усиления напряжения</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее 50000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>8.&nbsp;Коэффициент ослабления синфазных входных напряжений</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее 80 дБ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>9.&nbsp;Синфазное входное напряжение</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее <img width=7 height=10
+  src="../../../../Практика/images/lb1/image279.png" hspace=5
+  alt="plus minus">10 В</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" style='width:76.44%;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>10.&nbsp;Коэффициент влияния нестабильности источников питания
+  на напряжение смещения</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее 80 дБ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76%" valign=top style='width:76.44%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>11.&nbsp;Скорость нарастания выходного напряжения</span></p>
+  </td>
+  <td width="23%" style='width:23.56%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+  color:black'>не менее 7,5 В/мкс</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=489 height=273
+src="../../../../Практика/images/lb1/image280.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис.  5. Упрощенная схема</span></p>
+
+<span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>9</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+Параметры операционного усилителя по <span style='color:black'>постоянному току</span></span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=264
+  height=239 src="../../../../Практика/images/lb1/image281.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  6.
+  Зависимость входного тока </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от температуры
+  (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=256
+  height=247 src="../../../../Практика/images/lb1/image282.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  7.
+  Зависимость входного тока </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от температуры
+  (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>156)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=254
+  height=249 src="../../../../Практика/images/lb1/image283.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  8.
+  Зависимость входного тока</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от напряжения
+  синфазного сигнала (</span><span lang=EN-US style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>LF</span><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>155).</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=249
+  height=240 src="../../../../Практика/images/lb1/image284.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  10.
+  Зависимость тока потребления</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от напряжения
+  питания (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Times New Roman","serif"'><img width=257
+  height=249 src="../../../../Практика/images/lb1/image285.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  9.
+  Перепад напряжения</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=257
+  height=240 src="../../../../Практика/images/lb1/image286.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  11.
+  Зависимость тока потребления</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от напряжения
+  питания (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>156)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=256
+  height=246 src="../../../../Практика/images/lb1/image287.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  12.
+  Зависимость тока</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от
+  отрицательного напряжения </span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=246
+  height=246 src="../../../../Практика/images/lb1/image288.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  13.
+  Зависимость тока</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>от
+  положительного напряжения</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=266
+  height=252 src="../../../../Практика/images/lb1/image289.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  14.
+  Зависимость положительного входного сигнала от положительного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>напряжения
+  питания</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=280
+  height=252 src="../../../../Практика/images/lb1/image290.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  15.
+  Зависимость отрицательного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>входного
+  сигнала от отрицательного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>напряжения
+  питания</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=280
+  height=256 src="../../../../Практика/images/lb1/image291.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  16.
+  Усиление по напряжению </span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=270
+  height=256 src="../../../../Практика/images/lb1/image292.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  17.
+  Зависимость выходного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>напряжения от
+  нагрузки</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2</span></b><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.1</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.
+Параметры операционного усилителя по <span style='color:black'>переменному току</span></span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=250
+  height=239 src="../../../../Практика/images/lb1/image293.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  18.
+  Зависимость коэффициента </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>усиления от
+  температуры (</span><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>LF</span><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>155)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=255
+  height=239 src="../../../../Практика/images/lb1/image294.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  19.
+  Зависимость коэффициента </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>усиления от
+  температуры (</span><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>LF</span><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>156)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=262
+  height=256 src="../../../../Практика/images/lb1/image295.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  20.
+  Скорость нарастания </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>выходного
+  напряжения</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=270
+  height=258 src="../../../../Практика/images/lb1/image296.png"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  21.
+  Зависимость выходного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>сопротивления
+  от частоты (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=269
+  height=249 src="../../../../Практика/images/lb1/image297.png"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  22.
+  Зависимость выходного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>сопротивления
+  от частоты (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>156)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=264
+  height=182 src="../../../../Практика/images/lb1/image298.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  23.
+  Импульсная характеристика</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>слабого
+  сигнала A</span><sub><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>V</span></sub><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'> = +1 (</span><span lang=EN-US
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=257
+  height=194 src="../../../../Практика/images/lb1/image299.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  24.
+  Импульсная характеристика </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>слабого
+  сигнала, </span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>A<sub>V</sub></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>=+1 (</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>156)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=264
+  height=196 src="../../../../Практика/images/lb1/image300.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  25.
+  Импульсная характеристика</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>большого
+  сигнала, </span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>A<sub>V</sub></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>=+1 (</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=309
+  height=261 src="../../../../Практика/images/lb1/image301.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'> 26</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. График Боде</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+  (LF155)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=312
+  height=261 src="../../../../Практика/images/lb1/image302.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'> 27</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. График Боде</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+  (LF156)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=297
+  height=260 src="../../../../Практика/images/lb1/image303.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'> 28</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. График Боде</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+  (LF357)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=283
+  height=260 src="../../../../Практика/images/lb1/image304.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  29.
+  Коэффициент подавления</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>синфазного
+  сигнала</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=276
+  height=254 src="../../../../Практика/images/lb1/image305.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  30.
+  Зависимость коэффициента</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>подавления от
+  частоты (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>155)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=276
+  height=254 src="../../../../Практика/images/lb1/image306.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  31.
+  Зависимость коэффициента</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>подавления от
+  частоты (</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>156/357)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=273
+  height=258 src="../../../../Практика/images/lb1/image307.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'></span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>3</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>2</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. Предел
+  выходного напряжения</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=277
+  height=257 src="../../../../Практика/images/lb1/image308.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  33.
+  Эквивалентное выходное шумовое напряжение</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=276
+  height=250 src="../../../../Практика/images/lb1/image309.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  34.
+  Эквивалентное выходное шумовое напряжение (расширенная шкала)</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><i><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i></b></p>
+  </td>
+ </tr>
+</table>
+
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Приборы
+и оборудование</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+Программа компьютерного моделирование электронных схем Multisim (приборы: функциональный генератор сигналов (Function Generator), осциллограф (Oscilloscope); резисторы; конденсаторы). </span></p>
+
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 4. Порядок выполнения лабораторной
+работы</span></b></p>
+
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 4.1.</span></b><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'> <b>Схема соединений</b></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=245
+  height=176 src="../../../../Практика/images/lb1/image310.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  3</span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>5</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.  </span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Металлический
+  корпус </span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><i><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i></b></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=215
+  height=157 src="../../../../Практика/images/lb1/image311.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>36</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. Корпус DIP </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 4.2. Типовые соединения </span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Задание 1</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:&nbsp;и</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>сследовать
+схемы типовых соединений операционного усилителя </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=669
+ style='width:501.55pt;margin-left:14.05pt;border-collapse:collapse'>
+ <tr>
+  <td width=202 valign=top style='width:151.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'><img width=185 height=235
+  src="../../../../Практика/images/lb1/image312.jpg"></span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Рис. </span><span lang=EN-US
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>37</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. Регулировка </span><i><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ОС</span></sub></p>
+  </td>
+  <td width=444 colspan=3 valign=top style='width:333.1pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'> </span></span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>ОС</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> регулируется
+  при помощи  потенциометра на 25k;</span></p>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'> </span></span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> движок
+  потенциометра подключается к + питающего напряжения,</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0cm 0cm 0cm 0cm' width=23 colspan=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=281 colspan=2 valign=top style='width:210.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><img width=260 height=176
+  src="../../../../Практика/images/lb1/image313.png"></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Рис. </span><span lang=EN-US
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>38</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. Емкостные
+  нагрузки</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:normal'><b><span style='font-size:14.0pt;font-family:
+  "Times New Roman","serif"'>&nbsp;</span></b></p>
+  </td>
+  <td width=387 colspan=4 valign=top style='width:290.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для LF155
+  (LF156) <i>R</i> = 5кОм;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> для </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>357 </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 1,25кОм;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> благодаря
+  высоким характеристикам выходного каскада, данные усилители имеют возможность
+  выдерживать высокие емкостные нагрузки, сохраняя при этом стабильность. </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span></i><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>l</span></sub><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(</span></sub><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>MAX</span></sub><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> &#8776; 0,01
+  мкФ;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> время
+  установления сигнала: (</span><i><span lang=EN-US style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>t<sub>s</sub></span></i><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)&nbsp;=&nbsp;5&nbsp;мкс.</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:normal'><b><span style='font-size:14.0pt;font-family:
+  "Times New Roman","serif"'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=291 colspan=3 valign=top style='width:218.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><img width=243 height=175
+  src="../../../../Практика/images/lb1/image314.png"></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Рис.  39. </span><span lang=EN-US
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>357
+  широкополосный усилитель мощности</span></p>
+  </td>
+  <td width=366 colspan=2 valign=top style='width:274.65pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>при искажении
+  &#8804; 1% и 20 </span><i><span lang=EN-US style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> диапазон
+  частот составляет до 500 кГц.</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0cm 0cm 0cm 0cm' width=12><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr height=0>
+  <td width=202 style='border:none'></td>
+  <td width=79 style='border:none'></td>
+  <td width=9 style='border:none'></td>
+  <td width=355 style='border:none'></td>
+  <td width=11 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 4.3. Типовые области применения</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Задание
+</span></b><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>сследовать
+схемы  операционного усилителя </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>LF</span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=357 valign=top style='width:267.65pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><img width=347
+  height=292 src="../../../../Практика/images/lb1/image315.jpg"></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  40.
+  Испытательная схема определения времени нарастания сигнала</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;
+  text-indent:1.0cm;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'> </span></span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> полевой
+  транзистор используется для развязки операционного усилителя и измерительного
+  прибора.</span></p>
+  </td>
+ </tr>
+</table>
+
+<span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'></span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4</span></b><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.4.</span></b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> <b>Выходной
+сигнал операционного усилителя, </b></span><b><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i></b><b><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(на
+основании схемы определения времени нарастания сигнала)</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img width=239
+  height=188 src="../../../../Практика/images/lb1/image316.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  41. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>355</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  line-height:normal'><span lang=EN-US style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img
+  width=256 height=188
+  src="../../../../Практика/images/lb1/image317.jpg"></span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис  42. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>357</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt;font-family:"Arial","sans-serif"'><img
+  width=247 height=193
+  src="../../../../Практика/images/lb1/image318.jpg"></span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис  43. </span><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>356</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><b><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Задание</span></b><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 3</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>сследовать
+схемы  операционного усилителя </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>LF</span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=291 valign=top style='width:218.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><img width=297
+  height=306 src="../../../../Практика/images/lb1/image319.jpg"></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Рис.  44. Регулируемое опорное</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>напряжение с малым смещением</span></p>
+  </td>
+  <td width=366 valign=top style='width:274.65pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+  14.0pt;font-family:"Times New Roman","serif"'> все резисторы и потенциометры
+  должны быть проволочными;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+  14.0pt;font-family:"Times New Roman","serif"'> р1: регулировка смещения;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.7pt;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+  14.0pt;font-family:"Times New Roman","serif"'> р</span><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2: </span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>регулировка </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=483 height=201
+src="../../../../Практика/images/lb1/image320.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис.  45. Быстродействующий
+логарифмический преобразователь</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Характеристики
+преобразователя:</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Динамический
+диапазон: 100мкА </span><span style='font-size:14.0pt;font-family:SymbolPS'>&pound;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I<sub>i</sub></span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:SymbolPS'>&pound;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 1 мА (5 декад),
+|</span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>| = 1В/декада</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Переходная
+характеристика: 3 мкс для </span><span style='font-size:14.0pt;font-family:
+SymbolPS'>D</span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I<sub>i</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 1 дек.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>: добавочная
+динамическая компенсация.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:35.45pt;margin-bottom:.0001pt;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=306 valign=top style='width:229.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><img width=288
+  height=227 src="../../../../Практика/images/lb1/image321.jpg"><b><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span></b></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  46.
+  Схема для высокоточного</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>контроля тока</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:1.75pt;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+  </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 5 </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>/</span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> (В/мА от </span><i><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span></i><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>S</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:1.75pt;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+  </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>: резисторы
+  0,1&nbsp;%</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:37.15pt;margin-bottom:.0001pt;text-align:justify;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle style='line-height:normal'><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=407 valign=top style='width:304.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><img width=397
+  height=241 src="../../../../Практика/images/lb1/image322.png"></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  47.
+  Восьмибитный ЦАП</span></p>
+  </td>
+  <td width=281 valign=top style='width:210.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.3pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+  </span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> должны находиться
+  в пределах ±0,05&nbsp;%</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.3pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+  </span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> время
+  отклика: 3&nbsp;мкс</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle align=right style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:right;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=right style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:right;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Таблица </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:354.0pt;margin-bottom:.0001pt;text-indent:35.4pt;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>E<sub>0</sub></span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B1</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B2</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B3</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B4</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B5</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B6</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B7</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>B8</span></p>
+  </td>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Комментарии</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>+9.920</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Положительная
+  шкала</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>+0.040</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(+)
+  Ноль шкалы</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-0.040</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(-)
+  Ноль шкалы</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>-9.920</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Отрицательная
+  шкала</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><i><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></i></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=306 valign=top style='width:229.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><img width=292
+  height=204 src="../../../../Практика/images/lb1/image323.jpg"></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  48.
+  Широкополосный усилитель</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>с низким
+  уровнем шумом</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>и малым
+  смещением</span></p>
+  </td>
+  <td width=351 valign=top style='width:262.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:.55pt;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.4pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+  Паразитная входная емкость </span></p>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:.55pt;margin-bottom:.0001pt;text-align:justify;
+  line-height:normal'><span lang=EN-US style='font-size:14.0pt;font-family:
+  "Times New Roman","serif"'>C</span><sub><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>1</span></sub><span style='font-size:
+  14.0pt;font-family:"Times New Roman","serif"'>&nbsp;=&nbsp;3&nbsp;пФ (для </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>155, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>156 и </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>357 плюс любое
+  дополнительное сопротивление схемы) взаимодействует с элементами обратной
+  связи. Для его компенсации необходимо добавить </span><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> таким образом,
+  чтобы </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C</span><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:.55pt;margin-bottom:.0001pt;text-align:justify;
+  text-indent:35.4pt;line-height:normal'><span style='font-size:14.0pt;
+  font-family:Symbol'>·</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+  Диапазон частот до 191 кГц.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle style='text-align:justify;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=390 valign=top style='width:292.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:normal'><img width=376 height=193
+  src="../../../../Практика/images/lb1/image324.jpg"></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  49.
+  Повышение напряжения LF156</span></p>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>при помощи
+  усилителя тока</span></p>
+  </td>
+  <td width=267 valign=top style='width:199.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;max</span></sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=</span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>150 мА (выдерживает
+  </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>R</span></i><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>L</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 100 Ом)</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span></i><sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><sub><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;max</span></sub><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 150 мА (выдерживает
+  <i>R</i><sub>L</sub> = 100 Ом)</span></p>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><span style='position:relative;top:15.0pt'><img width=137
+  height=49 src="../../../../Практика/images/lb1/image325.png"></span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span></p>
+	<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'>&nbsp;</p>
+	<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'>
+	<span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;с показанным
+  </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C<sub>L</sub></span></i></p>
+  <p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;text-indent:35.45pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> Усилитель
+  тока не добавляет фазового сдвига.</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-align:justify;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><img width=436 height=358
+src="../../../../Практика/images/lb1/image326.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span lang=X-NONE
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.  5</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>0</span><span
+lang=X-NONE style='font-size:12.0pt;font-family:"Times New Roman","serif"'>. </span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Трех</span><span
+lang=X-NONE style='font-size:12.0pt;font-family:"Times New Roman","serif"'>декадный
+генератор, управляемый напряжением (ГУН)</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=style1 align=right style='margin-bottom:0cm;margin-bottom:
+.0001pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><span
+style='position:relative;top:17.0pt'><img width=457 height=52
+src="../../../../Практика/images/lb1/image327.png"></span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>   </span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>(3.</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Указанные R<sub>1</sub>,
+R<sub>4</sub>. Линейность 0,1</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;</span><span lang=X-NONE style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>%.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-align:justify;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><img
+width=351 height=183
+src="../../../../Практика/images/lb1/image328.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.
+ 51. Исключение больших емкостных нагрузок</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> отклонение
+6&nbsp;%;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>T<sub>s</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> = 10 мкс;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> скорость
+нарастания вых. напряжения </span><i><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>U</span></i><sub><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>вых </span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>зависит от </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C<sub>L</sub></span></i><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> и </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><sub><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;max</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>:</span></p>
+
+<p class=style1 align=right style='line-height:
+normal'><span style='position:relative;top:17.0pt'><img width=476 height=52
+src="../../../../Практика/images/lb1/image329.png"></span>              <span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>( 2)</span></p>
+
+<p class=MsoNormalCxSpMiddle align=right style='text-align:right;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><img width=381 height=164
+src="../../../../Практика/images/lb1/image330.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис
+ 52. Пиковый детектор с малым смещением</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> диод
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> фиксирует </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>V</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вых</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> между </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>V</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&#8209;</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>V<sub>D</sub></span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, позволяя
+повысить скорость и ограничить обратное смещение </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>
+</span></span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> максимальная
+входная частота должна быть </span><span style='position:relative;top:8.0pt'><img
+width=116 height=28
+src="../../../../Практика/images/lb1/image331.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, где </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>C<sub>D</sub></span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> &#8209; шунтирующая
+ёмкость </span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>D</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:35.45pt;margin-bottom:.0001pt;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><img
+width=200 height=148
+src="../../../../Практика/images/lb1/image332.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис
+ 53. Работа с единичным коэффициентом усиления для </span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>157</span></p>
+
+<p class=style1 align=right style='line-height:
+normal'><span style='position:relative;top:16.0pt'><img width=163 height=51
+src="../../../../Практика/images/lb1/image333.png"></span>                                                                       <span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>( 3)</span></p>
+
+<p class=style1 align=right style='line-height:
+normal'><span style='position:relative;top:13.0pt'><img width=101 height=47
+src="../../../../Практика/images/lb1/image334.png"></span>;                                                                           <span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>( 4)</span></p>
+
+<p class=style1 style='margin-left:177.0pt;text-indent:35.4pt;
+line-height:normal'><span style='position:relative;top:8.0pt'><img width=83
+height=28 src="../../../../Практика/images/lb1/image335.png"></span>;</p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='position:relative;top:6.0pt'><img width=107 height=25
+src="../../../../Практика/images/lb1/image336.png"></span>.</p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><img
+width=203 height=121
+src="../../../../Практика/images/lb1/image337.jpg"></span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Рис.
+ 58. Инвертирующая работа с единичным</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>коэффициентом
+усиления для </span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LF</span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>157</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=style1 align=right style='line-height:
+normal'><span style='position:relative;top:16.0pt'><img width=163 height=51
+src="../../../../Практика/images/lb1/image333.png"></span>                                                                       <span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>( 5)</span></p>
+
+<p class=style1 align=right style='line-height:
+normal'><span style='position:relative;top:13.0pt'><img width=63 height=47
+src="../../../../Практика/images/lb1/image338.png"></span>;                                                                                       <span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>( 6)</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:177.0pt;text-indent:35.4pt;
+line-height:normal'><span style='position:relative;top:8.0pt'><img width=95
+height=28 src="../../../../Практика/images/lb1/image339.png"></span>;</p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><span style='position:relative;top:6.0pt'><img width=112 height=25
+src="../../../../Практика/images/lb1/image340.png"></span>.</p>
+
+<p class=MsoNormalCxSpMiddle style='line-height:normal'><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 5. Содержание отчёта</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Цель
+лабораторной работы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Исследованные
+цепи.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Результаты
+исследований;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выводы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Ответы на
+контрольные вопросы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><i><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></i></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 6. Контрольные вопросы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Что понимается
+под ОУ?</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Какие свойства
+характерны для идеального усилителя?</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Каковы пути
+повышения входного сопротивления ОУ?</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Как добиваются
+получения минимального выходного сопротивления?</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Чем
+ограничивается получение максимального выходного напряжения ОУ?</span></p>
+
+</div>
+
+
+ </div>
+				<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

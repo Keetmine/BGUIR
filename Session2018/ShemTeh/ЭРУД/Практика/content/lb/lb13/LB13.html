@@ -1,0 +1,1308 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB13 - дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                  <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 13</b></p>
+<div class=WordSection4>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>СИНТЕЗ КОМБИНАЦИОННЫХ СХЕМ С ИСПОЛЬЗОВАНИЕМ МУЛЬТИПЛЕКСОРОВ И ДЕМУЛЬТИПЛЕКСОРОВ</span></b></p>
+	<OL>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<FONT SIZE=4><B>ЦЕЛЬ РАБОТЫ </B></FONT>
+		</P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Целью работы является изучение
+	мультиплексоров и демультиплексоров,
+	а также синтеза комбинационных схем
+	на основе мультиплексоров и на основе
+	демультиплексоров.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>2. КРАТКИЕ ТЕОРЕТИЧЕСКИЕ
+	СВЕДЕНИЯ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Традиционный синтез комбинационных
+	схем (КС) включает в себя минимизацию
+	ФАЛ и реализацию минимальной ФАЛ с
+	помощью логических элементов. Используя
+	этот метод, некоторые КС схемы были
+	синтезированы и реализованы как
+	отдельные ИС. Среди них мультиплексоры
+	и демультиплексоры, которые широко
+	представлены как ИС средней степени
+	интеграции. Мультиплексоры и
+	демультиплексоры могут успешно
+	использоваться для реализации различных
+	комбинационных устройств. При этом
+	уменьшается количество требуемых ИС,
+	повышается надежность и снижается
+	стоимость реализации КС.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Мультиплексоры</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Мультиплексор (или селектор
+	данных) это комбинационная схема,
+	которая коммутирует один из
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m60182692.gif" NAME="Object383" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=20>
+	входных сигналов на один выход. Выбор
+	информационного входа, который
+	коммутируется на выход, осуществляется
+	с помощью
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_17aa43f7.gif" NAME="Object384" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	адресных   входов.  Условные  обозначения
+	 мультиплексора  показаны  на  рис. 13.1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_30e2254e.png" NAME="graphics47" ALIGN=BOTTOM WIDTH=402 HEIGHT=280 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.1. Условное обозначение мультиплексора:</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	                а) используемое в отечественной
+	справочной литературе;</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	б) рекомендуемое к использованию
+	международным стандартом <SPAN LANG="en-US">IEEE</SPAN></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для выбора одного из </FONT><FONT SIZE=4><SPAN LANG="en-US"><I>n</I></SPAN></FONT><FONT SIZE=4>
+	входов, коммутируемого на выход,
+	требуется группа из
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_17aa43f7.gif" NAME="Object385" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	адресных входов, где
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6c93deb6.gif" NAME="Object386" ALIGN=ABSMIDDLE WIDTH=48 HEIGHT=20>.
+	В зависимости от цифрового кода на
+	адресных входах, один из входов выбирается
+	и соединяется с выходом. Обычно
+	стробируемый (</FONT><FONT SIZE=4><SPAN LANG="en-US">G</SPAN></FONT><FONT SIZE=4>)
+	или разрешающий (</FONT><FONT SIZE=4><SPAN LANG="en-US">EN</SPAN></FONT><FONT SIZE=4>)
+	вход используется для каскадного
+	соединения мультиплексоров и, который
+	обычно активный при низком уровне, т.е.
+	разрешает работу мультиплексора, когда
+	сигнал на этом входе низкий, лог. 0.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Число информационных входов,
+	коммутируемых на выход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object387" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>,
+	составляет
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_63b7e08a.gif" NAME="Object388" ALIGN=ABSMIDDLE WIDTH=85 HEIGHT=18>.
+	При
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_37921469.gif" NAME="Object389" ALIGN=ABSMIDDLE WIDTH=40 HEIGHT=18>
+	мультиплексор имеет размерность 4:1.
+	Это 4-канальный одноразрядный
+	мультиплексор, на выход которого
+	передается один из четырех входных
+	сигналов. Рассмотрим, как построить
+	мультиплексор 4:1, таблица истинности
+	которого приведена в таблице 13.1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.5in; margin-bottom: 0in">
+	                       <FONT SIZE=4>Таблица 13.1</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DL>
+						<DD>
+						<TABLE WIDTH=271 CELLPADDING=7 CELLSPACING=0 align="center">
+							<COL WIDTH=171>
+							<COL WIDTH=70>
+							<TR VALIGN=TOP>
+								<TD WIDTH=171 HEIGHT=56 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4><U>Адресные входы</U></FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1fca604a.gif" NAME="Object390" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+
+									<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_142ad7c0.gif" NAME="Object391" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21></P>
+								</TD>
+								<TD WIDTH=70 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4><U>Выход</U></FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object392" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></P>
+								</TD>
+							</TR>
+							<TR VALIGN=TOP>
+								<TD WIDTH=171 HEIGHT=107 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+									<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0.04in">
+									<FONT SIZE=4>0                   0</FONT></P>
+									<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0.04in">
+									<FONT SIZE=4>0                   1</FONT></P>
+									<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0.04in">
+									<FONT SIZE=4>1                   0</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">1
+									                  1</SPAN></FONT></P>
+								</TD>
+								<TD WIDTH=70 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m64b20c45.gif" NAME="Object393" ALIGN=ABSMIDDLE WIDTH=23 HEIGHT=21></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m69e3bc28.gif" NAME="Object394" ALIGN=ABSMIDDLE WIDTH=23 HEIGHT=21></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_meaf0332.gif" NAME="Object395" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4bf12fbd.gif" NAME="Object396" ALIGN=ABSMIDDLE WIDTH=23 HEIGHT=21></P>
+								</TD>
+							</TR>
+						</TABLE>
+					</DL>
+				</DL>
+			</DL>
+		</DL>
+	</DL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Выход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object397" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	может быть записан как </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	       <FONT SIZE=4><SPAN LANG="en-US"><I>Y</I></SPAN></FONT><FONT SIZE=4><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_76117856.gif" NAME="Object398" ALIGN=ABSMIDDLE WIDTH=410 HEIGHT=35></FONT><FONT SIZE=4 STYLE="font-size: 16pt">
+	             </FONT><FONT SIZE=4>(13.1)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Выражение (13.1) преобразуем,
+	используя двойную инверсию и закон Де
+	Моргана</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in; text-align: center;">
+	               <FONT SIZE=4><SPAN LANG="en-US"><I>Y</I></SPAN></FONT><FONT SIZE=4><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f8aa4fd.gif" NAME="Object399" ALIGN=ABSMIDDLE WIDTH=349 HEIGHT=36>
+	                             (13.2)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Выражение (13.2) реализуется, как
+	показано на рис. 13.2.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<br>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2cc13adf.png" NAME="graphics48" ALIGN=BOTTOM WIDTH=403 HEIGHT=445 BORDER=0></P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.2. Логическая схема мультиплексора
+	4:1
+
+	с разрешающим входом
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m78048965.gif" NAME="Object400" ALIGN=ABSMIDDLE WIDTH=33 HEIGHT=18></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Промышленностью выпускаются
+	мультиплексоры размерностью 8:1 и 16:1 со
+	стробирующим входом и без него. Также
+	выпускаются двухразрядные мультиплексоры
+	4:1 и четырехразрядные мультиплексоры
+	2:1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Мультиплексоры могут быть
+	использованы как логические элементы
+	для синтеза комбинационных схем.
+	Использование мультиплексоров дает
+	следующие преимущества:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1) Не требуется упрощение ФАЛ;</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2) Минимизируется число требуемых
+	интегральных схем;</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3) Синтез КС упрощается.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для реализации КС с использованием
+	мультиплексора требуется представление
+	ФАЛ таблицей истинности или в СДНФ, или
+	в СКНФ. Синтез КС сводится к следующему:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1) Определяется десятичные номера
+	каждого минтерма ФАЛ и входы мультиплексора,
+	соответствующие этим номерам соединяются
+	с лог. 1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2) Все остальные входы соединяются
+	с лог. 0.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3) Входные переменные ФАЛ подаются
+	на адресные входы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 13.1.</B></FONT><FONT SIZE=4>
+	Реализовать следующую ФАЛ, используя
+	мультиплексор</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6b42f882.gif" NAME="Object401" ALIGN=ABSMIDDLE WIDTH=331 HEIGHT=35></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Решение.</B></FONT><FONT SIZE=4> ФАЛ
+	четырех переменных, поэтому мультиплексор
+	должен быть с четырьмя адресными
+	входами, рис. 13.3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m62d7ec73.png" NAME="graphics49" ALIGN=BOTTOM WIDTH=297 HEIGHT=439 BORDER=0></P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.3 Реализация ФАЛ
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_1fb974a4.gif" NAME="Object402" ALIGN=ABSMIDDLE WIDTH=156 HEIGHT=35>
+	из примера 13.1</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Реализация функции </B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>m</B></SPAN></FONT><FONT SIZE=4><B>+1
+	переменных на мультиплексорах с  </B></FONT><FONT SIZE=4><SPAN LANG="en-US"><B>m</B></SPAN></FONT><FONT SIZE=4><B>
+	 адресными входами.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Рассмотрим это на примере.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 13.2.</B></FONT><FONT SIZE=4>
+	Реализовать  ФАЛ,  заданную  таблицей
+	истинности,    таблица 13.2. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>ФАЛ четырех переменных может
+	быть реализована, используя мультиплексор
+	размерностью 8:1, рис. 13.4. Переменные ФАЛ
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m170726bb.gif" NAME="Object403" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m457d9418.gif" NAME="Object404" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d94f73c.gif" NAME="Object405" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	подсоединим к адресным входам
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7c765e3f.gif" NAME="Object406" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1fca604a.gif" NAME="Object407" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_ef8a305.gif" NAME="Object408" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	соответственно. Переменную, не
+	подсоединенную к адресным входам,
+	называют «выделенной». Без выделенной
+	переменной наборы  переменных
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m170726bb.gif" NAME="Object409" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m457d9418.gif" NAME="Object410" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d94f73c.gif" NAME="Object411" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	образуют пары. В таблице истинности
+	эти пары выделены пунктирными линиями.
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Теперь рассмотрим соотношения
+	между выделенной переменной
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object412" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	и выходом для каждой пары. При этом
+	возможны четыре варианта, когда выход
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object413" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	не зависит от переменной
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object414" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	и равен 0 или 1, и когда выход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object415" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	зависит от</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	                                             <FONT SIZE=4>Таблица
+	13.2</FONT></P>
+	<DL>
+		<DL>
+			<DL>
+				<DD>
+				<TABLE WIDTH=384 CELLPADDING=7 CELLSPACING=0 align="center">
+					<COLGROUP>
+						<COL WIDTH=49>
+						<COL WIDTH=50>
+						<COL WIDTH=50>
+						<COL WIDTH=50>
+					</COLGROUP>
+					<COLGROUP>
+						<COL WIDTH=54>
+					</COLGROUP>
+					<COLGROUP>
+						<COL WIDTH=46>
+					</COLGROUP>
+					<TR>
+						<TD COLSPAN=4 WIDTH=241 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Входы</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выход</FONT></P>
+						</TD>
+						<TD WIDTH=46 VALIGN=TOP STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><BR>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m170726bb.gif" NAME="Object416" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m457d9418.gif" NAME="Object417" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d94f73c.gif" NAME="Object418" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_47c579f.gif" NAME="Object419" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m173f8031.gif" NAME="Object420" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></P>
+						</TD>
+						<TD WIDTH=46 VALIGN=TOP STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><BR>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object421" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object422" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7f13f6b0.gif" NAME="Object423" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt dashed #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object424" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=6 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: 1.00pt dashed #000000; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD ROWSPAN=2 WIDTH=46 STYLE="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7f13f6b0.gif" NAME="Object425" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=49 HEIGHT=7 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=50 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+						</TD>
+						<TD WIDTH=54 VALIGN=BOTTOM STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+							<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+						</TD>
+					</TR>
+				</TABLE>
+			</DL>
+		</DL>
+	</DL>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>переменной
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object426" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	и равен
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object427" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	или
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7f13f6b0.gif" NAME="Object428" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+	как отмечено справа от таблицы истинности.
+	Исходя из этого, на информационные
+	входы мультиплексора и подается лог.
+	0, лог. 1,
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object429" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>
+	или
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7f13f6b0.gif" NAME="Object430" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+	как показано на рис.13.4.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7195d1a1.png" NAME="graphics50" ALIGN=BOTTOM WIDTH=287 HEIGHT=342 BORDER=0></P>
+
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.4. Реализация ФАЛ, пример 13.2,  с
+	использованием мультиплексора
+	КР1533КП7(74<SPAN LANG="en-US">ALS</SPAN>151)</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для синтеза ФАЛ можно использовать
+	карты Карно, рис. 13.5. Парные наборы на
+	ней расположены рядом, т.е. являются
+	соседними. Объединим эти наборы и
+	пометим числом, соответствующим наборам
+	переменных
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m170726bb.gif" NAME="Object431" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m457d9418.gif" NAME="Object432" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d94f73c.gif" NAME="Object433" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>.
+	Можно заметить, что парные наборы легко
+	выделяются проведением разделительных
+	линий по переменным
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m170726bb.gif" NAME="Object434" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m457d9418.gif" NAME="Object435" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d94f73c.gif" NAME="Object436" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+	рис. 13.5б. После объединения парных
+	наборов получается карта Карно для
+	трех переменных. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m488c6d25.png" NAME="graphics51" ALIGN=BOTTOM WIDTH=648 HEIGHT=211 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.5. Синтез ФАЛ с помощью карт Карно</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Зададим теперь ФАЛ с помощью
+	карты Карно, рис. 13.5в. Сопоставляя рис.
+	13.5б и рис. 13.5в можно заметить, что в клетке
+	с номером 0
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_390abc90.gif" NAME="Object437" ALIGN=ABSMIDDLE WIDTH=42 HEIGHT=18>и,
+	следовательно,
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m57f92fdc.gif" NAME="Object438" ALIGN=ABSMIDDLE WIDTH=45 HEIGHT=21>.
+	В клетке с номером 1
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_380dd066.gif" NAME="Object439" ALIGN=ABSMIDDLE WIDTH=49 HEIGHT=21>,
+	что дает
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3a6ba5e3.gif" NAME="Object440" ALIGN=ABSMIDDLE WIDTH=52 HEIGHT=21>.
+	Продолжая рассмотрение дальше, получим
+	итоговый результат
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m601684db.gif" NAME="Object441" ALIGN=ABSMIDDLE WIDTH=72 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5dd571a2.gif" NAME="Object442" ALIGN=ABSMIDDLE WIDTH=107 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5b11ca92.gif" NAME="Object443" ALIGN=ABSMIDDLE WIDTH=46 HEIGHT=21>,
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m77e7df51.gif" NAME="Object444" ALIGN=ABSMIDDLE WIDTH=79 HEIGHT=21>.
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>До сих пор мы различали парные
+	наборы по переменной
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_f067bd9.gif" NAME="Object445" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21>,
+	которая затем подавалась на информационные
+	входы. Однако в качестве “выделенной”
+	может быть взята любая переменная.
+	Более того, для технической реализации,
+	не безразлично какую переменную следует
+	выделять. Это связано с тем, что выбор
+	выделенной переменной определяет
+	количество информационных входов, на
+	которые подаются константы 0, 1. Такие
+	информационные входы не нагружают
+	предыдущие цепи, поэтому их желательно
+	иметь как можно больше. Очевидно, что
+	для достижения этого, в качестве
+	выделенной следует использовать
+	переменную, от которой ФАЛ зависит
+	меньше всего. Последнее можно установить
+	по минимальной дизъюнктивной форме,
+	подсчитав количество вхождений
+	переменной в эту форму, как с инверсией,
+	так и без нее.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Увеличение размерности
+	мультиплексора</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Максимальный размер мультиплексора,
+	выпускаемого промышленностью 16:1.
+	Мультиплексоры с большим числом входов
+	можно построить из мультиплексоров с
+	меньшим числом входов. Используются
+	два метода, которые проиллюстрируем
+	следующими примерами.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 13.3.</B></FONT><FONT SIZE=4> Построить
+	мультиплексор размерностью 32:1. Такой
+	мультиплексор может быть построен, как
+	показано на рис. 13.6, используя два
+	мультиплексора 16:1. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3eaf871a.png" NAME="graphics52" ALIGN=BOTTOM WIDTH=480 HEIGHT=318 BORDER=0></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.6. Мультиплексор 32:1, используя два
+	мультиплексора 16:1</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 13.4.</B></FONT><FONT SIZE=4> Построить
+	мультиплексор размерностью 256:1. Такой
+	мультиплексор может быть построен по
+	древовидной схеме, используя 17
+	мультиплексоров 16:1, рис. 13.7.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2ab69f57.png" NAME="graphics53" ALIGN=BOTTOM WIDTH=590 HEIGHT=321 BORDER=0></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.7. Мультиплексор 256:1, используя 17
+	мультиплексоров 16:1</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Декодеры/Демультиплексоры и
+	их использование в синтезе комбинационных
+	схем</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В интегральном исполнении
+	декодеры (дешифраторы) реализуются с
+	использованием элементов И-НЕ, и поэтому
+	на выходах таких декодеров генерируются
+	минтермы  в инверсном виде. Большинство
+	интегральных декодеров имеют один или
+	несколько стробирующих или разрешающих
+	входов. Схема декодера 2:4 с разрешающим
+	входом, построенная на элементах И-НЕ,
+	показана на рис. 13.8.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c8ea183.png" NAME="graphics54" ALIGN=BOTTOM WIDTH=289 HEIGHT=344 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	    Рис. 13.8. Логическая схема декодера
+	2:4 с разрешающим входом
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4289ae75.gif" NAME="Object446" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Таблица истинности декодера
+	2:4 дана в таблице 13.3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если разрешающий вход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4e901730.gif" NAME="Object447" ALIGN=ABSMIDDLE WIDTH=43 HEIGHT=18>,
+	то все выходы декодера равны 1 независимо
+	от значения входов
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1fca604a.gif" NAME="Object448" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_ef8a305.gif" NAME="Object449" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>.
+	Когда разрешающий вход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m23166d9b.gif" NAME="Object450" ALIGN=ABSMIDDLE WIDTH=43 HEIGHT=18>,
+	схема работает, как декодер с инверсными
+	выходами. Условное обозначение схемы
+	показано на рис. 13.9.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	                          <FONT SIZE=4>Таблица 13.3</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<CENTER>
+		<TABLE DIR="LTR" WIDTH=283 CELLPADDING=7 CELLSPACING=0>
+			<COL WIDTH=23>
+			<COL WIDTH=59>
+			<COL WIDTH=157>
+			<TR>
+				<TD WIDTH=23 HEIGHT=24 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4289ae75.gif" NAME="Object451" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18></P>
+				</TD>
+				<TD WIDTH=59 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1fca604a.gif" NAME="Object452" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_ef8a305.gif" NAME="Object453" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21></P>
+				</TD>
+				<TD WIDTH=157 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6c3840e3.gif" NAME="Object454" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_mf6150c7.gif" NAME="Object455" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_51946640.gif" NAME="Object456" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21>
+
+					<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m13617c68.gif" NAME="Object457" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=23 HEIGHT=100 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+				</TD>
+				<TD WIDTH=59 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" STYLE="margin-bottom: 0in"> <FONT SIZE=4>x
+					 x</FONT></P>
+					<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"> <FONT SIZE=4>0
+					  </FONT><FONT SIZE=4><SPAN LANG="en-US"> </SPAN></FONT><FONT SIZE=4>
+					0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"> <FONT SIZE=4>0</FONT><FONT SIZE=4><SPAN LANG="en-US">
+					</SPAN></FONT><FONT SIZE=4>    1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"> <FONT SIZE=4>1
+					    0</FONT></P>
+					<P LANG="ru-RU" CLASS="western"> <FONT SIZE=4>1     1</FONT></P>
+				</TD>
+				<TD WIDTH=157 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      1      1      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1      1      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0      1      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      1      0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					1      1      0</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</CENTER><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m45ca3288.png" NAME="graphics55" ALIGN=BOTTOM WIDTH=503 HEIGHT=166 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.9. Условное обозначение декодера
+	2:4</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Декодер с разрешающим входом
+	может работать как демультиплексор.
+	Демультиплексор это комбинационная
+	схема, которая принимает информацию
+	на единственный вход и передает эту
+	информацию на один из
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2d181cce.gif" NAME="Object458" ALIGN=ABSMIDDLE WIDTH=48 HEIGHT=20>
+	возможных выходов. Выбор определенного
+	выхода осуществляется с помощью адресных
+	входов. Декодер, который мы рассмотрели,
+	может работать как демультиплексор,
+	если вход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4289ae75.gif" NAME="Object459" ALIGN=ABSMIDDLE WIDTH=21 HEIGHT=18>
+	использовать как  информационный вход,
+	а информационные входы декодера
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1fca604a.gif" NAME="Object460" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_ef8a305.gif" NAME="Object461" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	использовать как адресные входы.
+	Условное обозначение демультиплексора
+	показано на рис. 13.10. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3f548ef3.png" NAME="graphics56" ALIGN=BOTTOM WIDTH=422 HEIGHT=177 BORDER=0></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.10. Условное обозначение схемы
+	рис. 13.9, используемой как демультиплексор</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Информация с единственного
+	входа демультиплексора поступает на
+	один из выходов, в зависимости от
+	двоичных значений на адресных входах.
+	Это можно проверить, используя таблицу
+	истинности, таблица 13.3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Поскольку для декодера и
+	демультиплексора используется одна и
+	та же логическая схема, декодер с
+	разрешающим входом называется
+	</FONT><FONT SIZE=4><B>декодером/демультиплексором.</B></FONT><FONT SIZE=4>
+	Демультиплексор осуществляет операцию
+	обратную мультиплексору.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Декодеры/демультиплексоры</B></FONT><FONT SIZE=4>
+	используются в синтезе комбинационных
+	схем. Особенно эти устройства полезны
+	при синтезе КС с несколькими выходами.
+	Декодеры/демультиплексоры в интегральном
+	исполнении возможны как 2:4, 3:8 и 4:16 линий.
+	Выходы таких  устройств, как правило,
+	имеют низкий активный уровень.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Рассмотрим использование
+	декодеров/демультиплексоров в синтезе
+	комбинационных схем. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример. 13.5.</B></FONT><FONT SIZE=4>
+	Реализовать  схему  полного  сумматора,
+	 используя декодер/демультиплексор.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Решение.</B></FONT><FONT SIZE=4> Из таблицы
+	истинности для полного сумматора</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3401933e.gif" NAME="Object462" ALIGN=ABSMIDDLE WIDTH=528 HEIGHT=35></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4af6e187.gif" NAME="Object463" ALIGN=ABSMIDDLE WIDTH=531 HEIGHT=35></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Используя двойную инверсию и
+	закон Де Моргана, преобразуем эти
+	выражения</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in; text-align: center;">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_67e02b04.gif" NAME="Object464" ALIGN=ABSMIDDLE WIDTH=510 HEIGHT=36>
+	           <FONT SIZE=4>(13.3)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4b6c9700.gif" NAME="Object465" ALIGN=ABSMIDDLE WIDTH=514 HEIGHT=36>
+	         <FONT SIZE=4>(13.4)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Или функция
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m45538a49.gif" NAME="Object466" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	может быть записана как  </FONT><FONT SIZE=4><SPAN LANG="en-US">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7e3f7022.gif" NAME="Object467" ALIGN=ABSMIDDLE WIDTH=198 HEIGHT=39></SPAN></FONT><FONT SIZE=4>,
+	а функция
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3f62b0e2.gif" NAME="Object468" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>
+	может быть записана как </FONT><FONT SIZE=4><SPAN LANG="en-US">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_55830e8a.gif" NAME="Object469" ALIGN=ABSMIDDLE WIDTH=202 HEIGHT=44></SPAN></FONT><FONT SIZE=4>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для реализации полного сумматора
+	необходимо использовать
+	декодер/демультиплексор 3:8 линий,
+	например КР1533ИД7(</FONT><FONT SIZE=4><SPAN LANG="en-US">SN</SPAN></FONT><FONT SIZE=4>74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>138).
+	Схема полного сумматора показана на
+	рис. 13.12.</FONT></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m470b987a.png" NAME="graphics57" ALIGN=BOTTOM WIDTH=394 HEIGHT=266 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.12. Реализация полного сумматора
+	с использованием декодера/демультиплексора</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>При синтезе КС с использованием
+	мультиплексоров дополнительные элементы
+	не используются, в то время как их
+	необходимо использовать при синтезе
+	КС на основе декодеров/демультиплексоров.
+	Тем не менее, несмотря на это,
+	декодеры/демультиплексоры являются
+	более экономичными в случаях синтеза
+	многовыходовых КС. В таких случаях один
+	мультиплексор требуется для реализации
+	каждого выхода, а при использовании
+	декодера/демультиплексора только
+	дополнительные схемы И-НЕ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Увеличение размерности
+	декодеров/демультиплексоров</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Поскольку ИС КР1533ИД3 является
+	самым большим (4:16 линий)
+	декодером/демультиплексором, то для
+	увеличения размерности
+	декодеров/демультиплексоров используются
+	методы, показанные на рис. 13.13 и рис.
+	13.14.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m69a43fcc.png" NAME="graphics58" ALIGN=BOTTOM WIDTH=281 HEIGHT=329 BORDER=0></P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.13. Построение 5:32 линии
+	декодера/демультиплексора,
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	используя два 4:16 линий декодера/демультиплексора</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f373cc.png" NAME="graphics59" ALIGN=BOTTOM WIDTH=314 >
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 13.14. Построение 8:256 линий
+	декодера/демультиплексора, используя 17 декодеров/демультиплексоров
+	4:16 линий</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<B>3. ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+	РАБОТЫ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>Программа компьютерного моделирование электронных схем Multisim:</B></FONT><FONT SIZE=4>Компоненты:
+	ИС 1533КП7(74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>151),
+	ИС 1533ИД7(74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>138),
+	ИС 1533ЛА1(74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>20),
+	ИС 1533ЛН1(74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>04).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.1.
+	Исследование работы мультиплексора.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Установить ИС 1533КП7 в рабочей области схемы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Вывод 16 ИС соединить с источником
+	питания +5</FONT><FONT SIZE=4><SPAN LANG="en-US">V</SPAN></FONT><FONT SIZE=4>,
+	а вывод 8 с общей шиной установки.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Изменяя значения адресных
+	входов от 000 до 111 и входные данные (0,1),
+	проследить за состоянием выходов
+	мультиплексора и проверить работу
+	мультиплексора. Результаты отразить
+	в таблице истинности мультиплексора.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.2.
+	Синтезировать и реализовать, используя
+	мультиплексор ИС 1533КП7, следующие ФАЛ:</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>а)
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3086669a.gif" NAME="Object470" ALIGN=ABSMIDDLE WIDTH=170 HEIGHT=35>(
+	                               ),</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>б)
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3756c7c3.gif" NAME="Object471" ALIGN=ABSMIDDLE WIDTH=202 HEIGHT=35>(
+	                              ).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3.3. Исследование работы
+	декодера/демультиплексора.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Установить ИС 1533ИД7 в рабочей области схемы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Вывод 16 ИС соединить с источником
+	питания +5</FONT><FONT SIZE=4><SPAN LANG="en-US">V</SPAN></FONT><FONT SIZE=4>,
+	а вывод 8 с общей шиной установки.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Изменяя значения адресных
+	входов от 000 до 111 проследить за состояниями
+	выходов. Результаты наблюдений отразить
+	в таблице истинности и получить выражения
+	для выходов
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6aa5d749.gif" NAME="Object472" ALIGN=ABSMIDDLE WIDTH=60 HEIGHT=21>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.4.
+	Исследование работы полного сумматора
+	на основе декодера/демультиплексора.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Собрать схему полного сумматора,
+	рис. 13.12. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Исследовать  работу  полного
+	 сумматора,  результаты  отразить  в
+	таблице истинности. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.5.
+	Синтезировать и исследовать работу
+	полного вычитателя на основе
+	декодера/демультиплексора.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.6.
+	Синтезировать и исследовать работу
+	компаратора для сравнения двухразрядных
+	двоичных чисел.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<B>4. СОДЕРЖАНИЕ ОТЧЕТА</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Цель работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Схемы, исследуемые в работе.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Таблицы, отражающие результаты
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Выводы по результатам
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<B>5. КОНТРОЛЬНЫЕ ВОПРОСЫ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Дать определение мультиплексора
+	и объяснить его работу.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Объяснить, каким образом
+	мультиплексоры используются для синтеза
+	КС.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Дать основные преимущества
+	использования мультиплексоров при
+	реализации ФАЛ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Дать определение
+	декодера/демультиплексора и объяснить
+	его работу.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5. Объяснить, каким образом
+	декодеры/демультиплексоры используются
+	для реализации ФАЛ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>6. Почему декодеры/демультиплексоры
+	наиболее удобны для реализации
+	многовыходовых ФАЛ.   </FONT>
+	</P><p>	Литература: Будько Цифровые устройства (Минск БГУИР 2010) УДК 004.3*144(076) ББК 32.973.26-04 7
+Б90</p>
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

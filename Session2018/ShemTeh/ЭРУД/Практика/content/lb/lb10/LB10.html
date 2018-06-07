@@ -1,0 +1,967 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB10 дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                   <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 10</b></p>
+
+<div class=WordSection14>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>СИНТЕЗ КОМБИНАЦИОННЫХ УСТРОЙСТВ
+	В ЗАДАННОМ БАЗИСЕ ЛОГИЧЕСКИХ ЭЛЕМЕНТОВ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	</P>
+	<OL>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ЦЕЛЬ РАБОТЫ     </B>
+		</P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-left: 0.05in; margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Изучение представления функций
+	алгебры логики (ФАЛ) в дизъюнктивной
+	нормальной форме и конъюнктивной
+	нормальной форме. Реализация этих
+	функций в базисах И-ИЛИ, И-НЕ; ИЛИ-И,
+	ИЛИ-НЕ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<OL START=2>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ТЕОРЕТИЧЕСКАЯ ЧАСТЬ</B></P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Любая ФАЛ может быть представлена
+	логическим выражением в одной из
+	следующих форм:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>- дизъюнктивной нормальной
+	форме,</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>- конъюнктивной нормальной
+	форме.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Это, конечно, не означает, что
+	ФАЛ не может быть в другой форме. ФАЛ
+	может быть в различных формах, но эти
+	две формы удобны при упрощении ФАЛ
+	стандартными методами.  </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>Рассмотрим
+	 пример:</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Пусть дана следующая логическая
+	функция</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<FONT SIZE=4>	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3adb9bd3.gif" NAME="Object226" ALIGN=ABSMIDDLE width="50%">
+	                                               (1)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>Необходимо:</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>1.Реализовать
+	эту функцию, используя логические
+	элементы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>2.Определить
+	– возможно ли реализовать эту функцию
+	с использованием только логических
+	элементов </FONT><FONT SIZE=4>И-НЕ</FONT><FONT SIZE=4> и
+	ИЛИ-НЕ и если возможно, построить такие
+	схемы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>3.Определить
+	– возможно, ли упростить эту функцию,
+	если да – то упростить.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>4.Построить
+	схемы по упрощенным выражениям.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>5.Сравнить
+	полученные схемы. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Решение:</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Из выражения для  </FONT><FONT SIZE=4><B>
+	</B></FONT><FONT SIZE=4>видно, что имеются три
+	переменные . При этом переменная  дана
+	в нормальном (неинверсном) виде и в
+	инверсном виде .</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Схема может быть построена путем
+	рассмотрения  выражения (1) и выбора
+	логических элементов для реализации
+	соответствующих термов выражения.
+	Примем, что переменные возможны в
+	неинвертированном и инвертированном
+	виде.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Первый терм </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m36b71c4c.gif" NAME="Object227" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=21><FONT SIZE=4>
+	представляет собой только одну
+	переменную, а второй терм имеет переменные
+	 и . Очевидно, что второй терм не что
+	иное, как элементарная конъюнкция и
+	этот терм может быть реализован используя
+	двухвходовый логический элемент И.
+	Комбинация первых двух термов реализуется
+	с помощью элемента ИЛИ, как показано
+	на рис. 1а.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_105d4376.png" NAME="graphics22" ALIGN=BOTTOM WIDTH=584 HEIGHT=197 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	рис. 1</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Третий терм  снова просто одна
+	переменная и четвертый терм представляет
+	собой конъюнкцию двух переменных .
+	Схема для реализации этих двух термов
+	строится также как и для реализации
+	двух предыдущих,   рис. 1б.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Теперь, с использованием
+	дополнительного логического элемента
+	 И, построим полную схему, которая
+	реализует данную функцию (рис. 2).    </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.13in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_eeb6169.png" NAME="graphics23" ALIGN=BOTTOM WIDTH=624 HEIGHT=345 BORDER=0></P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	рис. 2</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для реализации схемы на рис. 2
+	требуется три двухвходовых элемента
+	И и два двухвходовых элемента ИЛИ. Такая
+	реализация известна как трехуровневая
+	реализация.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Дизъюнктивная нормальная
+	форма</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Преобразуем выражение (1)
+	следующим образом: </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>
+
+	                                      </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1166ba28.gif" NAME="Object228" ALIGN=ABSMIDDLE width="70%"></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1e653835.gif" NAME="Object229" ALIGN=ABSMIDDLE width="20%">
+
+	                                           <FONT SIZE=4>( 2) </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Представление ФАЛ в таком виде
+	( 2), известно как представление ФАЛ в
+	</FONT><FONT SIZE=4><I>дизъюнктивной нормальной
+	форме.</I></FONT><FONT SIZE=4> Итак, формы ФАЛ,
+	представляющие дизъюнкцию элементарных
+	конъюнкций, называются дизъюнктивными
+	нормальными формами (ДНФ). Под элементарной
+	 конъюнкцией понимается логическое
+	произведение отдельных переменных в
+	нормальном или инвертированном виде.
+	Функция, представленная в ДНФ может
+	быть реализована используя  И-ИЛИ
+	конфигурацию, рис  3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2617f87f.png" NAME="graphics24" ALIGN=BOTTOM WIDTH=512 HEIGHT=383 BORDER=0></P>
+	<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	Рис. 3. Реализация ФАЛ представленной
+	в ДНФ (И-ИЛИ конфигурация)</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Реализация ФАЛ рис. 3 известна
+	как двухуровневая реализация. Первый
+	уровень состоит из И элементов, и второй
+	уровень состоит из элемента ИЛИ.</FONT></P>
+	<P LANG="ru-RU" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Используя закон де Моргана,
+	выражение (2) можно переписать следующим
+	образом:</FONT></P>
+	<P LANG="ru-RU" STYLE="text-indent: 0.5in; margin-bottom: 0in" class="style1">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6e5c469f.gif" NAME="Object230" ALIGN=ABSMIDDLE width="15%"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7352f6f3.gif" NAME="Object231" ALIGN=ABSMIDDLE width="50%">
+	                                           <FONT SIZE=4>( 3)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>                     </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Теперь функция (3) может быть
+	реализована с использованием только
+	И-НЕ элементов, рис. 4.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_459516fb.png" NAME="graphics25" ALIGN=BOTTOM WIDTH=526 HEIGHT=376 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	Рис. 4.  Реализация ФАЛ, используя только
+	И-НЕ элементы</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><I><U>Вывод:</U></I></FONT><FONT SIZE=4><U> для
+	того, чтобы реализовать ФАЛ с помощью
+	только элементов И-НЕ, необходимо
+	представить ФАЛ в ДНФ, а затем использовать
+	двойное инвертирование и  закон де
+	Моргана.</U></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>	Опять преобразуем исходную
+	ФАЛ, используя распределительный закон
+	для оператора И.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_490cf99.gif" NAME="Object232" ALIGN=ABSMIDDLE width="70%"></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1805cb03.gif" NAME="Object233" ALIGN=ABSMIDDLE width="30%"><FONT SIZE=4>
+
+	            (4)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4>Представление ФАЛ в виде (4)
+	известно, как представление ФАЛ в
+	</FONT><FONT SIZE=4><I>конъюнктивной нормальной
+	форме</I></FONT><FONT SIZE=4>. Итак, формы ФАЛ,
+	представляющие конъюнкцию элементарных
+	дизъюнкций, называются конъюнктивными
+	нормальными формами (КНФ). Под элементарной
+	дизъюнкцией понимается логическая
+	сумма отдельных переменных в нормальном
+	 или инвертированном виде. Функция,
+	представленная в КНФ, может быть
+	реализована, используя ИЛИ-И конфигурацию,
+	рис. 5.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3ddfed59.png" NAME="graphics26" ALIGN=BOTTOM WIDTH=525 HEIGHT=318 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	рис. 5. Реализация ФАЛ представленной
+	в КНФ (ИЛИ-И конфигурация)</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Используя двойную инверсию и
+	закон де Моргана, выражение (4) можно
+	переписать следующим образом:</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2ee17ee0.gif" NAME="Object234" ALIGN=ABSMIDDLE width="60%">
+	                 <FONT SIZE=4>( 5)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Теперь функция может быть
+	реализована с использованием только
+	ИЛИ-НЕ элементов, рис. 6.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1a05e0c3.png" NAME="graphics27" ALIGN=BOTTOM WIDTH=514 HEIGHT=327 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	рис. 6.  Реализация ФАЛ используя только
+	ИЛИ-НЕ элементы</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><I><U>Вывод</U></I></FONT><FONT SIZE=4><U>: Для
+	того чтобы реализовать ФАЛ с помощью
+	только ИЛИ-НЕ элементов, необходимо
+	представить ФАЛ в КНФ, а затем использовать
+	двойное инвертирование и закон де
+	Моргана.</U></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Теперь рассмотрим, как выражения
+	( 2) и (4) могут быть упрощены.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><FONT SIZE=4>а)
+	</FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_133fb754.gif" NAME="Object235" ALIGN=ABSMIDDLE width="70%"><FONT SIZE=4>
+	   (6) </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;"><FONT SIZE=4>б)
+	</FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2f8c605b.gif" NAME="Object236" ALIGN=ABSMIDDLE width="70%"><FONT SIZE=4>
+	            (7) </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>	Реализация  выражений (6) и
+	( 7), используя только элементы И-НЕ и
+	ИЛИ-НЕ, показана на рис. 7.</FONT></P>
+	<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7ce1a7ff.png" NAME="graphics28" ALIGN=BOTTOM WIDTH=637 HEIGHT=169 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	Рис. 7.  Реализация функции после
+	упрощения</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Сравнение полученных схем</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>а) Реализация функции в соответствии
+	с выражением (1) потребовала максимальное
+	количество элементов и полученная
+	схема оказалась трехуровневой, что
+	снижает её быстродействие.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>б) Реализация функции в соответствии
+	с выражениями (3) и  (5) является очень
+	полезным, поскольку используется только
+	один тип логических элементов
+	(И-НЕ/ИЛИ-НЕ), которые находятся в одном
+	корпусе ИС. Эти схемы двухуровневые.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>в) Для реализации функции в
+	соответствии с выражениями (6) и (7)
+	требуется минимальное количество
+	элементов, поэтому упрощение логических
+	выражений является очень полезными.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Рассмотрим снова выражение
+	( 2), в котором функция представлена в
+	ДНФ и выражение (4), в котором функция
+	представлена в КНФ. В этих выражениях
+	индивидуальные термы не содержат все
+	переменные. Если все термы в ДНФ и КНФ
+	содержат все переменные, то такие ДНФ
+	и КНФ называют совершенными. Каждый
+	индивидуальный терм в совершенной
+	дизъюнктивной нормальной форме (СДНФ)
+	называется минтермом, а каждый
+	индивидуальный терм в совершенной
+	конъюнктивной нормальной форме (СКНФ)
+	называется макстермом.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Функция в ДНФ может быть
+	преобразована в СДНФ путем логического
+	умножения термов (конъюнкций) ДНФ с
+	термами, образованными путем логического
+	сложения переменной и ее отрицания,
+	которая отсутствует в исходных термах.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 1</B></FONT><FONT SIZE=4>.
+	Преобразовать функцию  </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_efc8916.gif" NAME="Object237" ALIGN=ABSMIDDLE width="30%">
+	<FONT SIZE=4>в СДНФ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Решение</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7c66302b.gif" NAME="Object238" ALIGN=ABSMIDDLE width="70%"></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Функция
+	в КНФ может быть преобразована в СКНФ
+	путем логического сложения термов
+	(дизъюнкций) КНФ с термами, образованными
+	путем логического умножения переменной
+	и ее отрицания, которая отсутствует в
+	исходном терме.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Пример 2</B></FONT><FONT SIZE=4>.
+	Преобразовать функцию </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5d50a617.gif" NAME="Object239" ALIGN=ABSMIDDLE width="30%"><FONT SIZE=4>
+	в СКНФ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Решение</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-left: 0.25in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m58428341.gif" NAME="Object240" ALIGN=ABSMIDDLE width="70%"></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Если ФАЛ имеет
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_190a7ce9.gif" NAME="Object241" ALIGN=ABSMIDDLE WIDTH=18 HEIGHT=18>-
+	переменных, то число возможных минтермов
+	(конституент единицы или составляющих
+	единицы) равно
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m712b611d.gif" NAME="Object242" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=20>.
+	Также число возможных макстермов
+	(конституент нуля или составляющих
+	нуля) равно
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m712b611d.gif" NAME="Object243" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=20>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В таблице  1 представлены все
+	возможные минтермы и  макстермы для
+	четырех переменных. В левой части
+	таблицы записаны все наборы переменных.
+	Минтерм для любого набора переменных
+	записывается в виде конъюнкции.  Причем,
+	если на данном наборе переменная равна
+	единице, то переменная записывается в
+	нормальном (неинвертированном) виде и
+	если переменная равна нулю, то переменная
+	записывается в инвертированном виде.
+	Макстерм для любого набора переменных
+	записывается в виде дизъюнкции. Причем,
+	если на данном наборе переменная равна
+	единице, то она записывается в
+	инвертированном виде и если переменная
+	равно нулю, то она записывается в
+	нормальном виде.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В правой части таблицы представлена
+	ФАЛ, описывающая работу устройства
+	сравнения, которое сравнивает два
+	двоичных двухразрядных числа А () и В().
+	Если эти два числа равны, на выходе
+	устройства сравнения должна быть
+	единица, а если не равны – ноль. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4>Таблица  1</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<TABLE WIDTH=658 CELLPADDING=7 CELLSPACING=0 align="center">
+		<COL WIDTH=143>
+		<COL WIDTH=144>
+		<COL WIDTH=167>
+		<COL WIDTH=145>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Переменные</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Минтермы</FONT></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Макстермы</FONT></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Функция
+				У</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_46ccc2cb.gif" NAME="Object244" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">m</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">i</SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US"><I>M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>i</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">A(x</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">1</SPAN></FONT></SUB><FONT SIZE=4><SPAN LANG="en-US">,x</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">2</SPAN></FONT></SUB><FONT SIZE=4><SPAN LANG="en-US">)=B(x</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">3</SPAN></FONT></SUB><FONT SIZE=4>,</FONT><FONT SIZE=4><SPAN LANG="en-US">x</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">4</SPAN></FONT></SUB><FONT SIZE=4><SPAN LANG="en-US">)</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 0 0 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2f4969e0.gif" NAME="Object245" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>0</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1de562d.gif" NAME="Object246" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>0</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 0 0 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2990154c.gif" NAME="Object247" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>1</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6526ae8.gif" NAME="Object248" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>1</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 0 1 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m36d4411b.gif" NAME="Object249" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>2</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7351994d.gif" NAME="Object250" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>2</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 0 1 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5cdcabfd.gif" NAME="Object251" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>3</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3641fdd3.gif" NAME="Object252" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>3</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 1 0 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2b92fc40.gif" NAME="Object253" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>4</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_27701e01.gif" NAME="Object254" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>4</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 1 0 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7b00871.gif" NAME="Object255" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>5</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2e3ecda8.gif" NAME="Object256" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>5</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 1 1 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1a43b7a9.gif" NAME="Object257" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>6</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_504a22d9.gif" NAME="Object258" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>6</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0 1 1 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1ad4a03e.gif" NAME="Object259" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>7</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2a731e71.gif" NAME="Object260" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>7</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 0 0 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6c848a74.gif" NAME="Object261" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>8</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m50ac415f.gif" NAME="Object262" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>8</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 0 0 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_907184f.gif" NAME="Object263" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>9</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2d08b5e9.gif" NAME="Object264" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>9</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 0 1 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m333cef4e.gif" NAME="Object265" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>10</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m537c5a98.gif" NAME="Object266" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>10</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 0 1 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m38769071.gif" NAME="Object267" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>11</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4e419cf6.gif" NAME="Object268" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>11</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 1 0 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_22c2af91.gif" NAME="Object269" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>12</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1574e34f.gif" NAME="Object270" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>12</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 1 0 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5f7aefdb.gif" NAME="Object271" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>13</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4751df7c.gif" NAME="Object272" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>13</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 1 1 0</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m25ed649.gif" NAME="Object273" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>14</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3583e240.gif" NAME="Object274" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>14</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=143 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1 1 1 1</FONT></P>
+			</TD>
+			<TD WIDTH=144 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7c2300c6.gif" NAME="Object275" ALIGN=ABSMIDDLE WIDTH=73 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=m</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>15</I></SPAN></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=167 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_ac2889a.gif" NAME="Object276" ALIGN=ABSMIDDLE WIDTH=101 HEIGHT=21><FONT SIZE=4><SPAN LANG="en-US"><I>=M</I></SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US"><I>1</I></SPAN></FONT></SUB><SUB><FONT SIZE=4><I>5</I></FONT></SUB></P>
+			</TD>
+			<TD WIDTH=145 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Наборы переменных в левой части
+	таблицы и значения функции в правой
+	части таблицы представляют собой
+	таблицу истинности ФАЛ, описывающую
+	работу устройства сравнения.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Из таблицы истинности ФАЛ может
+	быть записана в СДНФ и в СКНФ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В СДНФ ФАЛ записывается из
+	таблицы истинности как дизъюнкция
+	минтермов, на которых функция принимает
+	значение 1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m68b76cc1.gif" NAME="Object277" ALIGN=ABSMIDDLE width="50%">
+	                                                   <FONT SIZE=4>( 8)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В СКНФ ФАЛ из таблицы истинности
+	записывается как конъюнкция макстермов,
+	на которых функция принимает значение
+	0.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4b9d3700.gif" NAME="Object278" ALIGN=ABSMIDDLE width="50%">
+		</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_32fd2e77.gif" NAME="Object279" ALIGN=ABSMIDDLE width="40%"></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	     <FONT SIZE=4>=                         (9)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Уравнения (8) и (9) представляют
+	одну и ту же функцию, выраженную в
+	минтермах и макстермах.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Эти два представления обладают
+	свойством дополнительности. И если
+	имеется выражение для функции в минтермах
+	(в СДНФ), то выражение в макстермах (в
+	СКНФ) может быть, получено используя
+	это свойство и наоборот.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>3. ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+	РАБОТЫ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Оборудование и компоненты:
+программа компьютерного моделирование электронных схем Multisim: ИС 1533ЛА3(74АLS</SPAN></FONT><FONT SIZE=4>00)-четыре
+	логических элемента 2И-НЕ, ИС
+	1533ЛА4(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>10)
+	-три логических элемента 3И-НЕ, ИС
+	1533ЛЕ1(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>02)
+	-четыре логических элемента 2ИЛИ-НЕ, ИС
+	1533ЛЕ4(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>27)
+	-три логических элемента 3ИЛИ-НЕ.</FONT><B>
+	</B><FONT SIZE=4>ФАЛ задана следующей таблицей
+	истинности</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+
+	           <img alt="" src="../../../../Практика/images/lb2/img20.gif">&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.1.
+	 Исследование представления ФАЛ в ДНФ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><I>Для заданной таблицы истинности:</I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>а) Записать логическое выражение
+	для </FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4>
+	в СДНФ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>б) Нарисовать схему и реализовать
+	ее только с помощью элементов И-НЕ.
+	Проверить таблицу истинности.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>в) Упростить логическое выражение
+	для У, нарисовать схему и реализовать
+	ее только с помощью элементов И-НЕ.
+	Проверить таблицу истинности.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.2.
+	 Исследование представление ФАЛ в КНФ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><I>Для заданной таблицы истинности:</I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>а) Записать логическое выражение
+	для </FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4>
+	в СКНФ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>б) Нарисовать схему и реализовать
+	ее только с помощью элементов ИЛИ-НЕ.
+	Проверить таблицу истинности. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>в) Упростить логическое выражение
+	для </FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4>,
+	нарисовать схему и реализовать ее
+	только с помощью элементов ИЛИ-НЕ.
+	Проверить таблицу истинности.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><B>4. СОДЕРЖАНИЕ  ОТЧЕТА</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Цель работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Схемы, исследуемые в работе.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Таблицы, отражающие результаты
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Выводы по результатам
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>5.  КОНТРОЛЬНЫЕ  ВОПРОСЫ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Как представляется ФАЛ в ДНФ?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>  Что такое СДНФ?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Что необходимо, чтобы реализовать
+	ФАЛ, используя только элементы И-НЕ?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Как представляется ФАЛ в КНФ?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5. Что такое СКНФ?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>6. Что необходимо, чтобы реализовать
+	ФАЛ, используя только ИЛИ-НЕ элементы?
+	</FONT>
+	</P>
+
+
+
+
+
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

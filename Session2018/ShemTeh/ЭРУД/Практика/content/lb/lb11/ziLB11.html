@@ -1,0 +1,911 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB4 - Программа дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+                   <p><b>ЛАБОРАТОРНАЯ  РАБОТА № 4</b></p>
+ <div>
+<div class=WordSection14>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>Исследование сумматоров и вычитателей  <br>Исследование функционирования сумматоров и вычитателей.</span></b></p>
+
+
+
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>1. ЦЕЛЬ ЛАБОРАТОРНОЙ  РАБОТЫ </B>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>- исследование функционирования
+	сумматоров и вычитателей;</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>- исследование суммирования/вычитания
+	в дополнительных кодах.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>2. ТЕОРЕТИЧЕСКИЕ СВЕДЕНИЯ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Несомненно, что наиболее базовой
+	арифметической операцией является
+	суммирование двух двоичных цифр. Это
+	простое сложение состоит из четырех
+	возможных элементарных, а именно 0+0=0,
+	0+1=1, 1+0=1 и 1+1=10. Первые три операции дают
+	сумму, чья длина есть одна цифра. Однако,
+	когда обе слагаемых равны единице,
+	двоичная сумма состоит из двух цифр.
+	Старшая цифра называется переносом.
+	Когда слагаемые числа состоят из
+	нескольких цифр, то полученный перенос
+	прибавляется к следующей более значащей
+	паре бит. Комбинационная схема,
+	осуществляющая сложение двух бит
+	называется </FONT><FONT SIZE=4><U>полусумматором</U></FONT><FONT SIZE=4>.
+	Если схема осуществляет сложение трех
+	бит (два значащих и перенос из предыдущего
+	разряда), то такая схема называется
+	</FONT><FONT SIZE=4><U>полным сумматором</U></FONT><FONT SIZE=4>.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><U><B>Полусумматор</B></U></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Полусумматор может быть
+	использован для сложения двух наименее
+	значащих бит
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_40f65491.gif" NAME="Object281" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_15cfce85.gif" NAME="Object282" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21>
+	двух чисел, где отсутствует входной
+	перенос. Условное обозначение
+	полусумматора показано на рис. 1.</FONT></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6f5ad798.png" NAME="graphics29" ALIGN=BOTTOM WIDTH=315 HEIGHT=146 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  1. Условное обозначение полусумматора</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Таблица истинности полусумматора</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<CENTER>
+		<TABLE DIR="LTR" WIDTH=261 CELLPADDING=7 CELLSPACING=0>
+			<COL WIDTH=115>
+			<COL WIDTH=116>
+			<TR VALIGN=TOP>
+				<TD WIDTH=115 HEIGHT=6 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Входы</FONT></P>
+				</TD>
+				<TD WIDTH=116 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=115 HEIGHT=7 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>А
+					В</FONT></P>
+				</TD>
+				<TD WIDTH=116 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>
+					    С</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=115 HEIGHT=22 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					1</FONT></P>
+				</TD>
+				<TD WIDTH=116 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0     0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1     0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1     0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0
+					1</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</CENTER><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Из таблицы истинности мы можем
+	получить логические выражения для </FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>
+	и С.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 2.26in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m4618237c.gif" NAME="Object283" ALIGN=ABSMIDDLE WIDTH=145 HEIGHT=18><FONT SIZE=4>;
+	                                              ( 1)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 2.26in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_326ba6a1.gif" NAME="Object284" ALIGN=ABSMIDDLE WIDTH=56 HEIGHT=18>
+
+	<FONT SIZE=4>( 2)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В соответствии с выражениями
+	( 1) и ( 2) полусумматор может быть легко
+	реализован с помощью логических
+	элементов ИСКЛЮЧАЮЩЕ ИЛИ и И, рис. 2.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img22.jpg">&nbsp;</P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  2. Схема полусумматора</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Полный сумматор</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Полусумматор имеет только два
+	входа и не имеет возможности суммировать
+	перенос из  младшего  разряда при
+	многобитовом сложении. Для этих целей
+	используется третий вход, и схема
+	осуществляет сложение
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_59b7e7aa.gif" NAME="Object285" ALIGN=ABSMIDDLE WIDTH=52 HEIGHT=21>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_12621399.gif" NAME="Object286" ALIGN=ABSMIDDLE WIDTH=46 HEIGHT=24>,
+	где
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6fe2f87a.gif" NAME="Object287" ALIGN=ABSMIDDLE WIDTH=52 HEIGHT=21>
+	это биты чисел </FONT><FONT SIZE=4><SPAN LANG="en-US">A</SPAN></FONT><FONT SIZE=4>
+	и </FONT><FONT SIZE=4><SPAN LANG="en-US">B</SPAN></FONT><FONT SIZE=4>
+	в разряде</FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1c792002.gif" NAME="Object288" ALIGN=ABSMIDDLE WIDTH=15 HEIGHT=16>,<FONT SIZE=4>
+	а
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_12621399.gif" NAME="Object289" ALIGN=ABSMIDDLE WIDTH=46 HEIGHT=24>
+	это перенос при сложении из
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_71ee0a34.gif" NAME="Object290" ALIGN=ABSMIDDLE WIDTH=39 HEIGHT=18>
+	разряда.<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m53d4ecad.gif" NAME="Object291" ALIGN=ABSMIDDLE WIDTH=8 HEIGHT=18></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 1.58in; margin-bottom: 0in">
+	      <FONT SIZE=4>Таблица истинности полного
+	сумматора</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<CENTER>
+		<TABLE DIR="LTR" WIDTH=366 CELLPADDING=7 CELLSPACING=0>
+			<COL WIDTH=167>
+			<COL WIDTH=168>
+			<TR VALIGN=TOP>
+				<TD WIDTH=167 HEIGHT=2 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Входы</FONT></P>
+				</TD>
+				<TD WIDTH=168 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=167 HEIGHT=16 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m68711003.gif" NAME="Object292" ALIGN=ABSMIDDLE WIDTH=92 HEIGHT=21></P>
+				</TD>
+				<TD WIDTH=168 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1e38bb02.gif" NAME="Object293" ALIGN=ABSMIDDLE WIDTH=54 HEIGHT=21></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=167 HEIGHT=9 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      0      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      1      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					1      1</FONT></P>
+				</TD>
+				<TD WIDTH=168 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					 1</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</CENTER><BR>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Логические выражения для </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3232f512.gif" NAME="Object294" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=32>
+	<FONT SIZE=4>и </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_715862cc.gif" NAME="Object295" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=32><FONT SIZE=4>
+	могут быть упрощены с помощью карт
+	Карно, рис. 3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_331111f0.gif" NAME="Object296" ALIGN=BOTTOM WIDTH=601 HEIGHT=129></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.89in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  3. Упрощение выражений для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3232f512.gif" NAME="Object297" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=32>
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_715862cc.gif" NAME="Object298" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=32>
+	полного сумматора</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.89in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Логическое выражение для </FONT>
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3232f512.gif" NAME="Object299" ALIGN=ABSMIDDLE WIDTH=24 HEIGHT=32><FONT SIZE=4>
+	может быть упрощено в базисе функций
+	ИСКЛЮЧАЮЩЕЕ ИЛИ.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.3in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m72dd0ee3.gif" NAME="Object300" ALIGN=ABSMIDDLE WIDTH=389 HEIGHT=22>
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.3in; margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2525925a.gif" NAME="Object301" ALIGN=ABSMIDDLE WIDTH=341 HEIGHT=22>
+	                                      <FONT SIZE=4>( 3)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>ФАЛ для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f2b69cf.gif" NAME="Object302" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>
+	может быть покрыта с помощью обычного
+	логического соседства, а также
+	диагонального соседства, рис. 3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_1b716cb7.gif" NAME="Object303" ALIGN=ABSMIDDLE WIDTH=426 HEIGHT=24>
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6b783ad5.gif" NAME="Object304" ALIGN=ABSMIDDLE WIDTH=185 HEIGHT=23>
+
+	          <FONT SIZE=4>( 4)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>В соответствии с выражениями
+	( 3) и ( 4) на рис. 4 показана схема полного
+	сумматора.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img23.jpg">&nbsp;</P>
+	<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.98in; margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  4. Полный сумматор: а) логическая
+	схема,  б) условное обозначение</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Параллельный сумматор</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Для сложения четырехразрядных
+	двоичных чисел четыре полных сумматора
+	могут быть соединены, как показано на
+	рис. 5, для получения четырехразрядного
+	параллельного сумматора. Два
+	четырехразрядных двоичных числа
+	подаются на входы А и В четырех полных
+	сумматоров.
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_170a7b13.gif" NAME="Object305" ALIGN=ABSMIDDLE WIDTH=51 HEIGHT=21>
+	- это, конечно, наименее значимые биты.
+	Выход переноса
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5d976db4.gif" NAME="Object306" ALIGN=ABSMIDDLE WIDTH=36 HEIGHT=21>
+	каждого сумматора соединен непосредственно
+	с входом переноса
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_372613ba.gif" NAME="Object307" ALIGN=ABSMIDDLE WIDTH=30 HEIGHT=21>
+	следующего более значимого полного
+	сумматора. Выход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5d976db4.gif" NAME="Object308" ALIGN=ABSMIDDLE WIDTH=36 HEIGHT=21>
+	наиболее значимого разряда является
+	переносом всей схемы. Биты переноса
+	передаются через схему от разряда к
+	разряду и индивидуальная сумма будет
+	правильной, когда перенос из предыдущего
+	разряда появится в данном разряде. Это
+	означает, что выходная или полная сумма
+	появится, когда все биты переноса
+	пройдут через схему. Поэтому такую
+	схему, рис. 5а, более точно называют
+	псевдопараллельным сумматором.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>В интегральном исполнении
+	выпускается четырехразрядный параллельный
+	сумматор 1533ИМ3(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>83),
+	рис. 5б.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_2c2cf998.png" NAME="graphics32" ALIGN=BOTTOM WIDTH=611 HEIGHT=501 BORDER=0></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  5. Параллельный сумматор</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Вычитатели</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Полувычитатель. </B></FONT><FONT SIZE=4>Логическая
+	схема, которая осуществляет вычитание
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">B</SPAN></FONT><FONT SIZE=4>(вычитаемое)
+	из </FONT><FONT SIZE=4><SPAN LANG="en-US">A</SPAN></FONT><FONT SIZE=4>(уменьшаемое),
+	где </FONT><FONT SIZE=4><SPAN LANG="en-US">A</SPAN></FONT><FONT SIZE=4>
+	и </FONT><FONT SIZE=4><SPAN LANG="en-US">B</SPAN></FONT><FONT SIZE=4>
+	это однобитовые числа, называется
+	полувычитателем. Процесс вычитания
+	может быть представлен с помощью таблицы
+	истинности.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 1.77in; margin-bottom: 0in">
+	<FONT SIZE=4>Таблица истинности полувычитателя</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DL>
+						<DD>
+						<TABLE WIDTH=273 CELLPADDING=7 CELLSPACING=0 align="center">
+							<COL WIDTH=121>
+							<COL WIDTH=122>
+							<TR VALIGN=TOP>
+								<TD WIDTH=121 HEIGHT=9 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Входы</FONT></P>
+								</TD>
+								<TD WIDTH=122 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы</FONT></P>
+								</TD>
+							</TR>
+							<TR VALIGN=TOP>
+								<TD WIDTH=121 HEIGHT=10 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>А
+									    В</FONT></P>
+								</TD>
+								<TD WIDTH=122 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>
+									    С</FONT></P>
+								</TD>
+							</TR>
+							<TR VALIGN=TOP>
+								<TD WIDTH=121 HEIGHT=26 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>0      0</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>0      1</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>1      0</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+									    1</FONT></P>
+								</TD>
+								<TD WIDTH=122 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>0     0</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>1     1</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+									<FONT SIZE=4>1     0</FONT></P>
+									<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0
+									   0</FONT></P>
+								</TD>
+							</TR>
+						</TABLE>
+					</DL>
+				</DL>
+			</DL>
+		</DL>
+	</DL>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Здесь А и В это входы, а выходы
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">D</SPAN></FONT><FONT SIZE=4>‒разность
+	и С - заем.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<FONT SIZE=4>Из таблицы истинности</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_554e0b41.gif" NAME="Object309" ALIGN=ABSMIDDLE WIDTH=169 HEIGHT=24><FONT SIZE=4>;
+	                                            ( 5)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_26f6d9de.gif" NAME="Object310" ALIGN=ABSMIDDLE WIDTH=67 HEIGHT=21>
+
+	<FONT SIZE=4>( 6)  </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<FONT SIZE=4>В соответствии с выражениями
+	( 5) и ( 6) логическая схема полувычитателя
+	показана на рис. 6.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+
+<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img 6.jpg">&nbsp;</P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 6. Логическая схема полувычитателя</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Полный вычитатель.</B></FONT><FONT SIZE=4>
+	Подобно полному сумматору, мы нуждаемся
+	в полном вычитателе, для выполнения
+	многобитового вычитания, где заем из
+	предыдущего разряда присутствует.
+	Таким образом полный вычитатель имеет
+	три входа:
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6a78596c.gif" NAME="Object311" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21>
+	(уменьшаемое),
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m7c20f039.gif" NAME="Object312" ALIGN=ABSMIDDLE WIDTH=26 HEIGHT=21>(вычитаемое)
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2f053c37.gif" NAME="Object313" ALIGN=ABSMIDDLE WIDTH=41 HEIGHT=21>(заем
+	от предыдущего разряда) и два выхода
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3b5631ca.gif" NAME="Object314" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21>(разность)
+	и
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f2b69cf.gif" NAME="Object315" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>(заем).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 1.48in; margin-bottom: 0in">
+	   <FONT SIZE=4>Таблица истинности полного
+	вычитателя</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<CENTER>
+		<TABLE WIDTH=369 CELLPADDING=7 CELLSPACING=0>
+			<COL WIDTH=169>
+			<COL WIDTH=170>
+			<TR VALIGN=TOP>
+				<TD WIDTH=169 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Входы</FONT></P>
+				</TD>
+				<TD WIDTH=170 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=169 HEIGHT=18 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m2589faaf.gif" NAME="Object316" ALIGN=ABSMIDDLE WIDTH=92 HEIGHT=21></P>
+				</TD>
+				<TD WIDTH=170 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_4d938251.gif" NAME="Object317" ALIGN=ABSMIDDLE WIDTH=57 HEIGHT=21></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=169 HEIGHT=64 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      0      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0      1      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      0      1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1      1      0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					1      1</FONT></P>
+				</TD>
+				<TD WIDTH=170 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       1</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>1       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+					<FONT SIZE=4>0       0</FONT></P>
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1
+					 1</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</CENTER>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Таблица истинности и карта Карно
+	для выхода
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m3b5631ca.gif" NAME="Object318" ALIGN=ABSMIDDLE WIDTH=28 HEIGHT=21>точно
+	такие же, как и для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7f8e4c01.gif" NAME="Object319" ALIGN=ABSMIDDLE WIDTH=25 HEIGHT=21>
+	в полном сумматоре, поэтому</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m1ad0ad8c.gif" NAME="Object320" ALIGN=ABSMIDDLE WIDTH=141 HEIGHT=21>
+	                                     <FONT SIZE=4>( 7)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Карта Карно для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f2b69cf.gif" NAME="Object321" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>
+	показана на рис. 7.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m36b14b2a.gif" NAME="Object322" ALIGN=BOTTOM WIDTH=529 HEIGHT=159></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.98in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 7. Упрощение для
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f2b69cf.gif" NAME="Object323" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>
+	с помощью карты Карно</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Существует три варианта упрощения
+	выражения для заем
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f2b69cf.gif" NAME="Object324" ALIGN=ABSMIDDLE WIDTH=27 HEIGHT=21>.
+	Два из них дают схему полного сумматора
+	состоящего из двух полувычитателей и
+	схемы ИЛИ. Однако наиболее интересным
+	представляется третий вариант, рис. 7,  выражение в котором</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_5c62426d.gif" NAME="Object325" ALIGN=ABSMIDDLE WIDTH=391 HEIGHT=22></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_6751d9d9.gif" NAME="Object326" ALIGN=ABSMIDDLE WIDTH=182 HEIGHT=22>
+
+	     <FONT SIZE=4>( 8)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Логическая схема полного
+	вычитателя для этого варианта показана
+	на рис. 8.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img24.jpg">&nbsp;</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис. 8. Полный вычитатель</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Полный вычитатель рис. 8, по
+	сравнению с обычной схемой, не состоит
+	из двух полувычитателей, а содержит на
+	один логический элемент (инвертор)
+	меньше, и время распространения сигнала
+	через схемы на один элемент меньше,
+	т.е. схема полного вычитателя рис. 8
+	более быстродействующая по сравнению
+	с обычной схемой полного вычитателя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Суммирование/Вычитание в
+	системе счисления с дополнительным
+	кодом.</B></FONT><FONT SIZE=4> </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Вычитание двоичных чисел  может
+	осуществляться с использованием полных
+	двоичных вычитателей, однако этот метод
+	используется редко. Взамен этого
+	вычитания обычно используется арифметика
+	в системе счисления с дополнительным
+	кодом и тогда только двоичные сумматоры
+	используются для выполнения операций
+	суммирования и вычитания. Даже с учетом
+	того, что потребуется еще и схема для
+	получения дополнения, этот метод
+	является предпочтительным.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Обычно используется комбинированная
+	суммирующая/вычитающая схема, в которой
+	вид выполняемой операции (суммирование
+	или вычитание зависит от управляющего
+	сигнала).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Рассмотрим схему рис. 9, в которой
+	параллельный сумматор соединен таким
+	образом, чтобы выполнять или суммирование,
+	или вычитание.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Когда управляющий сигнал имеет
+	низкий уровень (лог.0) на входе
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_mf0c96e6.gif" NAME="Object327" ALIGN=ABSMIDDLE WIDTH=30 HEIGHT=21>,
+	то и на одном из входов схем ИСКЛЮЧАЮЩЕЕ
+	 ИЛИ также лог.0, поэтому биты числа </FONT><FONT SIZE=4><SPAN LANG="en-US">B</SPAN></FONT><FONT SIZE=4>
+	передаются на входы сумматора без
+	изменения. Схема работает как сумматор.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_62bb5d1e.png" NAME="graphics34" ALIGN=BOTTOM WIDTH=543 HEIGHT=374 BORDER=0></P>
+	<P CLASS="western" STYLE="text-indent: 1.97in; margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 1.97in; margin-bottom: 0in; text-align: center;">
+	Рис. 9. Сумматор / Вычитатель</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 1.97in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Когда управляющий сигнал имеет
+	высокий уровень, на вход
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_mf0c96e6.gif" NAME="Object328" ALIGN=ABSMIDDLE WIDTH=30 HEIGHT=21>
+	подается лог.1 и каждая схема ИСКЛЮЧАЮЩЕЕ
+	ИЛИ инвертирует биты числа В. Таким
+	образом осуществляется инвертирование
+	каждого бита числа В и прибавление 1
+	(по входу
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_mf0c96e6.gif" NAME="Object329" ALIGN=ABSMIDDLE WIDTH=30 HEIGHT=21>)
+	и в результате осуществляется операция
+	дополнения с числом В. При этом
+	суммирование числа А с дополнением
+	числа В равносильно вычитанию числа В
+	из числа А.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 1.97in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>3. ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+	РАБОТЫ</B></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><B>Оборудование и компоненты:</B></FONT><FONT SIZE=4>
+	программа компьютерного моделирование электронных схем Multisim:
+	ИС 1533ЛП5(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>86)-четыре
+	логических элемента ИСКЛЮЧАЮЩЕЕ ИЛИ,
+	ИС 1533ЛИ1(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>08)-четыре
+	логических элемента 2И, ИС
+	1533ЛЛ1(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>32)-четыре
+	логических элемента 2ИЛИ, ИС
+	1533ИМ3(74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>83)-четырехразрядный
+	сумматор, ИС 1533ЛН1 (74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>04)-шесть
+	инверторов.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.1.
+	Исследование сумматоров.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Полусумматор</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Используя логические элементы,
+	собрать схему полусумматора, рис. 2.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Изменяя состояния входов А и
+	В, исследовать работу полусумматора,
+	получить таблицу истинности полусумматора.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Полный сумматор</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Используя логические элементы,
+	собрать схему полного сумматора,
+	рис. 4.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Изменяя состояния входов
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m469a4ff2.gif" NAME="Object330" ALIGN=ABSMIDDLE WIDTH=98 HEIGHT=21>,
+	исследовать работу полного сумматора,
+	получить таблицу истинности полного
+	сумматора.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.2.
+	Исследование вычитателей</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Полувычитатель</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Используя логические элементы,
+	собрать схему полувычитателя, рис. 6.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Изменяя состояния входов А и
+	В, исследовать работу полувычитателя,
+	получить таблицу истинности полувычитателя.</FONT></P>
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><I><B>Полный вычитатель</B></I></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1.Используя логические элементы,
+	собрать схему полного вычитателя,  рис. 8.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Изменяя состояния входов
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m469a4ff2.gif" NAME="Object331" ALIGN=ABSMIDDLE WIDTH=98 HEIGHT=21>,
+	исследовать работу полного вычитателя,
+	получить таблицу истинности полного
+	вычитателя.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4><B>3.3.
+	Исследование суммирования/вычитания
+	в дополнительном коде</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Собрать схему сумматора/вычитателя,
+	рис. 9.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Исследовать работу
+	сумматора/вычитателя, используя
+	несколько примеров. Числа А и В
+	представляются в дополнительном коде.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Объяснить результаты
+	экспериментов.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><B>4. СОДЕРЖАНИЕ ОТЧЕТА</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Цель работы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Схемы, исследуемые в работе.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Таблицы, отражающие результаты
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Выводы по результатам
+	исследований.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><B>5. КОНТРОЛЬНЫЕ ВОПРОСЫ</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>1. Какие комбинационные схемы
+	называются полу/полным сумматором
+	(вычитателем)?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>2. Нарисуйте схему полу/полного
+	сумматора (вычитателя).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>3. Напишите таблицу истинности
+	полу/полного сумматора (вычитателя).</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4. Примеры суммирования/вычитания
+	в дополнительном коде. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+<p>	Литература: Будько Цифровые устройства (Минск БГУИР 2010) УДК 004.3*144(076) ББК 32.973.26-04 7
+Б90</p>
+
+
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

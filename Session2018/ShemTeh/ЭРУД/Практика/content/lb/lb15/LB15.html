@@ -1,0 +1,775 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>LB15 - Программа дисциплины  &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../../index.html">Оглавление</A> |
+	<A HREF="../../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+<td><A HREF="../../../../Практика/practice.html">Практика</A>
+
+ <div>
+
+
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>Лабораторная работа №15</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<FONT SIZE=4><B>ГЕНЕРАТОРЫ ПОСЛЕДОВАТЕЛЬНОСТЕЙ.</B></FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<OL>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ЦЕЛЬ ЛАБОРАТОРНОЙ  РАБОТЫ </B>
+		</P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<OL>
+		<OL>
+			<LI><P LANG="ru-RU" STYLE="margin-bottom: 0in"><FONT SIZE=4>Изучение
+			синтеза генераторов последовательностей;</FONT></P>
+			<LI><P LANG="ru-RU" STYLE="margin-bottom: 0in"><FONT SIZE=4>Исследование
+			работы генераторов последовательностей.</FONT></P>
+		</OL>
+	</OL>
+	<P LANG="ru-RU" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL START=2>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ТЕОРЕТИЧЕСКИЕ СВЕДЕНИЯ</B></P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Схема, которая генерирует
+	заданную последовательность бит
+	синхронно с импульсами синхронизации,
+	называется генератором последовательностей.
+	Такие генераторы используются как:</FONT></P>
+	<OL>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=4>Счетчики;</FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=4>Генераторы
+		псевдослучайных последовательностей;</FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=4>Генераторы
+		заданной последовательности и заданного
+		периода;</FONT></P>
+		<LI><P LANG="ru-RU" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=4>Генераторы
+		кодов.</FONT></P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Генераторы последовательностей
+	являются одним из наиболее интересных
+	применений регистров сдвига. Блок-схема
+	генератора последовательностей показана
+	на рисунке  1</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_264c921a.png" NAME="graphics109" ALIGN=BOTTOM WIDTH=294 HEIGHT=237 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  1 Блок-схема генератора
+	последовательностей</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Выход декодера следующего
+	состояния </FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4><SPAN LANG="be-BY">-
+	это функция от </SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT></SUB><SUB><FONT SIZE=4>-1</FONT></SUB><FONT SIZE=4><SPAN LANG="be-BY">,
+	</SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT></SUB><SUB><FONT SIZE=4>-</FONT></SUB><SUB><FONT SIZE=4><SPAN LANG="be-BY">2</SPAN></FONT></SUB><FONT SIZE=4><SPAN LANG="be-BY">,
+	… , </SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="be-BY">0</SPAN></FONT></SUB><FONT SIZE=4><SPAN LANG="be-BY">,
+	т.е. <IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_7e56a110.gif" NAME="Object540" ALIGN=ABSMIDDLE WIDTH=180 HEIGHT=22>.
+	Это схема подобна схеме кольцевого
+	счетч</SPAN></FONT><FONT SIZE=4>ика (</FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4>=</FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>0</FONT></SUB><FONT SIZE=4>)
+	или счетчика Джонсона (<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6df2afd4.gif" NAME="Object541" ALIGN=ABSMIDDLE WIDTH=52 HEIGHT=21>).
+	Кольцевой счётчик и счётчик Джонсона
+	являются частными случаями генераторов
+	последовательностей. </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Синтез генераторов последовательностей
+	рассмотрим на примерах.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Пример 1</U></FONT><FONT SIZE=4>.
+	Синтезировать генератор следующей
+	последовательности  … 1101011 … .</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Решение</U></FONT><FONT SIZE=4>. При
+	синтезе генератора заданной
+	последовательности необходимо определить
+	число разрядов регистра сдвига и
+	комбинационную схему декодера следующего
+	состояния.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Минимально возможное число
+	триггеров </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>
+	в регистре сдвига для генерирования
+	последовательности длинной </FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">бит определяется
+	из того, что </SPAN></FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5df77fbb.gif" NAME="Object542" ALIGN=ABSMIDDLE WIDTH=107 HEIGHT=22>
+	                                                     <FONT SIZE=4></FONT><FONT SIZE=4><I>	</I></FONT><FONT SIZE=4>( 1)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY">В данном примере </SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>=7,
+	поэтому минимально возможное значение
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>=3.
+	Однако это не значит, что это число
+	триггеров является достаточным. Если
+	данная последовательность ведет к семи
+	различным состояниям регистра, то тогда
+	три триггера будет достаточно, в
+	противном случае число триггеров
+	придется увеличить. Запишем состояние
+	регистра в виде таблицы  1.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	                     <FONT SIZE=4>Таблица  1</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<DL>
+		<DD>
+		<TABLE WIDTH=547 CELLPADDING=7 CELLSPACING=0 align="center">
+			<COL WIDTH=200>
+			<COL WIDTH=90>
+			<COL WIDTH=90>
+			<COL WIDTH=109>
+			<TR>
+				<TD ROWSPAN=2 WIDTH=200 HEIGHT=4 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Число
+					синхроимпульсов</FONT></P>
+				</TD>
+				<TD COLSPAN=3 WIDTH=316 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы
+					триггеров</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">2</SPAN></FONT></SUB></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">1</SPAN></FONT></SUB></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4><SPAN LANG="en-US">0</SPAN></FONT></SUB></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>2</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>3</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>4</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>5</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>6</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>7</FONT></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT><IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m5c60e703.gif" ALIGN=LEFT HSPACE=12></P>
+				</TD>
+				<TD WIDTH=109 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+					<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+	</DL>
+	<P LANG="be-BY" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="be-BY" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY">Допускаем, что данная
+	последовательность </SPAN></FONT><FONT SIZE=4>генерируется
+	на выходе </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>2</FONT></SUB><FONT SIZE=4>.
+	В таком случае на выходах </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>1</FONT></SUB><FONT SIZE=4>
+	и </FONT><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>0</FONT></SUB><FONT SIZE=4>
+	будет та же последовательность, только
+	задержанная на один и два такта,
+	соответственно. Из таблицы  1 видно,
+	что не все состояния регистра отличаются
+	от других (первая и вторая строки
+	одинаковы, а также четвертая и шестая),
+	что означает - число триггеров регистра
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>=3
+	не является достаточным. Поэтому примем
+	число </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>=4
+	и построим таблицу аналогичную табл.
+	 2.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Поскольку в данном случае все
+	состояния регистра являются отличными
+	(разными), добавим в эту таблицу колонку,
+	в которой запишем требуемую
+	последовательность на входе регистра,
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">Y</SPAN></FONT><FONT SIZE=4>.</FONT></P>
+
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+
+	                                 <FONT SIZE=4>Таблица 2</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<TABLE WIDTH=616 CELLPADDING=7 CELLSPACING=0 align="center">
+		<COL WIDTH=200>
+		<COL WIDTH=62>
+		<COL WIDTH=71>
+		<COL WIDTH=71>
+		<COL WIDTH=62>
+		<COL WIDTH=64>
+		<TR>
+			<TD ROWSPAN=2 WIDTH=200 HEIGHT=4 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Число
+				синхроимпульсов</FONT></P>
+			</TD>
+			<TD COLSPAN=4 WIDTH=307 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Выходы
+				триггеров</FONT></P>
+			</TD>
+			<TD ROWSPAN=2 WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P CLASS="western" ALIGN=CENTER><FONT SIZE=4>Y</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>3</FONT></SUB></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>2</FONT></SUB></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>1</FONT></SUB></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4><SPAN LANG="en-US">Q</SPAN></FONT><SUB><FONT SIZE=4>0</FONT></SUB></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>2</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>3</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>4</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>5</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>6</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>7</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border-top: 1px solid #000000; border-bottom: none; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=200 HEIGHT=9 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>8 (1)</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=71 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+			<TD WIDTH=62 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>0</FONT></P>
+			</TD>
+			<TD WIDTH=64 STYLE="border: 1px solid #000000; padding: 0in 0.08in">
+				<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=4>1</FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	&nbsp;<FONT SIZE=4>Схему декодера получим, упрощая
+	функцию  с помощью карты Карно</FONT>
+	</P>
+
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<img alt="" src="../../../../Практика/images/lb2/img41.jpg"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	 Упрощение ФАЛ декодера следующего
+	состояния</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Упрощенная схема генератора
+	последовательности … 1101011 … показана
+	на рис.  2</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m6f3f8ea1.png" NAME="graphics112" ALIGN=BOTTOM WIDTH=509 HEIGHT=219 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  2<SPAN LANG="be-BY"> </SPAN>Логическая структура
+	генератора последовательности …
+	1101011 … .</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Пример 2. Синтезировать генератор
+	последовательности … 1101001… .</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><U>Решение.</U></FONT><FONT SIZE=4> Минимально
+	возможное число триггеров регистра
+	</FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>=3.
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">Провер</SPAN></FONT><FONT SIZE=4>им
+	является ли это число достаточным. Для
+	этого построим таблицу  3.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	                           <img alt="" src="../../../../Практика/images/lb2/img42.jpg"><FONT SIZE=4><BR>
+	&nbsp;</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Из таблицы  3 видно, что все
+	состояния регистра являются неодинаковыми,
+	т.е. число триггеров </FONT><FONT SIZE=4><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=4>=3
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">является достаточным
+	для реализации генератора, и поэтому
+	добавим в эту таблицу колонку с требуемой
+	на входе  регистра последовательностью.
+	Схему декодера получим, упрощая функцию
+	</SPAN></FONT><FONT SIZE=4> с помощью карты Карно.
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>На рисунке  3 показана упрощенная
+	схема генератора последовательности
+	… 1101001… .</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_3fbbab72.png" NAME="graphics114" ALIGN=BOTTOM WIDTH=531 HEIGHT=213 BORDER=0></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; text-align: center;">
+	Рис.  3 Логическая структура генератора
+	последовательности … 1101001… .</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Длина последовательности,
+	генерируемой генератором, рис.  3, равна
+		<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m553b6cd2.gif" NAME="Object544" ALIGN=ABSMIDDLE WIDTH=143 HEIGHT=20>.
+	</FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>Генераторы, которые генерируют
+	последовательности длины </FONT>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.25in; margin-bottom: 0in">
+
+	<IMG src="../../../../Практика/images/lb2/i_e048f5a42919c131_html_m297f207e.gif" NAME="Object545" ALIGN=ABSMIDDLE WIDTH=72 HEIGHT=20><FONT SIZE=4>
+	                                                ( 2)</FONT></P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=4>называются
+	генераторами последовательностей
+	максимальной длины. Такие генераторы
+	широко используются для генерирования
+	помехоустойчивых кодов.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL START=3>
+		<LI><P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+		<B>ПОРЯДОК ВЫПОЛНЕНИЯ ЛАБОРАТОРНОЙ
+		РАБОТЫ</B></P>
+	</OL>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY"><B>Программа компьютерного моделирование электронных схем Multisim:</B></FONT><FONT SIZE=4>Компоненты:
+	ИС 1533ИР16 (74А</FONT><FONT SIZE=4><SPAN LANG="en-US">LS</SPAN></FONT><FONT SIZE=4>295)-
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">четырехразрядный
+	регистр сдвига, ИС 1533ЛА4 (</SPAN></FONT><FONT SIZE=4>74</FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>10)-
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">три логических
+	элемента 3И-НЕ, ИС 1533ЛП5 (74</SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">ALS</SPAN></FONT><FONT SIZE=4>86</FONT><FONT SIZE=4><SPAN LANG="be-BY">)</SPAN></FONT><FONT SIZE=4>-
+	</FONT><FONT SIZE=4><SPAN LANG="be-BY">четыре двухвходовых
+	логических элемента  ИСКЛЮЧАЮЩЕЕ  ИЛИ.</SPAN></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL START=3>
+		<OL>
+			<LI><P LANG="ru-RU" STYLE="margin-bottom: 0in">    <FONT SIZE=4><SPAN LANG="be-BY"><B>Исследование
+			работы генератора последовательности,
+			           рис  2.</B></SPAN></FONT></P>
+		</OL>
+	</OL>
+	<P LANG="be-BY" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL>
+		<LI><P LANG="ru-RU" STYLE="margin-bottom: 0in"><FONT SIZE=4><SPAN LANG="be-BY">Используя
+		ИС 1533ИР16 и 1533ЛА</SPAN></FONT><FONT SIZE=4>4,</FONT><FONT SIZE=4><SPAN LANG="be-BY">
+		собрать схему генератора последовательности.</SPAN></FONT></P>
+		<LI><P LANG="be-BY" STYLE="margin-bottom: 0in"><FONT SIZE=4>Подавая
+		одиночные синхроимпульсы ( использовать
+		антидребезговую кнопку), исследовать
+		работу генератора последовательности.</FONT></P>
+		<LI><P LANG="be-BY" STYLE="margin-bottom: 0in"><FONT SIZE=4>Результаты
+		представить в табличной форме.</FONT></P>
+	</OL>
+	<P LANG="be-BY" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL START=3>
+		<OL START=2>
+			<LI><P LANG="ru-RU" STYLE="margin-bottom: 0in">  <FONT SIZE=4><SPAN LANG="be-BY"><B>Исследование
+			работы генератора последовательности,
+			         рис.  3.</B></SPAN></FONT></P>
+		</OL>
+	</OL>
+	<P LANG="be-BY" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<OL>
+		<LI><P LANG="be-BY" STYLE="margin-bottom: 0in"><FONT SIZE=4>Используя
+		ИС К555ИР16 и 1533ЛП5, собрать схему генератора
+		последовательности.</FONT></P>
+		<LI><P LANG="be-BY" STYLE="margin-bottom: 0in"><FONT SIZE=4>Подавая
+		одиночные синхроимпульсы, исследовать
+		работу генератора.</FONT></P>
+		<LI><P LANG="be-BY" STYLE="margin-bottom: 0in"><FONT SIZE=4>Результаты
+		представить в табличной форме.</FONT></P>
+	</OL>
+	<P LANG="be-BY" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY"><B>3.3 </B></SPAN></FONT><FONT SIZE=4><B>
+	        </B></FONT><FONT SIZE=4><SPAN LANG="be-BY"><B>Синтез и
+	исследование генератора последовательности</B></SPAN></FONT><FONT SIZE=4><SPAN LANG="be-BY">
+	</SPAN></FONT><FONT SIZE=4><SPAN LANG="be-BY"><B>…1001011… .</B></SPAN></FONT></P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY">1.       Синтезировать
+	и построить генератор последовательности
+	…1001011….</SPAN></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY">2.       Исследовать
+	работу генератора, результаты предоставить
+	в табличной форме.</SPAN></FONT></P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.25in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4><SPAN LANG="be-BY"><B>3.4 </B></SPAN></FONT><FONT SIZE=4><B>
+	       </B></FONT><FONT SIZE=4><SPAN LANG="be-BY"><B> Синтезировать
+	и исследовать генератор последовательности,
+	заданной преподавателем.</B></SPAN></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.25in; margin-bottom: 0in">
+	<FONT SIZE=4><B>4. </B></FONT><B>СОДЕРЖАНИЕ  ОТЧЕТА</B></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.49in; margin-bottom: 0in">
+	<BR>
+	</P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.1. Цель работы.</FONT></P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.2. Схемы генераторов исследуемых
+	в работе.</FONT></P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.3. Таблицы результатов наблюдений.</FONT></P>
+	<P LANG="be-BY" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>4.4. Выводы.</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">
+	<B>5.  КОНТРОЛЬНЫЕ  ВОПРОСЫ</B></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+	</P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.</FONT><FONT SIZE=4><SPAN LANG="be-BY">1.  Чему
+	равняется минимально возможное число
+	триггеров для генератора последовательности
+	длинной </SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US">S</SPAN></FONT><FONT SIZE=4>=27?</FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.</FONT><FONT SIZE=4><SPAN LANG="be-BY">2.  Какие
+	генераторы называются генераторами
+	последовательности максимальной длины?</SPAN></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.</FONT><FONT SIZE=4><SPAN LANG="be-BY">3.  Привести
+	примеры генераторов последовательности
+	максимальной длины.</SPAN></FONT></P>
+	<P LANG="ru-RU" CLASS="western" STYLE="text-indent: 0.5in; margin-bottom: 0in">
+	<FONT SIZE=4>5.</FONT><FONT SIZE=4><SPAN LANG="be-BY">4.  Обьяснить
+	работу генераторов,иследованных в
+	работе. </SPAN></FONT><FONT SIZE=4> </FONT>
+	</P>
+
+
+	<p>	Литература: Будько Цифровые устройства (Минск БГУИР 2010) УДК 004.3*144(076) ББК 32.973.26-04 7
+Б90</p>
+
+ </div>
+<A HREF="../../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

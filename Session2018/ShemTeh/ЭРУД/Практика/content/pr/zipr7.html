@@ -1,0 +1,1108 @@
+﻿<!-- (C) 2015 07 Rozum Halina, BSUIR, Belarus -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>ziPR2 - Практика по дисциплине &quot;СХЕМОТЕХНИКА&quot;</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr>
+  <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный ресурс по учебной дисциплине<BR>
+        &quot;СХЕМОТЕХНИКА&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;Инженерно-психологическое обеспечение информационных технологий&quot;
+                </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.html">Оглавление</A> |
+	<A HREF="../../../Программа/programm.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+	<A HREF="../../../Теория/theory.html">Теория</a> |
+							<strong>Практика</strong> |
+	<A HREF="../../../Контроль_знаний/test.html">Контроль знаний</A> |
+	<A HREF="../../../Об авторах/author.html">Об авторах</A></var> </td>
+  <tr>
+</table>
+<table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+            <td>
+                <p>&nbsp;</p>
+				<A HREF="../../../Практика/practice.html">Практика</A>
+
+                <p>ПРАКТИЧЕСКАЯ  РАБОТА № 2</p>
+                 <div>
+
+<div class=WordSection14>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase'>Изучение работы и расчет стабилизатора тока  </span></b></p>
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 1. Цель работы:</span></b></p>
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>  закрепление теоретического курса, приобретение навыков решения задач, активизация самостоятельной работы студентов.</span></p>
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2. Теоретические сведения</span></b></p>
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Стабилизатор
+напряжения представляет собой схему, которая обеспечивает неизменное значение
+выходного напряжения независимо от изменений входного напряжения и тока
+нагрузки в определённом диапазоне. </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Преимущества
+стабилизатора:</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Простота
+подсоединения к внешней цепи.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Минимальное
+количество внешних компонентов (в некоторых случаях требуется отсутствие
+внешних компонентов).</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Рисунок  1
+показывает стандартную схему включения стабилизатора напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=411 height=144
+src="../../../Практика/images/lb1/image521.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис  1. Стандартный стабилизатор
+напряжения</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Для всех
+микросхем ёмкость входного конденсатора <i>C</i><sub>вх</sub> должна быть не
+менее 2,2 мкф для керамических или оксидных танталовых и не менее 10 мкф – для
+алюминиевых оксидных конденсаторов, а выходного конденсатора <i>C</i><sub>0</sub>
+– не менее 1 и 10 мкф соответственно. Существует большое разнообразие стабилизаторов
+с фиксированным выходным напряжением: 5, 5.2, 6, 8, 10, 12, 15, 18 и 24 В как с
+положительной, так и отрицательной полярностью напряжения. Выходной ток
+колеблется в диапазоне от 100 мА до 3 А.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>78хх - серия
+включает в себя стабилизаторы с семью значениями выходного напряжения.
+Последние две цифры в номере 78хх отображают значение выходного напряжения, как
+показано в табл.  1.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:354.0pt;text-indent:35.4pt;
+line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Таблица
+ 1</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:73.65pt;border-collapse:collapse;border:none'>
+ <tr style='height:43.0pt'>
+  <td width=130 style='width:97.55pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:43.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Тип устройства</span></p>
+  </td>
+  <td width=138 style='width:103.55pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:43.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Выходное напряжение</span></p>
+  </td>
+  <td width=195 style='width:146.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:43.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>Максимальное входное напряжение (</span><i><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>U</span></i><span
+  lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif"'>)</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.1pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7805</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.1pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>5,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.1pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.0pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7806</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>6,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7608</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>8,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>35</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.75pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7812</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.75pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>12,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.75pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7815</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>15,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.9pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7818</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>18,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.55pt'>
+  <td width=130 valign=top style='width:97.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.55pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7424</span></p>
+  </td>
+  <td width=138 valign=top style='width:103.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.55pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>24,0</span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.55pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>40</span></p>
+  </td>
+ </tr>
+</table>
+
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><img width="90%"
+src="../../../Практика/images/lb1/image522.jpg"></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:12.0pt;font-family: "Times New Roman","serif"'>Рис.  2. Серия 7800 стабилизатора: а &#8209; корпусного
+типа, б &#8209; стандартного применения</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 2.1. Регулируемые стабилизаторы
+напряжения 78хх</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Если требуется
+нестандартное значение стабилизированного выходного напряжения или плавное его
+регулирование, удобно использовать специализированные регулируемые
+стабилизаторы, поддерживающие напряжение 1,25 В между выходом и управляющим
+выводом. Резисторы <i>R</i><sub>1</sub> и <i>R</i><sub>2</sub> образуют внешний
+регулируемый делитель напряжения, который входит в цепь установки уровня
+выходного напряжения <i>U</i><sub>вых</sub>, равного</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='position:relative;
+top:6.0pt'><img width=257 height=25
+src="../../../Практика/images/lb1/image523.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>где
+</span><i><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>пот</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>=50...100 мкА –
+собственный потребляемый ток микросхемы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span lang=X-NONE
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Число 1,25 в
+этой формуле </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>–</span><span
+lang=X-NONE style='font-size:14.0pt;font-family:"Times New Roman","serif"'> это
+упомянутое выше напряжение между выходом и управляющим выводом, которое
+поддерживает стабилизатор в рабочем режиме.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=509 height=209
+src="../../../Практика/images/lb1/image524.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис.  3. </span><span style='font-size:
+14.0pt;font-family:"Times New Roman","serif"'>Типовая схема включения
+регулируемого</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>стабилизатора напряжения</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выходное
+напряжение цепи (см. рис  3):</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";position:relative;top:18.0pt'><img
+width=201 height=57
+src="../../../Практика/images/lb1/image525.png"></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>и</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";position:relative;top:20.0pt'><img
+width=80 height=56
+src="../../../Практика/images/lb1/image526.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";position:relative;top:20.0pt'><img
+width=121 height=56
+src="../../../Практика/images/lb1/image527.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Если мы
+установим</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='position:relative;
+top:9.0pt'><img width=75 height=29
+src="../../../Практика/images/lb1/image528.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>,</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>значит,</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='position:relative;
+top:19.0pt'><img width=127 height=55
+src="../../../Практика/images/lb1/image529.png"></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>и</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='position:relative;
+top:19.0pt'><img width=88 height=55
+src="../../../Практика/images/lb1/image530.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>По схеме на рис
+ 3 можно включать и стабилизаторы с фиксированным выходным напряжением.
+Однако, во-первых, потребляемый ими ток значительно больше (2...4 мА) и,
+во-вторых, он менее стабилен при изменении выходного тока и входного
+напряжения. По этим причинам максимально возможного коэффициента стабилизации
+устройства достичь не удастся. Для снижения уровня пульсаций на выходе,
+особенно при большем выходном напряжении, рекомендуется включать сглаживающий
+конденсатор емкостью 10 мкФ и более. К конденсаторам <i>C</i><sub>1</sub> и <i>C</i><sub>2</sub>
+требования такие же, как и к соответствующим конденсаторам фиксированных
+стабилизаторов.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Если
+стабилизатор работает при максимальном выходном напряжении, то при случайном
+замыкании входной цепи или отключении источника питания микросхема оказывается
+под большим обратным напряжением со стороны нагрузки и может быть выведена из
+строя. Для защиты микросхемы по выходу в таких ситуациях параллельно ей включают
+защитный диод.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Все сказанное
+служит только для предварительного выбора стабилизатора, перед проектированием
+блока питания следует ознакомиться с полными справочными характеристиками
+(максимально допустимое входное напряжение, ток нагрузки, рабочая температура и
+т. д.).</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 3. Требуемое обеспечение</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:normal'><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>MULTISIM.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='text-align:center;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'> 4.
+Порядок проведения работы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 4.1. Типовое применение стабилизатора
+7805</span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1. Соберите в MULTISIM
+схему согласно рис. 4.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=590 height=159
+src="../../../Практика/images/lb1/image531.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис.  4. Схема для исследования
+стабилизатора 7805 </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Проведите расчёт </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>0</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> в зависимости от </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Заполните таблицу
+ 2.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=right style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:right;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Таблица  2</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:354.0pt;margin-bottom:.0001pt;text-indent:35.4pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=60 valign=top style='width:45.05pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><i><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>U</span></i><sub><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>вх</span></sub><span style='font-size:
+  12.0pt;font-family:"Times New Roman","serif"'>, В</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>0,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>1,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>2,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>3,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>4,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>4,5</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>5,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>5,5</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>6,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>6,5</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7,0</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>8,0</span></p>
+  </td>
+  <td width=47 valign=top style='width:35.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>10,0</span></p>
+  </td>
+  <td width=51 valign=top style='width:38.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>15,0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=60 valign=top style='width:45.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><i><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif"'>U</span></i><sub><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>0</span></sub><span style='font-size:
+  12.0pt;font-family:"Times New Roman","serif"'>, В</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=41 valign=top style='width:31.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=47 valign=top style='width:35.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=51 valign=top style='width:38.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3. Сравните
+значения напряжения <i>U</i><sub>0</sub> и </span><i><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>.</span></p>
+
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>4.3. Источник тока на микросхеме 7805</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Соберите схему
+рис.5. Используйте следующие номиналы элементов: <span style='position:relative;
+top:3.0pt'><img width=67 height=20
+src="../../../Практика/images/lb1/image532.png"> </span>и </span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+top:3.0pt'><img width=67 height=20
+src="../../../Практика/images/lb1/image532.png"></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>;</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><img width=522 height=313
+src="../../../Практика/images/lb1/image533.jpg"></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'>Рис. 5. Цепь для исследования
+источника тока </span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2. Проведите рассчёт </span><i><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>I</span></i><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>н</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> от значения </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>U</span><sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>вх</span></sub><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>. Занесите
+результаты в таблицу 4.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=right style='margin-top:0cm;margin-right:
+0cm;margin-bottom:0cm;margin-left:353.95pt;margin-bottom:.0001pt;text-align:
+right;text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Таблица 4</span></p>
+
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=64 valign=top style='width:47.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><b><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif";position:relative;top:5.0pt'>U</span></b><b><sub><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+  top:5.0pt'>вх</span></sub></b><b><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif";position:relative;top:5.0pt'>, В</span></b></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>0</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>2</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>3</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>4</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>5</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>6</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>7</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>8</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>9</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>10</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>11</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>12</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>13</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>14</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>15</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=64 valign=top style='width:47.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+  line-height:normal'><b><span lang=EN-US style='font-size:12.0pt;font-family:
+  "Times New Roman","serif";position:relative;top:5.0pt'>I</span></b><b><sub><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif";position:relative;
+  top:5.0pt'>н</span></sub></b><b><span style='font-size:12.0pt;font-family:
+  "Times New Roman","serif";position:relative;top:5.0pt'>, А</span></b></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+  <td width=36 valign=top style='width:27.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3. Сделайте
+выводы.</span></p>
+
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 5. Содержание отчёта</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Цель работы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Исследуемая
+цепь.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Результаты
+исследований.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Выводы.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Ответы на
+контрольные вопросы.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=center style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:normal'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> 6. Контрольные вопросы</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>1. Что такое стабилизатор напряжения?</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>2. Укажите области применения стабилизаторов
+напряжения.</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:35.45pt;line-height:normal'><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>3. Как уменьшить пульсации выходного
+напряжения?</span></p>
+
+
+				<A HREF="../../../Практика/practice.html">Практика</A>
+				<div style="position: fixed; right: 0; bottom: 0">
+	<a href="#" id="toTop"><img src="../../../Оболочка/js/to_top_ye.GIF" width="32" height="32" border="0" align="absmiddle"></a> </div>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>
