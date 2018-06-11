@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
 namespace ChildCentre
 {
     class DBConnection
@@ -52,7 +52,11 @@ namespace ChildCentre
 
         public void Close()
         {
+            MySqlConnection.ClearPool(this.connection);
             connection.Close();
+            connection.Dispose();
         }
     }
 }
+
+    */

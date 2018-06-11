@@ -31,30 +31,30 @@
             this.close = new System.Windows.Forms.TabPage();
             this.events = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.PRICE_EVENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CHILDS_EVENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_EVENTS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CHILDS_EVENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRICE_EVENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.child = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.FATHER_DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FATHER_FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MOTHER_DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MOTHER_FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ADDRESS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_CHILD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ADDRESS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MOTHER_FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MOTHER_DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FATHER_FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FATHER_DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SHEDULE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLASS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CHILDS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TEACHER = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TEACHER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CHILDS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLASS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SHEDULE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.events.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -101,29 +101,11 @@
             this.dataGridView3.Size = new System.Drawing.Size(664, 498);
             this.dataGridView3.TabIndex = 0;
             // 
-            // PRICE_EVENT
+            // ID_EVENTS
             // 
-            this.PRICE_EVENT.HeaderText = "PRICE-EVENT";
-            this.PRICE_EVENT.Name = "PRICE_EVENT";
-            this.PRICE_EVENT.ReadOnly = true;
-            // 
-            // NOTE
-            // 
-            this.NOTE.HeaderText = "NOTE";
-            this.NOTE.Name = "NOTE";
-            this.NOTE.ReadOnly = true;
-            // 
-            // DATE
-            // 
-            this.DATE.HeaderText = "DATE";
-            this.DATE.Name = "DATE";
-            this.DATE.ReadOnly = true;
-            // 
-            // DESCRIPTION
-            // 
-            this.DESCRIPTION.HeaderText = "DESCRIPTION";
-            this.DESCRIPTION.Name = "DESCRIPTION";
-            this.DESCRIPTION.ReadOnly = true;
+            this.ID_EVENTS.HeaderText = "ID";
+            this.ID_EVENTS.Name = "ID_EVENTS";
+            this.ID_EVENTS.ReadOnly = true;
             // 
             // CHILDS_EVENT
             // 
@@ -131,11 +113,29 @@
             this.CHILDS_EVENT.Name = "CHILDS_EVENT";
             this.CHILDS_EVENT.ReadOnly = true;
             // 
-            // ID_EVENTS
+            // DESCRIPTION
             // 
-            this.ID_EVENTS.HeaderText = "ID";
-            this.ID_EVENTS.Name = "ID_EVENTS";
-            this.ID_EVENTS.ReadOnly = true;
+            this.DESCRIPTION.HeaderText = "DESCRIPTION";
+            this.DESCRIPTION.Name = "DESCRIPTION";
+            this.DESCRIPTION.ReadOnly = true;
+            // 
+            // DATE
+            // 
+            this.DATE.HeaderText = "DATE";
+            this.DATE.Name = "DATE";
+            this.DATE.ReadOnly = true;
+            // 
+            // NOTE
+            // 
+            this.NOTE.HeaderText = "NOTE";
+            this.NOTE.Name = "NOTE";
+            this.NOTE.ReadOnly = true;
+            // 
+            // PRICE_EVENT
+            // 
+            this.PRICE_EVENT.HeaderText = "PRICE-EVENT";
+            this.PRICE_EVENT.Name = "PRICE_EVENT";
+            this.PRICE_EVENT.ReadOnly = true;
             // 
             // child
             // 
@@ -166,41 +166,10 @@
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // FATHER_DOB
+            // ID_CHILD
             // 
-            this.FATHER_DOB.HeaderText = "FATHER DOB";
-            this.FATHER_DOB.Name = "FATHER_DOB";
-            this.FATHER_DOB.ReadOnly = true;
-            // 
-            // FATHER_FIO
-            // 
-            this.FATHER_FIO.HeaderText = "FATHER FIO";
-            this.FATHER_FIO.Name = "FATHER_FIO";
-            this.FATHER_FIO.ReadOnly = true;
-            // 
-            // MOTHER_DOB
-            // 
-            this.MOTHER_DOB.HeaderText = "MOTHER DOB";
-            this.MOTHER_DOB.Name = "MOTHER_DOB";
-            this.MOTHER_DOB.ReadOnly = true;
-            // 
-            // MOTHER_FIO
-            // 
-            this.MOTHER_FIO.HeaderText = "MOTHER FIO";
-            this.MOTHER_FIO.Name = "MOTHER_FIO";
-            this.MOTHER_FIO.ReadOnly = true;
-            // 
-            // ADDRESS
-            // 
-            this.ADDRESS.HeaderText = "ADDRESS";
-            this.ADDRESS.Name = "ADDRESS";
-            this.ADDRESS.ReadOnly = true;
-            // 
-            // DOB
-            // 
-            this.DOB.HeaderText = "DOB";
-            this.DOB.Name = "DOB";
-            this.DOB.ReadOnly = true;
+            this.ID_CHILD.HeaderText = "ID";
+            this.ID_CHILD.Name = "ID_CHILD";
             // 
             // FIO
             // 
@@ -208,10 +177,41 @@
             this.FIO.Name = "FIO";
             this.FIO.ReadOnly = true;
             // 
-            // ID_CHILD
+            // DOB
             // 
-            this.ID_CHILD.HeaderText = "ID";
-            this.ID_CHILD.Name = "ID_CHILD";
+            this.DOB.HeaderText = "DOB";
+            this.DOB.Name = "DOB";
+            this.DOB.ReadOnly = true;
+            // 
+            // ADDRESS
+            // 
+            this.ADDRESS.HeaderText = "ADDRESS";
+            this.ADDRESS.Name = "ADDRESS";
+            this.ADDRESS.ReadOnly = true;
+            // 
+            // MOTHER_FIO
+            // 
+            this.MOTHER_FIO.HeaderText = "MOTHER FIO";
+            this.MOTHER_FIO.Name = "MOTHER_FIO";
+            this.MOTHER_FIO.ReadOnly = true;
+            // 
+            // MOTHER_DOB
+            // 
+            this.MOTHER_DOB.HeaderText = "MOTHER DOB";
+            this.MOTHER_DOB.Name = "MOTHER_DOB";
+            this.MOTHER_DOB.ReadOnly = true;
+            // 
+            // FATHER_FIO
+            // 
+            this.FATHER_FIO.HeaderText = "FATHER FIO";
+            this.FATHER_FIO.Name = "FATHER_FIO";
+            this.FATHER_FIO.ReadOnly = true;
+            // 
+            // FATHER_DOB
+            // 
+            this.FATHER_DOB.HeaderText = "FATHER DOB";
+            this.FATHER_DOB.Name = "FATHER_DOB";
+            this.FATHER_DOB.ReadOnly = true;
             // 
             // group
             // 
@@ -240,29 +240,11 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // SHEDULE
+            // ID
             // 
-            this.SHEDULE.HeaderText = "SHEDULE";
-            this.SHEDULE.Name = "SHEDULE";
-            this.SHEDULE.ReadOnly = true;
-            // 
-            // SIZE
-            // 
-            this.SIZE.HeaderText = "SIZE";
-            this.SIZE.Name = "SIZE";
-            this.SIZE.ReadOnly = true;
-            // 
-            // CLASS
-            // 
-            this.CLASS.HeaderText = "CLASS";
-            this.CLASS.Name = "CLASS";
-            this.CLASS.ReadOnly = true;
-            // 
-            // CHILDS
-            // 
-            this.CHILDS.HeaderText = "CHILDS";
-            this.CHILDS.Name = "CHILDS";
-            this.CHILDS.ReadOnly = true;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
             // TEACHER
             // 
@@ -270,11 +252,29 @@
             this.TEACHER.Name = "TEACHER";
             this.TEACHER.ReadOnly = true;
             // 
-            // ID
+            // CHILDS
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
+            this.CHILDS.HeaderText = "CHILDS";
+            this.CHILDS.Name = "CHILDS";
+            this.CHILDS.ReadOnly = true;
+            // 
+            // CLASS
+            // 
+            this.CLASS.HeaderText = "CLASS";
+            this.CLASS.Name = "CLASS";
+            this.CLASS.ReadOnly = true;
+            // 
+            // SIZE
+            // 
+            this.SIZE.HeaderText = "SIZE";
+            this.SIZE.Name = "SIZE";
+            this.SIZE.ReadOnly = true;
+            // 
+            // SHEDULE
+            // 
+            this.SHEDULE.HeaderText = "SHEDULE";
+            this.SHEDULE.Name = "SHEDULE";
+            this.SHEDULE.ReadOnly = true;
             // 
             // tabControl1
             // 
@@ -304,6 +304,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Tables";
             this.Text = "CHILD CENTRE - TABLES";
+            this.Load += new System.EventHandler(this.Tables_Load);
             this.events.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.child.ResumeLayout(false);

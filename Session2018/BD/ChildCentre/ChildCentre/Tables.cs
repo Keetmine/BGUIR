@@ -103,5 +103,20 @@ namespace ChildCentre
                 main.Show();
             }
         }
+
+        private void Tables_Load(object sender, EventArgs e)
+        {
+            SetupEventTable();
+        }
+
+        private void SetupEventTable()
+        {
+            List<Event> events =  Event.getEvents();
+
+            foreach (Event item in events)
+            {
+                this.dataGridView3.Rows.Add(item.id, item.getChildsName(), item.description, item.date, item.note, item.price);
+            }
+        }
     }
 }

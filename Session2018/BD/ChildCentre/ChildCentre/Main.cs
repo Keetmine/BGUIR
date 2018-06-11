@@ -41,6 +41,8 @@ namespace ChildCentre
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             Tables table = new Tables();
             table.Show();
             this.Hide();
