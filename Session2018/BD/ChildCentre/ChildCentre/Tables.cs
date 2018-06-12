@@ -45,9 +45,9 @@ namespace ChildCentre
 
                 // Draw a different background color, and don't paint a focus rectangle.
 
-                _textBrush = new SolidBrush(Color.Red);
+                _textBrush = new SolidBrush(Color.Black);
 
-                g.FillRectangle(Brushes.Gray, e.Bounds);
+                g.FillRectangle(Brushes.LightGray, e.Bounds);
 
             }
 

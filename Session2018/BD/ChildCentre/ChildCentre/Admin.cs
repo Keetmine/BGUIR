@@ -37,8 +37,8 @@ namespace ChildCentre
             if (e.State == DrawItemState.Selected)
             {
                 // Draw a different background color, and don't paint a focus rectangle.
-                _textBrush = new SolidBrush(Color.Red);
-                g.FillRectangle(Brushes.Gray, e.Bounds);
+                _textBrush = new SolidBrush(Color.Black);
+                g.FillRectangle(Brushes.LightGray, e.Bounds);
             }
             else
             {

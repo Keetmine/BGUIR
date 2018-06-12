@@ -303,6 +303,7 @@
             this.ClientSize = new System.Drawing.Size(824, 511);
             this.Controls.Add(this.tabControl1);
             this.Name = "Tables";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHILD CENTRE - TABLES";
             this.Load += new System.EventHandler(this.Tables_Load);
             this.events.ResumeLayout(false);
