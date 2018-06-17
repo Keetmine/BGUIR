@@ -1,0 +1,6 @@
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\bin\Debug\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\bin\Debug\Zadanie4.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Debug\Zadanie4.csprojAssemblyReference.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Debug\Zadanie4.csproj.CoreCompileInputs.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Debug\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Debug\Zadanie4.pdb

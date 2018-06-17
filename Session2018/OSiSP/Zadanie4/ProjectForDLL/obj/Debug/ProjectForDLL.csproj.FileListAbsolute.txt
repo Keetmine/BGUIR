@@ -1,0 +1,10 @@
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Debug\ProjectForDLL.exe.config
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Debug\ProjectForDLL.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Debug\ProjectForDLL.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Debug\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Debug\Zadanie4.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Debug\ProjectForDLL.csprojAssemblyReference.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Debug\ProjectForDLL.csproj.CoreCompileInputs.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Debug\ProjectForDLL.csproj.CopyComplete
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Debug\ProjectForDLL.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Debug\ProjectForDLL.pdb

@@ -1,0 +1,7 @@
+D:\BGUIR\Session2018\OSiSP\Zadanie1\bin\Debug\Zadanie1.exe.config
+D:\BGUIR\Session2018\OSiSP\Zadanie1\bin\Debug\Zadanie1.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie1\bin\Debug\Zadanie1.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie1\obj\Debug\Zadanie1.csprojAssemblyReference.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie1\obj\Debug\Zadanie1.csproj.CoreCompileInputs.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie1\obj\Debug\Zadanie1.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie1\obj\Debug\Zadanie1.pdb

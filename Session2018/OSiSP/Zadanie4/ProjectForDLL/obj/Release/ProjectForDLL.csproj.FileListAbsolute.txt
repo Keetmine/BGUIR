@@ -1,0 +1,10 @@
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Release\ProjectForDLL.exe.config
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Release\ProjectForDLL.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Release\ProjectForDLL.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Release\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\bin\Release\Zadanie4.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Release\ProjectForDLL.csprojAssemblyReference.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Release\ProjectForDLL.csproj.CoreCompileInputs.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Release\ProjectForDLL.csproj.CopyComplete
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Release\ProjectForDLL.exe
+D:\BGUIR\Session2018\OSiSP\Zadanie4\ProjectForDLL\obj\Release\ProjectForDLL.pdb

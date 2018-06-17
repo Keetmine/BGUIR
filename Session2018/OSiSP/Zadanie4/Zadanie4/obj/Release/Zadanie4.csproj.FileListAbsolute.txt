@@ -1,0 +1,5 @@
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\bin\Release\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\bin\Release\Zadanie4.pdb
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Release\Zadanie4.csproj.CoreCompileInputs.cache
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Release\Zadanie4.dll
+D:\BGUIR\Session2018\OSiSP\Zadanie4\Zadanie4\obj\Release\Zadanie4.pdb
