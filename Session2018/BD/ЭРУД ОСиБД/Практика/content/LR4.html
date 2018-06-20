@@ -1,0 +1,87 @@
+﻿<!-- (C) 2015 Rozum Halina, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+
+<HEAD>
+    <LINK rel=stylesheet href="../../Оболочка/css/style.css" type=text/css>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="utf8">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title> Практика по дисциплине &quot;Операционные системы, базы данных&quot;</title>
+    <base target="_top">
+</HEAD>
+
+<BODY>
+    <table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../Оболочка/images/background.jpg">
+        <tr>
+            <td width="13%" rowspan=3 align="center"><img src="../../Оболочка/images/logo_new.jpg" width=117 align="middle">
+            </td>
+            <tr>
+                <td width="70%" colspan=2 align="center" valign="middle">
+                    <H1 align="center">электронный
+        ресурс по учебной дисциплине<BR>
+        &quot;Операционные системы, базы данных&quot;<BR>
+        для специальности: </H1> 1-58 01 01 - &quot;ИНЖЕНЕРНО-ПСИХОЛОГИЧЕСКОЕ ОБЕСПЕЧЕНИЕ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ&quot;.
+                </td>
+                <td width="12%" rowspan=3 align="center">&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal">
+                                                  <A HREF="../../index.htm">Оглавление</A> |
+                                                  <A HREF="../../Программа/program.html" TITLE="Программа курса (Откроется в новом окне)">Программа</A> |
+                                                  <A HREF="../../Теория/theory.htm">Теория</A> |
+                                                  <strong>Практика</strong>|
+                                                  <A HREF="../../Контроль_знаний/test.htm">Контроль знаний</A> |
+                                                  <A HREF="../../Об авторах/author.htm">Об авторах</A>
+     </var></var> </td>
+  </tr>
+    </table>
+    <P class="margined">
+        <FONT SIZE=4>
+            <CENTER>
+            </CENTER>
+        </FONT>
+        <table style="margin:0 auto;" width="90%" border="0" cellpadding="0" cellspacing="0">
+            <td>
+ <A HREF="../practice.htm">Оглавление</A>
+                <p>&nbsp;</p>
+                 <div> <p><a><b><span>Лабораторная работа 4 Использование системных функций для работы с виртуальной памятью.</span></b></a><span><b><u><span><o:p></o:p></span></u></b></span></p> <span></span> <p><b><span>1. Цель работы<o:p></o:p></span></b></p> <p><span>Изучить особенности функционирования механизма виртуальной памяти и получить практические навыки по его использованию.<o:p></o:p></span></p> <p><b><span>2. Учебный материал по лабораторной</span></b><span><o:p></o:p></span></p> <p><span>Память процесса различается на heap (куча) и non-heap (стек) память, и состоит из 5 областей (memory pools, memory spaces):<o:p></o:p></span></p> <p><span>Eden Space (heap) – в этой области выделятся память под все создаваемые из программы объекты. Большая часть объектов живет недолго (итераторы, временные объекты, используемые внутри методов и т.п.), и удаляются при выполнении сборок мусора это области памяти, не перемещаются в другие области памяти. Когда данная область заполняется (т.е. количество выделенной памяти в этой области превышает некоторый заданный процент), GC выполняет быструю (minor collection) сборку мусора. По сравнению с полной сборкой мусора она занимает мало времени, и затрагивает только эту область памяти — очищает от устаревших объектов Eden Space и перемещает выжившие объекты в следующую область.<span> </span></span><span><o:p></o:p></span></p> <p><span>Survivor Space (heap) – сюда перемещаются объекты из предыдущей, после того, как они пережили хотя бы одну сборку мусора. Время от времени долгоживущие объекты из этой области перемещаются в Tenured Space.</span><span><o:p></o:p></span></p> <p><span>Tenured (Old) Generation (heap) — Здесь скапливаются долгоживущие объекты (крупные высокоуровневые объекты, синглтоны, менеджеры ресурсов и проч.). Когда заполняется эта область, выполняется полная сборка мусора (full, major collection), которая обрабатывает все созданные JVM объекты.</span><span><br> <span><span> </span>Permanent Generation (non-heap) – Здесь хранится метаинформация, используемая JVM (используемые классы, методы и т.п.). В частности</span><o:p></o:p></span></p> <p><span>Code Cache (non-heap) — эта область используется JVM, когда включена JIT-компиляция, в ней кешируется скомпилированный платформенно — зависимый код.</span><span><o:p></o:p></span></p> <p><span>Сборщик мусора работает следующим образом. Все ссылки, которые находятся на стеке или в статической области памяти образуют<span> </span><em>корневое множество</em>. Все объекты в «куче», до которых можно добраться по ссылкам из корневого множества, называются живыми. Объекты, до которых добраться нельзя — мертвыми. Во время сборки мусора мертвые объекты удаляются.<o:p></o:p></span></p> <p style="text-align: center;"><span><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Рисунок_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
+ alt="http://img-fotki.yandex.ru/get/4300/watergaus.1/0_310f3_92f2dc12_L.jpg"
+ style='width:300pt;height:168pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LR4.files/image001.png" o:title="0_310f3_92f2dc12_L"/>
+</v:shape><![endif]--><img src="LR4.files/image001.png" alt="http://img-fotki.yandex.ru/get/4300/watergaus.1/0_310f3_92f2dc12_L.jpg" v:shapes="Рисунок_x0020_1"></span><span><o:p></o:p></span></p> <p><span>Те ссылки, которые показаны на этой картинке — обычные. Они образуются в момент присваивания объекта некоторой переменной:<o:p></o:p></span></p> <p><span>MyClass a = new MyClass();<o:p></o:p></span></p> <p><span>Такие ссылки ещё называются сильными (strong), а объекты, к которым можно составить путь по сильным ссылкам — сильнодостижимыми (strongly reachable).<o:p></o:p></span></p> <p><span>Для некоторых задач такой подход может быть показаться слишком негибким.<o:p></o:p></span></p> <p><span>Иногда имеет смысл сохранить объект, даже если на него осталось ссылок, иногда наоборот — убрать, даже если он достижим из корневого множества, иногда некоторые объекты имеет смысл уничтожать не сразу, а выполнять некоторые действия перед уничтожением?<o:p></o:p></span></p> <p><span>В Java в таких случаях используются классы из пакета<span> </span></span><code><span>java.lang.ref</span></code><span>:<span> </span></span><code><span>SoftRefence</span></code><span><span> </span></span><span>(мягкая ссылка), </span><code><span>WeakReference</span></code><span><span> </span></span><span>(слабая ссылка) и<span> </span></span><code><span>PhantomReference</span></code><span><span> </span></span><span>(призрачная ссылка).<o:p></o:p></span></p> <p><span>Пример 1. Исчезающие ящики.<o:p></o:p></span></p> <p><span>На склад прибыла партия ящиков, и вам нужно присвоить каждому ящику номер. Для этого заведена хеш-табличка, в которой ключи — ссылки на ящики, а значения — их номера. <o:p></o:p></span></p> <p><span>HashMap boxMap = new HashMap();<o:p></o:p></span></p> <p><span>При поступлении на склад, ящик добавляется в таблицу:<o:p></o:p></span></p> <p><span>boxMap.put(box, boxid);<o:p></o:p></span></p> <p><span>При этом возникает проблема: при отгрузке ящика со склада, память, выделенная для него, не освобождается, поскольку хеш-таблица содержит ссылку на ящик, и виртуальная машина считает его «живым».<o:p></o:p></span></p> <p><span>Необходимо модифицировать хеш-таблицу так, чтобы память освобождалась после отгрузки ящика.<o:p></o:p></span></p> <h4><span>Одно из возможных решений:<o:p></o:p></span></h4> <p><span>Эта задача — один из вариантов достаточно общей проблемы: есть объект со «средним» временем жизни (т.е. он живет дольше, чем метод, который выделил для него память, но меньше, чем приложение), c этим объектом связаны метаданные, и эта связь хранится в словаре. В итоге, некоторому третьему объекту необходимо в определенный момент почистить словарь от ненужных записей. Если этот третий объект случайно забудет почистить словарь, случится утечка памяти.<o:p></o:p></span></p> <p><span>Было бы хорошо, если бы записи в этом словаре вообще не учитывались при подсчёте достижимости объекта — то есть, если бы сборщик мусора уничтожал объект<span> </span></span><code><span>box</span></code><span>, когда ссылки на него остались только в словаре.<o:p></o:p></span></p> <p><span>В Java есть способ добиться такого поведения — использовать шаблонный класс<span> </span></span><code><span>WeakReference</span></code><span><span> </span></span><span>(«слабая ссылка»). Объект называется слабодостижимым («weakly reachable»), если до него можно добраться только по слабым ссылкам из корневого множества.<o:p></o:p></span></p> <p><span>Слабые ссылки создаются примерно так:<o:p></o:p></span></p> <p><span>WeakReference<Box> boxRef = new WeakReference<Box>(box);<o:p></o:p></span></p> <p><span>В том случае, если объект<span> </span></span><code><span>boxRef</span></code><span><span> </span></span><span>останется единственной живой ссылкой на объект<span> </span></span><code><span>box</span></code><span>, объект<span> </span></span><code><span>box</span></code><span><span> </span></span><span>будет удалён сборщиком мусора:<o:p></o:p></span></p> <p style="text-align: center;"><span><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_30" o:spid="_x0000_i1026" type="#_x0000_t75" alt="http://img-fotki.yandex.ru/get/4210/watergaus.1/0_310f4_ae7a8805_L.jpg"
+ style='width:300pt;height:154.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LR4.files/image002.png" o:title="0_310f4_ae7a8805_L"/>
+</v:shape><![endif]--><img src="LR4.files/image002.png" alt="http://img-fotki.yandex.ru/get/4210/watergaus.1/0_310f4_ae7a8805_L.jpg" v:shapes="Рисунок_x0020_30"></span><span><o:p></o:p></span></p> <p><span>Если при добавлении записи в хеш-табличку объект класса «ящик» обернуть в слабую ссылку, то это решит проблему утечек памяти. Однако это создаст другую проблему: иметь дело с хеш-табличкой, ключ в записи в которой может неожиданно обратиться в<span> </span></span><code><span>null</span></code><span> — занятие не самое приятное. Поэтому табличка должна сама удалять запись, как только удаляется объект, на который ссылается ключ.<o:p></o:p></span></p> <p><span>Воспользуемся стандартным классом WeakHashMap. <o:p></o:p></span></p> <p><span>Map<Box,long> boxMap = new WeakHashMap<Box,long>();<o:p></o:p></span></p> <p><span>boxMap.put(box, boxid);<o:p></o:p></span></p> <h3><span>Задача</span><span> 2: OutOfMemoryError<o:p></o:p></span></h3> <p><span>Необходимо преобразовать несколько (сотен? тысяч?) картинок. Для этого есть вот такой код:<o:p></o:p></span></p> <p><span>public class PicModifier {<o:p></o:p></span></p> <p><span><span> </span>private byte[] picData;<o:p></o:p></span></p> <p><span><span> </span>public synchronized int modifyPicture(String fileName) {<o:p></o:p></span></p> <p><span><span> </span>int picSize = getPicSize(fileName);<o:p></o:p></span></p> <p><span><span> </span>if (picData == null || picData.length < picSize) {<o:p></o:p></span></p> <p><span><span> </span>picdata = new byte[pisSize];<o:p></o:p></span></p> <p><span><span> </span>loadPicture(fileName, picSize);<o:p></o:p></span></p> <p><span><span> </span></span><span>}<o:p></o:p></span></p> <p><span><span> </span>}<o:p></o:p></span></p> <p><span>}<o:p></o:p></span></p> <p><span>Идея предварительно выделить буфер для файла кажется нормальной: выделение памяти всякий раз для каждой новой картинки может несколько замедлить работу приложения. Однако возникает новая проблема: вдруг приложению перестанет хватать памяти? Тогда, наверное, разумно будет пренебречь буфером и вернуть память системе.<o:p></o:p></span></p> <p><span>Необходимо модифицировать код так, чтобы приложение сохраняло буфер, если памяти достаточно и освобождало его, если память в системе заканчивается?<o:p></o:p></span></p> <h4><span>Одно из возможных решений<o:p></o:p></span></h4> <p><span>Здесь потребуется поведение, обратное поведению слабых ссылок. Необходимо указать сборщику мусора, что определенный тип объектов нужно держать в памяти столько времени, сколько возможно без риска получить<span> </span></span><code><span>OutOfMemoryError</span></code><span>.<o:p></o:p></span></p> <p><span>Этого можно добиться, используя «мягкие ссылки». Они работают следующим образом: если объект достижим через набор мягких ссылок («мягкодостижим», softly reachable, см. рисунок), то виртуальная машина будет стараться сохранять этот объект в памяти как можно дольше.<o:p></o:p></span></p> <p style="text-align: center;"><span><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_31" o:spid="_x0000_i1025" type="#_x0000_t75" alt="http://img-fotki.yandex.ru/get/4208/watergaus.1/0_310f5_60f84e97_L.jpg"
+ style='width:300pt;height:150.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LR4.files/image003.png" o:title="0_310f5_60f84e97_L"/>
+</v:shape><![endif]--><img src="LR4.files/image003.png" alt="http://img-fotki.yandex.ru/get/4208/watergaus.1/0_310f5_60f84e97_L.jpg" v:shapes="Рисунок_x0020_31"></span><span><o:p></o:p></span></p> <p><span>Необходимо это обернуть буфер в мягкую ссылку.<o:p></o:p></span></p> <p><span>private SoftReference<byte[]> picData;<o:p></o:p></span></p> <p><span>Таким образом, мягкие ссылки обеспечивают нечто вроде кэширования. Но это, конечно же, не настоящее кэширование. Если Вашему приложению действительно нужен полноценный кэш, то одних только мягких ссылок мало, нужна реализация кэширующих стратегий, по возможности независимых от количества свободной памяти. Поэтому мягкие ссылки иногда называют «кэшированием для бедных».<o:p></o:p></span></p> <p><b><span>3. Порядок выполнения работы<o:p></o:p></span></b></p> <p><![if !supportLists]><span><span>1.<span> </span></span></span><![endif]><span>Ознакомиться с учебным материалом<o:p></o:p></span></p> <p><![if !supportLists]><span><span>2.<span> </span></span></span><![endif]><span>В </span><span>ide</span><span> </span><span>Eclipse</span><span> создать проект.<o:p></o:p></span></p> <p><![if !supportLists]><span><span>3.<span> </span></span></span><![endif]><span>Создать приложение с большим количеством тяжелых объектов и оптимизировать работу с ними.<o:p></o:p></span></p> <p><![if !supportLists]><span><span>4.<span> </span></span></span><![endif]><span>Продемонстрировать результат работы преподавателю.</span><span><o:p></o:p></span></p> <p><![if !supportLists]><span><span>5.<span> </span></span></span><![endif]><span>Согласовать с преподавателем содержание отчёта и подготовить его.</span><span><o:p></o:p></span></p> <p><b><span>4. Контрольные вопросы<o:p></o:p></span></b></p> <p><span><span> </span>1. Из каких областей состоит память процесса?<o:p></o:p></span></p> <p><span><span> </span>2. Что такое слабая ссылка? <o:p></o:p></span></p> <p><span><span> </span>3. Что такое мягкая ссылка?</span></p> </div> 
+ <A HREF="../practice.htm">Оглавление</A>
+                <p>&nbsp;</p>
+        </table>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

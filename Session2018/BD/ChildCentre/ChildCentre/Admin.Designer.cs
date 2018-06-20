@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.categoty = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.id_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoty_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.child = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.ID_CHILD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_child_info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_parents = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_child = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.child_info = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.idChildInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +52,7 @@
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_child_info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.events = new System.Windows.Forms.TabPage();
-            this.save_event = new System.Windows.Forms.Button();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.ID_EVENTS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +61,7 @@
             this.PRICE_EVENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X_event = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TEACHER = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_group = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group_class = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
+            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.id_class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,7 +80,7 @@
             this.category_note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.list = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
+            this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.id_list = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.child_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,7 +88,7 @@
             this.id_event = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_list = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parents = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
+            this.materialRaisedButton8 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mother_fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,7 +97,7 @@
             this.father_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_parents = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personal = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
+            this.materialRaisedButton9 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.personal_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personal_fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,6 +105,7 @@
             this.qualification = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.x_personal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.close = new System.Windows.Forms.TabPage();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tabControl1.SuspendLayout();
             this.categoty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -128,7 +129,6 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tabControl1.Controls.Add(this.categoty);
             this.tabControl1.Controls.Add(this.child);
             this.tabControl1.Controls.Add(this.child_info);
@@ -139,41 +139,48 @@
             this.tabControl1.Controls.Add(this.parents);
             this.tabControl1.Controls.Add(this.personal);
             this.tabControl1.Controls.Add(this.close);
-            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tabControl1.ItemSize = new System.Drawing.Size(25, 150);
-            this.tabControl1.Location = new System.Drawing.Point(1, 1);
+            this.tabControl1.Depth = 0;
+            this.tabControl1.Location = new System.Drawing.Point(12, 131);
+            this.tabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(822, 509);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.Size = new System.Drawing.Size(1109, 610);
             this.tabControl1.TabIndex = 1;
-            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // categoty
             // 
-            this.categoty.Controls.Add(this.button1);
+            this.categoty.Controls.Add(this.materialRaisedButton1);
             this.categoty.Controls.Add(this.dataGridView4);
-            this.categoty.Location = new System.Drawing.Point(154, 4);
+            this.categoty.Location = new System.Drawing.Point(4, 22);
             this.categoty.Name = "categoty";
-            this.categoty.Size = new System.Drawing.Size(664, 501);
+            this.categoty.Size = new System.Drawing.Size(1101, 584);
             this.categoty.TabIndex = 4;
             this.categoty.Text = "CATEGORY";
             this.categoty.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // materialRaisedButton1
             // 
-            this.button1.Location = new System.Drawing.Point(582, 471);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "SAVE ALL";
-            this.button1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.AutoSize = true;
+            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Icon = null;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton1.TabIndex = 3;
+            this.materialRaisedButton1.Text = "Save All";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.saveCategory);
             // 
             // dataGridView4
             // 
+            this.dataGridView4.AllowUserToOrderColumns = true;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_category,
@@ -182,7 +189,7 @@
             this.x_category});
             this.dataGridView4.Location = new System.Drawing.Point(0, 0);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView4.Size = new System.Drawing.Size(1101, 533);
             this.dataGridView4.TabIndex = 1;
             this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
             this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
@@ -218,28 +225,35 @@
             // 
             // child
             // 
-            this.child.Controls.Add(this.button2);
+            this.child.Controls.Add(this.materialRaisedButton2);
             this.child.Controls.Add(this.dataGridView2);
-            this.child.Location = new System.Drawing.Point(154, 4);
+            this.child.Location = new System.Drawing.Point(4, 22);
             this.child.Name = "child";
             this.child.Padding = new System.Windows.Forms.Padding(3);
-            this.child.Size = new System.Drawing.Size(664, 501);
+            this.child.Size = new System.Drawing.Size(1101, 584);
             this.child.TabIndex = 1;
             this.child.Text = "CHILD";
             this.child.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // materialRaisedButton2
             // 
-            this.button2.Location = new System.Drawing.Point(582, 471);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "SAVE ALL";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.saveChild);
+            this.materialRaisedButton2.AutoSize = true;
+            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Icon = null;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton2.TabIndex = 4;
+            this.materialRaisedButton2.Text = "Save All";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.saveChild);
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_CHILD,
@@ -248,7 +262,7 @@
             this.x_child});
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView2.Size = new System.Drawing.Size(1101, 533);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView2_RowsAdded);
@@ -284,26 +298,34 @@
             // 
             // child_info
             // 
-            this.child_info.Controls.Add(this.button3);
+            this.child_info.Controls.Add(this.materialRaisedButton3);
             this.child_info.Controls.Add(this.dataGridView5);
-            this.child_info.Location = new System.Drawing.Point(154, 4);
+            this.child_info.Location = new System.Drawing.Point(4, 22);
             this.child_info.Name = "child_info";
-            this.child_info.Size = new System.Drawing.Size(664, 501);
+            this.child_info.Size = new System.Drawing.Size(1101, 584);
             this.child_info.TabIndex = 5;
             this.child_info.Text = "CHILD INFORMATION";
             this.child_info.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // materialRaisedButton3
             // 
-            this.button3.Location = new System.Drawing.Point(582, 471);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "SAVE ALL";
-            this.button3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.AutoSize = true;
+            this.materialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Icon = null;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton3.TabIndex = 5;
+            this.materialRaisedButton3.Text = "Save All";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.saveChildInfo);
             // 
             // dataGridView5
             // 
+            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idChildInfo,
@@ -313,8 +335,11 @@
             this.x_child_info});
             this.dataGridView5.Location = new System.Drawing.Point(0, 0);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView5.Size = new System.Drawing.Size(1101, 533);
             this.dataGridView5.TabIndex = 1;
+            this.dataGridView5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellClick);
+            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
+            this.dataGridView5.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView5_RowsAdded);
             // 
             // idChildInfo
             // 
@@ -353,28 +378,35 @@
             // 
             // events
             // 
-            this.events.Controls.Add(this.save_event);
+            this.events.Controls.Add(this.materialRaisedButton4);
             this.events.Controls.Add(this.dataGridView3);
-            this.events.Location = new System.Drawing.Point(154, 4);
+            this.events.Location = new System.Drawing.Point(4, 22);
             this.events.Name = "events";
             this.events.Padding = new System.Windows.Forms.Padding(3);
-            this.events.Size = new System.Drawing.Size(664, 501);
+            this.events.Size = new System.Drawing.Size(1101, 584);
             this.events.TabIndex = 2;
             this.events.Text = "EVENTS";
             this.events.UseVisualStyleBackColor = true;
             // 
-            // save_event
+            // materialRaisedButton4
             // 
-            this.save_event.Location = new System.Drawing.Point(582, 472);
-            this.save_event.Name = "save_event";
-            this.save_event.Size = new System.Drawing.Size(75, 23);
-            this.save_event.TabIndex = 1;
-            this.save_event.Text = "SAVE ALL";
-            this.save_event.UseVisualStyleBackColor = true;
-            this.save_event.Click += new System.EventHandler(this.saveEvent);
+            this.materialRaisedButton4.AutoSize = true;
+            this.materialRaisedButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Icon = null;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton4.TabIndex = 6;
+            this.materialRaisedButton4.Text = "Save All";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.saveEvent);
             // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_EVENTS,
@@ -386,7 +418,7 @@
             this.dataGridView3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(664, 466);
+            this.dataGridView3.Size = new System.Drawing.Size(1098, 533);
             this.dataGridView3.StandardTab = true;
             this.dataGridView3.TabIndex = 0;
             this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
@@ -442,27 +474,35 @@
             // 
             // group
             // 
-            this.group.Controls.Add(this.button4);
+            this.group.Controls.Add(this.materialRaisedButton5);
             this.group.Controls.Add(this.dataGridView1);
-            this.group.Location = new System.Drawing.Point(154, 4);
+            this.group.Location = new System.Drawing.Point(4, 22);
             this.group.Name = "group";
             this.group.Padding = new System.Windows.Forms.Padding(3);
-            this.group.Size = new System.Drawing.Size(664, 501);
+            this.group.Size = new System.Drawing.Size(1101, 584);
             this.group.TabIndex = 0;
             this.group.Text = "GROUP";
             this.group.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // materialRaisedButton5
             // 
-            this.button4.Location = new System.Drawing.Point(582, 472);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "SAVE ALL";
-            this.button4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.AutoSize = true;
+            this.materialRaisedButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton5.Depth = 0;
+            this.materialRaisedButton5.Icon = null;
+            this.materialRaisedButton5.Location = new System.Drawing.Point(1013, 539);
+            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton5.Name = "materialRaisedButton5";
+            this.materialRaisedButton5.Primary = true;
+            this.materialRaisedButton5.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton5.TabIndex = 6;
+            this.materialRaisedButton5.Text = "Save All";
+            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.saveGroup);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -474,8 +514,11 @@
             this.x_group});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(664, 466);
+            this.dataGridView1.Size = new System.Drawing.Size(1105, 533);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
             // 
             // ID
             // 
@@ -531,26 +574,34 @@
             // 
             // group_class
             // 
-            this.group_class.Controls.Add(this.button5);
+            this.group_class.Controls.Add(this.materialRaisedButton6);
             this.group_class.Controls.Add(this.dataGridView6);
-            this.group_class.Location = new System.Drawing.Point(154, 4);
+            this.group_class.Location = new System.Drawing.Point(4, 22);
             this.group_class.Name = "group_class";
-            this.group_class.Size = new System.Drawing.Size(664, 501);
+            this.group_class.Size = new System.Drawing.Size(1101, 584);
             this.group_class.TabIndex = 6;
             this.group_class.Text = "CLASS";
             this.group_class.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // materialRaisedButton6
             // 
-            this.button5.Location = new System.Drawing.Point(582, 471);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "SAVE ALL";
-            this.button5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton6.AutoSize = true;
+            this.materialRaisedButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton6.Depth = 0;
+            this.materialRaisedButton6.Icon = null;
+            this.materialRaisedButton6.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton6.Name = "materialRaisedButton6";
+            this.materialRaisedButton6.Primary = true;
+            this.materialRaisedButton6.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton6.TabIndex = 6;
+            this.materialRaisedButton6.Text = "Save All";
+            this.materialRaisedButton6.UseVisualStyleBackColor = true;
+            this.materialRaisedButton6.Click += new System.EventHandler(this.saveClass);
             // 
             // dataGridView6
             // 
+            this.dataGridView6.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_class,
@@ -561,8 +612,10 @@
             this.x_class});
             this.dataGridView6.Location = new System.Drawing.Point(0, 0);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView6.Size = new System.Drawing.Size(1101, 533);
             this.dataGridView6.TabIndex = 1;
+            this.dataGridView6.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellClick);
+            this.dataGridView6.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView6_RowsAdded);
             // 
             // id_class
             // 
@@ -610,26 +663,34 @@
             // 
             // list
             // 
-            this.list.Controls.Add(this.button6);
+            this.list.Controls.Add(this.materialRaisedButton7);
             this.list.Controls.Add(this.dataGridView7);
-            this.list.Location = new System.Drawing.Point(154, 4);
+            this.list.Location = new System.Drawing.Point(4, 22);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(664, 501);
+            this.list.Size = new System.Drawing.Size(1101, 584);
             this.list.TabIndex = 7;
             this.list.Text = "LiST";
             this.list.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // materialRaisedButton7
             // 
-            this.button6.Location = new System.Drawing.Point(582, 471);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "SAVE ALL";
-            this.button6.UseVisualStyleBackColor = true;
+            this.materialRaisedButton7.AutoSize = true;
+            this.materialRaisedButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton7.Depth = 0;
+            this.materialRaisedButton7.Icon = null;
+            this.materialRaisedButton7.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton7.Name = "materialRaisedButton7";
+            this.materialRaisedButton7.Primary = true;
+            this.materialRaisedButton7.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton7.TabIndex = 7;
+            this.materialRaisedButton7.Text = "Save All";
+            this.materialRaisedButton7.UseVisualStyleBackColor = true;
+            this.materialRaisedButton7.Click += new System.EventHandler(this.saveList);
             // 
             // dataGridView7
             // 
+            this.dataGridView7.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_list,
@@ -639,8 +700,10 @@
             this.x_list});
             this.dataGridView7.Location = new System.Drawing.Point(0, 0);
             this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView7.Size = new System.Drawing.Size(1105, 533);
             this.dataGridView7.TabIndex = 2;
+            this.dataGridView7.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellClick);
+            this.dataGridView7.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView7_RowsAdded);
             // 
             // id_list
             // 
@@ -682,26 +745,34 @@
             // 
             // parents
             // 
-            this.parents.Controls.Add(this.button7);
+            this.parents.Controls.Add(this.materialRaisedButton8);
             this.parents.Controls.Add(this.dataGridView8);
-            this.parents.Location = new System.Drawing.Point(154, 4);
+            this.parents.Location = new System.Drawing.Point(4, 22);
             this.parents.Name = "parents";
-            this.parents.Size = new System.Drawing.Size(664, 501);
+            this.parents.Size = new System.Drawing.Size(1101, 584);
             this.parents.TabIndex = 8;
             this.parents.Text = "PARENTS";
             this.parents.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // materialRaisedButton8
             // 
-            this.button7.Location = new System.Drawing.Point(582, 471);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "SAVE ALL";
-            this.button7.UseVisualStyleBackColor = true;
+            this.materialRaisedButton8.AutoSize = true;
+            this.materialRaisedButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton8.Depth = 0;
+            this.materialRaisedButton8.Icon = null;
+            this.materialRaisedButton8.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton8.Name = "materialRaisedButton8";
+            this.materialRaisedButton8.Primary = true;
+            this.materialRaisedButton8.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton8.TabIndex = 7;
+            this.materialRaisedButton8.Text = "Save All";
+            this.materialRaisedButton8.UseVisualStyleBackColor = true;
+            this.materialRaisedButton8.Click += new System.EventHandler(this.saveParents);
             // 
             // dataGridView8
             // 
+            this.dataGridView8.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
@@ -712,8 +783,10 @@
             this.x_parents});
             this.dataGridView8.Location = new System.Drawing.Point(0, 0);
             this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView8.Size = new System.Drawing.Size(1105, 533);
             this.dataGridView8.TabIndex = 3;
+            this.dataGridView8.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView8_CellClick);
+            this.dataGridView8.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView8_RowsAdded);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -761,26 +834,34 @@
             // 
             // personal
             // 
-            this.personal.Controls.Add(this.button8);
+            this.personal.Controls.Add(this.materialRaisedButton9);
             this.personal.Controls.Add(this.dataGridView9);
-            this.personal.Location = new System.Drawing.Point(154, 4);
+            this.personal.Location = new System.Drawing.Point(4, 22);
             this.personal.Name = "personal";
-            this.personal.Size = new System.Drawing.Size(664, 501);
+            this.personal.Size = new System.Drawing.Size(1101, 584);
             this.personal.TabIndex = 9;
             this.personal.Text = "PERSONAL";
             this.personal.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // materialRaisedButton9
             // 
-            this.button8.Location = new System.Drawing.Point(582, 471);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "SAVE ALL";
-            this.button8.UseVisualStyleBackColor = true;
+            this.materialRaisedButton9.AutoSize = true;
+            this.materialRaisedButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton9.Depth = 0;
+            this.materialRaisedButton9.Icon = null;
+            this.materialRaisedButton9.Location = new System.Drawing.Point(1010, 539);
+            this.materialRaisedButton9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton9.Name = "materialRaisedButton9";
+            this.materialRaisedButton9.Primary = true;
+            this.materialRaisedButton9.Size = new System.Drawing.Size(82, 36);
+            this.materialRaisedButton9.TabIndex = 7;
+            this.materialRaisedButton9.Text = "Save All";
+            this.materialRaisedButton9.UseVisualStyleBackColor = true;
+            this.materialRaisedButton9.Click += new System.EventHandler(this.saveParents);
             // 
             // dataGridView9
             // 
+            this.dataGridView9.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.personal_id,
@@ -790,8 +871,10 @@
             this.x_personal});
             this.dataGridView9.Location = new System.Drawing.Point(0, 0);
             this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(664, 465);
+            this.dataGridView9.Size = new System.Drawing.Size(1101, 533);
             this.dataGridView9.TabIndex = 2;
+            this.dataGridView9.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView9_CellClick);
+            this.dataGridView9.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView9_RowsAdded);
             // 
             // personal_id
             // 
@@ -830,43 +913,64 @@
             // 
             // close
             // 
-            this.close.Location = new System.Drawing.Point(154, 4);
+            this.close.Location = new System.Drawing.Point(4, 22);
             this.close.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(664, 501);
+            this.close.Size = new System.Drawing.Size(814, 483);
             this.close.TabIndex = 3;
             this.close.Text = "CLOSE";
             this.close.UseVisualStyleBackColor = true;
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.tabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 63);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1121, 62);
+            this.materialTabSelector1.TabIndex = 2;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 511);
+            this.ClientSize = new System.Drawing.Size(1120, 740);
+            this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Admin";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHILD CENTRE - ADMINISTRATION";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.tabControl1.ResumeLayout(false);
             this.categoty.ResumeLayout(false);
+            this.categoty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.child.ResumeLayout(false);
+            this.child.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.child_info.ResumeLayout(false);
+            this.child_info.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.events.ResumeLayout(false);
+            this.events.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.group.ResumeLayout(false);
+            this.group.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.group_class.ResumeLayout(false);
+            this.group_class.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.list.ResumeLayout(false);
+            this.list.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.parents.ResumeLayout(false);
+            this.parents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.personal.ResumeLayout(false);
+            this.personal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             this.ResumeLayout(false);
 
@@ -874,7 +978,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private MaterialSkin.Controls.MaterialTabControl tabControl1;
         private System.Windows.Forms.TabPage categoty;
         private System.Windows.Forms.TabPage child;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -892,7 +996,6 @@
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.Button save_event;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_category;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoty_description;
@@ -943,13 +1046,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SIZE;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn x_group;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton9;
     }
 }

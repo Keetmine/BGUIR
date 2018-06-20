@@ -20,7 +20,6 @@ D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\bin\Debug\Google.Protobuf.dll
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\bin\Debug\MySql.Data.dll
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\bin\Debug\Google.Protobuf.xml
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\bin\Debug\MySql.Data.xml
-D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.csprojAssemblyReference.cache
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.Properties.Resources.resources
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.csproj.GenerateResource.cache
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.csproj.CoreCompileInputs.cache
@@ -30,3 +29,5 @@ D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.pdb
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.Main.resources
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.Tables.resources
 D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.Admin.resources
+D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\bin\Debug\MaterialSkin.dll
+D:\BGUIR\Session2018\BD\ChildCentre\ChildCentre\obj\Debug\ChildCentre.csprojAssemblyReference.cache

@@ -61,13 +61,14 @@ namespace ChildCentre
 
         }
 
-        public static List<Event> getEvents()
+        public static List<Event> getEvents(string search = "")
         {
             List<Event> list = new List<Event>();
-
+            string query = "SELECT * FROM events";
+            if (search != "") query += " WHERE description LIKE '%" + search + "%' OR note LIKE '%" + search + "%'";
             DB db = new DB();
 
-            DataTable items = db.query("SELECT * FROM events");
+            DataTable items = db.query(query);
 
             foreach (DataRow row in items.Rows)
             {

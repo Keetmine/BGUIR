@@ -1,85 +1,28 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ChildCentre
 {
-    public partial class Tables : Form
+    public partial class Tables : MaterialForm
     {
+        public User user;
         public Tables()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
         }
 
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
-            Graphics g = e.Graphics;
-
-            Brush _textBrush;
-
-
-
-            // Get the item from the collection.
-
-            TabPage _tabPage = tabControl1.TabPages[e.Index];
-
-
-
-            // Get the real bounds for the tab rectangle.
-
-            Rectangle _tabBounds = tabControl1.GetTabRect(e.Index);
-
-
-
-            if (e.State == DrawItemState.Selected)
-
-            {
-
-
-
-                // Draw a different background color, and don't paint a focus rectangle.
-
-                _textBrush = new SolidBrush(Color.Black);
-
-                g.FillRectangle(Brushes.LightGray, e.Bounds);
-
-            }
-
-            else
-
-            {
-
-                _textBrush = new System.Drawing.SolidBrush(e.ForeColor);
-
-                e.DrawBackground();
-
-            }
-
-
-
-            // Use our own font.
-
-            Font _tabFont = new Font("Arial", (float)10.0, FontStyle.Bold, GraphicsUnit.Pixel);
-
-
-
-            // Draw string. Center the text.
-
-            StringFormat _stringFlags = new StringFormat();
-
-            _stringFlags.Alignment = StringAlignment.Center;
-
-            _stringFlags.LineAlignment = StringAlignment.Center;
-
-            g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
-
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -100,6 +43,7 @@ namespace ChildCentre
             if (tab.Name == "close")
             {
                 this.Hide();
+                this.user.updateLastLogout();
                 main.Show();
             }
         }
@@ -107,16 +51,57 @@ namespace ChildCentre
         private void Tables_Load(object sender, EventArgs e)
         {
             SetupEventTable();
+            SetupRemovedEventsTable();
         }
 
-        private void SetupEventTable()
-        {
-            List<Event> events =  Event.getEvents();
 
+
+        private void SetupEventTable(string search="")
+        {
+            List<Event> events =  Event.getEvents(search);
+            this.dataGridView3.Rows.Clear();
             foreach (Event item in events)
             {
                 this.dataGridView3.Rows.Add(item.id, item.getChildsName(), item.description, item.date, item.note, item.price);
             }
+        }
+
+        private void SetupRemovedEventsTable()
+        {
+            List<Removed_events> events = Removed_events.getEvents();
+
+            foreach (Removed_events item in events)
+            {
+                this.dataGridView4.Rows.Add(item.id, item.getChildsName(), item.description, item.date, item.note, item.price);
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            string search = materialSingleLineTextField1.Text.ToString();
+            if (search != "") SetupEventTable(search);
+      
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            SetupEventTable();
+            materialSingleLineTextField1.Text = "";
         }
     }
 }
