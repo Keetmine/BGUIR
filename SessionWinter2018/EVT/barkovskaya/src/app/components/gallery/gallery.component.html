@@ -1,20 +1,28 @@
 <h2>Gallery</h2>
 
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">jpg</label>
+<div class="btn-group btn-group-toggle sort" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+    <label ngbButtonLabel class="btn-primary">
+        <input ngbButton type="radio" [value]="1"> JPG
+    </label>
+    <label ngbButtonLabel class="btn-primary">
+        <input ngbButton type="radio" [value]="2"> PNG
+    </label>
+    <label ngbButtonLabel class="btn-primary">
+        <input ngbButton type="radio" [value]="0"> ALL
+    </label>
 </div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">png</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-  <label class="form-check-label" for="inlineCheckbox3">all</label>
+<div class="image-container">
+    <div *ngFor="let item of images" [ngStyle]="{ 'background-image': 'url(' + item.src + ')'}"
+         [ngClass]="item.type === 'jpg' ? 'jpg' : 'png'" (click)="openImage(item.src)">
+    </div>
 </div>
 
-<div *ngFor="let item of images">
-  <div style="background: url(../../../public/1.jpg)">
+<button class="btn-primary">
+    LOAD NEW
+</button>
 
-  </div>
+<div id="imgModal" class="modal" [ngStyle]="{ 'display': showModal ? 'block' : 'none'}">
+    <div class="modal-content">
+        <img src={{currentImg}} (click)="showModal = !showModal"/>
+    </div>
 </div>

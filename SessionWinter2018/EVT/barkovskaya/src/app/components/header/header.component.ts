@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -6,4 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  isShow: Boolean = true;
+
+  constructor(private router: Router ) {
+    this.isShow = this.router.url !== '/gallery'
+  }
+
+  start(){
+    let x = document.querySelector('#start');
+    if (x){
+      x.scrollIntoView();
+    }
+  }
+
 }

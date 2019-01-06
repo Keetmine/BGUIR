@@ -1,0 +1,28 @@
+
+:host {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px 5%;
+  & > div {
+    text-align: center;
+
+    & > p {
+      margin-bottom: 0;
+      color: gray;
+      text-transform: uppercase;
+    }
+    & > a {
+      color: white;
+      text-transform: uppercase;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .divider {
+    border-bottom: 2px solid gray;
+    width: 40px;
+    margin: 10px auto;
+  }
+}

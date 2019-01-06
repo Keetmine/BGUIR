@@ -3,12 +3,14 @@
   padding: 15px 5% 5%;
   display: block;
   h4 {
-    color: #848484;
+    color: black;
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 100;
     & > span {
       color: #28a98b;
       cursor: pointer;
+      font-weight: bold;
     }
   }
 
@@ -21,6 +23,12 @@
       width: 100%;
       text-align: left;
       margin-bottom: 10px;
+      border: 2px solid #29a98b;
+    }
+    & > .show {
+      margin-bottom: 10px;
     }
   }
+
+
 }
