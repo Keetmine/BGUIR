@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: #a4d6ff;
+    --blue: #6557d1;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 815px;
+    width: 1280px;
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid var(--blue);
+    background-color: rgb(168, 221, 225);
+    color: #ffffff;
+    font-size: 3rem;
+    background-image: url(../img/image5.jpg);
+    background-repeat: no-repeat;
+    background-position: center -10px;
+}
+
+.in-favorite {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    color: #000000;
+    letter-spacing: -.3px;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.aside {
+    position: relative;
+    width: 20%;
+    height: calc(100% - 145px);
+    background-image: url(../img/image6.jpg);
+}
+
+.menu {
+    width: 100%;
+    padding: .6rem 0 1rem 1.2rem;
+    border-bottom: 2px solid var(--blue);
+}
+
+.menu .main {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+
+.menu .sub {
+    display: block;
+    padding-left: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+.menu .type {
+    display: block;
+    padding-left: 2.5rem;
+    margin: .15rem 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 1rem;
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.form .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.form .half {
+    width: 50%;
+}
+.form .half:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    padding-right: 5px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.form .half:last-child {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.form input {
+    width: 85px;
+    height: 20px;
+    background-color: #cae7ff;
+    border: 1px solid lightgray;
+}
+.form button {
+    height: 20px;
+    padding: 0 5px;
+    background-color: #cae7ff;
+    border: 1px solid lightgray;
+    font-weight: lighter;
+}
+
+.main-wrap {
+    display: flex;
+    width: 80%;
+    padding: 0.2rem;
+    background-color: #ecf7ff;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+.main-wrap .content {
+    width: 70%;
+    font-size: .78rem;
+    line-height: 1.1rem;
+}
+
+.main-wrap .content .head-line {
+    width: calc(100% + 10px);
+}
+
+.news {
+    width: 30%;
+    padding: .8rem .8rem;
+}
+.news .title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.news .item {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+}
+
+.news .item .ico {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/image4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news .item .theme {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: #cae7ff;
+}
+
+.footer img {
+    padding: 0 .1rem;
+    height: 30px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.down-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-weight: 600;
+    line-height: .9rem;
+    font-size: .85rem;
+    letter-spacing: -.8px;
+    word-spacing: 2px;
+    bottom: 35px;
+    left: 20%;
+    width: 80%;
+    height: 30px;
+    background-color: var(--blue);
+}
+
+.down-line p {
+    padding: 0;
+}

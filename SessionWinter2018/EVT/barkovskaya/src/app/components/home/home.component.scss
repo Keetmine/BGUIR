@@ -1,0 +1,26 @@
+
+:host {
+  padding: 15px 5% 5%;
+  display: block;
+  h4 {
+    color: #848484;
+    text-align: justify;
+    font-size: 16px;
+    & > span {
+      color: #28a98b;
+      cursor: pointer;
+    }
+  }
+
+  .panel {
+    & > button {
+      background: none;
+      color: black;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+.header {
+  min-height: 100vh;
+  background: url(../../../assets/images/back.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  & > h4 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 10px;
+
+  }
+  & > h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 100%;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+  }
+
+  & > a {
+    margin: auto;
+    display: flex;
+    text-transform: uppercase;
+    background: #29a98b;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: black;
+    font-weight: bold;
+  }
+}
+.nav {
+  padding: 15px 5%;
+  background: #0a0c11;
+  position: static;
+  top: 0;
+  & > a {
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    letter-spacing: 2px;
+  }
+}
