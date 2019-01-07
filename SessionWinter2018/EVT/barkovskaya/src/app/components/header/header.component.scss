@@ -39,7 +39,7 @@
 .nav {
   padding: 15px 5%;
   background: #0a0c11;
-  position: static;
+  position: sticky;
   top: 0;
   & > a {
     color: white;
