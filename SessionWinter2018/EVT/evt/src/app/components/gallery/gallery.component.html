@@ -1,0 +1,39 @@
+<h2>Gallery</h2>
+
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.jpg" (change)="sort()"> JPG
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.png" (change)="sort()"> PNG
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.all" (change)="sort()"> ALL
+  </label>
+</div>
+
+<div class="image-container">
+  <div *ngFor="let item of sortImages" [ngStyle]="{ 'background-image': 'url(' + item.src + ')'}"
+       [ngClass]="item.type === 'jpg' ? 'jpg' : item.type === 'png' ? 'png' : ''" (click)="openImage(item.src)">
+  </div>
+</div>
+<div *ngIf="sortImages && sortImages.length === 0" style="margin-bottom: 20px">IMAGE NOT UPLOADED</div>
+
+<label class="btn btn btn-success btn-s" for="photo">
+  Select image
+</label>
+
+<input type="file" name="photo" id="photo" ng2FileSelect [uploader]="uploader" hidden />
+<input  type="text" [(ngModel)]="imgName"/>
+<button type="button" class="btn btn-success btn-s"
+        (click)="uploader.uploadAll()"
+        [disabled]="!uploader.getNotUploadedItems().length" >
+  UPLOAD
+</button>
+
+
+<div id="imgModal" class="modal" [ngStyle]="{ 'display': showModal ? 'block' : 'none'}">
+  <div class="modal-content">
+    <img src={{currentImg}} (click)="showModal = !showModal"/>
+  </div>
+</div>

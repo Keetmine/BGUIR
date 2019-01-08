@@ -1,0 +1,46 @@
+:host {
+  padding: 15px 5% 5%;
+  display: block;
+  text-align: center;
+  & > h2 {
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  & > .image-container {
+    display: flex;
+    margin-left: -20px;
+    flex-wrap: wrap;
+    & > div {
+      height: 300px;
+      background-size: cover;
+      max-width: calc(33.3% - 20px);
+      flex: calc(33.3% - 20px);
+      display: inline-flex;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    & > .jpg {
+      box-shadow: inset 0px 1px 0px 6px #d80310;
+    }
+    & > .png {
+      box-shadow: inset 0px 1px 0px 6px rgb(25, 41, 216);
+    }
+  }
+}
+
+input {
+  vertical-align: middle;
+  height: 36px;
+}
+.modal-content {
+  margin: 15% auto;
+  width: max-content;
+  & > img {
+    height: 50vh;
+    display: block;
+    cursor: pointer;
+  }
+}

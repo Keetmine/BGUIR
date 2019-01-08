@@ -1,0 +1,9 @@
+.nav {
+  padding: 15px 5%;
+  background: #ebebeb;
+  & > a {
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: black;
+  }
+}

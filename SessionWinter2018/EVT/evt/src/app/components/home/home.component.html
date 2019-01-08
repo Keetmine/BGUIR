@@ -1,0 +1,32 @@
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus expedita labore nam quas rem
+  sapiente similique unde? Adipisci esse perferendis quo repudiandae vel vero. Ad consectetur debitis exercitationem.
+</div>
+
+
+<div class="panel" *ngFor="let item of items">
+  <button type="button" class="btn btn-outline-primary" (click)="item.isCollapsed = !item.isCollapsed"
+          [attr.aria-expanded]="!item.isCollapsed" aria-controls={item.id}>
+    {{item.title}}
+  </button>
+  <div [ngbCollapse]="item.isCollapsed" id={item.id}>
+    <div class="card">
+      <div class="card-body">
+        {{item.content}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+:host {
+  padding: 15px 5% 5%;
+  display: block;
+  .panel {
+    & > button {
+      background: none;
+      color: black;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
