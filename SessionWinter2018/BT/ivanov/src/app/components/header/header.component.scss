@@ -1,0 +1,15 @@
+.nav {
+  padding: 15px 5%;
+  background: #0a0c11;
+  text-align: right;
+  display: block;
+  & > div > a {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    &:first-child {
+      float: left;
+    }
+  }
+}

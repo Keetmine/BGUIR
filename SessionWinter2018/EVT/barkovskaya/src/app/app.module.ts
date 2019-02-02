@@ -11,6 +11,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {FormsModule} from '@angular/forms';
 import {FileSelectDirective} from 'ng2-file-upload';
 import {HttpClientModule} from '@angular/common/http';
+import {AddComponent} from './components/add/add.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
         HeaderComponent,
         FooterComponent,
         FileSelectDirective,
+        AddComponent
     ],
     imports: [
         BrowserModule,

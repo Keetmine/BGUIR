@@ -1,42 +1,59 @@
 <h2>Gallery</h2>
 
 <div class="btn-group btn-group-toggle sort">
-    <label class="btn-primary" ngbButtonLabel>
+    <label class="btn-primary pers" ngbButtonLabel>
         <input type="checkbox" ngbButton [(ngModel)]="model.jpg" (change)="sort()"> JPG
     </label>
-    <label class="btn-primary" ngbButtonLabel>
+    <label class="btn-primary pers" ngbButtonLabel>
         <input type="checkbox" ngbButton [(ngModel)]="model.png" (change)="sort()"> PNG
     </label>
-    <label class="btn-primary" ngbButtonLabel>
+    <label class="btn-primary pers" ngbButtonLabel>
         <input type="checkbox" ngbButton [(ngModel)]="model.all" (change)="sort()"> ALL
     </label>
 </div>
 
 <div class="image-container">
-    <div *ngFor="let item of sortImages" [ngStyle]="{ 'background-image': 'url(' + item.src + ')'}"
-         [ngClass]="item.type === 'jpg' ? 'jpg' : item.type === 'png' ? 'png' : ''" (click)="openImage(item.src)">
+    <div *ngFor="let item of sortImages">
+        <div [ngStyle]="{ 'background-image': 'url(' + item.src + ')'}"
+             [ngClass]="item.type === 'jpg' ? 'jpg' : item.type === 'png' ? 'png' : ''">
+            <!--<i class="fas fa-trash" (click)="deleteImage(item.src)"></i>-->
+            <!--<i class="fa fa-pen" (click)="showEdit(item.src)"></i>-->
+            <i class="fa fa-images" (click)="openImage(item.src)"></i>
+        </div>
+        <p>{{item.name}}</p>
+
+        <!--<div>-->
+            <!---->
+        <!--</div>-->
+        <!--<input type="text" [(ngModel)]="item.name"/>-->
+        <!--<i class="fa fa-times" (click)="closeEdit(item.src)"></i>-->
+        <!--<i class="fa fa-check" (click)="editImageName(item.src)"></i>-->
     </div>
+
 </div>
 <div *ngIf="sortImages && sortImages.length === 0" style="margin-bottom: 20px">IMAGE NOT UPLOADED</div>
 
-<label class="btn load" for="photo">
-    Select image
-</label>
+<!--<label class="btn load" for="photo">-->
+    <!--Select image-->
+<!--</label>-->
 
-<input type="file" name="photo" id="photo" ng2FileSelect [uploader]="uploader" hidden />
-<input  type="text" [(ngModel)]="imgName"/>
-<button type="button" class="btn btn-success btn-s load"
-        (click)="uploader.uploadAll()"
-        [disabled]="!uploader.getNotUploadedItems().length" >
-    UPLOAD
-</button>
+<!--<input type="file" name="photo" id="photo" ng2FileSelect [uploader]="uploader" hidden/>-->
+<!--<input type="text" [(ngModel)]="imgName"/>-->
+<!--<button type="button" class="btn btn-success btn-s load"-->
+        <!--(click)="uploader.uploadAll()"-->
+        <!--[disabled]="!uploader.getNotUploadedItems().length">-->
+    <!--UPLOAD-->
+<!--</button>-->
+
+<!--<ngb-alert [dismissible]="false" type="danger" *ngIf="showAllert" style="margin-top: 20px" (close)="showAllert = false">-->
+    <!--<strong>Warning!</strong> Enter name.-->
+<!--</ngb-alert>-->
 
 
-<div id="imgModal" class="modal" [ngStyle]="{ 'display': showModal ? 'block' : 'none'}">
+<div id="imgModal" class="modal" [ngStyle]="{ 'display': showModal ? 'block' : 'none'}" >
     <div class="modal-content">
         <img src={{currentImg}} (click)="showModal = !showModal"/>
     </div>
 </div>
-
 
 

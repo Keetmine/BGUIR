@@ -1,0 +1,19 @@
+<h2>Add immage</h2>
+
+<label class="btn load" for="photo">
+    Select image
+</label>
+
+<input type="file" name="photo" id="photo" ng2FileSelect [uploader]="uploader" hidden/>
+<input type="text" [(ngModel)]="imgName"/>
+<button type="button" class="btn btn-success btn-s load"
+        (click)="uploader.uploadAll()"
+        [disabled]="!uploader.getNotUploadedItems().length">
+    UPLOAD
+</button>
+
+<ngb-alert [dismissible]="false" type="danger" *ngIf="showAllert" style="margin-top: 20px">
+    <strong>Warning!</strong> Enter name.
+</ngb-alert>
+
+

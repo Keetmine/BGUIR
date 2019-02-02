@@ -21,6 +21,7 @@ export class GalleryComponent implements OnInit {
 
     images;
     sortImages;
+    showAllert: Boolean = false;
 
     constructor(private http: HttpClient) {
     }
@@ -36,10 +37,15 @@ export class GalleryComponent implements OnInit {
         };
         this.uploader.onBeforeUploadItem = (file) => {
             console.log(this.imgName);
+            if (this.imgName.length === 0) {
+                this.showAllert = true;
+                return false;
+            }
             file.file.name = this.imgName + '.' + file.file.name.split('.')[file.file.name.split('.').length - 1];
         };
         this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
             this.imgName = '';
+            this.showAllert = false;
             this.loadImg();
         };
     }
@@ -47,6 +53,20 @@ export class GalleryComponent implements OnInit {
     openImage(img) {
         this.currentImg = img;
         this.showModal = true;
+    }
+
+    deleteImage(img) {
+
+    }
+
+    editImageName(img) {
+
+    }
+    showEdit(img) {
+
+    }
+    closeEdit(img) {
+
     }
 
     loadImg() {

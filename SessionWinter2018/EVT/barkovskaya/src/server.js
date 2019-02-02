@@ -56,10 +56,11 @@ app.get('/api/uploads', function (req, res) {
     let item = []
     fs.readdirSync(DIR).forEach(file => {
         console.log(file);
-        item.push({src: 'http://localhost:3000/uploads/' + file, type: file.split('.')[file.split('.').length - 1]})
+        item.push({src: 'http://localhost:3000/uploads/' + file,name:file.split('.').slice(0, -1).join('.'), type: file.split('.')[file.split('.').length - 1]})
     })
     res.send(JSON.stringify(item))
 });
+
 
 const PORT = process.env.PORT || 3000;
 

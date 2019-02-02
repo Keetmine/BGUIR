@@ -1,0 +1,117 @@
+:host {
+  padding: 15px 5% 5%;
+  display: block;
+  text-align: center;
+  & > h2 {
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  & > .sort {
+    display: flex;
+    margin: 10px 0 10px -20px;
+    & > label {
+      margin-left: 20px;
+      background: #0a0c11;
+      outline: none;
+      border: none;
+      flex: calc(33.3% - 20px);
+    }
+    & > .active {
+      background: #28a98b;
+    }
+  }
+
+  & > .image-container {
+    display: flex;
+    margin-left: -20px;
+    flex-wrap: wrap;
+    & > div {
+      flex: calc(33.3% - 20px);
+      max-width: calc(33.3% - 20px);
+      flex-wrap: wrap;
+      display: inline-flex;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      & >  div{
+        height: 300px;
+        background-size: cover;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        & > i {
+          float: right;
+          &:first-child {
+            margin: 20px 20px 0 10px;
+
+          }
+          cursor: pointer;
+          display: none;
+          margin: 20px 0 0 10px;
+        }
+
+        &:hover {
+          & > i {
+            display: block;
+          }
+
+        }
+      }
+      & > p {
+        text-align: center;
+        width: 100%;
+      }
+      & > input {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+    & > div > .jpg {
+      box-shadow: inset 0px 1px 0px 14px rgba(216, 3, 16, 0.39);
+      //box-shadow: inset 10px 10px 5px 200px rgba(172, 12, 22, 0.27);
+      //transition: all 0.2s;
+      //&:hover {
+      //  box-shadow: none;
+      //  transition: all 0.2s;
+      //
+      //}
+    }
+    & > div > .png {
+      //box-shadow: inset 10px 10px 5px 200px rgba(56, 42, 209, 0.3);
+      box-shadow: inset 0px 1px 0px 14px rgba(25, 41, 216, 0.39);
+      //transition: all 0.2s;
+      //
+      //&:hover {
+      //  box-shadow: none;
+      //  transition: all 0.2s;
+      //
+      //}
+
+    }
+  }
+}
+
+.load {
+  color: white;
+  background: #29a98b;
+  border-radius: 0;
+  border: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+input {
+  vertical-align: middle;
+  height: 36px;
+}
+.modal-content {
+  margin: 15% auto;
+  width: max-content;
+  & > img {
+    height: 50vh;
+    display: block;
+    cursor: pointer;
+  }
+}

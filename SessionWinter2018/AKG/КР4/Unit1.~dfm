@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 562
+  Top = 138
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #1051#1072#1073#1086#1088#1072#1090#1086#1088#1085#1072#1103' '#1088#1072#1073#1086#1090#1072' '#8470' 6 '#1074#1072#1088#1080#1072#1085#1090' 4'
+  ClientHeight = 551
+  ClientWidth = 805
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 658
+    Top = 77
+    Width = 28
+    Height = 13
+    Caption = #1054#1089#1100' X'
+  end
+  object Label2: TLabel
+    Left = 658
+    Top = 133
+    Width = 28
+    Height = 13
+    Caption = #1054#1089#1100' Y'
+  end
+  object Label3: TLabel
+    Left = 658
+    Top = 189
+    Width = 28
+    Height = 13
+    Caption = #1054#1089#1100' Z'
+  end
+  object Xbtn0: TSpeedButton
+    Left = 569
+    Top = 96
+    Width = 23
+    Height = 21
+    Caption = '0'
+    OnClick = Xbtn0Click
+  end
+  object Ybtn0: TSpeedButton
+    Left = 569
+    Top = 152
+    Width = 23
+    Height = 21
+    Caption = '0'
+    OnClick = Ybtn0Click
+  end
+  object Zbtn0: TSpeedButton
+    Left = 569
+    Top = 208
+    Width = 23
+    Height = 21
+    Caption = '0'
+    OnClick = Zbtn0Click
+  end
+  object RevolverBtn: TSpeedButton
+    Left = 598
+    Top = 40
+    Width = 148
+    Height = 22
+    AllowAllUp = True
+    GroupIndex = -6
+    Caption = #1042#1088#1072#1097#1077#1085#1080#1077' '#1074#1086#1082#1088#1091#1075' '#1086#1089#1080' X'
+    OnClick = RevolverBtnClick
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 551
+    Height = 551
+    Align = alLeft
+    TabOrder = 0
+    object Image1: TImage
+      Left = 1
+      Top = 1
+      Width = 549
+      Height = 549
+      Align = alClient
+    end
+  end
+  object EditX: TEdit
+    Left = 754
+    Top = 96
+    Width = 31
+    Height = 21
+    ReadOnly = True
+    TabOrder = 1
+    Text = '0'
+  end
+  object EditY: TEdit
+    Left = 754
+    Top = 152
+    Width = 31
+    Height = 21
+    ReadOnly = True
+    TabOrder = 2
+    Text = '0'
+  end
+  object EditZ: TEdit
+    Left = 754
+    Top = 208
+    Width = 31
+    Height = 21
+    ReadOnly = True
+    TabOrder = 3
+    Text = '0'
+  end
+  object RadioButton1: TRadioButton
+    Left = 598
+    Top = 268
+    Width = 64
+    Height = 17
+    Caption = #1050#1072#1088#1082#1072#1089
+    Checked = True
+    TabOrder = 4
+    TabStop = True
+    OnClick = RadioButton1Click
+  end
+  object RadioButton2: TRadioButton
+    Left = 684
+    Top = 268
+    Width = 64
+    Height = 17
+    Caption = #1043#1088#1072#1085#1080
+    TabOrder = 5
+    OnClick = RadioButton2Click
+  end
+  object ProjectionBox: TCheckBox
+    Left = 598
+    Top = 304
+    Width = 148
+    Height = 17
+    Caption = #1055#1086#1089#1084#1086#1090#1088#1077#1090#1100' '#1087#1088#1086#1077#1082#1094#1080#1080
+    TabOrder = 6
+    OnClick = ProjectionBoxClick
+  end
+  object TrackBarX: TTrackBar
+    Left = 598
+    Top = 94
+    Width = 150
+    Height = 29
+    Max = 180
+    Min = -180
+    TabOrder = 7
+    OnChange = TrackBarXChange
+  end
+  object TrackBarY: TTrackBar
+    Left = 598
+    Top = 150
+    Width = 150
+    Height = 29
+    Max = 180
+    Min = -180
+    TabOrder = 8
+    OnChange = TrackBarYChange
+  end
+  object TrackBarZ: TTrackBar
+    Left = 598
+    Top = 206
+    Width = 150
+    Height = 29
+    Max = 180
+    Min = -180
+    TabOrder = 9
+    OnChange = TrackBarZChange
+  end
+end
