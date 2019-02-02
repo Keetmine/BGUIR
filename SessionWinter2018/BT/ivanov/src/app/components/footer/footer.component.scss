@@ -1,0 +1,30 @@
+
+:host {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px 5%;
+  & > div {
+    text-align: center;
+
+    & > p {
+      margin-bottom: 0;
+      color: gray;
+      text-transform: uppercase;
+    }
+    & > a {
+      color: white;
+      text-transform: uppercase;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .divider {
+    border-bottom: 2px solid gray;
+    width: 40px;
+    margin: 10px auto;
+  }
+}
